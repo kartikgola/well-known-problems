@@ -1,0 +1,5 @@
+package leetcode;
+
+class ProductOfArrayExceptSelfTest {
+
+}
