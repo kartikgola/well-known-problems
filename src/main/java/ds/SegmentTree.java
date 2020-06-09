@@ -19,7 +19,6 @@ public class SegmentTree {
         this.arr = arr;
         this.type = type;
         this.build(0, 0, arr.length - 1);
-        System.out.println(Arrays.toString(tree));
     }
 
     private int merge(int val1, int val2) {
@@ -75,7 +74,7 @@ public class SegmentTree {
         if ( mid >= i ) {
             _update(2 * pos + 1, low, mid, i, val);
         } else {
-            _update(2 * pos + 1, mid + 1, high, i, val);
+            _update(2 * pos + 2, mid + 1, high, i, val);
         }
 
         tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
@@ -84,6 +83,5 @@ public class SegmentTree {
     public void update(int i, int val) {
         this.arr[i] = val;
         this._update(0, 0, arr.length - 1, i, val);
-        System.out.println(Arrays.toString(tree));
     }
 }

@@ -1,144 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algo/RabinKarpStringMatching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/ALTARAY.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/ANTEATER.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/BSTOPS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/CHFING.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/CHFM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/CHN15A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/CSub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/CircularQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/Compiler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/DELARRAY.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/EATTWICE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/EXAM1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/ExpressionEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/FCTRL2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/FLOW002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/FLOW006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/FastFood.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/INTEST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/PRICECON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/XYSTR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/KS2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/Lapin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/MAXDIFF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/Nokia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/PLAYSTR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/PROXYC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/RSIGNS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/SLUSH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/SUMAGCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/TSORT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/Underscore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codeforces/LongestRegularBracketSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/foobar/BombBaby.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/foobar/DoomsdayFuel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/foobar/FindTheAccessCodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/foobar/Fraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/EqualToProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/FourPointsSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/RectanglesOverlap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/RotateTwice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ioi/Buffalos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BinaryTreeFromPreorderInorder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BuyAndSellStock3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ContiguosArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CopyListWithRandomPointer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CourseSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FirstAndLastPositionOfElementInSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FourSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FourSum2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/GameOfLife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/GroupAnagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/IntervalListIntersection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/KthSmallestInMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MergeIntervals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/NumberOfDiceRollsWithTargetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PalindromePartitioning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ParitionToKEqualSumSubsets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PartitionLabels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PerformStringShifts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PossibleBipartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ProductOfArrayExceptSelf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RandomPickWithWeight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RandomizedSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReorganizeString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RotateImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RotateList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SearchInRotatedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ShuffleAnArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SortColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SpiralMatrix2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Subsets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ThreeSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TwoSum2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/UncrossedLines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/UniquePaths2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/WalkingRobotSimulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spoj/Anarc09A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spoj/HISTOGRA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spoj/JNext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spoj/MMass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spoj/Onp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spoj/Stpar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topcoder/DivisorInc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topcoder/PrimeAnagrams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topcoder/PrimePolynom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/topcoder/Refactoring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ArrayInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/algo/RabinKarpStringMatchingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/XYSTRTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/foobar/BombBabyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/foobar/FindTheAccessCodesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/FirstAndLastPositionOfElementInSortedArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/NumberOfDiceRollsWithTargetSumTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/PalindromePartitioningTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/ProductOfArrayExceptSelfTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/SearchInRotatedArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/ZeroOneMatrixTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ds/SegmentTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChange2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChangeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +46,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -171,169 +69,24 @@
       </state>
     </system>
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/foobar/BombBabyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/foobar/FindTheAccessCodesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/FirstAndLastPositionOfElementInSortedArrayTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/NumberOfDiceRollsWithTargetSumTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/PalindromePartitioningTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/ProductOfArrayExceptSelfTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/SearchInRotatedArrayTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/ZeroOneMatrixTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ds/SegmentTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1964" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/algo/RabinKarpStringMatchingTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/XYSTRTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/foobar/BombBabyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/foobar/FindTheAccessCodesTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/leetcode/FirstAndLastPositionOfElementInSortedArrayTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/leetcode/NumberOfDiceRollsWithTargetSumTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/leetcode/PalindromePartitioningTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/leetcode/SearchInRotatedArrayTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/leetcode/ZeroOneMatrixTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1d2QHo6Sk7eiNVkqa66IXRETjKg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="697" />
-    <option name="y" value="161" />
-    <option name="width" value="1623" />
-    <option name="height" value="824" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="well-known-problems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="well-known-problems" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="well-known-problems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="well-known-problems" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="well-known-problems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="well-known-problems" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="well-known-problems" type="b2602c69:ProjectViewProjectNode" />
-              <item name="well-known-problems" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -341,22 +94,87 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ds" />
+      <recent name="leetcode" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.SegmentTreeTest.testUpdate">
+    <configuration name="CoinChange2Test.testCoinChangeBottomUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.CoinChange2Test.testCoinChangeBottomUp&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CoinChangeTest.testCoinChangeBottomUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.CoinChangeTest.testCoinChangeBottomUp&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SegmentTreeTest.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ds.SegmentTreeTest.testUpdate&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Gradle.SegmentTreeTest.testUpdate" />
+        <item itemvalue="Gradle.CoinChange2Test.testCoinChangeBottomUp" />
+        <item itemvalue="Gradle.CoinChangeTest.testCoinChangeBottomUp" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -380,158 +198,68 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49924585" visible="true" weight="0.24068157" />
-      <window_info id="Structure" order="1" sideWeight="0.5007542" side_tool="true" weight="0.24068157" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.29166666" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" weight="0.32960597" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algo/RabinKarpStringMatching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/algo/RabinKarpStringMatchingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codechef/JUNE20B/XYSTRTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/foobar/BombBabyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/foobar/FindTheAccessCodesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/FirstAndLastPositionOfElementInSortedArrayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/NumberOfDiceRollsWithTargetSumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/PalindromePartitioningTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/ProductOfArrayExceptSelfTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/SearchInRotatedArrayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/leetcode/ZeroOneMatrixTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ds/SegmentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1964" />
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1591699341943">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591699341943" />
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591643741478" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1591699341942">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1591699341942" />
+    <state width="1398" height="264" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1591643741477" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1591699341941">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1591699341941" />
+    <state width="1398" height="264" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1591643741476" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1591699341942">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591699341942" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1591643741477" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1591643741479">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591627402352" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center" timestamp="1591643741479">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1591627402351" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left" timestamp="1591643741478">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1591627402351" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1591643741478" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right" timestamp="1591643741479">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1591627402352" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
+    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591699080059">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.823@0.23.1440.823" timestamp="1591699080059" />
+    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.825@0.23.1440.825" timestamp="1591623579452" />
+    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1591698968463">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1591698968463" />
   </component>
   <component name="masterDetails">
     <states>
