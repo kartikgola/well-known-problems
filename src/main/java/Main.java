@@ -1,3 +1,9 @@
+/*
+ * Author: Kartik Gola
+ * Date: 10/06/20, 5:53 PM
+ * Copyright (c) 2020 | rattl.io
+ */
+
 import codechef.JUNE20B.PRICECON;
 import codechef.JUNE20B.XYSTR;
 import ds.SegmentTree;
