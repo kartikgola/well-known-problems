@@ -3,76 +3,76 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-class LRUNode {
+public class LRUCache {
 
-    int key;
-    int usage;
-    LRUNode prev;
-    LRUNode next;
+    class LRUNode {
 
-    LRUNode(int key, int usage) {
-        this.key = key;
-        this.usage = usage;
-    }
+        int key;
+        int usage;
+        LRUNode prev;
+        LRUNode next;
 
-}
-
-class LRUList {
-
-    LRUNode first;
-    int size = 0;
-
-    public void add(LRUNode node) {
-        if ( first == null ) {
-            first = node;
-            first.prev = node;
-            first.next = node;
-        } else {
-            LRUNode last = first.prev;
-            last.next = node;
-            node.prev = last;
-            node.next = first;
-            first.prev = node;
+        LRUNode(int key, int usage) {
+            this.key = key;
+            this.usage = usage;
         }
-        ++size;
+
     }
 
-    public void removeKey(int key) {
-        if ( size > 0 ) {
-            LRUNode f = first;
-            LRUNode l = first.prev;
-            while ( f.key != l.key ) {
-                if ( f.key == key ) { ++size; removeNode(f); }
-                if ( l.key == key ) { ++size; removeNode(l); }
-                f = f.next;
-                l = l.prev;
-            }
-            if ( f.key == key ) { ++size; removeNode(f); }
-        }
-    }
+    class LRUList {
 
-    private void removeNode(LRUNode node) {
-        LRUNode prev = node.prev;
-        LRUNode next = node.next;
+        LRUNode first;
+        int size = 0;
 
-        if ( first.key == node.key ) {
-            if ( size == 1 ) {
-                first = null;
+        public void add(LRUNode node) {
+            if ( first == null ) {
+                first = node;
+                first.prev = node;
+                first.next = node;
             } else {
-                first = first.next;
+                LRUNode last = first.prev;
+                last.next = node;
+                node.prev = last;
+                node.next = first;
+                first.prev = node;
+            }
+            ++size;
+        }
+
+        public void removeKey(int key) {
+            if ( size > 0 ) {
+                LRUNode f = first;
+                LRUNode l = first.prev;
+                while ( f.key != l.key ) {
+                    if ( f.key == key ) { ++size; removeNode(f); }
+                    if ( l.key == key ) { ++size; removeNode(l); }
+                    f = f.next;
+                    l = l.prev;
+                }
+                if ( f.key == key ) { ++size; removeNode(f); }
+            }
+        }
+
+        private void removeNode(LRUNode node) {
+            LRUNode prev = node.prev;
+            LRUNode next = node.next;
+
+            if ( first.key == node.key ) {
+                if ( size == 1 ) {
+                    first = null;
+                } else {
+                    first = first.next;
+                    prev.next = next;
+                    next.prev = prev;
+                }
+            } else {
                 prev.next = next;
                 next.prev = prev;
             }
-        } else {
-            prev.next = next;
-            next.prev = prev;
+            --size;
         }
-        --size;
+
     }
-
-}
-
-public class LRUCache {
 
     private Map<Integer, Integer> store;
     private LRUList list;

@@ -1,41 +1,94 @@
 package leetcode;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class ReorganizeString {
 
-    public String reorganizeString(String S) {
+    // Using sorting + hashmap
+    // Time: O(N), Space: O(N)
+    public String reorganizeStringWithSorting(String S) {
         if ( S.length() <= 1 )
             return S;
 
-        char[] sArr = S.toCharArray();
-        Arrays.sort(sArr);
         final int n = S.length();
-        int i = -1, j = 0;
-        // a a b b c c
-        // a b a b c c
-        // a a a b b b c c c
-        // a b a a b b c c c
-        while ( i < n && j < n ) {
-            ++i; ++j;
-            // Find the problematic char
-            while ( j < n && sArr[i] != sArr[j] ) { ++i; ++j; }
-            if ( j >= n || sArr[i] != sArr[j] )
-                break;
-            // Find the char which will swap with this problematic chara
-            int k = j + 1;
-            while ( k < n && sArr[k] == sArr[j] ) ++k;
+        int[][] map = new int[26][2];
+        char[] res = new char[n];
 
-            // a b a a
-            if ( k < n && sArr[j] != sArr[k] ) {
-                char t = sArr[j];
-                sArr[j] = sArr[k];
-                sArr[k] = t;
-            } else
+        for ( int i = 0; i < S.length(); ++i ) {
+            int chi = S.charAt(i) - 'a';
+            map[ chi ][0]++;
+            map[ chi ][1] = chi;
+            if ( map[ chi ][0] > ((n + 1) / 2) )
                 return "";
         }
 
-        return new String(sArr);
+        Arrays.sort(map, (int[] a, int[] b) -> { return a[0] - b[0]; });
+
+        int i = 1;
+        for ( int[] item : map ) {
+            while ( item[0]-- > 0 ) {
+                res[i] = (char) (item[1] + 'a');
+                i += 2;
+                if ( i >= n ) {
+                    i = 0;
+                }
+            }
+        }
+
+        return new String(res);
+    }
+
+    static class Pair {
+        int occ;
+        char ch;
+
+        Pair(int ct, char ch) {
+            occ = ct;
+            this.ch = ch;
+        }
+    }
+
+    // Using greedy(using PQ) + hashmap
+    // Time: O(N), Space: O(N)
+    public String reorganizeStringWithGreedy(String S) {
+        int N = S.length();
+        int[] count = new int[26];
+        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) ->
+                a.occ == b.occ ? a.ch - b.ch : b.occ - a.occ);
+
+        for (char c: S.toCharArray())
+            count[c - 'a']++;
+
+        for (int i = 0; i < 26; ++i) {
+            if (count[i] > 0) {
+                if (count[i] > (N + 1) / 2) return "";
+                pq.add(new Pair(count[i], (char) ('a' + i)));
+            }
+        }
+
+        StringBuilder res = new StringBuilder();
+        while (pq.size() >= 2) {
+            // Get the first 2 most frequent characters
+            Pair p1 = pq.poll();
+            Pair p2 = pq.poll();
+
+            res.append(p1.ch);
+            res.append(p2.ch);
+
+            // Add the characters back, if their count is > 0
+            if (--p1.occ > 0)
+                pq.add(p1);
+
+            if (--p2.occ > 0)
+                pq.add(p2);
+        }
+
+        if (pq.size() > 0)
+            res.append(pq.poll().ch);
+
+        return res.toString();
     }
 
 }
+

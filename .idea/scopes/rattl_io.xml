@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="rattl.io" pattern="src:*..*||test:*..*||file[well-known-problems]:*/" />
+</component>

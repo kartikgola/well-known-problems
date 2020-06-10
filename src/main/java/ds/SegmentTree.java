@@ -1,7 +1,5 @@
 package ds;
 
-import java.util.Arrays;
-
 public class SegmentTree {
 
     public enum RangeQueryType {
@@ -46,7 +44,7 @@ public class SegmentTree {
         tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
     }
 
-    private int _query(int pos, int low, int high, int i, int j) {
+    private int query(int pos, int low, int high, int i, int j) {
         if ( low > j || high < i )
             return 0;
         if ( low >= i && high <= j )
@@ -54,34 +52,34 @@ public class SegmentTree {
 
         int mid = low + (high - low) / 2;
 
-        int leftResult = _query(2 * pos + 1, low, mid, i, j);
-        int rightResult = _query(2 * pos + 2, mid + 1, high, i, j);
+        int leftResult = query(2 * pos + 1, low, mid, i, j);
+        int rightResult = query(2 * pos + 2, mid + 1, high, i, j);
 
         return merge(leftResult, rightResult);
     }
 
-    public int query(int i, int j) {
-        return _query(0, 0, arr.length - 1, i, j);
-    }
-
-    private void _update(int pos, int low, int high, int i, int val) {
+    private void update(int pos, int low, int high, int i, int val) {
         if ( low == high ) {
             tree[pos] = val;
             return;
         }
 
         int mid = low + (high - low) / 2;
-        if ( mid >= i ) {
-            _update(2 * pos + 1, low, mid, i, val);
+        if ( i <= mid ) {
+            update(2 * pos + 1, low, mid, i, val);
         } else {
-            _update(2 * pos + 2, mid + 1, high, i, val);
+            update(2 * pos + 2, mid + 1, high, i, val);
         }
 
         tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
     }
 
+    public int query(int i, int j) {
+        return query(0, 0, arr.length - 1, i, j);
+    }
+
     public void update(int i, int val) {
         this.arr[i] = val;
-        this._update(0, 0, arr.length - 1, i, val);
+        this.update(0, 0, arr.length - 1, i, val);
     }
 }

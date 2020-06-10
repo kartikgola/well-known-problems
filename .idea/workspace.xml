@@ -19,24 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ds/SegmentTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChange2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChangeTest.java" afterDir="false" />
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding CoinChange problem">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/rattl_io.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds/FenwickTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds/LazySegmentTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DistantBarcodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/IsSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PowerOfTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ds/LazySegmentTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/PowerOfTwoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/ReorganizeStringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/BinaryTreeFromPreorderInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/BinaryTreeFromPreorderInorder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ReorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReorganizeString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/CoinChange2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChange2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +63,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -72,13 +83,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Kartik Gola &lt;krtkgla@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="rattl.io" />
+    </order>
   </component>
   <component name="ProjectId" id="1d2QHo6Sk7eiNVkqa66IXRETjKg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -94,23 +115,24 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="ds" />
       <recent name="leetcode" />
+      <recent name="ds" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SegmentTreeTest.testUpdate">
+  <component name="RunManager" selected="Gradle.ReorganizeStringTest.testReorganizeString">
     <configuration name="CoinChange2Test.testCoinChangeBottomUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,12 +152,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CoinChangeTest.testCoinChangeBottomUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LazySegmentTreeTest.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.CoinChangeTest.testCoinChangeBottomUp&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ds.LazySegmentTreeTest.testUpdate&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -149,12 +171,50 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="SegmentTreeTest.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PowerOfTwoTest.testIsPowerOfTwoBitHack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ds.SegmentTreeTest.testUpdate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.PowerOfTwoTest.testIsPowerOfTwoBitHack&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PowerOfTwoTest.testIsPowerOfTwoNaive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.PowerOfTwoTest.testIsPowerOfTwoNaive&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReorganizeStringTest.testReorganizeString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.ReorganizeStringTest.testReorganizeString&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -170,9 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SegmentTreeTest.testUpdate" />
+        <item itemvalue="Gradle.ReorganizeStringTest.testReorganizeString" />
+        <item itemvalue="Gradle.PowerOfTwoTest.testIsPowerOfTwoNaive" />
+        <item itemvalue="Gradle.PowerOfTwoTest.testIsPowerOfTwoBitHack" />
         <item itemvalue="Gradle.CoinChange2Test.testCoinChangeBottomUp" />
-        <item itemvalue="Gradle.CoinChangeTest.testCoinChangeBottomUp" />
+        <item itemvalue="Gradle.LazySegmentTreeTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -187,16 +249,15 @@
       <option name="presentableId" value="Default" />
       <updated>1591602265907</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding CoinChange problem">
+      <created>1591699459019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591699459019</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -210,27 +271,35 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding CoinChange problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding CoinChange problem" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1591699341943">
+    <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591771188909">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591699341943" />
-    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591643741478" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1591699341942">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.823@0.23.1440.823" timestamp="1591771188909" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1591781558098">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1591699341942" />
-    <state width="1398" height="264" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1591643741477" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1591699341941">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591771002343" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591781558098" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1591781558096">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1591699341941" />
-    <state width="1398" height="264" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1591643741476" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1591699341942">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1591771002343" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1591781558096" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1591781558095">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591699341942" />
-    <state width="1398" height="264" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1591643741477" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1591771002342" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1591781558095" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1591781558097">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591771002343" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1591781558097" />
     <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1591643741479">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -251,99 +320,27 @@
     </state>
     <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1591627402352" />
     <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
-    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591699080059">
+    <state x="221" y="73" key="SettingsEditor" timestamp="1591791835451">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="221" y="73" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1591791835451" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1591699465976">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.823@0.23.1440.823" timestamp="1591699080059" />
-    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.825@0.23.1440.825" timestamp="1591623579452" />
-    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1591698968463">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1591699465976" />
+    <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591714344006">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1591698968463" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>well-known-problems</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>14</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.823@0.23.1440.823" timestamp="1591714344006" />
+    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591779793082">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.823@0.23.1440.823" timestamp="1591725710054" />
+    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.825@0.23.1440.825" timestamp="1591779793082" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup" timestamp="1591791914576">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1591725726683" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1591791914576" />
   </component>
 </project>
