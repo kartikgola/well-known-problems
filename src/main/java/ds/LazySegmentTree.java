@@ -63,11 +63,6 @@ public class LazySegmentTree {
             return tree[pos];
 
         int mid = low + (high - low) / 2;
-        if (i > mid)
-            return query(2 * pos + 2, mid + 1, high, i, j);
-        else if (j <= mid)
-            return query(2 * pos + 1, low, mid, i, j);
-
         int leftResult = query(2 * pos + 1, low, mid, i, j);
         int rightResult = query(2 * pos + 2, mid + 1, high, i, j);
 

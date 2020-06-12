@@ -19,130 +19,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding more solutions from LC">
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Updating website name in copyrights!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/CHFICRM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/COVDSMPL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/EOEO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/EVENM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/TTUPLE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FlattenAMultilevelDoublyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SearchInsertPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/CHFICRMTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algo/RabinKarpStringMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algo/RabinKarpStringMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/ALTARAY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/ALTARAY.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/ANTEATER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/ANTEATER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/ATM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/ATM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/BSTOPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/BSTOPS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/CHFING.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/CHFING.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/CHFM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/CHFM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/CHN15A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/CHN15A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/CSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/CSub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/CircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/CircularQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/DELARRAY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/DELARRAY.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/EATTWICE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/EATTWICE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/EXAM1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/EXAM1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/ExpressionEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/ExpressionEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FCTRL2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FCTRL2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FLOW002.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FLOW002.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FLOW006.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FLOW006.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FastFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FastFood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/INTEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/INTEST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/PRICECON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/PRICECON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/XYSTR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/XYSTR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/KS2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/KS2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/Lapin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/Lapin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/MAXDIFF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/MAXDIFF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/Nokia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/Nokia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/PLAYSTR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/PLAYSTR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/PROXYC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/PROXYC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/RSIGNS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/RSIGNS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/SLUSH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/SLUSH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/SUMAGCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/SUMAGCD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/TSORT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/TSORT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/Underscore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/Underscore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codeforces/LongestRegularBracketSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codeforces/LongestRegularBracketSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ds/FenwickTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/FenwickTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ds/LazySegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/LazySegmentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/SegmentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/foobar/BombBaby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/foobar/BombBaby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/foobar/DoomsdayFuel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/foobar/DoomsdayFuel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/foobar/FindTheAccessCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/foobar/FindTheAccessCodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/foobar/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/foobar/Fraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/EqualToProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/EqualToProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/FourPointsSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/FourPointsSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/RectanglesOverlap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/RectanglesOverlap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/RotateTwice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/RotateTwice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ioi/Buffalos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ioi/Buffalos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/BinaryTreeFromPreorderInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/BinaryTreeFromPreorderInorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/BuyAndSellStock3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/BuyAndSellStock3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ContiguosArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ContiguosArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CopyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CopyListWithRandomPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CourseSchedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/DistantBarcodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/DistantBarcodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/FirstAndLastPositionOfElementInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/FirstAndLastPositionOfElementInSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/FourSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/FourSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/FourSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/FourSum2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/GameOfLife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/GroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/IntervalListIntersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/IntervalListIntersection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/IsSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/IsSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/KthSmallestInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/KthSmallestInMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/NumberOfDiceRollsWithTargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/NumberOfDiceRollsWithTargetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PalindromePartitioning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PalindromePartitioning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ParitionToKEqualSumSubsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ParitionToKEqualSumSubsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PartitionLabels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PartitionLabels.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PerformStringShifts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PerformStringShifts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PossibleBipartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PossibleBipartition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PowerOfTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PowerOfTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ProductOfArrayExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ProductOfArrayExceptSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RandomPickWithWeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RandomPickWithWeight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RandomizedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RandomizedSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ReorganizeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReorganizeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RotateImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RotateList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RotateList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SearchInRotatedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SearchInRotatedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ShuffleAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ShuffleAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SortColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SortColors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SpiralMatrix2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SpiralMatrix2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/TwoSum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/TwoSum2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/UncrossedLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/UncrossedLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/UniquePaths2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/UniquePaths2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/WalkingRobotSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/WalkingRobotSimulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spoj/Anarc09A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spoj/Anarc09A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spoj/HISTOGRA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spoj/HISTOGRA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spoj/JNext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spoj/JNext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spoj/MMass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spoj/MMass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spoj/Onp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spoj/Onp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spoj/Stpar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spoj/Stpar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topcoder/DivisorInc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/topcoder/DivisorInc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topcoder/PrimeAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/topcoder/PrimeAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topcoder/PrimePolynom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/topcoder/PrimePolynom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/topcoder/Refactoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/topcoder/Refactoring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/ArrayInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ArrayInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/algo/RabinKarpStringMatchingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algo/RabinKarpStringMatchingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/XYSTRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/XYSTRTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ds/LazySegmentTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ds/LazySegmentTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ds/SegmentTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ds/SegmentTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/foobar/BombBabyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/foobar/BombBabyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/foobar/FindTheAccessCodesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/foobar/FindTheAccessCodesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/CoinChange2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChange2Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/CoinChangeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/CoinChangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/FirstAndLastPositionOfElementInSortedArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/FirstAndLastPositionOfElementInSortedArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/NumberOfDiceRollsWithTargetSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/NumberOfDiceRollsWithTargetSumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/PalindromePartitioningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/PalindromePartitioningTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/PowerOfTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/PowerOfTwoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/ProductOfArrayExceptSelfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/ProductOfArrayExceptSelfTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/ReorganizeStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/ReorganizeStringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/SearchInRotatedArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/SearchInRotatedArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/ZeroOneMatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/ZeroOneMatrixTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,10 +115,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="codechef.JUNE20B" />
       <recent name="leetcode" />
       <recent name="ds" />
     </key>
@@ -230,32 +127,20 @@
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReorganizeStringTest.testReorganizeString">
-    <configuration name="CoinChange2Test.testCoinChangeBottomUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.CoinChange2Test.testCoinChangeBottomUp&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="well-known-problems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="LazySegmentTreeTest.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CHFICRMTest.testSolve" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ds.LazySegmentTreeTest.testUpdate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;codechef.JUNE20B.CHFICRMTest.testSolve&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -328,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.CHFICRMTest.testSolve" />
         <item itemvalue="Gradle.ReorganizeStringTest.testReorganizeString" />
         <item itemvalue="Gradle.PowerOfTwoTest.testIsPowerOfTwoNaive" />
         <item itemvalue="Gradle.PowerOfTwoTest.testIsPowerOfTwoBitHack" />
-        <item itemvalue="Gradle.CoinChange2Test.testCoinChangeBottomUp" />
-        <item itemvalue="Gradle.LazySegmentTreeTest.testUpdate" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +246,21 @@
       <option name="project" value="LOCAL" />
       <updated>1591792298271</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding copyrights!">
+      <created>1591792843828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591792843828</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updating website name in copyrights!">
+      <created>1591792958001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591792958001</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,33 +278,39 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding CoinChange problem" />
     <MESSAGE value="Adding more solutions from LC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding more solutions from LC" />
+    <MESSAGE value="Adding copyrights!" />
+    <MESSAGE value="Updating website name in copyrights!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating website name in copyrights!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591771188909">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.823@0.23.1440.823" timestamp="1591771188909" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1591781558098">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1398" height="411" key="GridCell.Tab.0.bottom" timestamp="1591866080444">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591771002343" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591781558098" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1591781558096">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1398" height="411" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591866080444" />
+    <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591855532635" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
+    <state width="1398" height="411" key="GridCell.Tab.0.center" timestamp="1591866080443">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1591771002343" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1591781558096" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1591781558095">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1398" height="411" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1591866080443" />
+    <state width="1398" height="413" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1591855532635" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
+    <state width="1398" height="411" key="GridCell.Tab.0.left" timestamp="1591866080443">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1591771002342" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1591781558095" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1591781558097">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state width="1398" height="411" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1591866080443" />
+    <state width="1398" height="413" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1591855532634" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1591851823270" />
+    <state width="1398" height="411" key="GridCell.Tab.0.right" timestamp="1591866080444">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591771002343" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1591781558097" />
+    <state width="1398" height="411" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591866080444" />
+    <state width="1398" height="413" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1591855532635" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
     <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1591643741479">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -426,28 +331,33 @@
     </state>
     <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1591627402352" />
     <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
-    <state x="221" y="73" key="SettingsEditor" timestamp="1591791835451">
+    <state x="221" y="73" key="SettingsEditor" timestamp="1591970633214">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="221" y="73" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1591791835451" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1591792299759">
+    <state x="221" y="73" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1591970633214" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1591792960263">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1591699465976" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1591792299759" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1591792960263" />
     <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591714344006">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.823@0.23.1440.823" timestamp="1591714344006" />
-    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591779793082">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591851191341">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.823@0.23.1440.823" timestamp="1591725710054" />
     <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.825@0.23.1440.825" timestamp="1591779793082" />
-    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup" timestamp="1591791914576">
+    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.826@0.23.1440.826" timestamp="1591851191341" />
+    <state x="417" y="31" width="606" height="807" key="find.popup" timestamp="1591792924548">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1591725726683" />
-    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1591791914576" />
+    <state x="417" y="31" width="606" height="807" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1591792924548" />
+    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1591864381806">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1591864381806" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1591855860496" />
   </component>
 </project>

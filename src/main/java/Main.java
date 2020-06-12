@@ -4,6 +4,8 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
+import codechef.JUNE20B.EOEO;
+import codechef.JUNE20B.EVENM;
 import codechef.JUNE20B.PRICECON;
 import codechef.JUNE20B.XYSTR;
 import ds.SegmentTree;
@@ -11,6 +13,6 @@ import ds.SegmentTree;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-
+        new EVENM().solve();
     }
 }

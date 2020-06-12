@@ -103,4 +103,8 @@ public class ZeroOneMatrix {
 
         return dist;
     }
+
+    public int[][] updateMatrixDP(int[][] matrix) {
+        return new int[][]{};
+    }
 }
