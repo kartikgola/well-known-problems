@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/12/20 11:21 AM
- * Copyright (c) 2020 | rattl.io
+ * Copyright (c) 2020 | https://rattl.io
  */
 
 package leetcode;
