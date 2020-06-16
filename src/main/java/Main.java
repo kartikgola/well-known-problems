@@ -6,10 +6,13 @@
 
 import codechef.JUNE20B.*;
 import ds.SegmentTree;
+import leetcode.ValidIpAddress;
+
+import java.util.StringTokenizer;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        new TTUPLE().solve();
+        new ValidIpAddress().validIPAddress("172.16.254.1");
     }
 }
