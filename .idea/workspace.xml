@@ -19,26 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Updating website name in copyrights!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/CHFICRM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/COVDSMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/EOEO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/EVENM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/TTUPLE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FlattenAMultilevelDoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SearchInsertPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/CHFICRMTest.java" afterDir="false" />
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding solutions from codechef">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ds/LazySegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/LazySegmentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/DistantBarcodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/DistantBarcodes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/COVDSMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/COVDSMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/RangeSetTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/TTUPLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/TTUPLE.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591792958001</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding solutions from codechef">
+      <created>1591971109659</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591971109659</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,70 +278,83 @@
     <MESSAGE value="Adding more solutions from LC" />
     <MESSAGE value="Adding copyrights!" />
     <MESSAGE value="Updating website name in copyrights!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating website name in copyrights!" />
+    <MESSAGE value="Adding solutions from codechef" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding solutions from codechef" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591771188909">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.823@0.23.1440.823" timestamp="1591771188909" />
-    <state width="1398" height="411" key="GridCell.Tab.0.bottom" timestamp="1591866080444">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="458" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592115428354">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="458" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.825@0.23.1440.825" timestamp="1592115428354" />
+    <state width="411" height="466" key="DebuggerActiveHint" timestamp="1592115084597">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="411" height="466" key="DebuggerActiveHint/0.23.1440.825@0.23.1440.825" timestamp="1592115084597" />
+    <state width="1398" height="412" key="GridCell.Tab.0.bottom" timestamp="1592212890688">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="411" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591866080444" />
-    <state width="1398" height="413" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591855532635" />
+    <state width="1398" height="412" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592212890688" />
     <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
-    <state width="1398" height="411" key="GridCell.Tab.0.center" timestamp="1591866080443">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="412" key="GridCell.Tab.0.center" timestamp="1592212890687">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="411" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1591866080443" />
-    <state width="1398" height="413" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1591855532635" />
+    <state width="1398" height="412" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592212890687" />
     <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
-    <state width="1398" height="411" key="GridCell.Tab.0.left" timestamp="1591866080443">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="412" key="GridCell.Tab.0.left" timestamp="1592212890687">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="411" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1591866080443" />
-    <state width="1398" height="413" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1591855532634" />
+    <state width="1398" height="412" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592212890687" />
     <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1591851823270" />
-    <state width="1398" height="411" key="GridCell.Tab.0.right" timestamp="1591866080444">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="412" key="GridCell.Tab.0.right" timestamp="1592212890687">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="411" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1591866080444" />
-    <state width="1398" height="413" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1591855532635" />
+    <state width="1398" height="412" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592212890687" />
     <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
-    <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1591643741479">
+    <state width="1398" height="440" key="GridCell.Tab.1.bottom" timestamp="1592212866360">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1591627402352" />
-    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
-    <state width="1398" height="264" key="GridCell.Tab.1.center" timestamp="1591643741479">
+    <state width="1398" height="440" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592212866360" />
+    <state width="1398" height="440" key="GridCell.Tab.1.center" timestamp="1592212866359">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1591627402351" />
-    <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
-    <state width="1398" height="264" key="GridCell.Tab.1.left" timestamp="1591643741478">
+    <state width="1398" height="440" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1592212866359" />
+    <state width="1398" height="440" key="GridCell.Tab.1.left" timestamp="1592212866359">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1591627402351" />
-    <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1591643741478" />
-    <state width="1398" height="264" key="GridCell.Tab.1.right" timestamp="1591643741479">
+    <state width="1398" height="440" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1592212866359" />
+    <state width="1398" height="440" key="GridCell.Tab.1.right" timestamp="1592212866359">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1591627402352" />
-    <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1591643741479" />
+    <state width="1398" height="440" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1592212866359" />
     <state x="221" y="73" key="SettingsEditor" timestamp="1591970633214">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="221" y="73" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1591970633214" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1591792960263">
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1591971111576">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1591699465976" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1591792960263" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1591971111576" />
     <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591714344006">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.823@0.23.1440.823" timestamp="1591714344006" />
+    <state x="508" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592068035131">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="508" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1592068035131" />
     <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591851191341">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
@@ -354,10 +365,14 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="417" y="31" width="606" height="807" key="find.popup/0.23.1440.825@0.23.1440.825" timestamp="1591792924548" />
-    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1591864381806">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="563" y="217" key="refactoring.ChangeSignatureDialog" timestamp="1592075818983">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="563" y="217" key="refactoring.ChangeSignatureDialog/0.23.1440.825@0.23.1440.825" timestamp="1592075818983" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup" timestamp="1592073349635">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1591864381806" />
-    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1591855860496" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1592073349635" />
   </component>
 </project>

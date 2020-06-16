@@ -10,6 +10,6 @@ import ds.SegmentTree;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        new COVDSMPL().solve();
+        new TTUPLE().solve();
     }
 }
