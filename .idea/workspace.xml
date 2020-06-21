@@ -20,9 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding solutions from codechef">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ValidIpAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforces/MaximumXorSecondary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforces/MinimalString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/DiagonalSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NextGreaterElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CriticalConnections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/HIndex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MergeKSortedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MinimumCostToConnectSticks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/NumberOfIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/OptimalUtilization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PermutationSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReorderDataInLogFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SubtreeOfAnotherTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TopKFrequentWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TreasureIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TreasureIsland2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/OptimalUtilizationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/TreasureIsland2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/TreasureIslandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/TTUPLE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/JUNE20B/TTUPLE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codechef/JUNE20B/RangeSetTreeTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,15 +129,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="codechef.JUNE20B" />
       <recent name="leetcode" />
+      <recent name="codechef.JUNE20B" />
       <recent name="ds" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="codeforces" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.TreasureIsland2Test.testTreasureIsland2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="well-known-problems" />
@@ -138,12 +167,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PowerOfTwoTest.testIsPowerOfTwoBitHack" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="OptimalUtilizationTest.testOptimalUtilization" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.PowerOfTwoTest.testIsPowerOfTwoBitHack&quot;" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.OptimalUtilizationTest.testOptimalUtilization&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -157,12 +186,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PowerOfTwoTest.testIsPowerOfTwoNaive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TreasureIsland2Test.testTreasureIsland2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.PowerOfTwoTest.testIsPowerOfTwoNaive&quot;" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.TreasureIsland2Test.testTreasureIsland2&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -176,12 +205,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReorganizeStringTest.testReorganizeString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TreasureIslandTest.testTreasureIsland" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.ReorganizeStringTest.testReorganizeString&quot;" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.TreasureIslandTest.testTreasureIsland&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -197,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TreasureIsland2Test.testTreasureIsland2" />
+        <item itemvalue="Gradle.TreasureIslandTest.testTreasureIsland" />
+        <item itemvalue="Gradle.OptimalUtilizationTest.testOptimalUtilization" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.CHFICRMTest.testSolve" />
-        <item itemvalue="Gradle.ReorganizeStringTest.testReorganizeString" />
-        <item itemvalue="Gradle.PowerOfTwoTest.testIsPowerOfTwoNaive" />
-        <item itemvalue="Gradle.PowerOfTwoTest.testIsPowerOfTwoBitHack" />
       </list>
     </recent_temporary>
   </component>
@@ -282,10 +311,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adding solutions from codechef" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591771188909">
+    <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592577046032">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.823@0.23.1440.823" timestamp="1591771188909" />
+    <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.823@0.23.1440.823" timestamp="1592577046032" />
     <state x="458" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592115428354">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -295,50 +324,50 @@
     </state>
     <state width="416" height="465" key="DebuggerActiveHint/0.23.1440.823@0.23.1440.823" timestamp="1592328758982" />
     <state width="411" height="466" key="DebuggerActiveHint/0.23.1440.825@0.23.1440.825" timestamp="1592115084597" />
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom" timestamp="1592333245315">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom" timestamp="1592736680068">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1592333245315" />
-    <state width="1398" height="412" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592212890688" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1592644529321" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592736680068" />
     <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center" timestamp="1592333245313">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center" timestamp="1592736680067">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1592333245313" />
-    <state width="1398" height="412" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592212890687" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1592644529320" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592736680067" />
     <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left" timestamp="1592333245312">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left" timestamp="1592736680066">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1592333245312" />
-    <state width="1398" height="412" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592212890687" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1592644529319" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592736680066" />
     <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1591851823270" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right" timestamp="1592333245313">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right" timestamp="1592736680067">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1592333245313" />
-    <state width="1398" height="412" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592212890687" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1592644529320" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592736680067" />
     <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1591851823271" />
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1592333245317">
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom" timestamp="1592644489202">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1592333245317" />
-    <state width="1398" height="440" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592212866360" />
-    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1592333245316">
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1592644489202" />
+    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592411372585" />
+    <state width="1398" height="265" key="GridCell.Tab.1.center" timestamp="1592644489201">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1592333245316" />
-    <state width="1398" height="440" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1592212866359" />
-    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1592333245315">
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1592644489201" />
+    <state width="1398" height="265" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1592411372585" />
+    <state width="1398" height="265" key="GridCell.Tab.1.left" timestamp="1592644489201">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1592333245315" />
-    <state width="1398" height="440" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1592212866359" />
-    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1592333245316">
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1592644489201" />
+    <state width="1398" height="265" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1592411372585" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right" timestamp="1592644489202">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1592333245316" />
-    <state width="1398" height="440" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1592212866359" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1592644489202" />
+    <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1592411372585" />
     <state x="221" y="73" key="SettingsEditor" timestamp="1591970633214">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -357,10 +386,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="508" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.825@0.23.1440.825" timestamp="1592068035131" />
-    <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1591851191341">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1592644199198">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.823@0.23.1440.823" timestamp="1591725710054" />
+    <state x="486" y="250" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.823@0.23.1440.823" timestamp="1592644199198" />
     <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.825@0.23.1440.825" timestamp="1591779793082" />
     <state x="486" y="251" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.826@0.23.1440.826" timestamp="1591851191341" />
     <state x="417" y="31" width="606" height="807" key="find.popup" timestamp="1591792924548">
@@ -371,10 +400,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="563" y="217" key="refactoring.ChangeSignatureDialog/0.23.1440.825@0.23.1440.825" timestamp="1592075818983" />
-    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1592328433672">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup" timestamp="1592736556261">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1592328433672" />
-    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1592073349635" />
+    <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1592644571156" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1592736556261" />
   </component>
 </project>

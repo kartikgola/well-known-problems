@@ -55,7 +55,7 @@ public class RottingOranges {
             Pair<Integer, Integer> p = q.poll();
             if ( p == null ) {
                 ++minute;
-                if ( q.isEmpty() )break;
+                if ( q.isEmpty() ) break;
                 else q.add(null);
             } else {
                 int i = p.fst, j = p.snd;

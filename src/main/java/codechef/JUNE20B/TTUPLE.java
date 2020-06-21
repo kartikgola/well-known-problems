@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+// TODO
 public class TTUPLE {
 
     private int[] diff(int[] src, int[] tar) {
