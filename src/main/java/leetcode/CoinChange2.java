@@ -6,11 +6,25 @@
 
 package leetcode;
 
+import java.util.Arrays;
+
 public class CoinChange2 {
 
-    // TODO
-    public int coinChange2TopDown(int[] coins, int amount, int j) {
-        return -1;
+    private int coinChangeTopDown(int amount, int[] coins, Integer[][] dp, int i) {
+        if ( amount == 0 )
+            return 1;
+        if ( i == 0 )
+            return 0;
+        if ( dp[i][amount] != null )
+            return dp[i][amount];
+        return dp[i][amount] = (amount - coins[i - 1] >= 0 ? coinChangeTopDown(amount - coins[i - 1], coins, dp, i) : 0)
+                + coinChangeTopDown(amount, coins, dp, i - 1);
+    }
+
+    public int coinChangeTopDown(int amount, int[] coins) {
+        Arrays.sort(coins);
+        Integer[][] dp = new Integer[coins.length + 1][amount + 1];
+        return coinChangeTopDown(amount, coins, dp, coins.length);
     }
 
     // Time: O(ca), Space: O(ca)

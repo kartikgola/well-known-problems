@@ -14,14 +14,37 @@ import leetcode.OptimalUtilization;
 import leetcode.ValidIpAddress;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-//        System.out.println(Arrays.toString(new NextGreaterElement().nextGreater(
-//                new int[]{13, 7, 6, 12}
-//        )));
-//        new DiagonalSum().solve();
+    }
+}
+
+class Node {
+    char val;
+    int times = 0;
+    Set<Node> children = new HashSet<>();
+
+    Node(char val) {
+        this.val = val;
+    }
+
+    Node(char val, int times) {
+        this.val = val;
+        this.times = times;
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) val;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return (obj instanceof Node && ((Node) obj).val == this.val);
     }
 }
