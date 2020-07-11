@@ -19,44 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding Trapping rainwater">
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ctci/chapter1/OneAway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ctci/chapter5/FlipBitToWin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/AllNodesDistanceKInBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/AutocompleteSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BinaryTreeMaximumPathSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CountNumberOfTeams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CourseSchedule2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DesignLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FindTheCelebrity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MedianOfTwoSortedArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MeetingRooms2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PathSum3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SnakesAndLadders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SpiralMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/UglyNumber2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/WidthOfBinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/WordBreak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/WordBreak2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/WordLadder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/WordLadder2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ctci/chapter1/OneAwayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ctci/chapter5/FlipBitToWinTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/WordBreakTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding solutions from LeetCode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CoinChange2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CriticalConnections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CriticalConnections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/TreasureIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/TreasureIsland.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +97,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -311,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592886963424</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding solutions from LeetCode">
+      <created>1594391648959</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1594391648959</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,7 +305,8 @@
     <MESSAGE value="Adding solutions from codechef" />
     <MESSAGE value="Adding solutions from leetcode" />
     <MESSAGE value="Adding Trapping rainwater" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Trapping rainwater" />
+    <MESSAGE value="Adding solutions from LeetCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding solutions from LeetCode" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592577046032">
@@ -398,16 +370,16 @@
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1592644489202" />
     <state width="1398" height="265" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1594033391620" />
-    <state x="221" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1594391083452">
+    <state x="221" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1594392200612">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="221" y="23" width="1024" height="823" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1593345260046" />
-    <state x="221" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1594391083452" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1592886966651">
+    <state x="221" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1594392200612" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1594391651441">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.823@0.23.1440.823" timestamp="1591699465976" />
-    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1592886966651" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1594391651441" />
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1592326249609" />
     <state x="417" y="334" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591714344006">
       <screen x="0" y="23" width="1440" height="823" />
@@ -432,11 +404,11 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="563" y="217" key="refactoring.ChangeSignatureDialog/0.23.1440.825@0.23.1440.825" timestamp="1592075818983" />
-    <state x="385" y="85" width="670" height="681" key="search.everywhere.popup" timestamp="1594234362158">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup" timestamp="1594392184242">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="385" y="85" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1593710074776" />
-    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1594108161696" />
+    <state x="385" y="85" width="670" height="678" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1594392184242" />
     <state x="385" y="85" width="670" height="681" key="search.everywhere.popup/0.23.1440.828@0.23.1440.828" timestamp="1594234362158" />
   </component>
 </project>
