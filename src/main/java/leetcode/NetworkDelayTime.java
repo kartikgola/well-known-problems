@@ -6,6 +6,7 @@
 
 package leetcode;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -29,11 +30,9 @@ public class NetworkDelayTime {
     public int networkDelayTime(int[][] times, int N, int K) {
         // Distance values of all nodes
         int[] dist = new int[N + 1];
-        // Visited values of nodes
-        boolean[] vis = new boolean[N + 1];
 
         // Priority Queue to get only low distance nodes
-        Queue<Integer> pq = new PriorityQueue<>((Integer a, Integer b) -> Integer.compare(dist[a], dist[b]));
+        Queue<Integer> pq = new PriorityQueue<>(Comparator.comparingInt((Integer k) -> dist[k]));
         for ( int i = 1; i <= N; ++i )
             dist[i] = i == K ? 0 : Integer.MAX_VALUE;
 
@@ -45,21 +44,16 @@ public class NetworkDelayTime {
 
         while ( !pq.isEmpty() ) {
             int u = pq.poll();
-            vis[u] = true;
             for ( int v = 1; v <= N; ++v ) {
-                // Only process unvisited neighbors
-                if ( !vis[v] && adj[u][v] > -1 ) {
-                    int newDist = dist[u] + adj[u][v];
-                    // Relax the distance if it is less
-                    if ( newDist <= dist[v] ) {
-                        dist[v] = newDist;
-                        pq.offer(v);
-                    }
+                // Process the neighbors & try to relax their distance
+                if ( adj[u][v] > -1 && dist[u] + adj[u][v] < dist[v] ) {
+                    dist[v] = dist[u] + adj[u][v];
+                    pq.offer(v);
                 }
             }
         }
 
-        // Maximum value of time to reach a node
+        // Calc. the maximum value of time to reach a node
         int time = Integer.MIN_VALUE;
         for ( int i = 1; i <= N; ++i ) {
             // If any node was found unreachable, return -1

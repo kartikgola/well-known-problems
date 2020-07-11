@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding solutions from LeetCode">
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding comment in NetworkDelayTime!">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CheapestFlightWithinKStops.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/NetworkDelayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/NetworkDelayTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +284,21 @@
       <option name="project" value="LOCAL" />
       <updated>1594391648959</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding NetworkDelayTime from LeetCode">
+      <created>1594454824518</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1594454824518</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adding comment in NetworkDelayTime!">
+      <created>1594454885368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1594454885368</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +322,9 @@
     <MESSAGE value="Adding solutions from leetcode" />
     <MESSAGE value="Adding Trapping rainwater" />
     <MESSAGE value="Adding solutions from LeetCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding solutions from LeetCode" />
+    <MESSAGE value="Adding NetworkDelayTime from LeetCode" />
+    <MESSAGE value="Adding comment in NetworkDelayTime!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding comment in NetworkDelayTime!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1240" height="623" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592577046032">
