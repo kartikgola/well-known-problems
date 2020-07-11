@@ -32,11 +32,13 @@ public class CheapestFlightWithinKStops {
 
         while ( !pq.isEmpty() ) {
             int[] val = pq.poll();
-            int u = val[0],
-                    currentCost = val[1],
-                    currentStops = val[2];
+            int u = val[0], // Value of node (or vertex)
+                    currentCost = val[1], // Cost to reach till this point
+                    currentStops = val[2]; // No. of airports in the path (including itself)
 
+            // Base case - we found the destination
             if ( u == dst ) return currentCost;
+            // No. of airports in path (inc. itself) == K + 1
             if ( currentStops == K + 1 ) continue;
 
             if ( adj.containsKey(u) ) {
@@ -44,6 +46,8 @@ public class CheapestFlightWithinKStops {
                     int v = e.getKey(),
                             edgeCost = e.getValue();
                     if ( currentCost + edgeCost < costs[v] || currentStops < stops[v] ) {
+                        // Add the next possibility to PQ
+                        // No. of stops for this next case will increase by 1
                         pq.offer(new int[]{ v, currentCost + edgeCost, currentStops + 1 });
                         costs[v] = currentCost + edgeCost;
                         stops[v] = currentStops;
