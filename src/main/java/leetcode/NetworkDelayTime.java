@@ -62,6 +62,7 @@ public class NetworkDelayTime {
         // Maximum value of time to reach a node
         int time = Integer.MIN_VALUE;
         for ( int i = 1; i <= N; ++i ) {
+            // If any node was found unreachable, return -1
             if ( dist[i] == Integer.MAX_VALUE )
                 return -1;
             time = Math.max(time, dist[i]);
