@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import com.sun.tools.javac.util.Pair;
+import util.Pair;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -90,7 +90,7 @@ public class ZeroOneMatrix {
 
         while ( !q.isEmpty() ) {
             Pair<Integer, Integer> pa = q.poll();
-            int i = pa.fst, j = pa.snd;
+            int i = pa.getKey(), j = pa.getValue();
             int[][] pos = new int[][]{{i - 1, j}, {i, j + 1}, {i + 1, j}, {i, j - 1}};
 
             for ( int[] p : pos ) {

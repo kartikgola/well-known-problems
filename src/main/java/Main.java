@@ -11,40 +11,14 @@ import ds.SegmentTree;
 import geeksforgeeks.DiagonalSum;
 import geeksforgeeks.NextGreaterElement;
 import leetcode.OptimalUtilization;
+import leetcode.ReverseBits;
 import leetcode.ValidIpAddress;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-    }
-}
-
-class Node {
-    char val;
-    int times = 0;
-    Set<Node> children = new HashSet<>();
-
-    Node(char val) {
-        this.val = val;
-    }
-
-    Node(char val, int times) {
-        this.val = val;
-        this.times = times;
-    }
-
-    @Override
-    public int hashCode() {
-        return (int) val;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return (obj instanceof Node && ((Node) obj).val == this.val);
+        SegmentTree st = new SegmentTree(new int[]{5, 6, 7}, SegmentTree.RangeQueryType.Sum);
     }
 }

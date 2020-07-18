@@ -6,6 +6,8 @@
 
 package ds;
 
+import java.util.Arrays;
+
 public class SegmentTree {
 
     public enum RangeQueryType {
@@ -37,47 +39,47 @@ public class SegmentTree {
         return res;
     }
 
-    private void build(int pos, int low, int high) {
+    private void build(int treePos, int low, int high) {
         if ( low == high ) {
-            tree[pos] = arr[low];
+            tree[treePos] = arr[low];
             return;
         }
 
         int mid = low + (high - low) / 2;
-        build(2 * pos + 1, low, mid);
-        build(2 * pos + 2, mid + 1, high);
+        build(2 * treePos + 1, low, mid);
+        build(2 * treePos + 2, mid + 1, high);
 
-        tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
+        tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
 
-    private int query(int pos, int low, int high, int i, int j) {
+    private int query(int treePos, int low, int high, int i, int j) {
         if ( low > j || high < i )
             return 0;
         if ( low >= i && high <= j )
-            return tree[pos];
+            return tree[treePos];
 
         int mid = low + (high - low) / 2;
 
-        int leftResult = query(2 * pos + 1, low, mid, i, j);
-        int rightResult = query(2 * pos + 2, mid + 1, high, i, j);
+        int leftResult = query(2 * treePos + 1, low, mid, i, j);
+        int rightResult = query(2 * treePos + 2, mid + 1, high, i, j);
 
         return merge(leftResult, rightResult);
     }
 
-    private void update(int pos, int low, int high, int i, int val) {
+    private void update(int treePos, int low, int high, int i, int val) {
         if ( low == high ) {
-            tree[pos] = val;
+            tree[treePos] = val;
             return;
         }
 
         int mid = low + (high - low) / 2;
         if ( i <= mid ) {
-            update(2 * pos + 1, low, mid, i, val);
+            update(2 * treePos + 1, low, mid, i, val);
         } else {
-            update(2 * pos + 2, mid + 1, high, i, val);
+            update(2 * treePos + 2, mid + 1, high, i, val);
         }
 
-        tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
+        tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
 
     public int query(int i, int j) {

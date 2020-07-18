@@ -39,53 +39,53 @@ public class LazySegmentTree {
         return res;
     }
 
-    private void build(int pos, int low, int high) {
+    private void build(int treePos, int low, int high) {
         if ( low == high ) {
-            tree[pos] = arr[low];
+            tree[treePos] = arr[low];
             return;
         }
 
         int mid = low + (high - low) / 2;
-        build(2 * pos + 1, low, mid);
-        build(2 * pos + 2, mid + 1, high);
+        build(2 * treePos + 1, low, mid);
+        build(2 * treePos + 2, mid + 1, high);
 
-        tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
+        tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
 
-    private int query(int pos, int low, int high, int i, int j) {
+    private int query(int treePos, int low, int high, int i, int j) {
         if ( low > j || high < i )
             return 0;
 
-        if ( lazy[pos] != 0 )
-            removeLaziness(pos, low, high);
+        if ( lazy[treePos] != 0 )
+            removeLaziness(treePos, low, high);
 
         if ( low >= i && high <= j )
-            return tree[pos];
+            return tree[treePos];
 
         int mid = low + (high - low) / 2;
-        int leftResult = query(2 * pos + 1, low, mid, i, j);
-        int rightResult = query(2 * pos + 2, mid + 1, high, i, j);
+        int leftResult = query(2 * treePos + 1, low, mid, i, j);
+        int rightResult = query(2 * treePos + 2, mid + 1, high, i, j);
 
         return merge(leftResult, rightResult);
     }
 
-    private void removeLaziness(int pos, int low, int high) {
+    private void removeLaziness(int treePos, int low, int high) {
         // remove laziness of the node
-        tree[pos] += (high - low + 1) * lazy[pos];
+        tree[treePos] += (high - low + 1) * lazy[treePos];
 
         // make children lazy
         if ( low < high ) {
-            lazy[2 * pos + 1] += lazy[pos];
-            lazy[2 * pos + 2] += lazy[pos];
+            lazy[2 * treePos + 1] += lazy[treePos];
+            lazy[2 * treePos + 2] += lazy[treePos];
         }
         // cleanup laziness
-        lazy[pos] = 0;
+        lazy[treePos] = 0;
     }
 
-    private void update(int pos, int low, int high, int i, int j, int val) {
+    private void update(int treePos, int low, int high, int i, int j, int val) {
         // check and remove laziness, if present
-        if ( lazy[pos] != 0 ) {
-            removeLaziness(pos, low, high);
+        if ( lazy[treePos] != 0 ) {
+            removeLaziness(treePos, low, high);
         }
 
         // not within the range
@@ -95,20 +95,20 @@ public class LazySegmentTree {
         // completely inside the range
         if ( low >= i && high <= j ) {
             // add to tree node, no. of elements * value to increment by
-            tree[pos] += (high - low + 1) * val;
+            tree[treePos] += (high - low + 1) * val;
             if ( low < high ) {
-                lazy[2 * pos + 1] += val;
-                lazy[2 * pos + 2] += val;
+                lazy[2 * treePos + 1] += val;
+                lazy[2 * treePos + 2] += val;
             }
             return;
         }
 
         // recurse for children as range is partially covered
         int mid = low + (high - low) / 2;
-        update(2 * pos + 1, low, mid, i, j, val);
-        update(2 * pos + 2, mid + 1, high, i, j, val);
+        update(2 * treePos + 1, low, mid, i, j, val);
+        update(2 * treePos + 2, mid + 1, high, i, j, val);
 
-        tree[pos] = merge(tree[2 * pos + 1], tree[2 * pos + 2]);
+        tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
 
     public int query(int i, int j) {

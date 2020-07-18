@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import com.sun.tools.javac.util.Pair;
+import util.Pair;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -58,7 +58,7 @@ public class RottingOranges {
                 if ( q.isEmpty() ) break;
                 else q.add(null);
             } else {
-                int i = p.fst, j = p.snd;
+                int i = p.getKey(), j = p.getValue();
                 grid[i][j] = 2;
                 v[i][j] = true;
                 if ( i > 0 && grid[i - 1][j] == 1 && !v[i - 1][j] ) {
