@@ -45,6 +45,7 @@ public class LRUCache {
             ++size;
         }
 
+        // TODO - This can be improved by making a Map of <Integer, LRUNode>
         public void removeKey(int key) {
             if ( size > 0 ) {
                 LRUNode f = first;

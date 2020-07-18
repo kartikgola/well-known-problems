@@ -1,10 +1,10 @@
 /*
  * Author: Kartik Gola
- * Date: 08/07/20, 11:17 PM
+ * Date: 7/18/20 9:33 PM
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package commons;
+package ds;
 
 public class TreeNode {
     public int val;

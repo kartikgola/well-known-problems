@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import commons.TreeNode;
+import ds.TreeNode;
 
 public class BinaryTreeMaximumPathSum {
 
@@ -29,7 +29,7 @@ public class BinaryTreeMaximumPathSum {
 
             // Return only the maximum sum that forms a PATH with root node at one end
             // A path goes from a node to another node
-            // So, we cannot just return sum here.
+            // So, we cannot just return 'sum' here.
             return Math.max(root.val, root.val + Math.max(left, right));
         }
         return 0;

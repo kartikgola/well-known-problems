@@ -22,6 +22,16 @@ public class Utils {
                 exp = exp / 2;
             }
         }
+        while ( exp < 0 ) {
+            if ( exp % 2 == 0 ) {
+                base = (base * base) % PRIME_MOD;
+                exp = exp / 2;
+            } else {
+                res = (res / base) % PRIME_MOD;
+                base = (base * base) % PRIME_MOD;
+                exp = exp / 2;
+            }
+        }
         return res;
     }
 }
