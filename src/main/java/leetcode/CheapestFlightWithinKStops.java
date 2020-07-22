@@ -18,6 +18,7 @@ public class CheapestFlightWithinKStops {
         stops[src] = 0;
         costs[src] = 0;
 
+        // Map of (from, (to, cost))
         Map<Integer, Map<Integer, Integer>> adj = new HashMap<>();
         for ( int[] flt : flights ) {
             Map<Integer, Integer> nbrs = adj.getOrDefault(flt[0], new HashMap<>());
@@ -25,6 +26,7 @@ public class CheapestFlightWithinKStops {
             adj.put(flt[0], nbrs);
         }
 
+        // Tuple of (vertex, distance, stops)
         Queue<int[]> pq = new PriorityQueue<>((int[] a, int[] b) -> {
             return a[1] - b[1];
         });
@@ -44,7 +46,7 @@ public class CheapestFlightWithinKStops {
             if ( adj.containsKey(u) ) {
                 for ( Map.Entry<Integer, Integer> e : adj.get(u).entrySet() ) {
                     int v = e.getKey(),
-                            edgeCost = e.getValue();
+                        edgeCost = e.getValue();
                     if ( currentCost + edgeCost < costs[v] || currentStops < stops[v] ) {
                         // Add the next possibility to PQ
                         // No. of stops for this next case will increase by 1

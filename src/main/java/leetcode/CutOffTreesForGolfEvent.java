@@ -14,6 +14,7 @@ public class CutOffTreesForGolfEvent {
         final int m = forest.size();
         final int n = forest.get(0).size();
 
+        // Holds tuple of (source, destination, distance)
         Queue<int[]> q = new LinkedList<>();
         q.add(new int[]{from[0], from[1], 0});
         boolean[][] vis = new boolean[m][n];

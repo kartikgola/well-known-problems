@@ -8,6 +8,7 @@ package leetcode;
 
 public class FindTheCelebrity {
 
+    // This method is provided by OJ
     public boolean knows(int i, int j) {
         return true;
     }

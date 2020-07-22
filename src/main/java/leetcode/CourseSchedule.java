@@ -6,9 +6,7 @@
 
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class CourseSchedule {
 
@@ -31,16 +29,28 @@ public class CourseSchedule {
         return false;
     }
 
-    //TODO
-    private boolean hasCycleBFS(boolean[] visited, boolean[] stack, int v) {
-        Stack<Integer> st = new Stack<>();
-        st.push(v);
+    private boolean hasCycleBFS(int[] indegrees) {
+        final int n = indegrees.length;
+        Queue<Integer> q = new LinkedList<>();
+        boolean[] vis = new boolean[n];
+        for ( int i = 0; i < indegrees.length; ++i )
+            if ( indegrees[i] == 0 ) {
+                q.add(i);
+                vis[i] = true;
+            }
 
-        while ( !st.empty() ) {
-
+        int completedCourses = 0;
+        while ( !q.isEmpty() ) {
+            int u = q.poll();
+            completedCourses++;
+            for ( Integer v : adj.get(u) ) {
+                if ( !vis[v] && --indegrees[v] == 0 ) {
+                    q.add(v);
+                }
+            }
         }
 
-        return false;
+        return completedCourses != n;
     }
 
     public boolean canFinish(int numCourses, int[][] prerequisites)  {
@@ -51,8 +61,11 @@ public class CourseSchedule {
         for ( int i = 0; i < numCourses; ++i )
             adj.add(new ArrayList<Integer>());
 
-        for ( int[] p : prerequisites )
-            adj.get(p[0]).add( p[1] );
+        int[] indegrees = new int[numCourses];
+        for ( int[] p : prerequisites ) {
+            adj.get(p[0]).add(p[1]);
+            indegrees[p[1]]++;
+        }
 
         boolean[] visited = new boolean[numCourses];
         boolean[] stack = new boolean[numCourses];
@@ -62,6 +75,8 @@ public class CourseSchedule {
                 return false;
         }
 
+        // Or, with BFS approach
+        // return hasCycleBFS(indegrees);
         return true;
     }
 }

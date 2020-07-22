@@ -11,100 +11,109 @@ import java.util.Map;
 
 public class LRUCache {
 
-    class LRUNode {
-
+    class DLinkedNode {
         int key;
-        int usage;
-        LRUNode prev;
-        LRUNode next;
-
-        LRUNode(int key, int usage) {
-            this.key = key;
-            this.usage = usage;
-        }
-
+        int value;
+        DLinkedNode pre;
+        DLinkedNode post;
     }
 
-    class LRUList {
+    /**
+     * Always add the new node right after head;
+     */
+    private void addNode(DLinkedNode node) {
 
-        LRUNode first;
-        int size = 0;
+        node.pre = head;
+        node.post = head.post;
 
-        public void add(LRUNode node) {
-            if ( first == null ) {
-                first = node;
-                first.prev = node;
-                first.next = node;
-            } else {
-                LRUNode last = first.prev;
-                last.next = node;
-                node.prev = last;
-                node.next = first;
-                first.prev = node;
-            }
-            ++size;
-        }
-
-        // TODO - This can be improved by making a Map of <Integer, LRUNode>
-        public void removeKey(int key) {
-            if ( size > 0 ) {
-                LRUNode f = first;
-                LRUNode l = first.prev;
-                while ( f.key != l.key ) {
-                    if ( f.key == key ) { ++size; removeNode(f); }
-                    if ( l.key == key ) { ++size; removeNode(l); }
-                    f = f.next;
-                    l = l.prev;
-                }
-                if ( f.key == key ) { ++size; removeNode(f); }
-            }
-        }
-
-        private void removeNode(LRUNode node) {
-            LRUNode prev = node.prev;
-            LRUNode next = node.next;
-
-            if ( first.key == node.key ) {
-                if ( size == 1 ) {
-                    first = null;
-                } else {
-                    first = first.next;
-                    prev.next = next;
-                    next.prev = prev;
-                }
-            } else {
-                prev.next = next;
-                next.prev = prev;
-            }
-            --size;
-        }
-
+        head.post.pre = node;
+        head.post = node;
     }
 
-    private Map<Integer, Integer> store;
-    private LRUList list;
-    private int CAPACITY = 1;
-    private int ops = 0;
+    /**
+     * Remove an existing node from the linked list.
+     */
+    private void removeNode(DLinkedNode node){
+        DLinkedNode pre = node.pre;
+        DLinkedNode post = node.post;
+
+        pre.post = post;
+        post.pre = pre;
+    }
+
+    /**
+     * Move certain node in between to the head.
+     */
+    private void moveToHead(DLinkedNode node){
+        this.removeNode(node);
+        this.addNode(node);
+    }
+
+    // pop the current tail.
+    private DLinkedNode popTail(){
+        DLinkedNode res = tail.pre;
+        this.removeNode(res);
+        return res;
+    }
+
+    private Map<Integer, DLinkedNode> cache = new HashMap<>();
+    private int count;
+    private int capacity;
+    private DLinkedNode head, tail;
 
     public LRUCache(int capacity) {
-        this.CAPACITY = capacity;
-        this.store = new HashMap<>();
-        this.list = new LRUList();
+        this.count = 0;
+        this.capacity = capacity;
+
+        head = new DLinkedNode();
+        head.pre = null;
+
+        tail = new DLinkedNode();
+        tail.post = null;
+
+        head.post = tail;
+        tail.pre = head;
     }
 
     public int get(int key) {
-        if ( store.containsKey(key) ) {
-            list.removeKey(key);
-            list.add(new LRUNode(key, ++ops));
-            return store.get(key);
+
+        DLinkedNode node = cache.get(key);
+        if(node == null){
+            return -1; // should raise exception here.
         }
-        return -1;
+
+        // move the accessed node to the head;
+        this.moveToHead(node);
+
+        return node.value;
     }
 
+
     public void put(int key, int value) {
-        store.put(key, value);
-        list.removeKey(key);
-        list.add(new LRUNode(key, ++ops));
+        DLinkedNode node = cache.get(key);
+
+        if(node == null){
+
+            DLinkedNode newNode = new DLinkedNode();
+            newNode.key = key;
+            newNode.value = value;
+
+            this.cache.put(key, newNode);
+            this.addNode(newNode);
+
+            ++count;
+
+            if(count > capacity){
+                // pop the tail
+                DLinkedNode tail = this.popTail();
+                this.cache.remove(tail.key);
+                --count;
+            }
+        }else{
+            // update the value.
+            node.value = value;
+            this.moveToHead(node);
+        }
     }
 
 }
