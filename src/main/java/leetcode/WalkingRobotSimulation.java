@@ -55,7 +55,6 @@ public class WalkingRobotSimulation {
                     case N:
                         // Increase y
                         while ( !grid[x + max][y + max + 1] && cmd-- > 0 ) y += 1;
-                        System.out.println("Here");
                         break;
                     case S:
                         // Decrease y

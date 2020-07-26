@@ -13,7 +13,7 @@ class SearchInRotatedArrayTest {
 
     @Test
     void findPivotTest() {
-        SearchInRotatedArray sr = new SearchInRotatedArray();
+        SearchInRotatedSortedArray sr = new SearchInRotatedSortedArray();
         int[][] test = new int[][]{
                 { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 },
                 { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 },
@@ -30,8 +30,8 @@ class SearchInRotatedArrayTest {
         int[] exp = new int[]{ 0, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
 
         for ( int i = 0; i < test.length; ++i ) {
-            assertEquals( exp[i], sr.findPivot(test[i]) );
-            System.out.println(sr.findPivot(test[i]));
+            assertEquals( exp[i], sr.search(test[i], test[i][0]) );
+            System.out.println(sr.search(test[i], test[i][0]));
         }
     }
 

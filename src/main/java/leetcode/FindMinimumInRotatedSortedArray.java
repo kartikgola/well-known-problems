@@ -2,12 +2,12 @@
  * Author: Kartik Gola
  * Date: 24/07/20, 8:38 PM
  * Copyright (c) 2020 | https://rattl.io
- * Problem URL:
+ * Problem URL: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
  */
 
 package leetcode;
 
-class FindMinimumInSortedRotatedArray {
+class FindMinimumInRotatedSortedArray {
     public int search(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         while ( left <= right ) {
