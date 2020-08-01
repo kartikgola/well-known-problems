@@ -20,7 +20,7 @@ public class WordSearch2 {
     int m, n;
     final int[][] pos = new int[][]{{-1,0}, {0,1}, {1,0}, {0,-1}};
 
-    List<String> dfs(char[][] board, int i, int j, boolean[][] vis, TrieNode parent) {
+    private List<String> dfs(char[][] board, int i, int j, boolean[][] vis, TrieNode parent) {
         List<String> res = new ArrayList<>();
         if ( i < 0 || i >= m || j < 0 || j >= n || vis[i][j] )
             return res;

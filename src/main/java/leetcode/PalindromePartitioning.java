@@ -7,14 +7,18 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class PalindromePartitioning {
 
-    public boolean isPalindrome(String str) {
-        int p = 0, q = str.length() - 1;
+    Map<Integer, List<List<String>>> map = new HashMap<>();
+
+    private boolean isPalindrome(StringBuilder sb) {
+        int p = 0, q = sb.length() - 1;
         while ( p <= q ) {
-            if ( str.charAt(p) == str.charAt(q) ) {
+            if ( sb.charAt(p) == sb.charAt(q) ) {
                 p++;
                 q--;
             } else return false;
@@ -22,30 +26,34 @@ public class PalindromePartitioning {
         return true;
     }
 
-    private List<List<String>> _part(String s, int p, int q) {
-        List<List<String>> list = new ArrayList<>();
+    private List<List<String>> partition(String s, int j) {
+        if ( map.containsKey(j) )
+            return map.get(j);
 
-        String str = "";
-        for ( int i = p; i < q; ++i ) {
-            str = str + s.charAt(i);
-            if ( isPalindrome(str) ) {
-                for ( List<String> remainingParts : _part(s, i + 1, q) ) {
+        List<List<String>> list = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
+
+        for ( int i = j; i < s.length(); ++i ) {
+            sb.append(s.charAt(i));
+            if ( isPalindrome(sb) ) {
+                for ( List<String> remainingParts : partition(s, i + 1) ) {
                     List<String> subList = new ArrayList<>();
-                    subList.add(str);
+                    subList.add(sb.toString());
                     subList.addAll(remainingParts);
                     list.add(subList);
                 }
             }
         }
-
         if ( list.size() == 0 ) {
             list.add(new ArrayList<>());
         }
+
+        map.put(j, list);
         return list;
     }
 
     public List<List<String>> partition(String s) {
-        return _part(s, 0, s.length());
+        return partition(s, 0);
     }
 
 }
