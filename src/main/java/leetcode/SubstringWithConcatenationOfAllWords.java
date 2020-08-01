@@ -2,7 +2,7 @@
  * Author: Kartik Gola
  * Date: 8/2/20 12:33 AM
  * Copyright (c) 2020 | https://rattl.io
- * Problem URL:
+ * Problem URL: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
  */
 
 package leetcode;
@@ -28,7 +28,7 @@ public class SubstringWithConcatenationOfAllWords {
         // Map of remaining counts of words
         Map<String, Integer> rem = new HashMap<>(map);
 
-        // Since each word in words is of length `k`
+        // Since each word in `words` is of length `k`
         // All the possible windows should be of length `m * k`
         // Total such windows in a string of length `n` would be `n - (m * k) + 1`
         for ( int i = 0; i < n - (m * k) + 1; ++i ) {
