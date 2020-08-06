@@ -25,7 +25,7 @@ public class WordSearch2 {
         if ( i < 0 || i >= m || j < 0 || j >= n || vis[i][j] )
             return res;
         TrieNode current = null;
-        if ( parent == null ) current = t.exists(Character.toString(board[i][j]));
+        if ( parent == null ) current = t.startsWith(Character.toString(board[i][j]));
         else current = parent.children[board[i][j] - 'a'];
 
         if ( current == null )
