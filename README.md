@@ -2,6 +2,13 @@
 My solutions to some well-known programming problems
 ---
 
+### How to solve problems?
+1. Define
+2. Representation
+3. Approach/Strategy
+4. Algorithm
+5. Experiment
+
 ### Best Conceivable Runtime (BCR)
 1. This is the lower bound of any algorithmic problem
 2. For a problem, no algorithm can do better than BCR.
