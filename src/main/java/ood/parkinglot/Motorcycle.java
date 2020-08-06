@@ -6,5 +6,14 @@
 
 package ood.parkinglot;
 
-public class Motorcycle extends Vehicle {
+public class Motorcycle implements Vehicle {
+    @Override
+    public VehicleType getType() {
+        return null;
+    }
+
+    @Override
+    public String getName() {
+        return null;
+    }
 }

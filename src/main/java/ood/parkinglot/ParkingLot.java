@@ -44,6 +44,6 @@ public class ParkingLot {
     }
 
     public static void main(String[] args) {
-        new ParkingLot(3, );
+        new ParkingLot(3);
     }
 }

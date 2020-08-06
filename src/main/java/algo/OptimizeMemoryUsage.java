@@ -21,10 +21,6 @@ public class OptimizeMemoryUsage {
         Collections.sort(ft, (Integer a, Integer b) -> Integer.compare(b, a));
         Collections.sort(bt);
 
-        // 7,6,5,4,2,1
-        // 3,2,1
-        // 6
-
         int i = 0, j = 0;
         while ( i < ft.size() && j < bt.size() ) {
             if ( ft.get(i) + bt.get(j) == k ) {

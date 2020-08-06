@@ -2,13 +2,12 @@
  * Author: Kartik Gola
  * Date: 14/07/20, 10:50 PM
  * Copyright (c) 2020 | https://rattl.io
+ * Problem URL: https://leetcode.com/problems/most-stones-removed-with-same-row-or-column
  */
 
 package leetcode;
 
 import ds.UnionFind;
-
-import java.util.Arrays;
 
 public class MostStonesRemovedWithSameRowOrColumn {
 
