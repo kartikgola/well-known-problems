@@ -17,6 +17,7 @@ import java.util.Queue;
 
 public class VerticalOrderTraversalOfABinaryTree {
 
+    // Every element of Queue is Pair<TreeNode, Pair<X, Y>>
     private Queue<Pair<TreeNode, Pair<Integer, Integer>>> q = new PriorityQueue<>((Pair<TreeNode, Pair<Integer, Integer>> p1, Pair<TreeNode, Pair<Integer, Integer>> p2) -> {
         int x1 = p1.getValue().getKey(),
             y1 = p1.getValue().getValue();
