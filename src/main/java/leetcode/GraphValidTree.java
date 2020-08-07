@@ -35,11 +35,12 @@ public class GraphValidTree {
         }
 
         boolean[] vis = new boolean[n];
-        boolean backEdge = dfs(0, -1, adj, vis);
 
-        if ( backEdge )
+        // dfs() returns true if there is a back-edge
+        if ( dfs(0, -1, adj, vis) )
             return false;
 
+        // We should have no unvisited node left as well
         for ( boolean val : vis )
             if ( !val )
                 return false;
