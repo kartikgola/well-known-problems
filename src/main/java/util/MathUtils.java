@@ -6,11 +6,10 @@
 
 package util;
 
-public class Utils {
-
-    public static long PRIME_MOD = 1000_000_007L;
+public class MathUtils {
 
     public static long fastPow(long base, long exp) {
+        final long PRIME_MOD = 1000_000_007L;
         long res = 1;
         while ( exp > 0 ) {
             if ( exp % 2 == 0 ) {
@@ -34,4 +33,5 @@ public class Utils {
         }
         return res;
     }
+
 }
