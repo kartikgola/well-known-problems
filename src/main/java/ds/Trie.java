@@ -8,7 +8,7 @@ package ds;
 
 public class Trie {
 
-    TrieNode root = new TrieNode('#');
+    public TrieNode root = new TrieNode('#');
 
     public void add(String word) {
         TrieNode curr = root;
