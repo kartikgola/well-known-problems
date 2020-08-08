@@ -39,7 +39,7 @@ public class Trie {
 
     private boolean contains(String word, int offset, TrieNode parent) {
         TrieNode curr = parent;
-        for ( int i = 0; i < word.length(); ++i ) {
+        for ( int i = offset; i < word.length(); ++i ) {
             char ch = word.charAt(i);
             if ( ch == '.' ) {
                 for ( TrieNode child : curr.children ) {

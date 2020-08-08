@@ -11,7 +11,9 @@ import java.util.*;
 public class CheapestFlightWithinKStops {
 
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
+        // Known number of stops of a vertex
         int[] stops = new int[n];
+        // Known cost of a vertex
         int[] costs = new int[n];
         Arrays.fill(stops, Integer.MAX_VALUE);
         Arrays.fill(costs, Integer.MAX_VALUE);

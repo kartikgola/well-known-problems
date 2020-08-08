@@ -6,7 +6,7 @@
 
 package algo;
 
-import util.Utils;
+import util.MathUtils;
 
 import java.io.IOException;
 
@@ -18,15 +18,15 @@ public class RabinKarpStringMatching {
         final int k = s.length() - 1;
         long hash = 0;
         for ( int i = 0; i < s.length(); ++i ) {
-            hash += Utils.fastPow(C, k - i) * (s.charAt(i) - 'a');
+            hash += MathUtils.fastPow(C, k - i) * (s.charAt(i) - 'a');
         }
         return hash;
     }
 
     private long rollHash(long prevHash, char prevChar, char newChar, int len) {
-        prevHash -= Utils.fastPow(C, len - 1) * (prevChar - 'a');
+        prevHash -= MathUtils.fastPow(C, len - 1) * (prevChar - 'a');
         prevHash *= C;
-        prevHash += Utils.fastPow(C, 0) * (newChar - 'a');
+        prevHash += MathUtils.fastPow(C, 0) * (newChar - 'a');
         return prevHash;
     }
 
