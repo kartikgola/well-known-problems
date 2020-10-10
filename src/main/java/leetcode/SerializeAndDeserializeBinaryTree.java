@@ -16,7 +16,13 @@ public class SerializeAndDeserializeBinaryTree {
     public String serialize(TreeNode root) {
         if ( root == null )
             return "null";
-        return root.val + "," + serialize(root.left) + "," + serialize(root.right);
+        StringBuilder sb = new StringBuilder();
+        sb.append(root.val);
+        sb.append(",");
+        sb.append(serialize(root.left));
+        sb.append(",");
+        sb.append(serialize(root.right))
+        return sb.toString();
     }
 
     private TreeNode make(StringTokenizer st) {
