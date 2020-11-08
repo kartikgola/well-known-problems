@@ -53,12 +53,12 @@ public class GraphUtils {
         return ans;
     }
 
-    private static boolean isValidTree(int u, int parent, List<List<Integer>> adj, boolean[] vis) {
+    private static boolean hasBackEdge(int u, int parent, List<List<Integer>> adj, boolean[] vis) {
         if ( vis[u] )
             return true;
         vis[u] = true;
         for ( Integer v : adj.get(u) ) {
-            if ( v != parent && isValidTree(v, u, adj, vis) )
+            if ( v != parent && hasBackEdge(v, u, adj, vis) )
                 return true;
         }
         return false;
@@ -77,11 +77,12 @@ public class GraphUtils {
 
         boolean[] vis = new boolean[n];
 
-        // dfs() returns true if there is a back-edge
-        if ( isValidTree(0, -1, adj, vis) )
+        // There should be no back-edge present in the graph
+        if ( hasBackEdge(0, -1, adj, vis) )
             return false;
 
-        // We should have no unvisited node left as well
+        // We should have no unvisited node left in the end
+        // So, all nodes should be connected for graph to be a tree
         for ( boolean val : vis )
             if ( !val )
                 return false;
