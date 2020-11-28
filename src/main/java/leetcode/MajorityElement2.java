@@ -8,12 +8,13 @@
 
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MajorityElement2 {
 
     public List<Integer> majorityElement(int[] nums) {
-        
+        return new ArrayList<>();
     }
 
 }

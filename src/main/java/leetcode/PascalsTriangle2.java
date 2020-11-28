@@ -7,8 +7,9 @@
 
 package leetcode;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PascalsTriangle2 {
 
@@ -29,10 +30,6 @@ public class PascalsTriangle2 {
                 }
             }
         }
-        List<Integer> res = new ArrayList<>(dp.length);
-        for ( int num : dp )
-            res.add(num);
-
-        return res;
+        return Arrays.stream(dp).boxed().collect(Collectors.toList());
     }
 }

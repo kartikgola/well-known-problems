@@ -6,21 +6,14 @@
 
 package leetcode;
 
+import ds.ListNode;
+
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class MergeKSortedLists {
 
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
-    PriorityQueue<ListNode> pq = new PriorityQueue<>((ListNode l1, ListNode l2) -> {
-        return l1.val - l2.val;
-    });
+    PriorityQueue<ListNode> pq = new PriorityQueue<>(Comparator.comparingInt((ListNode l) -> l.val));
 
     public ListNode mergeKLists(ListNode[] lists) {
         final int k = lists.length;

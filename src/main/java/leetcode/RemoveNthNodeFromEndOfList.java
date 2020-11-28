@@ -6,15 +6,9 @@
 
 package leetcode;
 
-public class RemoveNthNodeFromEndOfList {
+import ds.ListNode;
 
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
+public class RemoveNthNodeFromEndOfList {
 
     // @params : `i` is the index of a node in the linked list
     // @returns : length of the list
