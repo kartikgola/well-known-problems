@@ -42,9 +42,7 @@ public class CutOffTreesForGolfEvent {
         final int n = forest.get(0).size();
 
         boolean[][] vis = new boolean[m][n];
-        Queue<int[]> q = new PriorityQueue<>((int[] a, int[] b) -> {
-            return forest.get(a[0]).get(a[1]) - forest.get(b[0]).get(b[1]);
-        });
+        Queue<int[]> q = new PriorityQueue<>(Comparator.comparingInt((int[] a) -> forest.get(a[0]).get(a[1])));
 
         for ( int i = 0; i < m; ++i ) {
             for ( int j = 0; j < n; ++j ) {
