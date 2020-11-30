@@ -18,29 +18,39 @@ public class MathUtils {
      * @return long value of base to the power exp
      */
     public static long fastPow(long base, long exp) {
-        final long PRIME_MOD = 1000_000_007L;
+        boolean pos = exp >= 0;
         long res = 1;
-        while ( exp > 0 ) {
-            if ( exp % 2 == 0 ) {
-                base = (base * base) % PRIME_MOD;
-                exp = exp / 2;
+        while (exp != 0) {
+            if (exp % 2 == 0) {
+                base *= base;
+                exp /= 2;
             } else {
-                res = (res * base) % PRIME_MOD;
-                base = (base * base) % PRIME_MOD;
-                exp = exp / 2;
+                res *= base;
+                exp = exp + (exp > 0 ? -1 : 1);
             }
         }
-        while ( exp < 0 ) {
-            if ( exp % 2 == 0 ) {
-                base = (base * base) % PRIME_MOD;
-                exp = exp / 2;
+        return pos ? res : 1/res;
+    }
+
+    /**
+     * Performs fast exponentiation of a given base to the power exp
+     * @param base
+     * @param exp
+     * @return double value of base to the power exp
+     */
+    public static double fastPow(double base, double exp) {
+        boolean pos = exp >= 0;
+        double res = 1.0;
+        while (exp != 0) {
+            if (exp % 2 == 0) {
+                base *= base;
+                exp /= 2;
             } else {
-                res = (res / base) % PRIME_MOD;
-                base = (base * base) % PRIME_MOD;
-                exp = exp / 2;
+                res *= base;
+                exp = exp + (exp > 0 ? -1 : 1);
             }
         }
-        return res;
+        return pos ? res : 1/res;
     }
 
     /**
