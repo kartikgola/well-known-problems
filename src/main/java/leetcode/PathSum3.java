@@ -6,14 +6,9 @@
 
 package leetcode;
 
-public class PathSum3 {
+import ds.TreeNode;
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
+public class PathSum3 {
 
     private int pathSumFrom(TreeNode node, int sum) {
         if (node == null) return 0;

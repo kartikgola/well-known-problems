@@ -6,20 +6,9 @@
 
 package leetcode;
 
-public class SubtreeOfAnotherTree {
+import ds.TreeNode;
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
+public class SubtreeOfAnotherTree {
 
     private boolean isSubtree(TreeNode s, TreeNode t, boolean prevMatch) {
         if ( s == null && t == null )

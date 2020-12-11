@@ -84,6 +84,9 @@ public class MathUtils {
      * @return List of Integer containing prime factorization of given number
      */
     public static List<Integer> primeFactors(int number) {
+        if (number <= 0)
+            return new ArrayList<>();
+
         List<Integer> pFactors = new ArrayList<>();
         List<Integer> primes = primeNumbersUpto((int) Math.sqrt(number) + 1);
         for ( Integer prime : primes ) {
@@ -93,6 +96,9 @@ public class MathUtils {
                     number = number / prime;
                 }
             }
+        }
+        if (pFactors.isEmpty()) {
+            pFactors.add(number);
         }
         return pFactors;
     }

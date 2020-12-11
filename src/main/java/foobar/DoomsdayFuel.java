@@ -198,13 +198,8 @@ public class DoomsdayFuel {
         // Calculate inverse of Q
         Fraction[][] F = getInverse(Q);
 
-//        print(F);
-//        print(R);
-
         // Multiply F & R
         Fraction[][] FR = multiplyMat(F, R);
-
-//        print(FR);
 
         // Calculate the final result
         int[] res = new int[FR[0].length + 1];

@@ -6,17 +6,9 @@
 
 package leetcode;
 
+import ds.TreeNode;
+
 public class BinaryTreeFromPreorderInorder {
-
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     private int[] po;
     private int[] io;
