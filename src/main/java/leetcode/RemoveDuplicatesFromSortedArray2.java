@@ -20,7 +20,7 @@ public class RemoveDuplicatesFromSortedArray2 {
         for (int i = 1; i < n; ++i) {
             if (nums[i] != nums[i - 1]) {
                 // fill up min(count, k) positions with previous value
-                for (int j = prev; j < prev + (Math.min(count, k)); ++j)
+                for (int j = prev; j < prev + Math.min(count, k); ++j)
                     nums[j] = nums[i - 1];
                 // increase prev and reset count
                 prev += Math.min(count, k);
@@ -29,7 +29,7 @@ public class RemoveDuplicatesFromSortedArray2 {
         }
 
         // At this point, it can be [x x x y] or [x x x y y] or [x y z] or [x y y]
-        for (int j = prev; j < prev + (Math.min(count, k)); ++j)
+        for (int j = prev; j < prev + Math.min(count, k); ++j)
             nums[j] = nums[n - 1];
         prev += Math.min(count, k);
 
