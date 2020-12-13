@@ -6,16 +6,11 @@
 
 package leetcode;
 
+import ds.TreeNode;
+
 import java.util.*;
 
 public class AllNodesDistanceKInBinaryTree {
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
 
     Map<TreeNode, TreeNode> map = new HashMap<>();
     List<Integer> res = new ArrayList<>();

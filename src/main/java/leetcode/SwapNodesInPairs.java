@@ -2,20 +2,16 @@
  * Author: Kartik Gola
  * Date: 10/06/20, 5:53 PM
  * Copyright (c) 2020 | https://rattl.io
+ * Problem URL: https://leetcode.com/problems/swap-nodes-in-pairs/
  */
 
 package leetcode;
 
+import ds.ListNode;
+
 public class SwapNodesInPairs {
 
-    static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
+    // Iterative implementation
     public ListNode swapPairs(ListNode head) {
         if ( head == null || head.next == null )
             return head;
@@ -39,5 +35,19 @@ public class SwapNodesInPairs {
         }
 
         return newHead;
+    }
+
+    // Recursive implementation
+    public ListNode swapPairs2(ListNode head) {
+        if (head == null)
+            return null;
+        ListNode second = head.next;
+        if (second != null) {
+            ListNode third = second.next;
+            second.next = head;
+            head.next = swapPairs2(third);
+            return second;
+        }
+        return head;
     }
 }

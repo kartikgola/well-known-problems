@@ -22,17 +22,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding more solutions for Leetcode!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FileSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ValidMountainArray.java" afterDir="false" />
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding String">
+      <change afterPath="$PROJECT_DIR$/src/main/java/algo/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BuddyStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ClimbingStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FibonacciNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FlippingAnImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/HouseRobber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/HouseRobber2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MaximumDifferenceBetweenNodeAndAncestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReverseLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RunningSumOf1DArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SearchInABinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SortList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CutOffTreesForGolfEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CutOffTreesForGolfEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/MajorityElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/MajorityElement2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/MergeKSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PascalsTriangle2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PascalsTriangle2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SplitLinkedListInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SplitLinkedListInParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +94,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit3 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -88,6 +107,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="NamedScopeManager">
     <order>
@@ -113,7 +133,6 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -121,11 +140,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="util" />
       <recent name="leetcode" />
       <recent name="geeksforgeeks" />
       <recent name="ctci.chapter5" />
       <recent name="ctci.chapter1" />
-      <recent name="codechef.JUNE20B" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="leetcode" />
@@ -138,14 +157,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="well-known-problems" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.MathUtilsTest.testPrimeFactors">
     <configuration name="CountPrimesTest.testCountPrimes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,12 +216,31 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ParitionToKEqualSumSubsetsTest.testCanPartitionKSubsets" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MathUtilsTest.testPrimeFactors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.ParitionToKEqualSumSubsetsTest.testCanPartitionKSubsets&quot;" />
+        <option name="scriptParameters" value="--tests &quot;util.MathUtilsTest.testPrimeFactors&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MathUtilsTest.testPrimeNumbersUpto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;util.MathUtilsTest.testPrimeNumbersUpto&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -225,8 +256,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ParitionToKEqualSumSubsetsTest.testCanPartitionKSubsets" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.MathUtilsTest.testPrimeFactors" />
+        <item itemvalue="Gradle.MathUtilsTest.testPrimeNumbersUpto" />
         <item itemvalue="Gradle.FaultyKeyboardTest.testPossibleStrings" />
         <item itemvalue="Gradle.CountPrimesTest.testCountPrimes" />
         <item itemvalue="Gradle.HeightOfBinaryTreeWithConnectedLeafNodesTest.testHeight" />
@@ -448,56 +479,77 @@
       <option name="project" value="LOCAL" />
       <updated>1596886033571</updated>
     </task>
-    <task id="LOCAL-00030" summary="Adding workspace.xml">
-      <created>1596886583712</created>
+    <task id="LOCAL-00030" summary="Adding AddStrings">
+      <created>1602310358719</created>
       <option name="number" value="00030" />
       <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1596886583712</updated>
+      <updated>1602310358719</updated>
     </task>
-    <task id="LOCAL-00031" summary="Adding codechef solutions">
-      <created>1598977040629</created>
+    <task id="LOCAL-00031" summary="Adding InsertIntoABinarySearchTree">
+      <created>1602310366740</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1598977040629</updated>
+      <updated>1602310366740</updated>
     </task>
-    <task id="LOCAL-00032" summary="Adding leetcode solutions">
-      <created>1598977201720</created>
+    <task id="LOCAL-00032" summary="Adding isPalindrome">
+      <created>1602310377496</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1598977201720</updated>
+      <updated>1602310377496</updated>
     </task>
-    <task id="LOCAL-00033" summary="Adding AllElementsInTwoBinarySearchTrees">
-      <created>1599303675407</created>
+    <task id="LOCAL-00033" summary="Adding LinkedListUtils">
+      <created>1602310390898</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1599303675407</updated>
+      <updated>1602310390898</updated>
     </task>
-    <task id="LOCAL-00034" summary="Adding BinaryTreeTilt and FindTheSmallestDivisorGivenAThreshold">
-      <created>1604840604575</created>
+    <task id="LOCAL-00034" summary="Adding MaximumDistanceInArrays">
+      <created>1602310406804</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1604840604575</updated>
+      <updated>1602310406804</updated>
     </task>
-    <task id="LOCAL-00035" summary="Refactoring fastPow in MathUtils">
-      <created>1606724734774</created>
+    <task id="LOCAL-00035" summary="Modifying existing solutions!">
+      <created>1602310421991</created>
       <option name="number" value="00035" />
       <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1606724734774</updated>
+      <updated>1602310421991</updated>
     </task>
-    <task id="LOCAL-00036" summary="Adding more solutions for Leetcode!">
-      <created>1607523161127</created>
+    <task id="LOCAL-00036" summary="Adding solution for MinimumNumberOfArrowsToBurstBalloons">
+      <created>1602325011413</created>
       <option name="number" value="00036" />
       <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1607523161127</updated>
+      <updated>1602325011413</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Adding solutions for BinarySearch and RemoveCoveredIntervals">
+      <created>1602325024443</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1602325024443</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Adding OOD solution for Key-Value Storage">
+      <created>1602682401339</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1602682401339</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Adding String">
+      <created>1602682477522</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1602682477522</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,11 +579,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding 2 more LC solutions!" />
-    <MESSAGE value="Adding comments in CheapestFlightWithinKStops" />
-    <MESSAGE value="Adding ValidateBinarySearchTree" />
-    <MESSAGE value="Adding new solutions from LC!" />
-    <MESSAGE value="Adding TicTacToe.java" />
     <MESSAGE value="Adding HeightOfBinaryTreeWithConnectedLeafNodes" />
     <MESSAGE value="Adding FindMinimumInSortedRotatedArray" />
     <MESSAGE value="Adding changes to Trie and related problems!" />
@@ -545,75 +592,88 @@
     <MESSAGE value="Adding Utility methods" />
     <MESSAGE value="Updating imports!" />
     <MESSAGE value="Adding FaultyKeyboard" />
-    <MESSAGE value="Adding workspace.xml" />
-    <MESSAGE value="Adding codechef solutions" />
-    <MESSAGE value="Adding leetcode solutions" />
-    <MESSAGE value="Adding AllElementsInTwoBinarySearchTrees" />
-    <MESSAGE value="Adding BinaryTreeTilt and FindTheSmallestDivisorGivenAThreshold" />
-    <MESSAGE value="Refactoring fastPow in MathUtils" />
-    <MESSAGE value="Adding more solutions for Leetcode!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding more solutions for Leetcode!" />
+    <MESSAGE value="Adding utility methods" />
+    <MESSAGE value="Adding AddStrings" />
+    <MESSAGE value="Adding InsertIntoABinarySearchTree" />
+    <MESSAGE value="Adding isPalindrome" />
+    <MESSAGE value="Adding LinkedListUtils" />
+    <MESSAGE value="Adding MaximumDistanceInArrays" />
+    <MESSAGE value="Modifying existing solutions!" />
+    <MESSAGE value="Adding solution for MinimumNumberOfArrowsToBurstBalloons" />
+    <MESSAGE value="Adding solutions for BinarySearch and RemoveCoveredIntervals" />
+    <MESSAGE value="Adding OOD solution for Key-Value Storage" />
+    <MESSAGE value="Replacing String with StringBuilder in SerializeAndDeserializeBinaryTree" />
+    <MESSAGE value="Adding String" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding String" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="261" key="#com.intellij.ide.util.MemberChooser" timestamp="1607623194525">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="622" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1602328705258">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="765" y="261" key="#com.intellij.ide.util.MemberChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1607623194525" />
-    <state x="669" y="120" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604840455400">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="622" y="171" key="#com.intellij.ide.util.MemberChooser/0.23.1680.973@0.23.1680.973" timestamp="1602328705258" />
+    <state x="230" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600360327565">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="669" y="120" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604840455400" />
-    <state width="1877" height="190" key="GridCell.Tab.0.bottom" timestamp="1607535405440">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="230" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.973@0.23.1680.973" timestamp="1600360327565" />
+    <state width="1638" height="324" key="GridCell.Tab.0.bottom" timestamp="1602754030014">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1607535405440" />
-    <state width="1877" height="190" key="GridCell.Tab.0.center" timestamp="1607535405440">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1602754030014" />
+    <state width="1638" height="324" key="GridCell.Tab.0.center" timestamp="1602754030013">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1607535405440" />
-    <state width="1877" height="190" key="GridCell.Tab.0.left" timestamp="1607535405440">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1602754030013" />
+    <state width="1638" height="324" key="GridCell.Tab.0.left" timestamp="1602754030013">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1607535405440" />
-    <state width="1877" height="190" key="GridCell.Tab.0.right" timestamp="1607535405440">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1602754030013" />
+    <state width="1638" height="324" key="GridCell.Tab.0.right" timestamp="1602754030014">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="190" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1607535405440" />
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1604690256737">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1602754030014" />
+    <state width="1638" height="324" key="GridCell.Tab.1.bottom" timestamp="1602754030016">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1604690256737" />
-    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1604690256737">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.1.bottom/0.23.1680.973@0.23.1680.973" timestamp="1602754030016" />
+    <state width="1638" height="324" key="GridCell.Tab.1.center" timestamp="1602754030015">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.center/0.30.1920.1050@0.30.1920.1050" timestamp="1604690256737" />
-    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1604690256737">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.1.center/0.23.1680.973@0.23.1680.973" timestamp="1602754030015" />
+    <state width="1638" height="324" key="GridCell.Tab.1.left" timestamp="1602754030015">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.left/0.30.1920.1050@0.30.1920.1050" timestamp="1604690256737" />
-    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1604690256737">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.1.left/0.23.1680.973@0.23.1680.973" timestamp="1602754030015" />
+    <state width="1638" height="324" key="GridCell.Tab.1.right" timestamp="1602754030015">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1877" height="352" key="GridCell.Tab.1.right/0.30.1920.1050@0.30.1920.1050" timestamp="1604690256737" />
-    <state x="735" y="257" key="RollbackChangesDialog" timestamp="1604685527577">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state width="1638" height="324" key="GridCell.Tab.1.right/0.23.1680.973@0.23.1680.973" timestamp="1602754030015" />
+    <state x="258" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1598634726623">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="735" y="257" key="RollbackChangesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1604685527577" />
-    <state x="427" y="223" key="Vcs.Push.Dialog.v2" timestamp="1606724742614">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="258" y="23" key="SettingsEditor/0.23.1680.973@0.23.1680.973" timestamp="1598634726623" />
+    <state x="373" y="202" key="Vcs.Push.Dialog.v2" timestamp="1602682537368">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="427" y="223" key="Vcs.Push.Dialog.v2/0.30.1920.1050@0.30.1920.1050" timestamp="1606724742614" />
-    <state x="777" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607523167437">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="373" y="202" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1602682537368" />
+    <state x="467" y="184" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600351051562">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="777" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1920.1050@0.30.1920.1050" timestamp="1607523167437" />
-    <state x="667" y="288" width="585" height="534" key="find.popup" timestamp="1607615489615">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="467" y="184" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.973@0.23.1680.973" timestamp="1600351051562" />
+    <state x="638" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606493404336">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="667" y="288" width="585" height="534" key="find.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1607615489615" />
-    <state x="513" y="109" width="894" height="863" key="search.everywhere.popup" timestamp="1607622899010">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="638" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.973@0.23.1680.973" timestamp="1606493404336" />
+    <state x="567" y="292" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600351842572">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="513" y="109" width="894" height="863" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1607622899010" />
+    <state x="567" y="292" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.973@0.23.1680.973" timestamp="1600351842572" />
+    <state x="487" y="32" width="707" height="952" key="find.popup" timestamp="1602691392180">
+      <screen x="0" y="23" width="1680" height="973" />
+    </state>
+    <state x="487" y="32" width="707" height="952" key="find.popup/0.23.1680.973@0.23.1680.973" timestamp="1602691392180" />
+    <state x="449" y="96" width="782" height="800" key="search.everywhere.popup" timestamp="1606562762268">
+      <screen x="0" y="23" width="1680" height="973" />
+    </state>
+    <state x="449" y="96" width="782" height="800" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1606562762268" />
   </component>
 </project>
