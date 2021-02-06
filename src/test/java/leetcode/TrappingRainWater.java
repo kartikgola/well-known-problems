@@ -2,6 +2,7 @@
  * Author: Kartik Gola
  * Date: 21/06/20, 7:47 PM
  * Copyright (c) 2020 | https://rattl.io
+ * Problem URL: https://leetcode.com/problems/trapping-rain-water/
  */
 
 package leetcode;
@@ -32,9 +33,8 @@ public class TrappingRainWater {
                     // It is guaranteed that height[st.peek()] will be >= height[t]
                     // So, we take minimum of curr height & height[st.peek()]
                     // Also, we reduce it by height[t] as that height denotes
-                    // the height above 0-level that we have crossed.
+                    // the height above 0-level that we have already accounted for
                     int h = Math.min(height[i], height[st.peek()]) - height[t];
-
                     water += w * h;
                 }
                 st.push(i);
