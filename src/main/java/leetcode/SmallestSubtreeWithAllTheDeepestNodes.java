@@ -17,18 +17,18 @@ public class SmallestSubtreeWithAllTheDeepestNodes {
     private List<TreeNode> levelNodes = new ArrayList<>();
     private final Map<TreeNode, TreeNode> parentMap = new HashMap<>();
 
-    private void dfs(TreeNode root, TreeNode parent, int offset) {
+    private void dfs(TreeNode root, TreeNode parent, int depth) {
         if (root != null) {
             parentMap.put(root, parent);
-            if (offset == maxDepth) {
+            dfs(root.left, root, depth + 1);
+            dfs(root.right, root, depth + 1);
+            if (depth == maxDepth) {
                 levelNodes.add(root);
-            } else if (offset > maxDepth) {
-                levelNodes = new ArrayList<>();
-                maxDepth = offset;
+            } else if (depth > maxDepth) {
+                levelNodes.clear();
+                maxDepth = depth;
                 levelNodes.add(root);
             }
-            dfs(root.left, root, offset + 1);
-            dfs(root.right, root, offset + 1);
         }
     }
 
