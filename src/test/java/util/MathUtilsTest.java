@@ -21,6 +21,6 @@ public class MathUtilsTest extends TestCase {
     }
 
     public void testPrimeFactors() {
-        System.out.println(MathUtils.primeFactors(7));
+//        System.out.println(MathUtils.primeFactors(7));
     }
 }
