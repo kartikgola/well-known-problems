@@ -32,6 +32,6 @@ public class NumberOfConnectedComponentsInUndirectedGraph {
             }
         }
 
-        return uf.getUnionsCount();
+        return uf.getTotalGroups();
     }
 }
