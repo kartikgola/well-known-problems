@@ -21,10 +21,6 @@ public class MathUtilsTest extends TestCase {
     }
 
     public void testPrimeFactors() {
-        assertEquals(Arrays.asList(3, 5, 5), MathUtils.primeFactors(75));
-        assertEquals(Arrays.asList(3, 5, 13), MathUtils.primeFactors(195));
-        assertEquals(Arrays.asList(2, 2, 3), MathUtils.primeFactors(12));
-        assertEquals(Arrays.asList(13), MathUtils.primeFactors(13));
-        assertEquals(Arrays.asList(2, 2, 5, 5), MathUtils.primeFactors(100));
+        System.out.println(MathUtils.primeFactors(7));
     }
 }

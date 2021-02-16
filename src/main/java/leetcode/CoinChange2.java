@@ -10,21 +10,21 @@ import java.util.Arrays;
 
 public class CoinChange2 {
 
-    private int coinChangeTopDown(int amount, int[] coins, Integer[][] dp, int i) {
+    private int coinChange2TopDown(int amount, int[] coins, Integer[][] dp, int i) {
         if ( amount == 0 )
             return 1;
         if ( i == 0 )
             return 0;
         if ( dp[i][amount] != null )
             return dp[i][amount];
-        return dp[i][amount] = (amount - coins[i - 1] >= 0 ? coinChangeTopDown(amount - coins[i - 1], coins, dp, i) : 0)
-                + coinChangeTopDown(amount, coins, dp, i - 1);
+        return dp[i][amount] = (amount - coins[i - 1] >= 0 ? coinChange2TopDown(amount - coins[i - 1], coins, dp, i) : 0)
+                + coinChange2TopDown(amount, coins, dp, i - 1);
     }
 
-    public int coinChangeTopDown(int amount, int[] coins) {
+    public int coinChange2TopDown(int amount, int[] coins) {
         Arrays.sort(coins);
         Integer[][] dp = new Integer[coins.length + 1][amount + 1];
-        return coinChangeTopDown(amount, coins, dp, coins.length);
+        return coinChange2TopDown(amount, coins, dp, coins.length);
     }
 
     // Time: O(ca), Space: O(ca)
