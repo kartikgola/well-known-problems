@@ -104,24 +104,26 @@ public class MathUtils {
      * @param number
      * @return List of Integer containing prime factorization of given number
      */
-    public static List<Integer> primeFactors(int number) {
-        if (number <= 0)
-            return new ArrayList<>();
-
-        List<Integer> pFactors = new ArrayList<>();
-        List<Integer> primes = primeNumbersUpto((int) Math.sqrt(number) + 1);
-        for ( Integer prime : primes ) {
-            if ( number % prime == 0 ) {
-                while ( number > 0 && number % prime == 0 ) {
-                    pFactors.add(prime);
-                    number = number / prime;
-                }
-            }
-        }
-        if (pFactors.isEmpty()) {
-            pFactors.add(number);
-        }
-        return pFactors;
-    }
+//    public static List<Pair<Long, Long>> primeFactors(long number) {
+//        if (number <= 0)
+//            return new ArrayList<>();
+//
+//        List<Pair<Long, Long>> pFactors = new ArrayList<>();
+//        List<Integer> primes = primeNumbersUpto((int)Math.sqrt(number) + 1);
+//        for ( Integer prime : primes ) {
+//            int power = 0;
+//            while ( number > 0 && number % prime == 0 ) {
+//                number = number / prime;
+//                power++;
+//            }
+//            if (power > 0) {
+//                pFactors.add(new Pair<>(prime, power));
+//            }
+//        }
+//        if (pFactors.isEmpty()) {
+//            pFactors.add(new Pair<>(number, 1));
+//        }
+//        return pFactors;
+//    }
 
 }

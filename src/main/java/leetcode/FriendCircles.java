@@ -22,6 +22,6 @@ public class FriendCircles {
             }
         }
 
-        return uf.getUnionsCount();
+        return uf.getTotalGroups();
     }
 }

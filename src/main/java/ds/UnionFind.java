@@ -10,18 +10,17 @@ import java.util.Arrays;
 
 public class UnionFind {
 
-    private int unions;
-    private int n;
-    private int[] parent;
+    private int groups;
+    private final int[] parent;
 
     public UnionFind(int n) {
-        this.n = unions = n;
+        groups = n;
         parent = new int[n];
         Arrays.fill(parent, -1);
     }
 
-    public int getUnionsCount() {
-        return this.unions;
+    public int getTotalGroups() {
+        return this.groups;
     }
 
     public int find(int u) {
@@ -34,13 +33,15 @@ public class UnionFind {
         int pu = find(u);
         int pv = find(v);
         if ( pu != pv ) {
-            // Weight of pu is more
+            // Weight of pu is more (more negative means higher weight)
             if ( parent[pu] <= parent[pv] ) {
                 parent[pv] = pu;
+                parent[pu]--;
             } else {
                 parent[pu] = pv;
+                parent[pv]--;
             }
-            unions--;
+            groups--;
         }
     }
 }

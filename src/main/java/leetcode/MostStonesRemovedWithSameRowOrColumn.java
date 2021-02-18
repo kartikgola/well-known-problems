@@ -20,6 +20,6 @@ public class MostStonesRemovedWithSameRowOrColumn {
                     unionFind.union(i, j);
             }
         }
-        return n - unionFind.getUnionsCount();
+        return n - unionFind.getTotalGroups();
     }
 }
