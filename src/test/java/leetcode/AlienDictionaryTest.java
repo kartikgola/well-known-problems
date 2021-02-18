@@ -13,7 +13,7 @@ public class AlienDictionaryTest extends TestCase {
 
     public void testAlienOrder() {
         AlienDictionary ad = new AlienDictionary();
-//        ad.alienOrder(new String[]{"wrt","wrf","er","ett","rftt"});
+        ad.alienOrder(new String[]{"wrt","wrf","er","ett","rftt"});
         ad.alienOrder(new String[]{"ab", "a"});
     }
 }

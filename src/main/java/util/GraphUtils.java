@@ -7,10 +7,9 @@
 
 package util;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class GraphUtils {
 
@@ -50,6 +49,47 @@ public class GraphUtils {
 
         if ( w == 0 )
             return new int[]{};
+        return ans;
+    }
+
+    public static List<Character> topologicalSort(Map<Character, Set<Character>> adj) {
+        final int n = adj.size();
+        List<Character> ans = new ArrayList<>(n);
+
+        // Find out indegrees of all the vertices
+        Map<Character, Long> indegreesMap = adj.values()
+            .stream()
+            .flatMap(Collection::stream)
+            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        // Put in queue all those vertices whose indegree = 0
+        Queue<Character> q = adj.keySet()
+                .stream()
+                .filter(vertex -> !indegreesMap.containsKey(vertex))
+                .collect(Collectors.toCollection(LinkedList::new));
+
+        // Mark all the vertices present in queue as visited
+        Set<Character> visited = new HashSet<>(q);
+
+        while (!q.isEmpty()) {
+            Character from = q.remove();
+            ans.add(from);
+            for (Character to: adj.getOrDefault(from, Collections.emptySet())) {
+                if (!visited.contains(to)) {
+                    // Remove incoming edge of 'to'
+                    indegreesMap.put(to, indegreesMap.get(to) - 1);
+                    if (indegreesMap.get(to) == 0) {
+                        visited.add(to);
+                        q.add(to);
+                    }
+                }
+            }
+        }
+
+        // Check if there is a cycle
+        if (ans.size() != n)
+            return null;
+
         return ans;
     }
 
