@@ -54,6 +54,27 @@ public class MathUtils {
     }
 
     /**
+     * Returns seive of prime numbers upto (not including) the given number
+     * False values indicate primality
+     * True values indicates non-primality
+     * @param number
+     * @return Returns seive of prime numbers upto (not including) the given number
+     */
+    public static boolean[] primeNumbersSeive(int number) {
+        boolean[] seive = new boolean[number];
+        if ( number > 2 ) {
+            for ( int num = 2; num * num <= number - 1; ++num ) {
+                if ( !seive[num] ) {
+                    for ( int mult = num * 2; mult < seive.length; mult += num ) {
+                        seive[mult] = true;
+                    }
+                }
+            }
+        }
+        return seive;
+    }
+
+    /**
      * Returns list of all prime numbers upto (not including) the specified number
      * @param number
      * @return List of Integer of all prime numbers upto given number (exclusive)
