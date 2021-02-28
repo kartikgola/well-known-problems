@@ -1,0 +1,16 @@
+/*
+ * Author: Kartik Gola
+ * Date: 2/28/21, 5:35 PM
+ * Copyright (c) 2021 | https://rattl.io
+ * Problem URL:
+ */
+
+package fundamentals.reflection.annotations;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyPrimaryKeyAnnotation {
+
+}

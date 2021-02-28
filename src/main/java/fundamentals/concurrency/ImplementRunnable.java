@@ -5,7 +5,7 @@
  * Problem URL:
  */
 
-package multithreading;
+package fundamentals.concurrency;
 
 public class ImplementRunnable {
 
