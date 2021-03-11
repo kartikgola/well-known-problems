@@ -4,21 +4,12 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-import codechef.JUNE20B.*;
-import codeforces.MaximumXorSecondary;
-import codeforces.MinimalString;
-import ds.SegmentTree;
-import geeksforgeeks.DiagonalSum;
-import geeksforgeeks.NextGreaterElement;
-import leetcode.OptimalUtilization;
-import leetcode.ReverseBits;
-import leetcode.ValidIpAddress;
-
-import java.util.*;
+import projecteuler.Problem1;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        SegmentTree st = new SegmentTree(new int[]{5, 6, 7}, SegmentTree.RangeQueryType.Sum);
+        Problem1 p1 = new Problem1();
+        System.out.println(p1.solve());
     }
 }

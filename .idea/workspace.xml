@@ -22,36 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding String">
-      <change afterPath="$PROJECT_DIR$/src/main/java/algo/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BuddyStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ClimbingStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FibonacciNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FlippingAnImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/HouseRobber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/HouseRobber2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MaximumDifferenceBetweenNodeAndAncestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReverseLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RunningSumOf1DArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SearchInABinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/SortList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d1daa337-e096-480a-b2cf-8abcf439824f" name="Default Changelist" comment="Adding StrobogrammaticNumber">
+      <change afterPath="$PROJECT_DIR$/src/main/java/algo/DecreasingTripletSubsequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CountSquareSubmatricesWithAllOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FractionToRecurringDecimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/projecteuler/Problem2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/FractionToRecurringDecimalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/CutOffTreesForGolfEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/CutOffTreesForGolfEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/MajorityElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/MajorityElement2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/MergeKSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PascalsTriangle2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PascalsTriangle2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RemoveNthNodeFromEndOfList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SplitLinkedListInParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SplitLinkedListInParts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/SwapNodesInPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projecteuler/Problem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projecteuler/Problem1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit3 Test Class" />
         <option value="Interface" />
+        <option value="JUnit3 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -107,7 +92,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="NamedScopeManager">
     <order>
@@ -140,107 +124,84 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="util" />
       <recent name="leetcode" />
+      <recent name="util" />
       <recent name="geeksforgeeks" />
       <recent name="ctci.chapter5" />
       <recent name="ctci.chapter1" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="leetcode" />
-      <recent name="codeforces" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="codechef.FEB21C" />
+      <recent name="projecteuler" />
+      <recent name="leetcode" />
+      <recent name="codeforces" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MathUtilsTest.testPrimeFactors">
-    <configuration name="CountPrimesTest.testCountPrimes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.CountPrimesTest.testCountPrimes&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+  <component name="RunManager" selected="Gradle.AlienDictionaryTest.testAlienOrder">
+    <configuration name="ATWNT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codechef.FEB21C.ATWNT" />
+      <module name="well-known-problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.FEB21C.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="FaultyKeyboardTest.testPossibleStrings" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;leetcode.FaultyKeyboardTest.testPossibleStrings&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="FROGS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codechef.FEB21C.FROGS" />
+      <module name="well-known-problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.FEB21C.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="HeightOfBinaryTreeWithConnectedLeafNodesTest.testHeight" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;geeksforgeeks.HeightOfBinaryTreeWithConnectedLeafNodesTest.testHeight&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="PRIGAME" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codechef.FEB21C.PRIGAME" />
+      <module name="well-known-problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.FEB21C.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MathUtilsTest.testPrimeFactors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;util.MathUtilsTest.testPrimeFactors&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="TEAMNAME" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codechef.FEB21C.TEAMNAME" />
+      <module name="well-known-problems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.FEB21C.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="MathUtilsTest.testPrimeNumbersUpto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AlienDictionaryTest.testAlienOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;util.MathUtilsTest.testPrimeNumbersUpto&quot;" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.AlienDictionaryTest.testAlienOrder&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -256,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MathUtilsTest.testPrimeFactors" />
-        <item itemvalue="Gradle.MathUtilsTest.testPrimeNumbersUpto" />
-        <item itemvalue="Gradle.FaultyKeyboardTest.testPossibleStrings" />
-        <item itemvalue="Gradle.CountPrimesTest.testCountPrimes" />
-        <item itemvalue="Gradle.HeightOfBinaryTreeWithConnectedLeafNodesTest.testHeight" />
+        <item itemvalue="Gradle.AlienDictionaryTest.testAlienOrder" />
+        <item itemvalue="Application.ATWNT" />
+        <item itemvalue="Application.PRIGAME" />
+        <item itemvalue="Application.TEAMNAME" />
+        <item itemvalue="Application.FROGS" />
       </list>
     </recent_temporary>
   </component>
@@ -275,181 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591602265907</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Adding CoinChange problem">
-      <created>1591699459019</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1591699459019</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Adding more solutions from LC">
-      <created>1591792298271</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1591792298271</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Adding copyrights!">
-      <created>1591792843828</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1591792843828</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updating website name in copyrights!">
-      <created>1591792958001</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1591792958001</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Adding solutions from codechef">
-      <created>1591971109659</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1591971109659</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Adding solutions from codechef">
-      <created>1592326241210</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1592326241210</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Adding solutions from leetcode">
-      <created>1592736716593</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1592736716593</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Adding Trapping rainwater">
-      <created>1592886963424</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1592886963424</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Adding solutions from LeetCode">
-      <created>1594391648959</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1594391648959</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Adding NetworkDelayTime from LeetCode">
-      <created>1594454824518</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1594454824518</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Adding comment in NetworkDelayTime!">
-      <created>1594454885368</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1594454885368</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding 2 more LC solutions!">
-      <created>1594470285123</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1594470285123</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Adding comments in CheapestFlightWithinKStops">
-      <created>1594476845428</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1594476845428</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Adding ValidateBinarySearchTree">
-      <created>1594476856096</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1594476856096</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Adding new solutions from LC!">
-      <created>1595088043522</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1595088043522</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Adding new solutions from LC!">
-      <created>1595416403615</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1595416403615</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adding TicTacToe.java">
-      <created>1595600171621</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1595600171621</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Adding HeightOfBinaryTreeWithConnectedLeafNodes">
-      <created>1595600182796</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1595600182796</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Adding FindMinimumInSortedRotatedArray">
-      <created>1595753018846</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1595753018846</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Adding changes to Trie and related problems!">
-      <created>1596720117667</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1596720117667</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Adding IsGraphBipartite">
-      <created>1596720289518</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1596720289518</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Adding RemoveInvalidParentheses.java">
-      <created>1596740633005</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1596740633005</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Adding FindAllDuplicatesInAnArray.java">
-      <created>1596740654178</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1596740654178</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Adding VerticalOrderTraversalOfABinaryTree.java &amp; other comments!">
-      <created>1596813716705</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1596813716705</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Adding comment">
-      <created>1596813780682</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1596813780682</updated>
     </task>
     <task id="LOCAL-00026" summary="Adding ClosestBinarySearchTreeValue.java">
       <created>1596873502144</created>
@@ -549,7 +335,252 @@
       <option name="project" value="LOCAL" />
       <updated>1602682477522</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Adding LC solutions!">
+      <created>1610566833962</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1610566833962</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Adding AlienDictionary">
+      <created>1612323492357</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323492357</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Adding DeleteDuplicates">
+      <created>1612323505843</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323505843</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Adding FractionAdditionAndSubtraction">
+      <created>1612323560105</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323560105</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Adding NumberOf1Bits">
+      <created>1612323568112</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323568112</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Adding RectangleOverlap">
+      <created>1612323606813</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323606813</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Adding more solutions.">
+      <created>1612323636748</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323636748</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Updating comment.">
+      <created>1612323652069</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323652069</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Adding DIStringMatch">
+      <created>1612323668519</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323668519</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Adding FindCityWithSmallestNumberOfNeighbors">
+      <created>1612461663228</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1612461663228</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Adding LongestHarmoniousSubsequence">
+      <created>1612508520316</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1612508520317</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Adding LinkedListCycle">
+      <created>1612508702429</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1612508702429</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Adding comment in LongestHarmoniousSubsequence">
+      <created>1612508711722</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1612508711722</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Adding ShortestDistanceToACharacter">
+      <created>1612703916551</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1612703916551</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Adding Utils">
+      <created>1612723751108</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1612723751108</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Adding NextPermutation">
+      <created>1612723759781</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1612723759781</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Updating code">
+      <created>1612723796239</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1612723796239</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Adding PeekingIterator">
+      <created>1612800089821</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1612800089822</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Adding NumberOfDistinctIslands">
+      <created>1612885134399</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1612885134399</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Adding ConvertBSTToGreaterTree">
+      <created>1612893646458</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1612893646458</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Adding comments">
+      <created>1612895359891</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1612895359891</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Adding ArrayUtils">
+      <created>1612895385919</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1612895385919</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Adding RandomPickIndex">
+      <created>1612933303483</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1612933303483</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Adding EditDistance">
+      <created>1612968940863</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1612968940863</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Updatin code in IsGraphBipartite">
+      <created>1613308463859</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1613308463859</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Updating SmallestSubtreeWithAllTheDeepestNodes">
+      <created>1613308472923</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1613308472923</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Adding solutions to codechef Feb21C">
+      <created>1613651080103</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1613651080104</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Adding Method to get primerNumbersSeive">
+      <created>1613651118562</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1613651118562</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Adding changes to GraphUtils">
+      <created>1613655927012</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1613655927012</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Adding changes to AlienDictionary">
+      <created>1613655936402</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1613655936402</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Adding ArithmeticSlices">
+      <created>1613659174027</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1613659174027</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Adding examples of Java concurrency">
+      <created>1614499965432</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1614499965433</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Adding IntersectionOfTwoLinkedList">
+      <created>1614855865971</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1614855865972</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Adding AddOneRowToTree">
+      <created>1615300674360</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1615300674361</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Adding StrobogrammaticNumber">
+      <created>1615307042839</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1615307042839</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,101 +610,116 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding HeightOfBinaryTreeWithConnectedLeafNodes" />
-    <MESSAGE value="Adding FindMinimumInSortedRotatedArray" />
-    <MESSAGE value="Adding changes to Trie and related problems!" />
-    <MESSAGE value="Adding problem url" />
-    <MESSAGE value="Adding IsGraphBipartite" />
-    <MESSAGE value="Adding RemoveInvalidParentheses.java" />
-    <MESSAGE value="Adding FindAllDuplicatesInAnArray.java" />
-    <MESSAGE value="Adding VerticalOrderTraversalOfABinaryTree.java &amp; other comments!" />
-    <MESSAGE value="Adding comment" />
-    <MESSAGE value="Adding ClosestBinarySearchTreeValue.java" />
-    <MESSAGE value="Adding Utility methods" />
-    <MESSAGE value="Updating imports!" />
-    <MESSAGE value="Adding FaultyKeyboard" />
-    <MESSAGE value="Adding utility methods" />
-    <MESSAGE value="Adding AddStrings" />
-    <MESSAGE value="Adding InsertIntoABinarySearchTree" />
-    <MESSAGE value="Adding isPalindrome" />
-    <MESSAGE value="Adding LinkedListUtils" />
-    <MESSAGE value="Adding MaximumDistanceInArrays" />
-    <MESSAGE value="Modifying existing solutions!" />
-    <MESSAGE value="Adding solution for MinimumNumberOfArrowsToBurstBalloons" />
-    <MESSAGE value="Adding solutions for BinarySearch and RemoveCoveredIntervals" />
-    <MESSAGE value="Adding OOD solution for Key-Value Storage" />
-    <MESSAGE value="Replacing String with StringBuilder in SerializeAndDeserializeBinaryTree" />
-    <MESSAGE value="Adding String" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding String" />
+    <MESSAGE value="Adding LongestHarmoniousSubsequence" />
+    <MESSAGE value="Adding LinkedListCycle" />
+    <MESSAGE value="Adding comment in LongestHarmoniousSubsequence" />
+    <MESSAGE value="Adding ShortestDistanceToACharacter" />
+    <MESSAGE value="Adding Utils" />
+    <MESSAGE value="Adding NextPermutation" />
+    <MESSAGE value="Updating code" />
+    <MESSAGE value="Adding PeekingIterator" />
+    <MESSAGE value="Adding NumberOfDistinctIslands" />
+    <MESSAGE value="Adding ConvertBSTToGreaterTree" />
+    <MESSAGE value="Adding comments" />
+    <MESSAGE value="Adding ArrayUtils" />
+    <MESSAGE value="Adding RandomPickIndex" />
+    <MESSAGE value="Adding EditDistance" />
+    <MESSAGE value="Updatin code in IsGraphBipartite" />
+    <MESSAGE value="Updating SmallestSubtreeWithAllTheDeepestNodes" />
+    <MESSAGE value="Adding solutions to codechef Feb21C" />
+    <MESSAGE value="Adding Method to get primerNumbersSeive" />
+    <MESSAGE value="Adding changes to GraphUtils" />
+    <MESSAGE value="Adding changes to AlienDictionary" />
+    <MESSAGE value="Adding ArithmeticSlices" />
+    <MESSAGE value="Adding examples of Java concurrency" />
+    <MESSAGE value="Adding IntersectionOfTwoLinkedList" />
+    <MESSAGE value="Adding AddOneRowToTree" />
+    <MESSAGE value="Adding StrobogrammaticNumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding StrobogrammaticNumber" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="622" y="171" key="#com.intellij.ide.util.MemberChooser" timestamp="1602328705258">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="653" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1614439804315">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="622" y="171" key="#com.intellij.ide.util.MemberChooser/0.23.1680.973@0.23.1680.973" timestamp="1602328705258" />
-    <state x="230" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600360327565">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="653" y="232" key="#com.intellij.ide.util.MemberChooser/0.23.1680.974@0.23.1680.974" timestamp="1614439804315" />
+    <state x="585" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612774197753">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="230" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.973@0.23.1680.973" timestamp="1600360327565" />
-    <state width="1638" height="324" key="GridCell.Tab.0.bottom" timestamp="1602754030014">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="585" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.974@0.23.1680.974" timestamp="1612774197753" />
+    <state width="463" height="466" key="DebuggerActiveHint" timestamp="1613330665111">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1602754030014" />
-    <state width="1638" height="324" key="GridCell.Tab.0.center" timestamp="1602754030013">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="463" height="466" key="DebuggerActiveHint/0.23.1680.974@0.23.1680.974" timestamp="1613330665111" />
+    <state width="1638" height="315" key="GridCell.Tab.0.bottom" timestamp="1613710885829">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1602754030013" />
-    <state width="1638" height="324" key="GridCell.Tab.0.left" timestamp="1602754030013">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="297" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1610345500097" />
+    <state width="1638" height="315" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1613710885829" />
+    <state width="1638" height="315" key="GridCell.Tab.0.center" timestamp="1613710885828">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1602754030013" />
-    <state width="1638" height="324" key="GridCell.Tab.0.right" timestamp="1602754030014">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="297" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1610345500096" />
+    <state width="1638" height="315" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1613710885828" />
+    <state width="1638" height="315" key="GridCell.Tab.0.left" timestamp="1613710885828">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1602754030014" />
-    <state width="1638" height="324" key="GridCell.Tab.1.bottom" timestamp="1602754030016">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="297" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1610345500096" />
+    <state width="1638" height="315" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1613710885828" />
+    <state width="1638" height="315" key="GridCell.Tab.0.right" timestamp="1613710885829">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.1.bottom/0.23.1680.973@0.23.1680.973" timestamp="1602754030016" />
-    <state width="1638" height="324" key="GridCell.Tab.1.center" timestamp="1602754030015">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="297" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1610345500096" />
+    <state width="1638" height="315" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1613710885829" />
+    <state width="1638" height="285" key="GridCell.Tab.1.bottom" timestamp="1613710885810">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.1.center/0.23.1680.973@0.23.1680.973" timestamp="1602754030015" />
-    <state width="1638" height="324" key="GridCell.Tab.1.left" timestamp="1602754030015">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="285" key="GridCell.Tab.1.bottom/0.23.1680.974@0.23.1680.974" timestamp="1613710885810" />
+    <state width="1638" height="285" key="GridCell.Tab.1.center" timestamp="1613710885810">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.1.left/0.23.1680.973@0.23.1680.973" timestamp="1602754030015" />
-    <state width="1638" height="324" key="GridCell.Tab.1.right" timestamp="1602754030015">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="285" key="GridCell.Tab.1.center/0.23.1680.974@0.23.1680.974" timestamp="1613710885810" />
+    <state width="1638" height="285" key="GridCell.Tab.1.left" timestamp="1613710885810">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state width="1638" height="324" key="GridCell.Tab.1.right/0.23.1680.973@0.23.1680.973" timestamp="1602754030015" />
-    <state x="258" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1598634726623">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="285" key="GridCell.Tab.1.left/0.23.1680.974@0.23.1680.974" timestamp="1613710885810" />
+    <state width="1638" height="285" key="GridCell.Tab.1.right" timestamp="1613710885810">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="258" y="23" key="SettingsEditor/0.23.1680.973@0.23.1680.973" timestamp="1598634726623" />
-    <state x="373" y="202" key="Vcs.Push.Dialog.v2" timestamp="1602682537368">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="285" key="GridCell.Tab.1.right/0.23.1680.974@0.23.1680.974" timestamp="1613710885810" />
+    <state x="168" y="109" key="MergeDialog" timestamp="1612703838740">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="373" y="202" key="Vcs.Push.Dialog.v2/0.23.1680.973@0.23.1680.973" timestamp="1602682537368" />
-    <state x="467" y="184" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600351051562">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="168" y="109" key="MergeDialog/0.23.1680.974@0.23.1680.974" timestamp="1612703838740" />
+    <state x="478" y="278" key="MultipleFileMergeDialog" timestamp="1612703840372">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="467" y="184" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.973@0.23.1680.973" timestamp="1600351051562" />
-    <state x="638" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606493404336">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="478" y="278" key="MultipleFileMergeDialog/0.23.1680.974@0.23.1680.974" timestamp="1612703840372" />
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2" timestamp="1615307048225">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state x="638" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.973@0.23.1680.973" timestamp="1606493404336" />
-    <state x="567" y="292" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1600351842572">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="320" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.831@0.23.1440.831" timestamp="1615307048225" />
+    <state x="373" y="202" key="Vcs.Push.Dialog.v2/0.23.1680.974@0.23.1680.974" timestamp="1614499971880" />
+    <state x="547" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615307056610">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state x="567" y="292" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.973@0.23.1680.973" timestamp="1600351842572" />
-    <state x="487" y="32" width="707" height="952" key="find.popup" timestamp="1602691392180">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="547" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.831@0.23.1440.831" timestamp="1615307056610" />
+    <state x="638" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.974@0.23.1680.974" timestamp="1614519583536" />
+    <state x="606" y="302" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1613654556181">
+      <screen x="0" y="23" width="1680" height="974" />
     </state>
-    <state x="487" y="32" width="707" height="952" key="find.popup/0.23.1680.973@0.23.1680.973" timestamp="1602691392180" />
-    <state x="449" y="96" width="782" height="800" key="search.everywhere.popup" timestamp="1606562762268">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="606" y="302" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.973@0.23.1680.973" timestamp="1610118608994" />
+    <state x="606" y="302" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1680.974@0.23.1680.974" timestamp="1613654556181" />
+    <state x="484" y="276" width="606" height="501" key="find.popup" timestamp="1614854862565">
+      <screen x="0" y="23" width="1440" height="831" />
     </state>
-    <state x="449" y="96" width="782" height="800" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1606562762268" />
+    <state x="484" y="276" width="606" height="501" key="find.popup/0.23.1440.831@0.23.1440.831" timestamp="1614854862565" />
+    <state x="487" y="32" width="707" height="952" key="find.popup/0.23.1680.973@0.23.1680.973" timestamp="1608652000865" />
+    <state x="565" y="320" width="707" height="587" key="find.popup/0.23.1680.974@0.23.1680.974" timestamp="1613654563591" />
+    <state x="385" y="85" width="671" height="684" key="search.everywhere.popup" timestamp="1614855576195">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="385" y="85" width="671" height="684" key="search.everywhere.popup/0.23.1440.831@0.23.1440.831" timestamp="1614855576195" />
+    <state x="449" y="96" width="782" height="800" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1609575160314" />
+    <state x="449" y="96" width="782" height="801" key="search.everywhere.popup/0.23.1680.974@0.23.1680.974" timestamp="1614431455405" />
   </component>
 </project>
