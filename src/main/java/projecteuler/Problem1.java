@@ -8,4 +8,14 @@
 package projecteuler;
 
 public class Problem1 {
+
+    public int solve() {
+        final int LIMIT = 1000;
+        int sum = 0;
+        for (int num = 1; num < LIMIT; ++num) {
+            if (num % 5 == 0 || num % 3 == 0)
+                sum += num;
+        }
+        return sum;
+    }
 }
