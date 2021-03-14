@@ -14,41 +14,26 @@ public class FindTheCelebrity {
     }
 
     public int findCelebrity(int n) {
-        if ( n == 0 )
+        if (n == 0)
             return 0;
 
-        int[] in = new int[n];
-
-        // Person 'i' is not celebrity if it has outgoing edge
-        // In worst, case, when everybody is a celebrity, this loop will run O(n) times
-        for ( int i = 0; i < n; ++i ) {
-            if ( in[i] != -1 )
-                for ( int j = 0; j < n; ++j ) {
-                    if ( i != j ) {
-                        if ( knows(i, j) ) {
-                            in[i] = -1; // i cannot be celebrity if it knows anybody
-                            break;
-                        } else { // j cannot be celebrity if even 1 person doesn't know him
-                            in[j] = -1;
-                        }
-                    }
-                }
-        }
-
-        // For the possible celeb, make sure, everybody knows him/her
-        for ( int i = 0; i < n; ++i ) {
-            if ( in[i] == 0 ) {
-                for ( int j = 0; j < n; ++j ) {
-                    if ( i != j ) {
-                        if ( knows(j, i) ) {
-                            in[i]++;
-                        } else break;
-                    }
-                }
-                return in[i] == n - 1 ? i : -1;
+        // Since there is only 1 celebrity in the party if 'i' knows 'j'
+        // 'i' cannot be the celebrity since he knows 'j'. So, our celebrity becomes 'j'
+        int celebrity = 0;
+        for (int i = 0; i < n; ++i) {
+            if (knows(celebrity, i)) {
+                celebrity = i;
             }
         }
 
-        return -1;
+        for (int i = 0; i < n; ++i) {
+            // Check if everybody knows this celebrity
+            // And that this celebrity does not know anybody else
+            if (!knows(i, celebrity) || (celebrity != i && knows(celebrity, i))) {
+                return -1;
+            }
+        }
+
+        return celebrity;
     }
 }

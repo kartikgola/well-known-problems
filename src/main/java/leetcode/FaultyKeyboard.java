@@ -29,7 +29,7 @@ public class FaultyKeyboard {
         if ( offset == input.length() )
             return ans;
 
-        TrieNode curr = trie.root;
+        TrieNode curr = trie.getRoot();
         for ( int i = offset; i < input.length(); ++i ) {
             char ch = input.charAt(i);
             if ( ch == ' ' ) {
@@ -43,10 +43,10 @@ public class FaultyKeyboard {
             if ( curr.children[ch - 'a'] != null ) {
                 curr = curr.children[ch - 'a'];
                 str += ch;
-            } else if ( curr.isComplete && trie.root.children[ch - 'a'] != null ) {
+            } else if ( curr.isComplete && trie.getRoot().children[ch - 'a'] != null ) {
                 // Check if we can end str with ch & start a new word with ch
                 str += ch;
-                curr = trie.root.children[ch - 'a'];
+                curr = trie.getRoot().children[ch - 'a'];
             } else {
                 return ans;
             }
