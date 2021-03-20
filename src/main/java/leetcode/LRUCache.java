@@ -2,118 +2,77 @@
  * Author: Kartik Gola
  * Date: 10/06/20, 5:53 PM
  * Copyright (c) 2020 | https://rattl.io
+ * Problem URL: https://leetcode.com/problems/lru-cache/
  */
 
 package leetcode;
+
+import ds.DoublyNode;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class LRUCache {
 
-    class DLinkedNode {
-        int key;
-        int value;
-        DLinkedNode pre;
-        DLinkedNode post;
+    private DoublyNode<Integer> begin = new DoublyNode<>();
+    private DoublyNode<Integer> end = new DoublyNode<>();
+    Map<Integer, DoublyNode<Integer>> map = new HashMap<>();
+    private final int CAPACITY;
+
+    private DoublyNode<Integer> getLast() {
+        if  (end.prev != begin)
+            return end.prev;
+        return null;
     }
 
-    /**
-     * Always add the new node right after head;
-     */
-    private void addNode(DLinkedNode node) {
-
-        node.pre = head;
-        node.post = head.post;
-
-        head.post.pre = node;
-        head.post = node;
+    private void remove(DoublyNode<Integer> node) {
+        DoublyNode<Integer> prev = node.prev;
+        DoublyNode<Integer> next = node.next;
+        prev.next = next;
+        next.prev = prev;
     }
 
-    /**
-     * Remove an existing node from the linked list.
-     */
-    private void removeNode(DLinkedNode node){
-        DLinkedNode pre = node.pre;
-        DLinkedNode post = node.post;
-
-        pre.post = post;
-        post.pre = pre;
+    private void addFirst(DoublyNode<Integer> node) {
+        DoublyNode<Integer> next = begin.next;
+        begin.next = node;
+        node.prev = begin;
+        node.next = next;
+        next.prev = node;
     }
 
-    /**
-     * Move certain node in between to the head.
-     */
-    private void moveToHead(DLinkedNode node){
-        this.removeNode(node);
-        this.addNode(node);
+    private void move2Front(DoublyNode<Integer> node) {
+        remove(node);
+        addFirst(node);
     }
 
-    // pop the current tail.
-    private DLinkedNode popTail(){
-        DLinkedNode res = tail.pre;
-        this.removeNode(res);
-        return res;
-    }
-
-    private Map<Integer, DLinkedNode> cache = new HashMap<>();
-    private int count;
-    private int capacity;
-    private DLinkedNode head, tail;
-
-    public LRUCache(int capacity) {
-        this.count = 0;
-        this.capacity = capacity;
-
-        head = new DLinkedNode();
-        head.pre = null;
-
-        tail = new DLinkedNode();
-        tail.post = null;
-
-        head.post = tail;
-        tail.pre = head;
+    public LRUCache(int cap) {
+        CAPACITY = cap;
+        begin.next = end;
+        begin.prev = end;
+        end.prev = begin;
+        end.next = begin;
     }
 
     public int get(int key) {
-
-        DLinkedNode node = cache.get(key);
-        if(node == null){
-            return -1; // should raise exception here.
-        }
-
-        // move the accessed node to the head;
-        this.moveToHead(node);
-
-        return node.value;
+        if (!map.containsKey(key))
+            return -1;
+        DoublyNode<Integer> node = map.get(key);
+        move2Front(node);
+        return node.val;
     }
-
 
     public void put(int key, int value) {
-        DLinkedNode node = cache.get(key);
-
-        if(node == null){
-
-            DLinkedNode newNode = new DLinkedNode();
-            newNode.key = key;
-            newNode.value = value;
-
-            this.cache.put(key, newNode);
-            this.addNode(newNode);
-
-            ++count;
-
-            if(count > capacity){
-                // pop the tail
-                DLinkedNode tail = this.popTail();
-                this.cache.remove(tail.key);
-                --count;
+        if (map.containsKey(key)) {
+            move2Front(map.get(key));
+            map.get(key).val = value;
+        } else {
+            if (map.size() == CAPACITY) {
+                map.remove(getLast().key);
+                remove(getLast());
             }
-        }else{
-            // update the value.
-            node.value = value;
-            this.moveToHead(node);
+            DoublyNode<Integer> node = new DoublyNode<>(key, value);
+            addFirst(node);
+            map.put(key, node);
         }
     }
-
 }

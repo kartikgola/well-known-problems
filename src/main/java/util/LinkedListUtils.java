@@ -27,4 +27,35 @@ public class LinkedListUtils {
 
         return 2 * count + ( second == null ? 0 : 1 );
     }
+
+    public static ListNode get(ListNode head, int index) {
+        ListNode curr = head;
+        while (index-- > 0) {
+            curr = curr.next;
+        }
+        return curr;
+    }
+
+    public static ListNode add(ListNode head, ListNode node, int index) {
+        ListNode dummy = new ListNode(-1);
+        ListNode prev = dummy;
+        // -1 -> 0 -> 1
+        for (int i = 0; i < index; ++i) {
+            prev = prev.next;
+        }
+        ListNode next = prev.next;
+        prev.next = node;
+        node.next = next;
+        return dummy.next;
+    }
+
+    public static ListNode remove(ListNode head, int index) {
+        ListNode dummy = new ListNode(-1);
+        ListNode prev = dummy;
+        for (int i = 0; i < index; ++i) {
+            prev = prev.next;
+        }
+        prev.next = prev.next.next;
+        return dummy.next;
+    }
 }

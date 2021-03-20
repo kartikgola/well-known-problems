@@ -2,6 +2,7 @@
  * Author: Kartik Gola
  * Date: 10/06/20, 5:53 PM
  * Copyright (c) 2020 | https://rattl.io
+ * Problem URL: https://leetcode.com/problems/coin-change/
  */
 
 package leetcode;
@@ -35,20 +36,20 @@ public class CoinChange {
     }
 
     public int coinChangeBottomUp(int[] coins, int amount) {
-        int[] map = new int[amount + 1];
-        map[0] = 0;
+        int[] dp = new int[amount + 1];
+        dp[0] = 0;
 
-        for ( int a = 1; a <= amount; ++a ) {
-            map[a] = Integer.MAX_VALUE;
-            for ( int coin : coins ) {
-                if (a - coin >= 0 && map[a - coin] > -1) {
-                    map[a] = Math.min(map[a], map[a - coin] + 1);
+        for (int amt = 1; amt <= amount; ++amt) {
+            dp[amt] = Integer.MAX_VALUE;
+            for (int coin : coins) {
+                if (amt - coin >= 0 && dp[amt - coin] > -1) {
+                    dp[amt] = Math.min(dp[amt], dp[amt - coin] + 1);
                 }
             }
-            map[a] = map[a] == Integer.MAX_VALUE ? -1 : map[a];
+            dp[amt] = dp[amt] == Integer.MAX_VALUE ? -1 : dp[amt];
         }
 
-        return map[amount];
+        return dp[amount];
     }
 
 }

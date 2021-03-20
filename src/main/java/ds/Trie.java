@@ -8,7 +8,27 @@ package ds;
 
 public class Trie {
 
-    public TrieNode root = new TrieNode('#');
+    private final TrieNode root = new TrieNode('#');
+    private int leavesDistance = 0;
+
+    public TrieNode getRoot() {
+        return root;
+    }
+
+    public int getLeavesDistance() {
+        countLeavesDistance(root, 0);
+        return leavesDistance;
+    }
+
+    public int countLeavesDistance(TrieNode curr, int prev) {
+        int sum = 0;
+        for (TrieNode child: curr.children) {
+            if (child != null) {
+                sum += countLeavesDistance(child, prev+1);
+            }
+        }
+        return sum == 0 ? prev : sum;
+    }
 
     public void add(String word) {
         TrieNode curr = root;
