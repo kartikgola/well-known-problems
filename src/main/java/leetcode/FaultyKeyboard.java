@@ -7,8 +7,8 @@
 
 package leetcode;
 
-import ds.Trie;
-import ds.TrieNode;
+import ds.trie.Trie;
+import ds.trie.TrieNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,13 +40,13 @@ public class FaultyKeyboard {
                 ch = faultyChar;
             }
             // Check if we can use ch to extend ongoing str
-            if ( curr.children[ch - 'a'] != null ) {
-                curr = curr.children[ch - 'a'];
+            if ( curr.children.containsKey(ch) ) {
+                curr = curr.children.get(ch);
                 str += ch;
-            } else if ( curr.isComplete && trie.getRoot().children[ch - 'a'] != null ) {
+            } else if ( curr.isComplete && trie.getRoot().children.containsKey(ch) ) {
                 // Check if we can end str with ch & start a new word with ch
                 str += ch;
-                curr = trie.getRoot().children[ch - 'a'];
+                curr = trie.getRoot().children.get(ch);
             } else {
                 return ans;
             }

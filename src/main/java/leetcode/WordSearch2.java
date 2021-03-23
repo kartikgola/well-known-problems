@@ -6,8 +6,8 @@
 
 package leetcode;
 
-import ds.Trie;
-import ds.TrieNode;
+import ds.trie.Trie;
+import ds.trie.TrieNode;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -26,7 +26,7 @@ public class WordSearch2 {
             return res;
         TrieNode current = null;
         if ( parent == null ) current = t.startsWith(Character.toString(board[i][j]));
-        else current = parent.children[board[i][j] - 'a'];
+        else current = parent.children.getOrDefault(board[i][j], null);
 
         if ( current == null )
             return res;
