@@ -11,35 +11,24 @@ import java.util.*;
 
 public class VowelSpellcheck {
 
-    private final Set<Character> vowels = new HashSet<Character>(){{
-        add('a');
-        add('e');
-        add('i');
-        add('o');
-        add('u');
-    }};
-
-    private String replaceVowels(String word, String replacement) {
-        StringBuilder sb = new StringBuilder();
-        for (Character ch: word.toCharArray()) {
-            if (vowels.contains(ch)) {
-                sb.append(replacement);
-            } else {
-                sb.append(ch);
-            }
-        }
-        return sb.toString();
-    }
-
+    /**
+     * Make a map of the form
+     * {
+     *   "k-t-": {
+     *       "kite": ["Kite", "KITE", "kITe", "KITe"]
+     *    }
+     * }
+     */
     public String[] spellchecker(String[] wordlist, String[] queries) {
         final int n = queries.length;
         final String[] ans = new String[n];
         final Map<String, Map<String, Set<String>>> dict = new HashMap<>();
         final String REPLACEMENT = "-";
+        final String VOWELS_REGEX = "[aeiou]";
 
         for (String word: wordlist) {
             String lowerCaseWord = word.toLowerCase();
-            String dashedWord = replaceVowels(lowerCaseWord, REPLACEMENT);
+            String dashedWord = lowerCaseWord.replaceAll(VOWELS_REGEX, REPLACEMENT);
             dict.putIfAbsent(dashedWord, new LinkedHashMap<>());
             dict.get(dashedWord).putIfAbsent(lowerCaseWord, new LinkedHashSet<>());
             dict.get(dashedWord).get(lowerCaseWord).add(word);
@@ -47,7 +36,7 @@ public class VowelSpellcheck {
 
         for (int i = 0; i < queries.length; ++i) {
             String lowerCaseQuery = queries[i].toLowerCase();
-            String dashedQuery = replaceVowels(lowerCaseQuery, REPLACEMENT);
+            String dashedQuery = lowerCaseQuery.replaceAll(VOWELS_REGEX, REPLACEMENT);
             if (dict.containsKey(dashedQuery)) {
                 if (dict.get(dashedQuery).containsKey(lowerCaseQuery)) {
                    if (dict.get(dashedQuery).get(lowerCaseQuery).contains(queries[i])) {
