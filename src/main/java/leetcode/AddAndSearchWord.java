@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.Trie;
+import ds.trie.Trie;
 
 public class AddAndSearchWord {
 
