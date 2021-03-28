@@ -132,7 +132,12 @@ public class MathUtils {
     }
 
     public static boolean isPalindrome(long number) {
-        return String.valueOf(number).equals(new StringBuilder(String.valueOf(number)).reverse().toString());
+        String str = Long.toString(number);
+        for (int i = 0, j = str.length() - 1; i <= j; ++i, --j) {
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+        }
+        return true;
     }
 
     public static long gcd(long a, long b) {
