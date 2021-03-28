@@ -7,7 +7,9 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MathUtils {
 
@@ -102,28 +104,39 @@ public class MathUtils {
     /**
      * Returns all prime factors of the given number in an Integer List
      * @param number
-     * @return List of Integer containing prime factorization of given number
+     * @return Map<Long, Long> where key is the prime factor and value is its power
      */
-//    public static List<Pair<Long, Long>> primeFactors(long number) {
-//        if (number <= 0)
-//            return new ArrayList<>();
-//
-//        List<Pair<Long, Long>> pFactors = new ArrayList<>();
-//        List<Integer> primes = primeNumbersUpto((int)Math.sqrt(number) + 1);
-//        for ( Integer prime : primes ) {
-//            int power = 0;
-//            while ( number > 0 && number % prime == 0 ) {
-//                number = number / prime;
-//                power++;
-//            }
-//            if (power > 0) {
-//                pFactors.add(new Pair<>(prime, power));
-//            }
-//        }
-//        if (pFactors.isEmpty()) {
-//            pFactors.add(new Pair<>(number, 1));
-//        }
-//        return pFactors;
-//    }
+    public static Map<Long, Long> primeFactors(long number) {
+        if (number <= 0)
+            return new HashMap<>();
+
+        Map<Long, Long> primeFactors = new HashMap<>();
+        List<Integer> primes = primeNumbersUpto((int)Math.sqrt(number) + 1);
+
+        for (int prime: primes) {
+            long count = 0;
+            while (number % prime == 0) {
+                number /= prime;
+                count++;
+            }
+            if (count > 0) {
+                primeFactors.put((long)prime, count);
+            }
+        }
+
+        if (number > 1) {
+            primeFactors.put(number, 1L);
+        }
+
+        return primeFactors;
+    }
+
+    public static boolean isPalindrome(long number) {
+        return String.valueOf(number).equals(new StringBuilder(String.valueOf(number)).reverse().toString());
+    }
+
+    public static long gcd(long a, long b) {
+        return a == 0 ? b : gcd(b % a, a);
+    }
 
 }
