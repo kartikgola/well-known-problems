@@ -1,11 +1,11 @@
 /*
  * Author: Kartik Gola
- * Date: 14/10/2020, 21:25
- * Copyright (c) 2020 | https://rattl.io
+ * Date: 4/2/21, 9:32 PM
+ * Copyright (c) 2021 | https://rattl.io
  * Problem URL:
  */
 
-package algo;
+package algo.sorting;
 
 public class MergeSort {
 
