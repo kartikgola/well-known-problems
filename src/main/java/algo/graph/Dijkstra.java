@@ -7,6 +7,7 @@
 
 package algo.graph;
 
+import ds.graph.Graph;
 import ds.graph.UndirectedGraph;
 import javafx.util.Pair;
 
@@ -14,9 +15,9 @@ import java.util.*;
 
 public class Dijkstra {
 
-    public Pair<int[], int[]> dijkstra(UndirectedGraph graph, int source) {
-        int[] dist = new int[graph.size];
-        int[] prev = new int[graph.size];
+    public Pair<int[], int[]> dijkstra(Graph graph, int source) {
+        int[] dist = new int[graph.getSize()];
+        int[] prev = new int[graph.getSize()];
         Arrays.fill(dist, Integer.MAX_VALUE);
         Arrays.fill(prev, -1);
         dist[source] = 0;
@@ -29,7 +30,7 @@ public class Dijkstra {
             int u = pq.poll();
             visited.add(u);
             if (dist[u] != Integer.MAX_VALUE) {
-                for (Map.Entry<Integer, Integer> e: graph.adj.getOrDefault(u, new HashMap<>()).entrySet()) {
+                for (Map.Entry<Integer, Integer> e: graph.getAdj().getOrDefault(u, new HashMap<>()).entrySet()) {
                     int v = e.getKey();
                     int weight = e.getValue();
                     if (weight > 0 && !visited.contains(v) && dist[u] + weight < dist[v]) {
@@ -45,7 +46,7 @@ public class Dijkstra {
     }
 
     public static void main(String[] args) {
-        UndirectedGraph graph = new UndirectedGraph(9);
+        Graph graph = new UndirectedGraph(9);
         // For graph, refer - https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg
         graph.setAdjacencyMatrix(new int[][]{
                 { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
