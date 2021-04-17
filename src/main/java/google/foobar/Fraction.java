@@ -1,10 +1,11 @@
 /*
  * Author: Kartik Gola
- * Date: 10/06/20, 5:53 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Date: 4/17/21, 12:33 PM
+ * Copyright (c) 2021 | https://rattl.io
+ * Problem URL:
  */
 
-package foobar;
+package google.foobar;
 
 public class Fraction {
     long n;
