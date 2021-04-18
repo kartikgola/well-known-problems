@@ -7,9 +7,8 @@
 
 package geeksforgeeks;
 
-import ds.TreeNode;
+import ds.tree.binary.TreeNode;
 import junit.framework.TestCase;
-import leetcode.SerializeAndDeserializeBinaryTree;
 
 public class HeightOfBinaryTreeWithConnectedLeafNodesTest extends TestCase {
 

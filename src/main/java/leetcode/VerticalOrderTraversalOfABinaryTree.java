@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.TreeNode;
+import ds.tree.binary.TreeNode;
 import javafx.util.Pair;
 
 import java.util.ArrayList;

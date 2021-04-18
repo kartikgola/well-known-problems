@@ -6,6 +6,7 @@
 
 package ds;
 
+import ds.tree.segment.LazySegmentTree;
 import junit.framework.TestCase;
 
 public class LazySegmentTreeTest extends TestCase {

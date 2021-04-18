@@ -6,9 +6,9 @@
 
 package leetcode;
 
-import ds.TreeNode;
-import util.Pair;
+import ds.tree.binary.TreeNode;
 
+import javafx.util.Pair;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;

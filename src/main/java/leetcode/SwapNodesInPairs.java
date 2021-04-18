@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.ListNode;
+import ds.linkedlist.ListNode;
 
 public class SwapNodesInPairs {
 

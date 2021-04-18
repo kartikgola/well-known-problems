@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.Node;
+import ds.linkedlist.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -7,7 +7,7 @@
 
 package util;
 
-import ds.ListNode;
+import ds.linkedlist.ListNode;
 
 public class LinkedListUtils {
 

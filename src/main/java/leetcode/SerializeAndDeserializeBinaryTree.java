@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import ds.TreeNode;
+import ds.tree.binary.TreeNode;
 
 import java.util.StringTokenizer;
 

@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.TreeNode;
+import ds.tree.binary.TreeNode;
 
 public class InsertIntoABinarySearchTree {
 

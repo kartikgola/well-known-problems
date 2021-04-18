@@ -144,4 +144,8 @@ public class MathUtils {
         return a == 0 ? b : gcd(b % a, a);
     }
 
+    public static long gcd(int a, int b) {
+        return a == 0 ? b : gcd(b % a, a);
+    }
+
 }

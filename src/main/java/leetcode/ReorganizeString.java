@@ -45,12 +45,12 @@ public class ReorganizeString {
         return new String(res);
     }
 
-    static class Pair {
-        int occ;
+    static class CharOccurance {
+        int occurance;
         char ch;
 
-        Pair(int ct, char ch) {
-            occ = ct;
+        CharOccurance(int ct, char ch) {
+            occurance = ct;
             this.ch = ch;
         }
     }
@@ -60,8 +60,8 @@ public class ReorganizeString {
     public String reorganizeStringWithGreedy(String S) {
         int N = S.length();
         int[] count = new int[26];
-        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) ->
-                a.occ == b.occ ? a.ch - b.ch : b.occ - a.occ);
+        PriorityQueue<CharOccurance> pq = new PriorityQueue<>((a, b) ->
+                a.occurance == b.occurance ? a.ch - b.ch : b.occurance - a.occurance);
 
         for (char c: S.toCharArray())
             count[c - 'a']++;
@@ -69,24 +69,24 @@ public class ReorganizeString {
         for (int i = 0; i < 26; ++i) {
             if (count[i] > 0) {
                 if (count[i] > (N + 1) / 2) return "";
-                pq.add(new Pair(count[i], (char) ('a' + i)));
+                pq.add(new CharOccurance(count[i], (char) ('a' + i)));
             }
         }
 
         StringBuilder res = new StringBuilder();
         while (pq.size() >= 2) {
             // Get the first 2 most frequent characters
-            Pair p1 = pq.poll();
-            Pair p2 = pq.poll();
+            CharOccurance p1 = pq.poll();
+            CharOccurance p2 = pq.poll();
 
             res.append(p1.ch);
             res.append(p2.ch);
 
             // Add the characters back, if their count is > 0
-            if (--p1.occ > 0)
+            if (--p1.occurance > 0)
                 pq.add(p1);
 
-            if (--p2.occ > 0)
+            if (--p2.occurance > 0)
                 pq.add(p2);
         }
 
