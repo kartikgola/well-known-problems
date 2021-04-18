@@ -4,9 +4,11 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package algo;
+package algorithms;
 
 import java.io.IOException;
+
+import algorithms.string.RabinKarpStringMatching;
 import junit.framework.TestCase;
 
 public class RabinKarpStringMatchingTest extends TestCase {

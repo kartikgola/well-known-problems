@@ -5,7 +5,7 @@
  * Problem URL: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
  */
 
-package algo.graph;
+package algorithms.graph;
 
 import ds.graph.Graph;
 import ds.graph.UndirectedGraph;

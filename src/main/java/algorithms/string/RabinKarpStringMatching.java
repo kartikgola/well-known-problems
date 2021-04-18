@@ -4,7 +4,7 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package algo;
+package algorithms.string;
 
 import util.MathUtils;
 
@@ -30,20 +30,20 @@ public class RabinKarpStringMatching {
         return prevHash;
     }
 
-    public boolean solve(String text, String patt) throws IOException {
-        if ( patt.length() > text.length() ) return false;
-        if ( patt.isEmpty() ) return true;
+    public boolean solve(String text, String pattern) throws IOException {
+        if ( pattern.length() > text.length() ) return false;
+        if ( pattern.isEmpty() ) return true;
 
-        long pattHash = getHash(patt);
+        long patternHash = getHash(pattern);
         long textHash = 0;
-        for ( int i = 0; i <= text.length() - patt.length(); ++i ) {
+        for ( int i = 0; i <= text.length() - pattern.length(); ++i ) {
             if ( i == 0 ) {
-                textHash = getHash(text.substring(0, patt.length()));
+                textHash = getHash(text.substring(0, pattern.length()));
             } else {
                 textHash = rollHash(textHash, text.charAt(i - 1),
-                        text.charAt(i + patt.length() - 1), patt.length());
+                        text.charAt(i + pattern.length() - 1), pattern.length());
             }
-            if ( textHash == pattHash )
+            if ( textHash == patternHash )
                 return true;
         }
 

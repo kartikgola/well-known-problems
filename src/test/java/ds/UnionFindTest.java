@@ -7,6 +7,7 @@
 
 package ds;
 
+import ds.disjointset.UnionFind;
 import junit.framework.TestCase;
 
 public class UnionFindTest extends TestCase {

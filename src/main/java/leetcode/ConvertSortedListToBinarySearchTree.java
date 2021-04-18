@@ -6,8 +6,8 @@
 
 package leetcode;
 
-import ds.ListNode;
-import ds.TreeNode;
+import ds.linkedlist.ListNode;
+import ds.tree.binary.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

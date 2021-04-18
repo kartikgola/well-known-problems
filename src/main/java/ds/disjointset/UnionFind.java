@@ -4,7 +4,7 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package ds;
+package ds.disjointset;
 
 import java.util.Arrays;
 

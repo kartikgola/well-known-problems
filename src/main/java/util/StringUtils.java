@@ -13,7 +13,7 @@ public class StringUtils {
 
     /**
      * Checks if a string of length `n` can be evenly divided in `parts` partitions such that
-     * each string all the string partitions are equal
+     * each sub-string in all the string partitions are equal
      * @param str
      * @param parts
      * @return true if `str` can be divided into equal `parts` partitions

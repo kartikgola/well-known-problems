@@ -6,6 +6,7 @@
 
 package ds;
 
+import ds.tree.segment.SegmentTree;
 import junit.framework.TestCase;
 
 public class SegmentTreeTest extends TestCase {

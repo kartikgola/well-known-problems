@@ -4,7 +4,7 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package ds;
+package ds.tree.binary;
 
 public class TreeNode {
     public int val;

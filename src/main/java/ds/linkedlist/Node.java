@@ -5,7 +5,7 @@
  * Problem URL:
  */
 
-package ds;
+package ds.linkedlist;
 
 public class Node {
 
