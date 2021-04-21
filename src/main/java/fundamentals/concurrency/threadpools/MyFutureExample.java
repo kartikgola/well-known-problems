@@ -1,4 +1,4 @@
-package fundamentals.concurrency;
+package fundamentals.concurrency.threadpools;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

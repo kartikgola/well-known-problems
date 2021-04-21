@@ -5,7 +5,7 @@
  * Problem URL:
  */
 
-package fundamentals.concurrency;
+package fundamentals.concurrency.threadpools;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
