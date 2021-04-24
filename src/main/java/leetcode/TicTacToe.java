@@ -15,6 +15,9 @@ public class TicTacToe {
     /** Initialize your data structure here. */
     public TicTacToe(int n) {
         this.n = n;
+        // Moves is an array of dimension [3, 2n+2]
+        // Rows are 3 just to ease indexing of Player 1 & 2
+        // Columns are n(sum of each row) + n(sum of each column) + 2(sum of 2 diagonals)
         this.moves = new int[2 + 1][2 * n + 2];
     }
 
@@ -27,21 +30,21 @@ public class TicTacToe {
      1: Player 1 wins.
      2: Player 2 wins. */
     public int move(int row, int col, int player) {
-        // number of markers in each row/col/diag
-        int res = 0;
+        // Maximum sum of markers of each row/column/diagonal
+        int sum = 0;
 
-        // update the rows & cols count
-        res = Math.max(++moves[player][row], res);
-        res = Math.max(++moves[player][col + n], res);
+        // Update the rows & cols moves
+        sum = Math.max(++moves[player][row], sum);
+        sum = Math.max(++moves[player][col + n], sum);
 
-        // update the main diagonal
+        // Update the main diagonal moves
         if ( row == col )
-            res = Math.max(++moves[player][moves[player].length - 2], res);
+            sum = Math.max(++moves[player][moves[player].length - 2], sum);
 
-        // update the off diagonal
+        // Update the off diagonal moves
         if ( row + col == n - 1 )
-            res = Math.max(++moves[player][moves[player].length - 1], res);
+            sum = Math.max(++moves[player][moves[player].length - 1], sum);
 
-        return res == n ? player : 0;
+        return sum == n ? player : 0;
     }
 }
