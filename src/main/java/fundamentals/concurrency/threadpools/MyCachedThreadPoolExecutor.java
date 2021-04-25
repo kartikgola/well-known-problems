@@ -15,6 +15,9 @@ public class MyCachedThreadPoolExecutor {
     public static void cachedThreadPoolExample() {
         ExecutorService es = null;
         try {
+            // Only use this for short-lived threads
+            // since this creates a new thread if there is no thread available
+            // and can choke the system
             es = Executors.newCachedThreadPool();
             System.out.println(Thread.currentThread().getName() + " Begin");
 
