@@ -4,24 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73856750-273b-4c4d-abfa-6540ccb10214" name="Default Changelist" comment="Restructuring code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/codeforces/div3/r697/OddDivisor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MyCachedThreadPoolExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MyFutureExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/PathWithMinimumEffort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/StringUtilsTest.java" afterDir="false" />
+    <list default="true" id="73856750-273b-4c4d-abfa-6540ccb10214" name="Default Changelist" comment="Adding all changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/BlockingQueueExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/CopyOnWriteArrayListExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/ObtainingSyncCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/SkipListExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algo/DecreasingTripletSubsequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ds/FenwickTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/tree/fenwick/FenwickTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MyFixedThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MyFixedThreadExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MySingleThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MySingleThreadExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/StringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +50,16 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1rIZuEBuLqm1yoxrnhg3KM58moE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
@@ -76,16 +77,18 @@
       <recent name="util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="atcoder.abc199" />
+      <recent name="fundamentals.concurrency.collections" />
       <recent name="fundamentals.concurrency" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyCachedThreadPoolExecutor">
-    <configuration name="MyCachedThreadPoolExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fundamentals.concurrency.MyCachedThreadPoolExecutor" />
+  <component name="RunManager" selected="Application.TaskD">
+    <configuration name="CopyOnWriteArrayListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fundamentals.concurrency.collections.CopyOnWriteArrayListExample" />
       <module name="well-known-problems.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fundamentals.concurrency.*" />
+          <option name="PATTERN" value="fundamentals.concurrency.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFixedThreadExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fundamentals.concurrency.MyFixedThreadExecutor" />
+    <configuration name="ObtainingSyncCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fundamentals.concurrency.collections.ObtainingSyncCollections" />
       <module name="well-known-problems.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fundamentals.concurrency.*" />
+          <option name="PATTERN" value="fundamentals.concurrency.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFutureExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fundamentals.concurrency.MyFutureExample" />
+    <configuration name="TaskB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="atcoder.abc199.TaskB" />
       <module name="well-known-problems.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fundamentals.concurrency.*" />
+          <option name="PATTERN" value="atcoder.abc199.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySingleThreadExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fundamentals.concurrency.MySingleThreadExecutor" />
+    <configuration name="TaskC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="atcoder.abc199.TaskC" />
       <module name="well-known-problems.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fundamentals.concurrency.*" />
+          <option name="PATTERN" value="atcoder.abc199.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,34 +135,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilsTest.testSuffixArray" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;util.StringUtilsTest.testSuffixArray&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="TaskD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="atcoder.abc199.TaskD" />
+      <module name="well-known-problems.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="atcoder.abc199.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyCachedThreadPoolExecutor" />
-        <item itemvalue="Application.MySingleThreadExecutor" />
-        <item itemvalue="Application.MyFutureExample" />
-        <item itemvalue="Application.MyFixedThreadExecutor" />
-        <item itemvalue="Gradle.StringUtilsTest.testSuffixArray" />
+        <item itemvalue="Application.TaskD" />
+        <item itemvalue="Application.TaskC" />
+        <item itemvalue="Application.TaskB" />
+        <item itemvalue="Application.ObtainingSyncCollections" />
+        <item itemvalue="Application.CopyOnWriteArrayListExample" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618728937410</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding all changes">
+      <created>1618755878470</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618755878470</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +253,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Restructuring" />
     <MESSAGE value="Adding GCD" />
     <MESSAGE value="Adding java fundamentals files" />
@@ -259,6 +262,7 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Adding test files" />
     <MESSAGE value="Restructuring code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructuring code" />
+    <MESSAGE value="Adding all changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding all changes" />
   </component>
 </project>
