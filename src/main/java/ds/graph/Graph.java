@@ -16,8 +16,16 @@ public interface Graph {
 
     Map<Integer, Map<Integer, Integer>> getAdj();
 
+    /**
+     * Get the list of vertices
+     * @return: List<Integer> representing list of vertices
+     */
     List<Integer> getVertices();
 
+    /**
+     * Sets the adjacency list using a 2D array of edges
+     * @param edges: 2D array of Nx3 where every sub-array is a tuple of (from, to, edgeWeight)
+     */
     void setEdges(int[][] edges);
 
     void setAdjacencyMatrix(int[][] matrix);
