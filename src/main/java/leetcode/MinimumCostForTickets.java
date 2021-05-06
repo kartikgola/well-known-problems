@@ -2,7 +2,7 @@
  * Author: Kartik Gola
  * Date: 04/04/2021, 19:25
  * Copyright (c) 2021 | https://rattl.io
- * Problem URL:
+ * Problem URL: https://leetcode.com/problems/minimum-cost-for-tickets/
  */
 
 package leetcode;
@@ -11,9 +11,9 @@ import java.util.Arrays;
 
 public class MinimumCostForTickets {
 
-    int[] pass = new int[]{1, 7, 15};
+    final int[] pass = new int[]{1, 7, 15};
 
-    // Subtract no. of days (1 or 7 or 15) from the current day, days[i]
+    // Subtract pass[j] number of days from the current day, days[i]
     // and return the index of greatest day which is LTE to days[i] - pass[j]
     private int floorDayIndex(int[] days, int i, int j) {
         while (i > -1) {
