@@ -9,6 +9,9 @@ package util;
 
 import ds.linkedlist.ListNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LinkedListUtils {
 
     public static int findLength(ListNode node) {
@@ -57,5 +60,16 @@ public class LinkedListUtils {
         }
         prev.next = prev.next.next;
         return dummy.next;
+    }
+
+    public static List<ListNode> toList(ListNode node) {
+        List<ListNode> list = new ArrayList<>();
+        if (node == null)
+            return list;
+        while (node != null) {
+            list.add(node);
+            node = node.next;
+        }
+        return list;
     }
 }
