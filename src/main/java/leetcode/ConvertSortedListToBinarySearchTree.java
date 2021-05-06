@@ -8,20 +8,10 @@ package leetcode;
 
 import ds.linkedlist.ListNode;
 import ds.tree.binary.TreeNode;
-
-import java.util.ArrayList;
+import util.LinkedListUtils;
 import java.util.List;
 
 public class ConvertSortedListToBinarySearchTree {
-
-    private List<ListNode> len(ListNode head) {
-        List<ListNode> res = new ArrayList<>();
-        while ( head != null ) {
-            res.add(head);
-            head = head.next;
-        }
-        return res;
-    }
 
     private TreeNode build(List<ListNode> l, int i, int j) {
         if ( i <= j ) {
@@ -35,7 +25,7 @@ public class ConvertSortedListToBinarySearchTree {
     }
 
     public TreeNode sortedListToBST(ListNode head) {
-        List<ListNode> l = len(head);
+        List<ListNode> l = LinkedListUtils.toList(head);
         return build(l, 0, l.size() - 1);
     }
 }
