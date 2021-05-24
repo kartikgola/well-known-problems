@@ -19,7 +19,7 @@ public class ContinuousSubarraySum {
         for (int i = 0; i < n; ++i) {
             sum += nums[i];
             if (nums[i] > 0)
-                sum %= nums[i];
+                sum %= k;
             if (map.containsKey(sum)) {
                 if (i - map.get(sum) >= 2) {
                     return true;
