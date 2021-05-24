@@ -11,6 +11,7 @@ public class IOUtils {
 
     public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+    // Common StringTokenizer used by next*() methods
     public static StringTokenizer tokenizer = null;
 
     /* Integer utilities */

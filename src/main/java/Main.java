@@ -4,6 +4,8 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
+import ood.bitcask.Bitcask;
+import ood.bitcask.BitcaskApp;
 import projecteuler.Problem5;
 
 public class Main {

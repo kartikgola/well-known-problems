@@ -4,34 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73856750-273b-4c4d-abfa-6540ccb10214" name="Default Changelist" comment="Updating LinkedListUtils">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/well-known-problems.iml" afterDir="false" />
+    <list default="true" id="73856750-273b-4c4d-abfa-6540ccb10214" name="Default Changelist" comment="Adding MaximumLengthOfRepeatedSubarray">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BestTimeToBuyAndSellStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BestTimeToBuyAndSellStock2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/BestTimeToBuyAndSellStock3.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DeleteOperationsForTwoStrings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/Bitcask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskReaderSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskWriterSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ood/bitcask/BitcaskAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,7 +79,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -102,11 +91,11 @@
       <recent name="util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="atcoder.abc199" />
       <recent name="ood.bitcask" />
       <recent name="atcoder.abc200" />
       <recent name="leetcode" />
       <recent name="ds.graph" />
-      <recent name="atcoder.abc199" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.BitcaskAppTest.test">
@@ -116,19 +105,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ood.bitcask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskC (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="atcoder.abc200.TaskC" />
-      <module name="well-known-problems.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="atcoder.abc200.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,15 +138,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+    <configuration name="TaskE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="atcoder.abc199.TaskE" />
+      <module name="well-known-problems.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="atcoder.abc199.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,10 +175,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.BitcaskAppTest.test" />
-        <item itemvalue="Application.BitcaskApp" />
+        <item itemvalue="Application.TaskE" />
         <item itemvalue="Application.TaskD" />
         <item itemvalue="Application.TaskD (1)" />
-        <item itemvalue="Application.TaskC (1)" />
+        <item itemvalue="Application.BitcaskApp" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +199,18 @@
       <workItem from="1620979577491" duration="664000" />
       <workItem from="1621250620396" duration="560000" />
       <workItem from="1621261074672" duration="1131000" />
-      <workItem from="1621322572456" duration="7334000" />
+      <workItem from="1621322572456" duration="7999000" />
+      <workItem from="1621345859404" duration="2774000" />
+      <workItem from="1621403401664" duration="6603000" />
+      <workItem from="1621430773678" duration="2119000" />
+      <workItem from="1621496517852" duration="29000" />
+      <workItem from="1621496559353" duration="3721000" />
+      <workItem from="1621515708483" duration="5000" />
+      <workItem from="1621527374245" duration="1232000" />
+      <workItem from="1621588515095" duration="4107000" />
+      <workItem from="1621689498379" duration="1803000" />
+      <workItem from="1621768461773" duration="635000" />
+      <workItem from="1621780664444" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="Restructuring">
       <created>1618665857626</created>
@@ -337,7 +324,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620310122266</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Adding BitCask clone">
+      <created>1621334693897</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621334693897</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adding IOUtils">
+      <created>1621404945756</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621404945756</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding DeleteAndEarn">
+      <created>1621592486720</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1621592486720</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding MaximumLengthOfRepeatedSubarray">
+      <created>1621698105421</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1621698105421</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,6 +386,10 @@
     <MESSAGE value="Updating Graph code" />
     <MESSAGE value="Updating ConvertSortedListToBinarySearchTree" />
     <MESSAGE value="Updating LinkedListUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating LinkedListUtils" />
+    <MESSAGE value="Adding BitCask clone" />
+    <MESSAGE value="Adding IOUtils" />
+    <MESSAGE value="Adding DeleteAndEarn" />
+    <MESSAGE value="Adding MaximumLengthOfRepeatedSubarray" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding MaximumLengthOfRepeatedSubarray" />
   </component>
 </project>
