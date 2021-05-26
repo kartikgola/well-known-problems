@@ -8,13 +8,19 @@
 package algorithms.graph;
 
 import ds.graph.Graph;
-import ds.graph.UndirectedGraph;
 import javafx.util.Pair;
 
 import java.util.*;
 
 public class Dijkstra {
 
+    /**
+     * Implements Dijkstra's single-source shortest-path algorithm
+     * Time Complexity = O(Elog(V))
+     * @param graph
+     * @param source
+     * @return Pair<int[], int[]> where key and value represent distances and previous vertices respectively
+     */
     public Pair<int[], int[]> dijkstra(Graph graph, int source) {
         int[] dist = new int[graph.getSize()];
         int[] prev = new int[graph.getSize()];
@@ -23,44 +29,28 @@ public class Dijkstra {
         dist[source] = 0;
 
         Set<Integer> visited = new HashSet<>();
-        Queue<Integer> pq = new PriorityQueue<>(Comparator.comparingInt(v -> dist[v]));
-        pq.addAll(graph.getVertices());
+        // Values in PQ are stored as {distance_from_source, vertex} pairs
+        Queue<Pair<Integer, Integer>> pq = new PriorityQueue<>(Comparator.comparingInt(Pair::getKey));
+        pq.add(new Pair<>(0, source));
 
         while (!pq.isEmpty()) {
-            int u = pq.poll();
-            visited.add(u);
-            if (dist[u] != Integer.MAX_VALUE) {
-                for (Map.Entry<Integer, Integer> e: graph.getAdj().getOrDefault(u, new HashMap<>()).entrySet()) {
-                    int v = e.getKey();
-                    int weight = e.getValue();
-                    if (weight > 0 && !visited.contains(v) && dist[u] + weight < dist[v]) {
-                        dist[v] = dist[u] + weight;
-                        prev[v] = u;
-                        pq.add(pq.remove());
-                    }
+            int d = pq.peek().getKey(), // distance of current vertex 'u' from source
+                from = pq.poll().getValue(); // current vertext 'u'
+            if (visited.contains(from))
+                continue;
+            visited.add(from);
+            for (Map.Entry<Integer, Integer> e: graph.getNeighborsOf(from).entrySet()) {
+                int to = e.getKey(), // neighbor 'v' of 'u'
+                    weight = e.getValue(); // weight of edge 'uv'
+                // Relax the distance, dist[v]
+                if (d + weight < dist[to]) {
+                    dist[to] = dist[from] + weight;
+                    prev[to] = from;
+                    pq.add(new Pair<>(dist[to], to));
                 }
             }
         }
 
         return new Pair<>(dist, prev);
-    }
-
-    public static void main(String[] args) {
-        Graph graph = new UndirectedGraph(9);
-        // For graph, refer - https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg
-        graph.setAdjacencyMatrix(new int[][]{
-                { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
-                { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
-                { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
-                { 0, 0, 7, 0, 9, 14, 0, 0, 0 },
-                { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
-                { 0, 0, 4, 14, 10, 0, 2, 0, 0 },
-                { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
-                { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
-                { 0, 0, 2, 0, 0, 0, 6, 7, 0 }
-        });
-        Pair<int[], int[]> p = new Dijkstra().dijkstra(graph, 0);
-        System.out.println(Arrays.toString(p.getKey()));
-        System.out.println(Arrays.toString(p.getValue()));
     }
 }

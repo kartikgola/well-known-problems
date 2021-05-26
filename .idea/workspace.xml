@@ -4,28 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73856750-273b-4c4d-abfa-6540ccb10214" name="Default Changelist" comment="Adding MaximumLengthOfRepeatedSubarray">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
+    <list default="true" id="73856750-273b-4c4d-abfa-6540ccb10214" name="Default Changelist" comment="Adding comments">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/BellmanFord.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DeleteOperationsForTwoStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/BellmanFordTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/RegularExpressionMatchingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/AbstractGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/NetworkDelayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/NetworkDelayTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -36,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit3 Test Class" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -79,7 +91,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -87,24 +99,26 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="algorithms.graph" />
+      <recent name="leetcode" />
       <recent name="ood.bitcask" />
       <recent name="util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="algorithms.graph" />
       <recent name="atcoder.abc199" />
       <recent name="ood.bitcask" />
       <recent name="atcoder.abc200" />
       <recent name="leetcode" />
-      <recent name="ds.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BitcaskAppTest.test">
-    <configuration name="BitcaskApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ood.bitcask.BitcaskApp" />
+  <component name="RunManager" selected="Gradle.BellmanFordTest.testBellmanFord">
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithms.graph.Dijkstra" />
       <module name="well-known-problems.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ood.bitcask.*" />
+          <option name="PATTERN" value="algorithms.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,51 +126,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskD (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="atcoder.abc200.TaskD" />
-      <module name="well-known-problems.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="atcoder.abc200.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaskD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="atcoder.abc199.TaskD" />
-      <module name="well-known-problems.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="atcoder.abc199.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TaskE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="atcoder.abc199.TaskE" />
-      <module name="well-known-problems.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="atcoder.abc199.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BitcaskAppTest.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BellmanFordTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ood.bitcask.BitcaskAppTest.test&quot;" />
+        <option name="scriptParameters" value="--tests &quot;algorithms.graph.BellmanFordTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BellmanFordTest.testBellmanFord" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;algorithms.graph.BellmanFordTest.testBellmanFord&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DijkstraTest.testDijkstra" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;algorithms.graph.DijkstraTest.testDijkstra&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegularExpressionMatchingTest.testIsMatch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;leetcode.RegularExpressionMatchingTest.testIsMatch&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -174,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BitcaskAppTest.test" />
-        <item itemvalue="Application.TaskE" />
-        <item itemvalue="Application.TaskD" />
-        <item itemvalue="Application.TaskD (1)" />
-        <item itemvalue="Application.BitcaskApp" />
+        <item itemvalue="Gradle.BellmanFordTest.testBellmanFord" />
+        <item itemvalue="Gradle.DijkstraTest.testDijkstra" />
+        <item itemvalue="Gradle.BellmanFordTest" />
+        <item itemvalue="Application.Dijkstra" />
+        <item itemvalue="Gradle.RegularExpressionMatchingTest.testIsMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +259,14 @@
       <workItem from="1621588515095" duration="4107000" />
       <workItem from="1621689498379" duration="1803000" />
       <workItem from="1621768461773" duration="635000" />
-      <workItem from="1621780664444" duration="960000" />
+      <workItem from="1621780664444" duration="7068000" />
+      <workItem from="1621858649609" duration="3056000" />
+      <workItem from="1621925729272" duration="4924000" />
+      <workItem from="1621942148120" duration="688000" />
+      <workItem from="1622014639638" duration="1482000" />
+      <workItem from="1622016145034" duration="1086000" />
+      <workItem from="1622020753470" duration="88000" />
+      <workItem from="1622026387491" duration="9565000" />
     </task>
     <task id="LOCAL-00001" summary="Restructuring">
       <created>1618665857626</created>
@@ -352,7 +408,42 @@
       <option name="project" value="LOCAL" />
       <updated>1621698105421</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Adding changes to files">
+      <created>1621838843684</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1621838843684</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adding ContinuousSubarraySum">
+      <created>1621840420782</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1621840420782</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Bugfix in ContinuousSubarraySum">
+      <created>1621840564158</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1621840564158</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Adding code for KnightDialer">
+      <created>1621851870357</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1621851870357</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Adding comments">
+      <created>1621860617114</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621860617114</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +481,11 @@
     <MESSAGE value="Adding IOUtils" />
     <MESSAGE value="Adding DeleteAndEarn" />
     <MESSAGE value="Adding MaximumLengthOfRepeatedSubarray" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding MaximumLengthOfRepeatedSubarray" />
+    <MESSAGE value="Adding changes to files" />
+    <MESSAGE value="Adding ContinuousSubarraySum" />
+    <MESSAGE value="Bugfix in ContinuousSubarraySum" />
+    <MESSAGE value="Adding code for KnightDialer" />
+    <MESSAGE value="Adding comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding comments" />
   </component>
 </project>

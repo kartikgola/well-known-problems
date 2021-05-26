@@ -6,26 +6,12 @@
 
 package leetcode;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class NetworkDelayTime {
-
-    private int[][] initAdj(int N, int[][] times) {
-        int[][] adj = new int[N + 1][N + 1];
-        for ( int i = 1; i <= N; ++i )
-            for ( int j = 1; j <= N; ++j )
-                adj[i][j] = -1;
-
-        for ( int[] time : times ) {
-            if ( adj[time[0]][time[1]] == -1 )
-                adj[time[0]][time[1]] = time[2];
-            else
-                adj[time[0]][time[1]] = Math.min(time[2], adj[time[0]][time[1]]);
-        }
-        return adj;
-    }
 
     public int networkDelayTime(int[][] times, int N, int K) {
         // Distance values of all nodes
@@ -37,7 +23,11 @@ public class NetworkDelayTime {
             dist[i] = i == K ? 0 : Integer.MAX_VALUE;
 
         // Adjacency matrix
-        int[][] adj = initAdj(N, times);
+        int[][] adj = new int[N+1][N+1];
+        for (int[] row: adj)
+            Arrays.fill(row, -1);
+        for (int[] t: times)
+            adj[t[0]][t[1]] = t[2];
 
         // Add source vertex K to the PQ
         pq.offer(K);

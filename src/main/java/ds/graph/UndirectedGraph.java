@@ -7,6 +7,7 @@
 
 package ds.graph;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class UndirectedGraph extends AbstractGraph {
@@ -21,15 +22,7 @@ public class UndirectedGraph extends AbstractGraph {
             adj.putIfAbsent(e[1], new HashMap<>());
             adj.get(e[0]).put(e[1], e[2]);
             adj.get(e[1]).put(e[0], e[2]);
-        }
-    }
-
-    public void setAdjacencyMatrix(int[][] adjMat) {
-        for (int i = 0; i < adjMat.length; ++i) {
-            adj.putIfAbsent(i, new HashMap<>());
-            for (int j = 0; j < adjMat[i].length; ++j) {
-                adj.get(i).put(j, adjMat[i][j]);
-            }
+            this.edges.add(Arrays.asList(e[0], e[1], e[2]));
         }
     }
 }
