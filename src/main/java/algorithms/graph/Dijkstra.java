@@ -12,6 +12,8 @@ import ds.graph.Graph;
 import util.Pair;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Dijkstra<T> {
 
@@ -24,7 +26,7 @@ public class Dijkstra<T> {
      * @return Map<T, Integer> representing (vertex, shortestDistanceFromSource)
      */
     public Map<T, Integer> dijkstra(Graph<T> graph, T source) {
-        Map<T, Integer> dist = new HashMap<>();
+        Map<T, Integer> dist = new HashMap<>(graph.getVertices().stream().collect(Collectors.toMap(Function.identity(), v -> Integer.MAX_VALUE)));
         dist.put(source, 0);
 
         Set<T> visited = new HashSet<>();

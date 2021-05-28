@@ -28,7 +28,7 @@ public class BellmanFord<T> {
         Map<T, Integer> dist = new HashMap<>(graph.getVertices().stream().collect(Collectors.toMap(Function.identity(), v -> Integer.MAX_VALUE)));
         dist.put(source, 0);
 
-        // Try to relax the distances 'V-1' times
+        // 1. Try to relax the distances 'V-1' times
         for (int i = 0; i < graph.getSize()-1; i++) {
             for (Edge<T> e: graph.getEdges()) {
                 if (dist.get(e.from) != Integer.MAX_VALUE && dist.get(e.to) > e.weight + dist.get(e.from)) {
@@ -37,7 +37,7 @@ public class BellmanFord<T> {
             }
         }
 
-        // Try to relax the distances one more time
+        // 2. Try to relax the distances one more time
         // If any distance gets relaxed this time, the graph contains a -ve weight cycle
         for (Edge<T> e: graph.getEdges()) {
             if (dist.get(e.from) != Integer.MAX_VALUE && dist.get(e.to) > e.weight + dist.get(e.from)) {

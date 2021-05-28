@@ -28,7 +28,7 @@ class DijkstraTest {
                 new HashMap<Integer, Integer>(){{
                     put(1, 0); put(2, 5); put(3, 3); put(4, 4); put(5, 6);
                 }},
-                new BellmanFord<Integer>().bellmanFord(graph1, 1)
+                new Dijkstra<Integer>().dijkstra(graph1, 1)
         );
     }
 }

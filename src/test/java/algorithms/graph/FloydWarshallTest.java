@@ -27,19 +27,19 @@ class FloydWarshallTest {
         Map<Integer, Map<Integer, Integer>> dist = new FloydWarshall<Integer>().floydWarshall(graph);
         assertEquals(
                 new HashMap<Integer, Map<Integer, Integer>>(){{
-                    put(1, new HashMap<Integer, Integer>(){{
+                    put(1, new HashMap<>(){{
                         put(1, 0); put(2, 5); put(3, 7); put(4, 3); put(5, 1);
                     }});
-                    put(2, new HashMap<Integer, Integer>(){{
+                    put(2, new HashMap<>(){{
                         put(1, 5); put(2, 0); put(3, 2); put(4, 8); put(5, 6);
                     }});
-                    put(3, new HashMap<Integer, Integer>(){{
+                    put(3, new HashMap<>(){{
                         put(1, 7); put(2, 2); put(3, 0); put(4, 7); put(5, 8);
                     }});
-                    put(4, new HashMap<Integer, Integer>(){{
+                    put(4, new HashMap<>(){{
                         put(1, 3); put(2, 8); put(3, 7); put(4, 0); put(5, 2);
                     }});
-                    put(5, new HashMap<Integer, Integer>(){{
+                    put(5, new HashMap<>(){{
                         put(1, 1); put(2, 6); put(3, 8); put(4, 2); put(5, 0);
                     }});
                 }},

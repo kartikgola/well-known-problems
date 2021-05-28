@@ -26,16 +26,7 @@ class PrimTest {
                 new UndirectedEdge<>(5,6,2),
                 new UndirectedEdge<>(6,4,7)
         ));
-        Graph<Integer> mst = new Kruskal<Integer>().kruskal(graph);
-        assertEquals(
-                new HashSet<Edge<Integer>>(){{
-                    add(new UndirectedEdge<>(1, 2, 3));
-                    add(new UndirectedEdge<>(1, 5, 5));
-                    add(new UndirectedEdge<>(3, 6, 3));
-                    add(new UndirectedEdge<>(4, 6, 7));
-                    add(new UndirectedEdge<>(5, 6, 2));
-                }},
-                new HashSet<>(mst.getDistinctEdges())
-        );
+        Graph<Integer> mst = new Prim<Integer>().prim(graph);
+        assertEquals(20, mst.getDistinctEdges().stream().mapToInt(e -> e.weight).sum());
     }
 }
