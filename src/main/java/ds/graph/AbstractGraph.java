@@ -9,18 +9,20 @@ package ds.graph;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
-public abstract class AbstractGraph implements Graph {
+public abstract class AbstractGraph<T> implements Graph<T> {
 
     protected final int size;
-    protected Map<Integer, Map<Integer, Integer>> adj;
-    protected List<List<Integer>> edges;
+    protected Map<T, Map<T, Edge<T>>> adjMap;
 
     public AbstractGraph(int size) {
         this.size = size;
-        this.adj = new HashMap<>(size);
-        this.edges = new ArrayList<>(size);
+        this.adjMap = new HashMap<>(size);
+    }
+
+    @Override
+    public Map<T, Map<T, Edge<T>>> getAdjMap() {
+        return adjMap;
     }
 
     @Override
@@ -29,29 +31,35 @@ public abstract class AbstractGraph implements Graph {
     }
 
     @Override
-    public List<List<Integer>> getEdges() {
-        return edges;
+    public List<T> getVertices() {
+        // Add all 'from' vertices
+        final Set<T> verticesSet = new HashSet<>();
+        verticesSet.addAll(adjMap.keySet());
+        // Add all 'to' vertices
+        verticesSet.addAll(adjMap.values()
+            .stream()
+            .map(Map::keySet)
+            .flatMap(Collection::stream)
+            .collect(Collectors.toSet())
+        );
+        return new ArrayList<>(verticesSet);
     }
 
-    public Map<Integer, Map<Integer, Integer>> getAdjacencyMap() {
-        return adj;
+    @Override
+    public Map<T, Edge<T>> getAdjMapOf(T u) {
+        return adjMap.getOrDefault(u, new HashMap<>());
     }
 
-    public Map<Integer, Integer> getNeighborsOf(int u) {
-        return adj.getOrDefault(u, new HashMap<>());
+    @Override
+    public List<Edge<T>> getEdgesFrom(T u) {
+        return new ArrayList<>(adjMap.getOrDefault(u, new HashMap<>()).values());
     }
 
-    public List<Integer> getVerticesList() {
-        return IntStream.range(0, size).boxed().collect(Collectors.toList());
-    }
-
-    public void setAdjacencyMatrix(int[][] adjMat) {
-        for (int i = 0; i < adjMat.length; ++i) {
-            adj.putIfAbsent(i, new HashMap<>());
-            for (int j = 0; j < adjMat[i].length; ++j) {
-                adj.get(i).put(j, adjMat[i][j]);
-                edges.add(Arrays.asList(i, j, adjMat[i][j]));
-            }
-        }
+    @Override
+    public String toString() {
+        return "AbstractGraph{" +
+                "size=" + size +
+                ", adjMap=" + adjMap +
+                '}';
     }
 }

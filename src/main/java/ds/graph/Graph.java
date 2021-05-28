@@ -2,7 +2,6 @@
  * Author: Kartik Gola
  * Date: 4/4/21, 10:29 PM
  * Copyright (c) 2021 | https://rattl.io
- * Problem URL:
  */
 
 package ds.graph;
@@ -10,7 +9,7 @@ package ds.graph;
 import java.util.List;
 import java.util.Map;
 
-public interface Graph {
+public interface Graph<T> {
 
     /**
      * Get the size of graph (no. of vertices)
@@ -20,38 +19,53 @@ public interface Graph {
 
     /**
      * Get the adjacency map of the graph
-     * @return Map<Integer, Map<Integer, Integer>>
+     * @return Map<T, Map<T, Integer>>
      */
-    Map<Integer, Map<Integer, Integer>> getAdjacencyMap();
+    Map<T, Map<T, Edge<T>>> getAdjMap();
 
     /**
-     * Get the list of vertices
-     * @return: List<Integer> representing list of vertices
-     */
-    List<Integer> getVerticesList();
-
-    /**
-     * Get List of all edges as tuples of (fromEdge, toEdge, edgeWeight)
+     * Get List of all unique edges as tuples of (fromVertex, toVertex, edgeWeight)
+     * For Undirected edges, the result includes only 1 edge among (A, B, X) & (B, A, X)
      * @return List<List<Integer>>
      */
-    List<List<Integer>> getEdges();
+    List<Edge<T>> getDistinctEdges();
 
     /**
-     * Get the neighbors of a specific vertex, 'u'
-     * @param u
-     * @return Map<Integer, Integer> where key is a neighbor and value is its weight
+     * Get List of all edges as tuples of (fromVertex, toVertex, edgeWeight)
+     * @return List<List<Integer>>
      */
-    Map<Integer, Integer> getNeighborsOf(int u);
+    List<Edge<T>> getEdges();
 
     /**
-     * Sets the adjacency list using a 2D array of edges
-     * @param edges: 2D array of size Nx3 where every sub-array is a tuple of (fromEdge, toEdge, edgeWeight)
+     * Get list of all vertices in the graph
+     * @return List<T>
      */
-    void setEdges(int[][] edges);
+    List<T> getVertices();
 
     /**
-     * Set the adjacency map of the graph using a 2D adjacency matrix
-     * @param matrix: 2D matrix where values represent edge weights
+     * Get the neighbors of a specific vertex 'u'
+     * @param u : input vertex
+     * @return Map<T, Integer> where key is the neighboring vertex and value is the weight
      */
-    void setAdjacencyMatrix(int[][] matrix);
+    Map<T, Edge<T>> getAdjMapOf(T u);
+
+    /**
+     * Get list of all edges starting from vertex 'u'
+     * @param u : input vertex
+     * @return List<Edge<T>>
+     */
+    List<Edge<T>> getEdgesFrom(T u);
+
+    /**
+     * Sets the adjacency list and list of edges using a 2D array of edges
+     * @param edges: 2D array of size Nx3 where every sub-array is a tuple of (fromVertex, toVertex, edgeWeight) 
+     */
+    void setEdges(List<Edge<T>> edges);
+
+    /**
+     * Adds an edge to the Graph and updates adjacency list and list of edges
+     * @param edge: a tuple of (fromVertex, toVertex, edgeWeight) 
+     */
+    void addEdge(Edge<T> edge);
+
 }

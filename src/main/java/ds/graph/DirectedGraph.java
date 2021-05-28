@@ -7,20 +7,47 @@
 
 package ds.graph;
 
-import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
-public class DirectedGraph extends AbstractGraph {
+public class DirectedGraph<T> extends AbstractGraph<T> {
 
     public DirectedGraph(int size) {
         super(size);
     }
 
-    public void setEdges(int[][] edges) {
-        for (int[] e: edges) {
-            adj.putIfAbsent(e[0], new HashMap<>());
-            adj.get(e[0]).put(e[1], e[2]);
-            this.edges.add(Arrays.asList(e[0], e[1], e[2]));
-        }
+    @Override
+    public void setEdges(List<Edge<T>> edges) {
+        for (Edge<T> edge: edges)
+            addEdge(edge);
+    }
+
+    @Override
+    public void addEdge(Edge<T> edge) {
+        adjMap.putIfAbsent(edge.from, new HashMap<>());
+        adjMap.putIfAbsent(edge.to, new HashMap<>());
+        adjMap.get(edge.from).put(edge.to, new DirectedEdge<>(edge));
+    }
+
+    @Override
+    public List<Edge<T>> getDistinctEdges() {
+        return adjMap.values()
+                .stream()
+                .map(Map::values)
+                .flatMap(Collection::stream)
+                .distinct()
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Edge<T>> getEdges() {
+        return adjMap.values()
+                .stream()
+                .map(Map::values)
+                .flatMap(Collection::stream)
+                .collect(Collectors.toList());
     }
 }

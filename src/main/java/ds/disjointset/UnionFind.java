@@ -13,23 +13,39 @@ public class UnionFind {
     private int groups;
     private final int[] parent;
 
-    public UnionFind(int n) {
-        groups = n;
-        parent = new int[n];
+    public UnionFind(int size) {
+        groups = size;
+        parent = new int[size];
         Arrays.fill(parent, -1);
     }
 
+    /**
+     * Get the total number of sets/groups present in this disjoint set
+     * @return int
+     */
     public int getTotalGroups() {
         return this.groups;
     }
 
+    /**
+     * Finds the parent of a vertex 'u'
+     * @param u : int vertex 'u'
+     * @return int
+     */
     public int find(int u) {
         if ( parent[u] < 0 )
             return u;
         return parent[u] = find(parent[u]);
     }
 
-    public void union(int u, int v) {
+    /**
+     * Performs union of two vertices 'u' and 'v'
+     * Union is performed by weight
+     * @param u : first vertex
+     * @param v : second vertex
+     * @return true if parent of 'u' and 'v' is same; false, otherwise
+     */
+    public boolean union(int u, int v) {
         int pu = find(u);
         int pv = find(v);
         if ( pu != pv ) {
@@ -42,6 +58,9 @@ public class UnionFind {
                 parent[pv]--;
             }
             groups--;
+            return true;
         }
+        // In case parents of 'u' and 'v' are same, we return false
+        return false;
     }
 }

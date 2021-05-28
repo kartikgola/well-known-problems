@@ -7,50 +7,46 @@
 
 package algorithms.graph;
 
+import ds.graph.Edge;
 import ds.graph.Graph;
 import javafx.util.Pair;
 
 import java.util.*;
 
-public class Dijkstra {
+public class Dijkstra<T> {
 
     /**
      * Implements Dijkstra's single-source shortest-path algorithm
+     * This is a greedy algorithm which always picks the vertex having minimum distance from source
      * Time Complexity = O(Elog(V))
-     * @param graph
-     * @param source
-     * @return Pair<int[], int[]> where key and value represent distances and previous vertices respectively
+     * @param graph : input graph
+     * @param source : starting vertex
+     * @return Map<T, Integer> representing (vertex, shortestDistanceFromSource)
      */
-    public Pair<int[], int[]> dijkstra(Graph graph, int source) {
-        int[] dist = new int[graph.getSize()];
-        int[] prev = new int[graph.getSize()];
-        Arrays.fill(dist, Integer.MAX_VALUE);
-        Arrays.fill(prev, -1);
-        dist[source] = 0;
+    public Map<T, Integer> dijkstra(Graph<T> graph, T source) {
+        Map<T, Integer> dist = new HashMap<>();
+        dist.put(source, 0);
 
-        Set<Integer> visited = new HashSet<>();
-        // Values in PQ are stored as {distance_from_source, vertex} pairs
-        Queue<Pair<Integer, Integer>> pq = new PriorityQueue<>(Comparator.comparingInt(Pair::getKey));
+        Set<T> visited = new HashSet<>();
+        // Values in PQ are stored as {distanceFromSource, vertex} pairs
+        Queue<Pair<Integer, T>> pq = new PriorityQueue<>(Comparator.comparingInt(Pair::getKey));
         pq.add(new Pair<>(0, source));
 
         while (!pq.isEmpty()) {
-            int d = pq.peek().getKey(), // distance of current vertex 'u' from source
-                from = pq.poll().getValue(); // current vertext 'u'
+            int d = pq.peek().getKey(); // distance of current vertex 'u' from source
+            T from = pq.poll().getValue(); // current vertex 'u'
             if (visited.contains(from))
                 continue;
             visited.add(from);
-            for (Map.Entry<Integer, Integer> e: graph.getNeighborsOf(from).entrySet()) {
-                int to = e.getKey(), // neighbor 'v' of 'u'
-                    weight = e.getValue(); // weight of edge 'uv'
+            for (Edge<T> e: graph.getEdgesFrom(from)) {
                 // Relax the distance, dist[v]
-                if (d + weight < dist[to]) {
-                    dist[to] = dist[from] + weight;
-                    prev[to] = from;
-                    pq.add(new Pair<>(dist[to], to));
+                if (d + e.weight < dist.getOrDefault(e.to, Integer.MAX_VALUE)) {
+                    dist.put(e.to, d + e.weight);
+                    pq.add(new Pair<>(d + e.weight, e.to));
                 }
             }
         }
 
-        return new Pair<>(dist, prev);
+        return dist;
     }
 }
