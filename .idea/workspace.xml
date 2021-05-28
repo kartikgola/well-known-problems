@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding tests for Graph/Tree algos">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Fixing test case issues">
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
@@ -12,13 +12,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/BellmanFord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/BellmanFord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622188342913</updated>
-      <workItem from="1622188345072" duration="3382000" />
+      <workItem from="1622188345072" duration="3537000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -204,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622193291721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixing test case issues">
+      <created>1622193839591</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622193839591</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +226,7 @@
     <MESSAGE value="Major Update: Moving project to Maven" />
     <MESSAGE value="Fixing broken imports" />
     <MESSAGE value="Adding tests for Graph/Tree algos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding tests for Graph/Tree algos" />
+    <MESSAGE value="Fixing test case issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing test case issues" />
   </component>
 </project>
