@@ -4,30 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Major Update: Moving project to Maven">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Fixing broken imports">
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wkp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RemoveInvalidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RemoveInvalidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RottingOranges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/VerticalOrderTraversalOfABinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/VerticalOrderTraversalOfABinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/WidthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/WidthOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/ZeroOneMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskReaderSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ood/bitcask/BitcaskReaderSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/StringUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -83,10 +72,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="algorithms.tree" />
       <recent name="algorithms.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.PrimTest.testMSTGeneration">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -154,8 +144,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimTest.testMSTGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms.tree" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.tree.PrimTest" />
+      <option name="METHOD_NAME" value="testMSTGeneration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" />
         <item itemvalue="JUnit.BellmanFordTest" />
@@ -171,7 +178,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622188342913</updated>
-      <workItem from="1622188345072" duration="1824000" />
+      <workItem from="1622188345072" duration="2794000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -180,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622189670173</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixing broken imports">
+      <created>1622190324162</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622190324162</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +213,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Major Update: Moving project to Maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="Major Update: Moving project to Maven" />
+    <MESSAGE value="Fixing broken imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing broken imports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
