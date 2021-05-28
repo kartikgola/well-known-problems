@@ -1,6 +1,6 @@
 package ood.bitcask;
 
-import javafx.util.Pair;
+import util.Pair;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

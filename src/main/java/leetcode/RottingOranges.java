@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import javafx.util.Pair;
+import util.Pair;
 import java.util.LinkedList;
 import java.util.Queue;
 

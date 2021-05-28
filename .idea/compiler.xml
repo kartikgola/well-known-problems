@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="well-known-problems" />
+        <module name="wkp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="well-known-problems" target="11" />
+      <module name="wkp" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

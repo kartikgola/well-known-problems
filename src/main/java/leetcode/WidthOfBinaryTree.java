@@ -8,7 +8,7 @@ package leetcode;
 
 import ds.tree.binary.TreeNode;
 
-import javafx.util.Pair;
+import util.Pair;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;

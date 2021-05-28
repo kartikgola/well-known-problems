@@ -9,7 +9,7 @@ package algorithms.graph;
 
 import ds.graph.Edge;
 import ds.graph.Graph;
-import javafx.util.Pair;
+import util.Pair;
 
 import java.util.*;
 

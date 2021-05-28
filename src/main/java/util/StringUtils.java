@@ -6,7 +6,7 @@
 
 package util;
 
-import javafx.util.Pair;
+import util.Pair;
 
 import java.util.*;
 import java.util.stream.Collectors;
