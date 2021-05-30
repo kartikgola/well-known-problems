@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Fixing test case issues">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LeetCode #10: Regular Expression Matching">
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
@@ -12,7 +12,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/RegularExpressionMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/GraphUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,43 +68,17 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode" />
       <recent name="algorithms.tree" />
       <recent name="algorithms.graph" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimTest.testMSTGeneration">
+  <component name="RunManager" selected="JUnit.RegularExpressionMatchingTest.isMatch">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="wkp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="well-known-problems" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.graph" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.graph.BellmanFordTest" />
-      <option name="METHOD_NAME" value="testExceptionThrowingOnNegativeWeightCycle" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,13 +131,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegularExpressionMatchingTest.isMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.RegularExpressionMatchingTest" />
+      <option name="METHOD_NAME" value="isMatch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegularExpressionMatchingTest.isMatch" />
         <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
         <item itemvalue="JUnit.KruskalTest.testMSTGeneration" />
         <item itemvalue="JUnit.DijkstraTest.testShortestPathFinding" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +165,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622188342913</updated>
-      <workItem from="1622188345072" duration="3537000" />
+      <workItem from="1622188345072" duration="4882000" />
+      <workItem from="1622201896115" duration="5742000" />
+      <workItem from="1622271432797" duration="593000" />
+      <workItem from="1622273815501" duration="5245000" />
+      <workItem from="1622381799807" duration="3808000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -205,7 +199,49 @@
       <option name="project" value="LOCAL" />
       <updated>1622193839591</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding pom.xml">
+      <created>1622194005843</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622194005843</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding TC for BellmanFord">
+      <created>1622194021583</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622194021583</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding file GenerateParenthesis">
+      <created>1622194033420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622194033420</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding workspace.xml">
+      <created>1622194050967</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622194050967</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Cleaning up README.md">
+      <created>1622194190706</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622194190706</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding LeetCode #10: Regular Expression Matching">
+      <created>1622207832209</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622207832209</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,12 +257,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Major Update: Moving project to Maven" />
     <MESSAGE value="Fixing broken imports" />
     <MESSAGE value="Adding tests for Graph/Tree algos" />
     <MESSAGE value="Fixing test case issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing test case issues" />
+    <MESSAGE value="Adding pom.xml" />
+    <MESSAGE value="Adding TC for BellmanFord" />
+    <MESSAGE value="Adding file GenerateParenthesis" />
+    <MESSAGE value="Adding workspace.xml" />
+    <MESSAGE value="Cleaning up README.md" />
+    <MESSAGE value="Adding LeetCode #10: Regular Expression Matching" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding LeetCode #10: Regular Expression Matching" />
   </component>
 </project>
