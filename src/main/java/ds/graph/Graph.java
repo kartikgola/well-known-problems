@@ -68,4 +68,11 @@ public interface Graph<T> {
      */
     void addEdge(Edge<T> edge);
 
+    /**
+     * Get any adjacent vertex from a vertex 'u'
+     * @param u : input vertex
+     * @return a vertex of type T
+     */
+    T getAnyAdjacentVertex(T u);
+
 }

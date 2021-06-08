@@ -117,8 +117,8 @@ public class GraphUtils {
             pq.add(new int[]{0, source});
 
             while (!pq.isEmpty()) {
-                int u = pq.peek()[0],
-                    d = pq.poll()[1];
+                int d = pq.peek()[0],
+                    u = pq.poll()[1];
                 if (visited[u])
                     continue;
                 visited[u] = true;
