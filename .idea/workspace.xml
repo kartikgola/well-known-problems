@@ -4,14 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LeetCode #10: Regular Expression Matching">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding PaintHouse and MaximumAreaOfAPieceOfCake">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/FindSuccessor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ds/graph/SuccessorGraph.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/LongestConsecutiveSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MaximumPerformanceOfATeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MinCostClimbingStairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/OpenTheLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TheMaze2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FindSuccessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/TheMaze2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/util/GraphUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/GraphUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,29 +76,34 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="util" />
       <recent name="leetcode" />
-      <recent name="algorithms.tree" />
       <recent name="algorithms.graph" />
+      <recent name="algorithms.tree" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegularExpressionMatchingTest.isMatch">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="wkp" />
+  <component name="RunManager" selected="JUnit.FindSuccessorTest.successorOf">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DijkstraTest.testShortestPathFinding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindSuccessorTest.successorOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
@@ -92,8 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="algorithms.graph" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.graph.DijkstraTest" />
-      <option name="METHOD_NAME" value="testShortestPathFinding" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.graph.FindSuccessorTest" />
+      <option name="METHOD_NAME" value="successorOf" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,13 +167,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TheMaze2Test.shortestDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.TheMaze2Test" />
+      <option name="METHOD_NAME" value="shortestDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindSuccessorTest.successorOf" />
+        <item itemvalue="JUnit.TheMaze2Test.shortestDistance" />
         <item itemvalue="JUnit.RegularExpressionMatchingTest.isMatch" />
         <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
         <item itemvalue="JUnit.KruskalTest.testMSTGeneration" />
-        <item itemvalue="JUnit.DijkstraTest.testShortestPathFinding" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +205,14 @@
       <workItem from="1622201896115" duration="5742000" />
       <workItem from="1622271432797" duration="593000" />
       <workItem from="1622273815501" duration="5245000" />
-      <workItem from="1622381799807" duration="3808000" />
+      <workItem from="1622381799807" duration="14587000" />
+      <workItem from="1622563501594" duration="2452000" />
+      <workItem from="1622628871258" duration="1850000" />
+      <workItem from="1622699969846" duration="789000" />
+      <workItem from="1622717850238" duration="6402000" />
+      <workItem from="1622809498486" duration="4979000" />
+      <workItem from="1622913467610" duration="488000" />
+      <workItem from="1623048215768" duration="9658000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -241,7 +284,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622207832209</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding performant and lite graph APIs">
+      <created>1622395378276</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622395378276</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding LC solutions">
+      <created>1622639283014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622639283014</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Adding PaintHouse and MaximumAreaOfAPieceOfCake">
+      <created>1622792303564</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1622792303564</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +334,9 @@
     <MESSAGE value="Adding workspace.xml" />
     <MESSAGE value="Cleaning up README.md" />
     <MESSAGE value="Adding LeetCode #10: Regular Expression Matching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding LeetCode #10: Regular Expression Matching" />
+    <MESSAGE value="Adding performant and lite graph APIs" />
+    <MESSAGE value="Adding LC solutions" />
+    <MESSAGE value="Adding PaintHouse and MaximumAreaOfAPieceOfCake" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding PaintHouse and MaximumAreaOfAPieceOfCake" />
   </component>
 </project>

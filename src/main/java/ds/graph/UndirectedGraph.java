@@ -48,4 +48,9 @@ public class UndirectedGraph<T> extends AbstractGraph<T> {
                 .flatMap(Collection::stream)
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public T getAnyAdjacentVertex(T u) {
+        return adjMap.get(u).keySet().iterator().next();
+    }
 }
