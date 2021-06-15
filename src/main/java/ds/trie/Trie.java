@@ -7,6 +7,11 @@
 
 package ds.trie;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+
 public class Trie {
 
     private final TrieNode root = new TrieNode('#');
@@ -37,6 +42,23 @@ public class Trie {
             }
             if ( i == word.length() - 1 )
                 curr.isComplete = true;
+        }
+    }
+
+    public void add(String word, int id) {
+        TrieNode curr = root;
+        for ( int i = 0; i < word.length(); ++i ) {
+            if ( curr.children.containsKey(word.charAt(i)) ) {
+                curr = curr.children.get(word.charAt(i));
+            } else {
+                TrieNode temp = new TrieNode(word.charAt(i));
+                curr.children.put(word.charAt(i), temp);
+                curr = temp;
+            }
+            if ( i == word.length() - 1 ) {
+                curr.isComplete = true;
+                curr.id = id;
+            }
         }
     }
 
@@ -74,5 +96,37 @@ public class Trie {
 
     public boolean contains(String word) {
         return contains(word, 0, root);
+    }
+
+    public int findWordId(String word) {
+        TrieNode curr = root;
+        for ( int i = 0; i < word.length(); ++i ) {
+            char ch = word.charAt(i);
+            if ( curr.children.containsKey(ch) ) {
+                curr = curr.children.get(ch);
+            } else {
+                return -1;
+            }
+        }
+        return curr.isComplete ? curr.id : -1;
+    }
+
+    private List<Integer> wordIdsBelow(TrieNode node) {
+        List<Integer> ans = new ArrayList<>();
+        for (TrieNode child: node.children.values())
+            ans.addAll(wordIdsBelow(child));
+        if (node.isComplete)
+            ans.add(node.id);
+        return ans;
+    }
+
+    public List<Integer> wordIdsBelow(String prefix) {
+        TrieNode curr = root;
+        for (int i = 0; i < prefix.length(); i++) {
+            if (curr.children.containsKey(prefix.charAt(i))) {
+                curr = curr.children.get(prefix.charAt(i));
+            } else return Collections.emptyList();
+        }
+        return wordIdsBelow(curr);
     }
 }

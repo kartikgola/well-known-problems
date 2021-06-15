@@ -38,7 +38,7 @@ public class PalindromePairs {
             for (int j = words[i].length()-1; j >= 0; --j) {
                 // Case 3: CATDOOD,TAC
                 if (isPalindrome(words[i], j, words[i].length()-1)) {
-                    int k = trie.containsWord(words[i].substring(0, j));
+                    int k = trie.findWordId(words[i].substring(0, j));
                     if (k != -1)
                         ans.add(Arrays.asList(i, k));
                     if (j == 0 && empty != -1) {
