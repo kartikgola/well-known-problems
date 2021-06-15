@@ -124,4 +124,15 @@ public class StringUtils {
             list.add(new Pair<>(i, temp.substring(i)));
         return list;
     }
+
+    public static boolean isPalindrome(String s) {
+        return isPalindrome(s, 0, s.length()-1);
+    }
+
+    public static boolean isPalindrome(String s, int start, int end) {
+        for (int i = start, j = end; i < j; ++i, --j)
+            if (s.charAt(i) != s.charAt(j))
+                return false;
+        return true;
+    }
 }

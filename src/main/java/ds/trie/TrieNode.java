@@ -10,10 +10,9 @@ package ds.trie;
 import java.util.*;
 
 public class TrieNode {
-
     public char val;
+    public int id;
     public boolean isComplete;
     public Map<Character, TrieNode> children = new LinkedHashMap<>();
     public TrieNode(char val) { this.val = val; }
-
 }

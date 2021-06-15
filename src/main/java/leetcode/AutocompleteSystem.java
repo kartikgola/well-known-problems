@@ -10,7 +10,7 @@ import java.util.*;
 
 class AutocompleteSystem {
 
-    class Trie {
+    private class Trie {
 
         class Sentence {
             String val;
