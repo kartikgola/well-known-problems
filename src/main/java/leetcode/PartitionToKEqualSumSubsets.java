@@ -8,20 +8,21 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class ParitionToKEqualSumSubsets {
+public class PartitionToKEqualSumSubsets {
 
     public boolean canPartitionKSubsets(int[] A, int k) {
-        // 1 5 6 9 13 20
         if (k > A.length) return false;
         int sum = 0;
         for (int num : A) sum += num;
         if (sum % k != 0) return false;
         boolean[] visited = new boolean[A.length];
+        // Sorting here is being done to speed up the process of grouping
+        // Since a big number, if taken first, is less probable to be grouped with other numbers
         Arrays.sort(A);
         return canPart(A, 0, A.length - 1, visited, sum / k, k);
     }
 
-    public boolean canPart(int[] A, int sum, int st, boolean[] visited, int target, int k) {
+    private boolean canPart(int[] A, int sum, int st, boolean[] visited, int target, int k) {
         if (k == 0) return true;
         if (sum == target && canPart(A, 0, A.length - 1, visited, target, k - 1))
             return true;

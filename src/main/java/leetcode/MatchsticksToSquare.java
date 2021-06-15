@@ -11,15 +11,15 @@ import java.util.Arrays;
 
 public class MatchsticksToSquare {
 
-    private boolean canPartition(int[] ms, boolean[] vis, long sum, long target, int k, int st) {
-        if (k == 0)
+    private boolean makesquare(int[] a, boolean[] vis, int begin, long sum, long target, int parts) {
+        if (parts == 0)
             return true;
-        if (sum == target && canPartition(ms, vis, 0, target, k-1, 0))
-            return false;
-        for (int i = st; i < ms.length; ++i) {
-            if (!vis[i] && sum + ms[i] <= target) {
+        if (sum == target && makesquare(a, vis, a.length-1, 0, target, parts-1))
+            return true;
+        for (int i = begin; i >= 0; i--) {
+            if (!vis[i] && a[i]+sum <= target) {
                 vis[i] = true;
-                if (canPartition(ms, vis, sum+ms[i], target, k, i+1))
+                if (makesquare(a, vis, i-1, a[i]+sum, target, parts))
                     return true;
                 vis[i] = false;
             }
@@ -27,14 +27,16 @@ public class MatchsticksToSquare {
         return false;
     }
 
-    public boolean makesquare(int[] ms) {
-        if (ms.length < 4)
+    public boolean makesquare(int[] a) {
+        if (a.length < 4)
             return false;
         long sum = 0;
-        for (int v: ms) sum += v;
+        for (int v: a) sum += v;
         if (sum % 4 != 0)
             return false;
-        Arrays.sort(ms);
-        return canPartition(ms, new boolean[ms.length], 0, sum/4, 4, 0);
+        // Sorting here is being done to speed up the process of grouping
+        // Since a big number, if taken first, is less probable to be grouped with other numbers
+        Arrays.sort(a);
+        return makesquare(a, new boolean[a.length], a.length-1, 0, sum/4, 4);
     }
 }
