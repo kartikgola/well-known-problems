@@ -8,35 +8,27 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class GenerateParenthesis {
 
-    private String repeat(Character ch, int times) {
-        StringBuilder sb = new StringBuilder(times);
-        while ( times-- > 0 ) {
-            sb.append(ch);
-        }
-        return sb.toString();
-    }
+    private List<String> gen(int o, int c) { // o = open braces left, c = closed braces left
+        if (o == 0) return Collections.singletonList(")".repeat(c));
+        if (o > c) return Collections.emptyList();
 
-    private void gen(int op, int cl, String str, List<String> res) {
-        if ( op == 0 ) {
-            res.add(str + repeat(')', cl));
-        } else if ( cl == 0 ) {
-            res.add(str);
-        } else {
-            gen(op - 1, cl, str + '(', res);
-            if ( str.length() > 0 && str.charAt(str.length() - 1) == '(' )
-                gen(op, cl - 1, str + ')', res);
-            if ( str.length() > 0 && str.charAt(str.length() - 1) == ')' && op < cl )
-                gen(op, cl - 1, str + ')', res);
-        }
+        List<String> ans = new ArrayList<>();
+        for (String v: gen(o-1, c))
+            ans.add("(" + v); // Consume open brace
+
+        for (String v: gen(o, c-1))
+            ans.add(")" + v); // Consume close brace
+
+        return ans;
     }
 
     public List<String> generateParenthesis(int n) {
-        List<String> res = new ArrayList<>();
-        gen(n, n, "", res);
-        return res;
+        return gen(n,n);
     }
 }
