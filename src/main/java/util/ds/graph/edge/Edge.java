@@ -5,7 +5,7 @@
  * Problem URL:
  */
 
-package ds.graph.edge;
+package util.ds.graph.edge;
 
 public abstract class Edge<T> {
 

@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.linkedlist.ListNode;
+import util.ds.linkedlist.ListNode;
 import util.LinkedListUtils;
 
 public class SwappingNodesInALinkedList {

@@ -5,7 +5,7 @@
  * Problem URL:
  */
 
-package ds.trie;
+package util.ds.trie;
 
 import java.util.*;
 

@@ -4,9 +4,9 @@
  * Copyright (c) 2021 | https://rattl.io
  */
 
-package ds.graph;
+package util.ds.graph;
 
-import ds.graph.edge.Edge;
+import util.ds.graph.edge.Edge;
 
 import java.util.List;
 import java.util.Map;

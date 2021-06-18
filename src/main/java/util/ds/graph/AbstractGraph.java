@@ -5,9 +5,9 @@
  * Problem URL:
  */
 
-package ds.graph;
+package util.ds.graph;
 
-import ds.graph.edge.Edge;
+import util.ds.graph.edge.Edge;
 
 import java.util.*;
 import java.util.stream.Collectors;

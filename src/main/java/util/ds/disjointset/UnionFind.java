@@ -4,26 +4,19 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package ds.disjointset;
+package util.ds.disjointset;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.Arrays;
 
-public class UnionFindGeneric<T> {
+public class UnionFind {
 
     private int groups;
-    private final Map<T, T> parent;
-    private final Map<T, Integer> weight;
+    private final int[] parent;
 
-    public UnionFindGeneric(List<T> sets) {
-        groups = sets.size();
-        parent = new HashMap<>();
-        weight = new HashMap<>();
-        for (T set: sets) {
-            parent.put(set, null);
-            weight.put(set, -1);
-        }
+    public UnionFind(int size) {
+        groups = size;
+        parent = new int[size];
+        Arrays.fill(parent, -1);
     }
 
     /**
@@ -39,11 +32,10 @@ public class UnionFindGeneric<T> {
      * @param u : int vertex 'u'
      * @return int
      */
-    public T find(T u) {
-        if (parent.get(u) == null)
+    public int find(int u) {
+        if ( parent[u] < 0 )
             return u;
-        parent.put(u, find(parent.get(u)));
-        return parent.get(u);
+        return parent[u] = find(parent[u]);
     }
 
     /**
@@ -53,17 +45,17 @@ public class UnionFindGeneric<T> {
      * @param v : second vertex
      * @return true if parent of 'u' and 'v' is same; false, otherwise
      */
-    public boolean union(T u, T v) {
-        T pu = find(u);
-        T pv = find(v);
-        if (pu != pv) {
+    public boolean union(int u, int v) {
+        int pu = find(u);
+        int pv = find(v);
+        if ( pu != pv ) {
             // Weight of pu is more (more negative means higher weight)
-            if ( weight.get(pu) <= weight.get(pv) ) {
-                parent.put(pv, pu);
-                weight.put(pu, weight.get(pu) - 1);
+            if ( parent[pu] <= parent[pv] ) {
+                parent[pv] = pu;
+                parent[pu]--;
             } else {
-                parent.put(pu, pv);
-                weight.put(pv, weight.get(pv) - 1);
+                parent[pu] = pv;
+                parent[pv]--;
             }
             groups--;
             return true;

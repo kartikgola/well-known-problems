@@ -7,7 +7,7 @@
 
 package util;
 
-import ds.linkedlist.ListNode;
+import util.ds.linkedlist.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;

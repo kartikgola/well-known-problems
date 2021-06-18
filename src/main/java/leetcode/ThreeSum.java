@@ -6,11 +6,6 @@
 
 package leetcode;
 
-import util.ArrayInput;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -71,16 +66,5 @@ public class ThreeSum {
         }
 
         return list;
-    }
-
-    public void solve() throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        final int N = Integer.parseInt(reader.readLine());
-        final int target = Integer.parseInt(reader.readLine());
-        System.out.println(threeSumCountWithMap(
-                ArrayInput.readArray(reader, N),
-                0
-        ));
-
     }
 }

@@ -7,9 +7,9 @@
 
 package algorithms.tree;
 
-import ds.graph.edge.Edge;
-import ds.graph.Graph;
-import ds.graph.UndirectedGraph;
+import util.ds.graph.edge.Edge;
+import util.ds.graph.Graph;
+import util.ds.graph.UndirectedGraph;
 
 import java.util.*;
 

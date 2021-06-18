@@ -7,8 +7,8 @@
 
 package leetcode;
 
-import ds.trie.Trie;
-import ds.trie.TrieNode;
+import util.ds.trie.Trie;
+import util.ds.trie.TrieNode;
 
 import java.util.*;
 

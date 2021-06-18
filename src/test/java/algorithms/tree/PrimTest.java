@@ -1,8 +1,8 @@
 package algorithms.tree;
 
-import ds.graph.Graph;
-import ds.graph.edge.UndirectedEdge;
-import ds.graph.UndirectedGraph;
+import util.ds.graph.Graph;
+import util.ds.graph.edge.UndirectedEdge;
+import util.ds.graph.UndirectedGraph;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

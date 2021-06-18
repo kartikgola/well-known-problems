@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import ds.linkedlist.ListNode;
+import util.ds.linkedlist.ListNode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

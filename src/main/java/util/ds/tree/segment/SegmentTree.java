@@ -4,9 +4,7 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package ds.tree.segment;
-
-import java.util.Arrays;
+package util.ds.tree.segment;
 
 public class SegmentTree {
 

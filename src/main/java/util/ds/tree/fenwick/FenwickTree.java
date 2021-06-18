@@ -4,7 +4,7 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package ds.tree.fenwick;
+package util.ds.tree.fenwick;
 
 public class FenwickTree {
 }

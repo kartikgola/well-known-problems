@@ -4,7 +4,7 @@
  * Copyright (c) 2020 | https://rattl.io
  */
 
-package ds.linkedlist;
+package util.ds.linkedlist;
 
 public class ListNode {
     public int val;

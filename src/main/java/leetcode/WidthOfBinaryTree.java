@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import ds.tree.binary.TreeNode;
+import util.ds.tree.binary.TreeNode;
 
 import util.Pair;
 import java.util.HashMap;

@@ -7,7 +7,7 @@
 
 package leetcode;
 
-import ds.linkedlist.DoublyNode;
+import util.ds.linkedlist.DoublyNode;
 
 import java.util.HashMap;
 import java.util.Map;

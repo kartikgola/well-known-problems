@@ -1,7 +1,6 @@
 package algorithms.graph;
 
-import ds.graph.Graph;
-import ds.graph.SuccessorGraph;
+import util.ds.graph.SuccessorGraph;
 
 import java.util.HashMap;
 import java.util.List;

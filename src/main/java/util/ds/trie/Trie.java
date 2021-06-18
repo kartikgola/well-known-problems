@@ -4,7 +4,7 @@
  * Copyright (c) 2021 | https://rattl.io
  */
 
-package ds.trie;
+package util.ds.trie;
 
 import java.util.ArrayList;
 import java.util.Collections;

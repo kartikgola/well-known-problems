@@ -5,17 +5,20 @@
  * Problem URL:
  */
 
-package ds.graph;
+package util.ds.graph;
 
-import ds.graph.edge.Edge;
-import ds.graph.edge.UndirectedEdge;
+import util.ds.graph.edge.DirectedEdge;
+import util.ds.graph.edge.Edge;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
-public class UndirectedGraph<T> extends AbstractGraph<T> {
+public class DirectedGraph<T> extends AbstractGraph<T> {
 
-    public UndirectedGraph(int size) {
+    public DirectedGraph(int size) {
         super(size);
     }
 
@@ -28,9 +31,8 @@ public class UndirectedGraph<T> extends AbstractGraph<T> {
     @Override
     public void addEdge(Edge<T> edge) {
         adjMap.putIfAbsent(edge.from, new HashMap<>());
-        adjMap.get(edge.from).put(edge.to, new UndirectedEdge<>(edge.from, edge.to, edge.weight));
         adjMap.putIfAbsent(edge.to, new HashMap<>());
-        adjMap.get(edge.to).put(edge.from, new UndirectedEdge<>(edge.to, edge.from, edge.weight));
+        adjMap.get(edge.from).put(edge.to, new DirectedEdge<>(edge));
     }
 
     @Override

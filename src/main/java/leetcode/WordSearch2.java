@@ -6,8 +6,8 @@
 
 package leetcode;
 
-import ds.trie.Trie;
-import ds.trie.TrieNode;
+import util.ds.trie.Trie;
+import util.ds.trie.TrieNode;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -25,7 +25,7 @@ public class WordSearch2 {
         if ( i < 0 || i >= m || j < 0 || j >= n || vis[i][j] )
             return res;
         TrieNode current = null;
-        if ( parent == null ) current = t.nodeWithPrefix(Character.toString(board[i][j]));
+        if ( parent == null ) current = t.getNode(Character.toString(board[i][j]));
         else current = parent.children.getOrDefault(board[i][j], null);
 
         if ( current == null )

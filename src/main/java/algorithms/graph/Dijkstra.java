@@ -7,8 +7,8 @@
 
 package algorithms.graph;
 
-import ds.graph.edge.Edge;
-import ds.graph.Graph;
+import util.ds.graph.edge.Edge;
+import util.ds.graph.Graph;
 import util.Pair;
 
 import java.util.*;

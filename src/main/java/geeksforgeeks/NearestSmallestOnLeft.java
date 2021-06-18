@@ -6,7 +6,7 @@
 
 package geeksforgeeks;
 
-import util.ArrayInput;
+import util.IOUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,7 +26,7 @@ public class NearestSmallestOnLeft {
 
         while ( t-- > 0 ) {
             int n = Integer.parseInt(reader.readLine());
-            int[] arr = ArrayInput.readArray(reader, n);
+            int[] arr = IOUtils.getInts(n);
             Stack<Integer> s = new Stack<>();
             String[] res = new String[n];
 

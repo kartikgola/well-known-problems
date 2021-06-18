@@ -7,7 +7,7 @@
 
 package geeksforgeeks;
 
-import ds.tree.binary.TreeNode;
+import util.ds.tree.binary.TreeNode;
 
 public class HeightOfBinaryTreeWithConnectedLeafNodes {
 

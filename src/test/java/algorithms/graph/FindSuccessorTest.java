@@ -1,7 +1,7 @@
 package algorithms.graph;
 
-import ds.graph.edge.DirectedEdge;
-import ds.graph.SuccessorGraph;
+import util.ds.graph.edge.DirectedEdge;
+import util.ds.graph.SuccessorGraph;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

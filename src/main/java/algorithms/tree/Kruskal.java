@@ -7,11 +7,11 @@
 
 package algorithms.tree;
 
-import ds.disjointset.UnionFindGeneric;
-import ds.graph.edge.Edge;
-import ds.graph.Graph;
-import ds.graph.edge.UndirectedEdge;
-import ds.graph.UndirectedGraph;
+import util.ds.disjointset.UnionFindGeneric;
+import util.ds.graph.edge.Edge;
+import util.ds.graph.Graph;
+import util.ds.graph.edge.UndirectedEdge;
+import util.ds.graph.UndirectedGraph;
 
 import java.util.Comparator;
 import java.util.List;

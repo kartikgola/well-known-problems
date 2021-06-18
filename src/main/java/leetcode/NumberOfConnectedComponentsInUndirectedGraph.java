@@ -6,7 +6,7 @@
 
 package leetcode;
 
-import ds.disjointset.UnionFind;
+import util.ds.disjointset.UnionFind;
 
 import java.util.ArrayList;
 import java.util.List;
