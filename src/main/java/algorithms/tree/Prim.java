@@ -7,7 +7,7 @@
 
 package algorithms.tree;
 
-import ds.graph.Edge;
+import ds.graph.edge.Edge;
 import ds.graph.Graph;
 import ds.graph.UndirectedGraph;
 

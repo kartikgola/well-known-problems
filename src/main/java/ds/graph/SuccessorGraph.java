@@ -6,6 +6,9 @@
 
 package ds.graph;
 
+import ds.graph.edge.DirectedEdge;
+import ds.graph.edge.Edge;
+
 import java.util.HashMap;
 
 public class SuccessorGraph<T> extends DirectedGraph<T> {

@@ -8,9 +8,9 @@
 package algorithms.tree;
 
 import ds.disjointset.UnionFindGeneric;
-import ds.graph.Edge;
+import ds.graph.edge.Edge;
 import ds.graph.Graph;
-import ds.graph.UndirectedEdge;
+import ds.graph.edge.UndirectedEdge;
 import ds.graph.UndirectedGraph;
 
 import java.util.Comparator;

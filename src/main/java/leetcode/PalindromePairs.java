@@ -26,7 +26,7 @@ public class PalindromePairs {
 
         for (int i = 0; i < words.length; i++) {
             if (i == empty) continue;
-            for (int j: trie.wordIdsBelow(words[i])) {
+            for (int j: trie.getWordIdsBelow(words[i])) {
                 if (i == j) continue;
                 // Case 1: CAT,TAC
                 // Case 2: CAT,DOODTAC
@@ -38,7 +38,7 @@ public class PalindromePairs {
             for (int j = words[i].length()-1; j >= 0; --j) {
                 // Case 3: CATDOOD,TAC
                 if (isPalindrome(words[i], j, words[i].length()-1)) {
-                    int k = trie.findWordId(words[i].substring(0, j));
+                    int k = trie.getWordId(words[i].substring(0, j));
                     if (k != -1)
                         ans.add(Arrays.asList(i, k));
                     if (j == 0 && empty != -1) {

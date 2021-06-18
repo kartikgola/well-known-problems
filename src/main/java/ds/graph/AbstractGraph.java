@@ -7,6 +7,8 @@
 
 package ds.graph;
 
+import ds.graph.edge.Edge;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

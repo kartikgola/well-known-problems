@@ -4,35 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding PaintHouse and MaximumAreaOfAPieceOfCake">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/rattl_io.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/FindSuccessor.java" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding solution to ShortestDistanceToTargetColor">
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ds/graph/SuccessorGraph.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ds/trie/CompressedTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/LongestConsecutiveSequence.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MaximumPerformanceOfATeam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MinCostClimbingStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/OpenTheLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/TheMaze2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FindSuccessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/TheMaze2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/util/GraphUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MinNoOfRefuelingStops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/StoneGame7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/interview/uber/FindKthFromSAndTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/BellmanFord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/BellmanFord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/FloydWarshall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/FloydWarshall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/tree/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/tree/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/tree/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/tree/Prim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/AbstractGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/edge/DirectedEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/edge/Edge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/SuccessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/SuccessorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/edge/UndirectedEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/graph/UndirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/GraphUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ds/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ds/trie/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/PalindromePairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/PalindromePairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/VowelSpellcheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/VowelSpellcheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/WordSearch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/WordSearch2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/BellmanFordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/BellmanFordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/FindSuccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FindSuccessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,6 +63,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1t9jkBqz0soNUOWOK0kUutTi22H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -76,20 +90,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="util" />
       <recent name="leetcode" />
+      <recent name="leetcode.interview.uber" />
+      <recent name="util" />
       <recent name="algorithms.graph" />
       <recent name="algorithms.tree" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindSuccessorTest.successorOf">
+  <component name="RunManager" selected="JUnit.MatchsticksToSquareTest.makesquare">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -99,6 +114,22 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindKthFromSAndTTest.solve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.interview.uber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.interview.uber" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.interview.uber.FindKthFromSAndTTest" />
+      <option name="METHOD_NAME" value="solve" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,33 +150,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KruskalTest.testMSTGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatchsticksToSquareTest.makesquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.tree.*" />
+          <option name="PATTERN" value="leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.tree" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.tree.KruskalTest" />
-      <option name="METHOD_NAME" value="testMSTGeneration" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimTest.testMSTGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.tree" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.tree.PrimTest" />
-      <option name="METHOD_NAME" value="testMSTGeneration" />
+      <option name="PACKAGE_NAME" value="leetcode" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.MatchsticksToSquareTest" />
+      <option name="METHOD_NAME" value="makesquare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatchsticksToSquareTest.makesquare" />
+        <item itemvalue="JUnit.FindKthFromSAndTTest.solve" />
         <item itemvalue="JUnit.FindSuccessorTest.successorOf" />
         <item itemvalue="JUnit.TheMaze2Test.shortestDistance" />
         <item itemvalue="JUnit.RegularExpressionMatchingTest.isMatch" />
-        <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
-        <item itemvalue="JUnit.KruskalTest.testMSTGeneration" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +227,18 @@
       <workItem from="1622717850238" duration="6402000" />
       <workItem from="1622809498486" duration="4979000" />
       <workItem from="1622913467610" duration="488000" />
-      <workItem from="1623048215768" duration="9658000" />
+      <workItem from="1623048215768" duration="11976000" />
+      <workItem from="1623236493061" duration="1028000" />
+      <workItem from="1623335030990" duration="535000" />
+      <workItem from="1623348854282" duration="1038000" />
+      <workItem from="1623391549955" duration="717000" />
+      <workItem from="1623395976596" duration="9849000" />
+      <workItem from="1623565158097" duration="7798000" />
+      <workItem from="1623610335646" duration="25209000" />
+      <workItem from="1623778057351" duration="3668000" />
+      <workItem from="1623845494476" duration="2986000" />
+      <workItem from="1623940239936" duration="4084000" />
+      <workItem from="1624008882911" duration="1822000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -305,7 +331,112 @@
       <option name="project" value="LOCAL" />
       <updated>1622792303564</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Adding SuccessorGraph">
+      <created>1623162386760</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1623162386760</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixing bug in djikstra">
+      <created>1623162406724</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1623162406724</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Adding LC solutions">
+      <created>1623162432799</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1623162432799</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Adding util method and project files">
+      <created>1623162462442</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1623162462442</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Adding LC solutions">
+      <created>1623350910333</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1623350910333</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding ABC200 sols">
+      <created>1623659093093</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1623659093093</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding PalindromePairs">
+      <created>1623691052361</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1623691052361</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding MaximumUnitsOnATruck">
+      <created>1623738229518</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1623738229518</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adding MatchsticksToSquare">
+      <created>1623760988390</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623760988390</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Making changes to Trie">
+      <created>1623761029576</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623761029576</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Adding MatchsticksToSquare and updating PartitionToKEqualSumSubsets">
+      <created>1623781749774</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1623781749774</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updating Trie method">
+      <created>1623781838670</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1623781838670</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Updating GenerateParenthesis">
+      <created>1623848198623</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1623848198623</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Adding solution to NumberOfSubarraysWithBoundedMaximum">
+      <created>1623954741769</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1623954741769</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Adding solution to ShortestDistanceToTargetColor">
+      <created>1623957206618</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1623957206618</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +455,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Major Update: Moving project to Maven" />
     <MESSAGE value="Fixing broken imports" />
     <MESSAGE value="Adding tests for Graph/Tree algos" />
     <MESSAGE value="Fixing test case issues" />
@@ -335,8 +465,21 @@
     <MESSAGE value="Cleaning up README.md" />
     <MESSAGE value="Adding LeetCode #10: Regular Expression Matching" />
     <MESSAGE value="Adding performant and lite graph APIs" />
-    <MESSAGE value="Adding LC solutions" />
     <MESSAGE value="Adding PaintHouse and MaximumAreaOfAPieceOfCake" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding PaintHouse and MaximumAreaOfAPieceOfCake" />
+    <MESSAGE value="Adding SuccessorGraph" />
+    <MESSAGE value="Fixing bug in djikstra" />
+    <MESSAGE value="Adding util method and project files" />
+    <MESSAGE value="Adding LC solutions" />
+    <MESSAGE value="Adding ABC200 sols" />
+    <MESSAGE value="Adding PalindromePairs" />
+    <MESSAGE value="Adding MaximumUnitsOnATruck" />
+    <MESSAGE value="Adding MatchsticksToSquare" />
+    <MESSAGE value="Making changes to Trie" />
+    <MESSAGE value="Adding MatchsticksToSquare and updating PartitionToKEqualSumSubsets" />
+    <MESSAGE value="Updating Trie method" />
+    <MESSAGE value="Updating GenerateParenthesis" />
+    <MESSAGE value="Adding solution to NumberOfSubarraysWithBoundedMaximum" />
+    <MESSAGE value="Adding solution to ShortestDistanceToTargetColor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding solution to ShortestDistanceToTargetColor" />
   </component>
 </project>

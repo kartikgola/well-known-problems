@@ -7,6 +7,9 @@
 
 package ds.graph;
 
+import ds.graph.edge.DirectedEdge;
+import ds.graph.edge.Edge;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;

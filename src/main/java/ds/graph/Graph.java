@@ -6,6 +6,8 @@
 
 package ds.graph;
 
+import ds.graph.edge.Edge;
+
 import java.util.List;
 import java.util.Map;
 

@@ -1,8 +1,6 @@
 package algorithms.graph;
 
-import ds.graph.DirectedEdge;
-import ds.graph.DirectedGraph;
-import ds.graph.Graph;
+import ds.graph.edge.DirectedEdge;
 import ds.graph.SuccessorGraph;
 import org.junit.jupiter.api.Test;
 

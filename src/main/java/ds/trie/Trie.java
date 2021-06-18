@@ -2,7 +2,6 @@
  * Author: Kartik Gola
  * Date: 23/03/2021, 23:08
  * Copyright (c) 2021 | https://rattl.io
- * Problem URL:
  */
 
 package ds.trie;
@@ -10,7 +9,6 @@ package ds.trie;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 
 public class Trie {
 
@@ -20,17 +18,7 @@ public class Trie {
         return root;
     }
 
-    public int countLeavesDistance(TrieNode curr, int prev) {
-        int sum = 0;
-        for (TrieNode child: curr.children.values()) {
-            if (child != null) {
-                sum += countLeavesDistance(child, prev+1);
-            }
-        }
-        return sum == 0 ? prev : sum;
-    }
-
-    public void add(String word) {
+    private TrieNode addNode(String word) {
         TrieNode curr = root;
         for ( int i = 0; i < word.length(); ++i ) {
             if ( curr.children.containsKey(word.charAt(i)) ) {
@@ -40,29 +28,26 @@ public class Trie {
                 curr.children.put(word.charAt(i), temp);
                 curr = temp;
             }
-            if ( i == word.length() - 1 )
-                curr.isComplete = true;
         }
+        return curr;
+    }
+
+    // Addition of a new word
+    public void add(String word) {
+        final TrieNode node = addNode(word);
+        if (node != root)
+            node.isComplete = true;
     }
 
     public void add(String word, int id) {
-        TrieNode curr = root;
-        for ( int i = 0; i < word.length(); ++i ) {
-            if ( curr.children.containsKey(word.charAt(i)) ) {
-                curr = curr.children.get(word.charAt(i));
-            } else {
-                TrieNode temp = new TrieNode(word.charAt(i));
-                curr.children.put(word.charAt(i), temp);
-                curr = temp;
-            }
-            if ( i == word.length() - 1 ) {
-                curr.isComplete = true;
-                curr.id = id;
-            }
+        final TrieNode node = addNode(word);
+        if (node != root) {
+            node.isComplete = true;
+            node.id = id;
         }
     }
 
-    public TrieNode startsWith(String prefix) {
+    public TrieNode getNode(String prefix) {
         TrieNode curr = root;
         for ( int i = 0; i < prefix.length(); ++i ) {
             if ( curr.children.containsKey(prefix.charAt(i)) ) {
@@ -71,9 +56,10 @@ public class Trie {
                 return null;
             }
         }
-        return curr;
+        return curr == root ? null : curr;
     }
 
+    // Check if a word is present in Trie
     private boolean contains(String word, int offset, TrieNode parent) {
         TrieNode curr = parent;
         for ( int i = offset; i < word.length(); ++i ) {
@@ -98,7 +84,8 @@ public class Trie {
         return contains(word, 0, root);
     }
 
-    public int findWordId(String word) {
+    // Returns the ID of the word present in Trie
+    public int getWordId(String word) {
         TrieNode curr = root;
         for ( int i = 0; i < word.length(); ++i ) {
             char ch = word.charAt(i);
@@ -111,22 +98,23 @@ public class Trie {
         return curr.isComplete ? curr.id : -1;
     }
 
-    private List<Integer> wordIdsBelow(TrieNode node) {
+    // Find IDs of all complete words present below the given node
+    private List<Integer> getWordIdsBelow(TrieNode node) {
         List<Integer> ans = new ArrayList<>();
         for (TrieNode child: node.children.values())
-            ans.addAll(wordIdsBelow(child));
+            ans.addAll(getWordIdsBelow(child));
         if (node.isComplete)
             ans.add(node.id);
         return ans;
     }
 
-    public List<Integer> wordIdsBelow(String prefix) {
+    public List<Integer> getWordIdsBelow(String prefix) {
         TrieNode curr = root;
         for (int i = 0; i < prefix.length(); i++) {
             if (curr.children.containsKey(prefix.charAt(i))) {
                 curr = curr.children.get(prefix.charAt(i));
             } else return Collections.emptyList();
         }
-        return wordIdsBelow(curr);
+        return getWordIdsBelow(curr);
     }
 }

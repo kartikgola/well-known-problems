@@ -7,6 +7,9 @@
 
 package leetcode;
 
+import ds.trie.Trie;
+import ds.trie.TrieNode;
+
 import java.util.*;
 
 public class VowelSpellcheck {
@@ -61,54 +64,6 @@ public class VowelSpellcheck {
         }
 
         return ans;
-    }
-
-    private static class TrieNode {
-        public char val;
-        public boolean isComplete;
-        public Map<Character, TrieNode> children = new LinkedHashMap<>();
-        public TrieNode(char val) { this.val = val; }
-    }
-
-    private static class Trie {
-
-        private final TrieNode root = new TrieNode('#');
-
-        public TrieNode getRoot() {
-            return root;
-        }
-
-        public void add(String word) {
-            TrieNode curr = root;
-            for ( int i = 0; i < word.length(); ++i ) {
-                if ( curr.children.containsKey(word.charAt(i)) ) {
-                    curr = curr.children.get(word.charAt(i));
-                } else {
-                    TrieNode temp = new TrieNode(word.charAt(i));
-                    curr.children.put(word.charAt(i), temp);
-                    curr = temp;
-                }
-                if ( i == word.length() - 1 )
-                    curr.isComplete = true;
-            }
-        }
-
-        private boolean contains(String word, int offset, TrieNode parent) {
-            TrieNode curr = parent;
-            for ( int i = offset; i < word.length(); ++i ) {
-                char ch = word.charAt(i);
-                if ( curr.children.containsKey(ch) ) {
-                    curr = curr.children.get(ch);
-                } else {
-                    return false;
-                }
-            }
-            return curr.isComplete;
-        }
-
-        public boolean contains(String word) {
-            return contains(word, 0, root);
-        }
     }
 
     private Set<Character> vowels = new HashSet<Character>(){{

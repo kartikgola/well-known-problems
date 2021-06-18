@@ -1,10 +1,11 @@
 /*
  * Author: Kartik Gola
- * Date: 5/27/21, 4:26 PM
+ * Date: 6/18/21, 3:34 PM
  * Copyright (c) 2021 | https://rattl.io
+ * Problem URL:
  */
 
-package ds.graph;
+package ds.graph.edge;
 
 public class UndirectedEdge<T> extends Edge<T> {
 

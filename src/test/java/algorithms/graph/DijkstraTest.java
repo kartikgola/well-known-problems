@@ -1,7 +1,7 @@
 package algorithms.graph;
 
 import ds.graph.Graph;
-import ds.graph.UndirectedEdge;
+import ds.graph.edge.UndirectedEdge;
 import ds.graph.UndirectedGraph;
 import org.junit.jupiter.api.Test;
 

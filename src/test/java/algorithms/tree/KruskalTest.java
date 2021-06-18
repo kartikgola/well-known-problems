@@ -1,13 +1,11 @@
 package algorithms.tree;
 
-import ds.graph.Edge;
 import ds.graph.Graph;
-import ds.graph.UndirectedEdge;
+import ds.graph.edge.UndirectedEdge;
 import ds.graph.UndirectedGraph;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
