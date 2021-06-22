@@ -47,9 +47,10 @@ public class GraphUtils {
                 visited[u] = true;
                 path[u] = true;
                 for (int v: adj.get(u).keySet()) {
-                    if (isCyclic(v, visited, path))
-                        return true;
-                    else if (path[v])
+                    if (!visited[v]) {
+                        if (isCyclic(v, visited, path))
+                            return true;
+                    } else if (path[v])
                         return true;
                 }
             }
