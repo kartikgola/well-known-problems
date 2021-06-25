@@ -12,11 +12,22 @@ public class UnionFind {
 
     private int groups;
     private final int[] parent;
+    private boolean zeroIndexed = true;
 
     public UnionFind(int size) {
         groups = size;
         parent = new int[size];
         Arrays.fill(parent, -1);
+    }
+
+    public UnionFind(int size, boolean zeroIndexed) {
+        groups = size;
+        if (zeroIndexed)
+            parent = new int[size];
+        else
+            parent = new int[size+1];
+        Arrays.fill(parent, -1);
+        this.zeroIndexed = zeroIndexed;
     }
 
     /**
@@ -43,7 +54,7 @@ public class UnionFind {
      * Union is performed by weight
      * @param u : first vertex
      * @param v : second vertex
-     * @return true if parent of 'u' and 'v' is same; false, otherwise
+     * @return true if union of 'u' and 'v' is successful (ie, their parents were different); false, otherwise
      */
     public boolean union(int u, int v) {
         int pu = find(u);
