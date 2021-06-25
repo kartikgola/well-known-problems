@@ -33,11 +33,14 @@ public class GraphUtils {
                 addEdge(edge);
         }
         public void addEdge(int[] edge) {
-            adj.get(edge[0]).put(edge[1], edge[2]);
-            edges.add(new int[]{edge[0], edge[1], edge[2]});
+            int from = edge[0],
+                to = edge[1],
+                weight = edge.length == 3 ? edge[2] : 0;
+            adj.get(from).put(to, weight);
+            edges.add(new int[]{from, to, weight});
             if (!isDirected) {
-                adj.get(edge[1]).put(edge[0], edge[2]);
-                edges.add(new int[]{edge[1], edge[0], edge[2]});
+                adj.get(to).put(from, weight);
+                edges.add(new int[]{to, from, weight});
             }
         }
 
