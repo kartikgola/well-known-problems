@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class FloydWarshall<T> {
+public class FloydWarshall<T extends Number> {
 
     /**
      * Implements Floyd-Warshall's all-source shortest-path algorithm

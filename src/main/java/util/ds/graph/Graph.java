@@ -11,7 +11,7 @@ import util.ds.graph.edge.Edge;
 import java.util.List;
 import java.util.Map;
 
-public interface Graph<T> {
+public interface Graph<T extends Number> {
 
     /**
      * Get the size of graph (no. of vertices)

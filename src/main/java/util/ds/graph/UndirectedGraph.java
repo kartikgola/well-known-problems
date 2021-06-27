@@ -13,7 +13,7 @@ import util.ds.graph.edge.UndirectedEdge;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class UndirectedGraph<T> extends AbstractGraph<T> {
+public class UndirectedGraph<T extends Number> extends AbstractGraph<T> {
 
     public UndirectedGraph(int size) {
         super(size);

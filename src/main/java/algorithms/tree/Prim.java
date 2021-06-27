@@ -13,7 +13,7 @@ import util.ds.graph.UndirectedGraph;
 
 import java.util.*;
 
-public class Prim<T> {
+public class Prim<T extends Number> {
 
     /**
      * Implements Prim's Minimum Spanning Tree algorithm using Priority-Queue data structure

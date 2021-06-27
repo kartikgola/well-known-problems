@@ -16,7 +16,7 @@ import util.ds.graph.UndirectedGraph;
 import java.util.Comparator;
 import java.util.List;
 
-public class Kruskal<T> {
+public class Kruskal<T extends Number> {
 
     /**
      * Implements Kruskal's Minimum Spanning Tree algorithm using Union-Find data structure.

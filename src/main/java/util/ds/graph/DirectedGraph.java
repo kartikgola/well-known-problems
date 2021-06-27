@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class DirectedGraph<T> extends AbstractGraph<T> {
+public class DirectedGraph<T extends Number> extends AbstractGraph<T> {
 
     public DirectedGraph(int size) {
         super(size);

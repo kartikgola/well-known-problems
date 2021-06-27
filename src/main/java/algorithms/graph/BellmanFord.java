@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class BellmanFord<T> {
+public class BellmanFord<T extends Number> {
 
     /**
      * Implements Bellman-Ford's single-source shortest-path algorithm

@@ -12,7 +12,7 @@ import util.ds.graph.edge.Edge;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public abstract class AbstractGraph<T> implements Graph<T> {
+public abstract class AbstractGraph<T extends Number> implements Graph<T> {
 
     protected final int size;
     protected Map<T, Map<T, Edge<T>>> adjMap;
