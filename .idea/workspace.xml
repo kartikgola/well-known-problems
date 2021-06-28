@@ -4,34 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding RemoveAllAdjacentDuplicatesInString">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CP.java" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding CP template">
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/BLITZ3_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/CHEFQUER.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/CYCLICQD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/SLPCYCLE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/TOTCRT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Candy.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CountOfSmallerNumbersAfterSelf.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MaximumPerformanceOfATeam.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MinNoOfRefuelingStops.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/StoneGame7.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/util/ds/trie/CompressedTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/sorting/MergeSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/codechef/START5B/SLPCYCLETest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/CandyTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/interview/uber/FindKthFromSAndTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/FindSuccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/FindSuccessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/FROGS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/FROGS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/SUMXOR2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/SUMXOR2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/graph/SuccessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/graph/SuccessorGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wkp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wkp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +92,14 @@
       <recent name="leetcode.interview.uber" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CandyTest.candy">
+  <component name="RunManager" selected="Application.CP">
+    <configuration name="CP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CP" />
+      <module name="wkp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SLPCYCLE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codechef.START5B.SLPCYCLE" />
       <module name="wkp" />
@@ -161,22 +153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.sorting" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.sorting.MergeSortTest" />
-      <option name="METHOD_NAME" value="sort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SLPCYCLETest.solve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
@@ -195,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CP" />
         <item itemvalue="JUnit.CandyTest.candy" />
         <item itemvalue="Application.TOTCRT" />
         <item itemvalue="Application.SLPCYCLE" />
         <item itemvalue="JUnit.SLPCYCLETest.solve" />
-        <item itemvalue="JUnit.MergeSortTest.sort" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +221,7 @@
       <workItem from="1624731987966" duration="10000" />
       <workItem from="1624772719483" duration="7205000" />
       <workItem from="1624789456311" duration="12632000" />
-      <workItem from="1624815648289" duration="13127000" />
+      <workItem from="1624815648289" duration="13343000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -513,7 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624874773930</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Updating utilities">
+      <created>1624882303264</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1624882303264</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Adding CP template">
+      <created>1624882325906</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1624882325906</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,8 +522,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding performant and lite graph APIs" />
-    <MESSAGE value="Adding PaintHouse and MaximumAreaOfAPieceOfCake" />
     <MESSAGE value="Adding SuccessorGraph" />
     <MESSAGE value="Fixing bug in djikstra" />
     <MESSAGE value="Adding util method and project files" />
@@ -557,7 +545,9 @@
     <MESSAGE value="Adding bisect left &amp; right array util" />
     <MESSAGE value="Adding T extends Number to graph classes" />
     <MESSAGE value="Adding RemoveAllAdjacentDuplicatesInString" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding RemoveAllAdjacentDuplicatesInString" />
+    <MESSAGE value="Updating utilities" />
+    <MESSAGE value="Adding CP template" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding CP template" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

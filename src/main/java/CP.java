@@ -13,7 +13,7 @@ class CP {
     public static void main(String[] args) throws Exception {
         int t = nextInt();
         while (t-- > 0) {
-
+            System.out.println("Hello, world");
         }
     }
 
@@ -500,7 +500,7 @@ class CP {
 
     /* -----------------------------IO Utilities----------------------------- */
     private static BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
-    private static StringTokenizer tkn = null;
+    private static StringTokenizer tkn = new StringTokenizer("");
 
     // Integer
     private static int nextInt() throws Exception {

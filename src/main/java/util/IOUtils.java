@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 public class IOUtils {
 
     private static BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
-    private static StringTokenizer tkn = null;
+    private static StringTokenizer tkn = new StringTokenizer("");
 
     // Integer
     public static int nextInt() throws Exception {
