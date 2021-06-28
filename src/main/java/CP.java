@@ -507,7 +507,6 @@ class CP {
             if (System.getProperty("ONLINE_JUDGE") == null) {
                 System.setOut(new PrintStream(new FileOutputStream("output.txt")));
                 rd = new BufferedReader(new FileReader("input.txt"));
-                System.out.println("here");
             }
         } catch(Exception e) {}
     }
