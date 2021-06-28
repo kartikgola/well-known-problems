@@ -502,6 +502,9 @@ class CP {
     private static BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer tkn = new StringTokenizer("");
 
+    // "ONLINE_JUDGE" property
+    // works on LeetCode, CodeForces, CodeChef
+    // does not work on AtCoder
     static {
         try {
             if (System.getProperty("ONLINE_JUDGE") == null) {
