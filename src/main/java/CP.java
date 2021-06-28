@@ -11,6 +11,7 @@ import java.lang.*;
 class CP {
 
     public static void main(String[] args) throws Exception {
+        setIO();
         int t = nextInt();
         while (t-- > 0) {
             System.out.println("Hello, world");
@@ -499,19 +500,17 @@ class CP {
 
 
     /* -----------------------------IO Utilities----------------------------- */
-    private static BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
+    private static BufferedReader rd = rd = new BufferedReader(new InputStreamReader(System.in));
     private static StringTokenizer tkn = new StringTokenizer("");
 
     // "ONLINE_JUDGE" property
     // works on LeetCode, CodeForces, CodeChef
     // does not work on AtCoder
-    static {
-        try {
-            if (System.getProperty("ONLINE_JUDGE") == null) {
-                System.setOut(new PrintStream(new FileOutputStream("output.txt")));
-                rd = new BufferedReader(new FileReader("input.txt"));
-            }
-        } catch(Exception e) {}
+    private static void setIO() throws Exception {
+        if (System.getProperty("ONLINE_JUDGE") == null) {
+            rd = new BufferedReader(new FileReader("input.txt"));
+            System.setOut(new PrintStream(new FileOutputStream("output.txt")));
+        }
     }
 
     // Integer
