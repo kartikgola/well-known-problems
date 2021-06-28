@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 03/10/2020, 13:06
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/maximum-distance-in-arrays/
  */
 

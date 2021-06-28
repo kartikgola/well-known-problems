@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 2/16/21, 10:34 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/kill-process/
  */
 

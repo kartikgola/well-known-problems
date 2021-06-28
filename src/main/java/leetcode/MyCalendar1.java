@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/10/21, 8:02 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/my-calendar-i/
  */
 

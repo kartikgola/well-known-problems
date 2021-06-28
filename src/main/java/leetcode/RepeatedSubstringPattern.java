@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 17/09/2020, 18:54
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/repeated-substring-pattern/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/6/20, 7:45 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
  */
 

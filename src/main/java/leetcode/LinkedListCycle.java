@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 05/02/2021, 12:34
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/linked-list-cycle/
  */
 

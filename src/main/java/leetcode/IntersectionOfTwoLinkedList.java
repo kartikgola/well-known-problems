@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 04/03/2021, 16:29
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/intersection-of-two-linked-lists/
  */
 

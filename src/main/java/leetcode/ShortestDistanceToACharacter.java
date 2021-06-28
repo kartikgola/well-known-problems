@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 07/02/2021, 18:47
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/shortest-distance-to-a-character/
  */
 

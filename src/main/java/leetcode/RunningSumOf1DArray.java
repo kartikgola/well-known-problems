@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 10/11/2020, 20:00
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/running-sum-of-1d-array/
  */
 

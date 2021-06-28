@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 24/07/20, 5:44 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://www.geeksforgeeks.org/find-height-of-a-special-binary-tree-whose-leaf-nodes-are-connected/
  */
 

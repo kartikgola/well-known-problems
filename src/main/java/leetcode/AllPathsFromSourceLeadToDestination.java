@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/22/21, 10:43 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/all-paths-from-source-lead-to-destination/
  */
 

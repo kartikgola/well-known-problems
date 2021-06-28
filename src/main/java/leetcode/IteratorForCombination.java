@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 8/16/20 7:29 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/iterator-for-combination/
  */
 

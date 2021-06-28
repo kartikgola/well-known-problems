@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/27/21, 5:45 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL:
  */
 

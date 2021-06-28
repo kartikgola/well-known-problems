@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 06/10/2020, 20:02
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/insert-into-a-binary-search-tree/
  */
 

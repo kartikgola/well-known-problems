@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 4/17/21, 12:34 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://atcoder.jp/contests/jsc2021
  */
 

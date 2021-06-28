@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 1/16/21, 8:18 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/out-of-boundary-paths/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 7/28/20 7:13 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/
  */
 

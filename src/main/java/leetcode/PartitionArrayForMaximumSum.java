@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 4/2/21, 1:11 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/partition-array-for-maximum-sum/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 18/12/2020, 23:45
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/increasing-triplet-subsequence/
  */
 

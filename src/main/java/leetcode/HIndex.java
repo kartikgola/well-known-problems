@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 8/11/20 10:11 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/h-index/
  */
 

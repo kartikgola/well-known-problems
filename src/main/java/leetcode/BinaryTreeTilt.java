@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 11/8/20, 6:22 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/binary-tree-tilt/
  */
 

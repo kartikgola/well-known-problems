@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 8/7/20 12:05 AM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/remove-invalid-parentheses/
  */
 

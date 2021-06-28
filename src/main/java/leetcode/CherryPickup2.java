@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/20/20, 1:14 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/cherry-pickup-ii/
  */
 

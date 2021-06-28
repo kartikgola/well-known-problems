@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 20/01/2021, 19:10
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/valid-parentheses/
  */
 

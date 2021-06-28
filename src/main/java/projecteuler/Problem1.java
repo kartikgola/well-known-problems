@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 28/08/2020, 22:44
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://projecteuler.net/problem=1
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/9/20, 12:48 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
  */
 

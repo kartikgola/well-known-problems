@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 7/28/20 6:42 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/count-primes/
  */
 

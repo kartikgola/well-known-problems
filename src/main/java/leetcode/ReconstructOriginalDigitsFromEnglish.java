@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 29/03/2021, 00:19
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/reconstruct-original-digits-from-english/
  */
 

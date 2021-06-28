@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/18/21, 3:57 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/range-sum-query-mutable/
  */
 

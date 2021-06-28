@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 14/03/2021, 13:37
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/binary-trees-with-factors/
  */
 

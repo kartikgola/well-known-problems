@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 14/10/2020, 22:18
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/buddy-strings/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 9/5/20, 4:10 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
  */
 

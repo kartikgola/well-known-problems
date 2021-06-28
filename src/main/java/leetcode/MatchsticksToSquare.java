@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/15/21, 4:55 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/matchsticks-to-square/
  */
 

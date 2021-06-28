@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 10/11/2020, 08:58
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL:  https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/
  */
 

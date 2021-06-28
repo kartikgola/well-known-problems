@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/23/20, 4:06 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/next-greater-element-i/
  */
 

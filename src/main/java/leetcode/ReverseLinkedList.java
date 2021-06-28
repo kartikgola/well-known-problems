@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 27/11/2020, 21:48
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/reverse-linked-list/
  */
 

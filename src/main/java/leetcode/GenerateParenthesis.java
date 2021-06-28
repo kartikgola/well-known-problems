@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 7/20/20 12:11 AM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/delete-operation-for-two-strings/
  */
 

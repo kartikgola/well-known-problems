@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 10/02/2021, 14:20
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://www.codechef.com/FEB21C/problems/PRIGAME
  */
 
@@ -17,7 +17,7 @@ public class SUMXOR2 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        final int[] nums = IOUtils.getInts(n);
+        final int[] nums = IOUtils.nextInts(n);
         int q = Integer.parseInt(br.readLine());
         StringBuilder ans = new StringBuilder();
 

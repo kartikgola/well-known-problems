@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 8/8/20 1:42 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/discuss/interview-experience/778039/google-phone-interview-rejected
  */
 

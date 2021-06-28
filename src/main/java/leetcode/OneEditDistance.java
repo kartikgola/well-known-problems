@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 1/23/21, 12:37 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/one-edit-distance/
  */
 

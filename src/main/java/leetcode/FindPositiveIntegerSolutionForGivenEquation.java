@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/11/21, 12:16 AM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/find-positive-integer-solution-for-a-given-equation/
  */
 

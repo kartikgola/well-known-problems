@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 11/6/20, 7:17 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/17/21, 9:43 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/number-of-subarrays-with-bounded-maximum/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 09/02/2021, 21:06
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/number-of-distinct-islands/
  */
 

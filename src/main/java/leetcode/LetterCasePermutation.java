@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 2/16/21, 8:22 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/letter-case-permutation/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/7/21, 7:49 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/min-cost-climbing-stairs/
  */
 

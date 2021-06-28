@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/13/20, 12:29 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 19/12/2020, 13:04
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/find-pivot-index/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 21/01/2021, 22:54
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/10/20, 9:21 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/valid-mountain-array/
  */
 

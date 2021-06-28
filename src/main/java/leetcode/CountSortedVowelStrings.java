@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 1/17/21, 4:33 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/count-sorted-vowel-strings/
  */
 

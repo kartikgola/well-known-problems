@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/2/21, 1:17 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/design-hit-counter/
  */
 

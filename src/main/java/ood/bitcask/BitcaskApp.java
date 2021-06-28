@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 5/18/21, 3:00 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  */
 
 package ood.bitcask;

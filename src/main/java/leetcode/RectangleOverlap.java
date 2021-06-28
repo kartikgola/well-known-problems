@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 22/01/2021, 01:13
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/rectangle-overlap/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/14/21, 5:35 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/palindrome-pairs/
  */
 

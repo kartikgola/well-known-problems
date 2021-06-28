@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 14/07/20, 10:50 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/most-stones-removed-with-same-row-or-column
  */
 

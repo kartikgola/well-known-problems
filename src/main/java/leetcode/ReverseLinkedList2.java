@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/23/21, 3:13 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/reverse-linked-list-ii/
  */
 

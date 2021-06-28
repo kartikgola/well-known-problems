@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/3/21, 4:48 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/
  */
 

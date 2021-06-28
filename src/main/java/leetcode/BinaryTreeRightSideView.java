@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 2/6/21, 6:15 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/binary-tree-right-side-view/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/4/21, 11:28 AM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/paint-house
  */
 

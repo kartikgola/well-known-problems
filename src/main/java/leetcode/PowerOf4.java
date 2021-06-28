@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 04/08/20, 7:44 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/power-of-four/
  */
 

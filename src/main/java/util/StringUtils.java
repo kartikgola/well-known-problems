@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 17/09/2020, 21:57
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  */
 
 package util;

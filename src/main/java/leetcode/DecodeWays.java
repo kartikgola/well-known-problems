@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 3/22/21, 12:13 AM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/decode-ways/
  */
 

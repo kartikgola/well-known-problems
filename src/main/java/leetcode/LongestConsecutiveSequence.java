@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/7/21, 12:18 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/longest-consecutive-sequence/solution/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 5/24/21, 12:28 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/continuous-subarray-sum/
  */
 

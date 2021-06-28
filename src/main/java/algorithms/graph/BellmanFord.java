@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 4/2/21, 9:33 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm
  */
 

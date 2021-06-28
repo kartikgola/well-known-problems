@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 28/03/2021, 23:23
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/word-subsets/
  */
 

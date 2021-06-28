@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 24/07/20, 8:38 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
  */
 

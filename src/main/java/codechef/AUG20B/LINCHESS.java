@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 8/13/20 9:41 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://www.codechef.com/AUG20B/problems/LINCHESS
  */
 

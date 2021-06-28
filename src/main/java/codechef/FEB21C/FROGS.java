@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 10/02/2021, 12:27
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://www.codechef.com/FEB21C/problems/FROGS
  */
 

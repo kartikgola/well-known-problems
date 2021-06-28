@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 27/11/2020, 22:10
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/search-in-a-binary-search-tree/
  */
 

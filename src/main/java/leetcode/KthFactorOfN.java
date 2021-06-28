@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 05/12/2020, 12:01
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/the-kth-factor-of-n/
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 9/1/20, 7:30 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/explore/challenge/card/september-leetcoding-challenge/554/week-1-september-1st-september-7th/3444/
  */
 package leetcode;

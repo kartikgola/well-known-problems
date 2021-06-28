@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 07/10/2020, 22:58
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/palindrome-number/
  */
 

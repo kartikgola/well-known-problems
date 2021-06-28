@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 5/27/21, 12:15 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
  */
 

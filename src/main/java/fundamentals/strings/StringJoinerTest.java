@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 12/04/2021, 20:23
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  */
 
 package fundamentals.strings;

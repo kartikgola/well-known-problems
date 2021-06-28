@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 11/03/2021, 16:31
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/count-square-submatrices-with-all-ones/
  */
 

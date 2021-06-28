@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 24/07/20, 7:25 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/design-tic-tac-toe
  */
 

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 2/6/21, 6:17 PM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/simplify-path/
  */
 

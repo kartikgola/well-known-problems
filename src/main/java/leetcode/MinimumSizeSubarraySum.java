@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 14/01/2021, 01:08
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/minimum-size-subarray-sum
  */
 

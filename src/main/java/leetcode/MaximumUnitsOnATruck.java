@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 6/15/21, 11:52 AM
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/maximum-units-on-a-truck/
  */
 

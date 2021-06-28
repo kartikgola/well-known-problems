@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 02/01/2021, 13:40
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/
  */
 

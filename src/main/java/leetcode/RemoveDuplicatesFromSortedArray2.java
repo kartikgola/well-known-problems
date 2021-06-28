@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 11/12/2020, 21:05
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
  */
 

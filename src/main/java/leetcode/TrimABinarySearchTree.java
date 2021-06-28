@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 03/02/2021, 08:52
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/trim-a-binary-search-tree/
  */
 

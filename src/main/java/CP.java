@@ -1,7 +1,7 @@
 /*
  * Java Coding Template for Competitive Programming
  * Author: Kartik Gola
- * Copyright (c) 2021 | https://rattl.io
+ * Copyright (c) 2021 | https://kartikgola.com
  */
 
 import java.io.*;

@@ -1,7 +1,7 @@
 /*
  * Author: Kartik Gola
  * Date: 02/08/20, 1:36 PM
- * Copyright (c) 2020 | https://rattl.io
+ * Copyright (c) 2020 | https://kartikgola.com
  * Problem URL: https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
  */
 
