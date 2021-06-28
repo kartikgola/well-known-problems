@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FindSuccessor<T> {
+public class FindSuccessor<T extends Number> {
 
     private final int STEPS_LIMIT = (int) Math.pow(2, 30);
     private final Map<T, Map<Integer, T>> dp = new HashMap<>();

@@ -16,7 +16,7 @@ import java.util.Stack;
 
 public class NearestSmallestOnLeft {
 
-    public void solve() throws IOException {
+    public void solve() throws Exception {
 
         //Input:  arr[] = {1, 6, 4, 10, 2, 5}
         //Output:         {_, 1, 1,  4, 1, 2}
@@ -26,7 +26,7 @@ public class NearestSmallestOnLeft {
 
         while ( t-- > 0 ) {
             int n = Integer.parseInt(reader.readLine());
-            int[] arr = IOUtils.getInts(n);
+            int[] arr = IOUtils.nextInts(n);
             Stack<Integer> s = new Stack<>();
             String[] res = new String[n];
 

@@ -4,16 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Moving stuff again!">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding RemoveAllAdjacentDuplicatesInString">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CP.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc199/TaskE.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/atcoder/abc200/TaskD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/BLITZ3_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/CHEFQUER.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/CYCLICQD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/SLPCYCLE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codechef/START5B/TOTCRT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/Candy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CountOfSmallerNumbersAfterSelf.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MaximumPerformanceOfATeam.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/MinNoOfRefuelingStops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/RangeSumQueryMutable.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/StoneGame7.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/util/ds/trie/CompressedTrie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/algorithms/sorting/MergeSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/codechef/START5B/SLPCYCLETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/CandyTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/interview/uber/FindKthFromSAndTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/graph/FindSuccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/graph/FindSuccessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/FROGS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/FROGS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/SUMXOR2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codechef/FEB21C/SUMXOR2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geeksforgeeks/NearestSmallestOnLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/graph/SuccessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/graph/SuccessorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wkp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wkp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
@@ -42,13 +61,15 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1t9jkBqz0soNUOWOK0kUutTi22H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -65,6 +86,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -79,101 +101,93 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="leetcode" />
-      <recent name="leetcode.interview.uber" />
+      <recent name="codechef.START5B" />
+      <recent name="algorithms.sorting" />
       <recent name="util" />
-      <recent name="algorithms.graph" />
-      <recent name="algorithms.tree" />
+      <recent name="leetcode.interview.uber" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MatchsticksToSquareTest.makesquare">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CandyTest.candy">
+    <configuration name="SLPCYCLE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codechef.START5B.SLPCYCLE" />
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.START5B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TOTCRT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codechef.START5B.TOTCRT" />
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.START5B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindKthFromSAndTTest.solve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CandyTest.candy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.interview.uber.*" />
+          <option name="PATTERN" value="leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.interview.uber" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.interview.uber.FindKthFromSAndTTest" />
+      <option name="PACKAGE_NAME" value="leetcode" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.CandyTest" />
+      <option name="METHOD_NAME" value="candy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSortTest.sort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms.sorting" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.sorting.MergeSortTest" />
+      <option name="METHOD_NAME" value="sort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SLPCYCLETest.solve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codechef.START5B.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="codechef.START5B" />
+      <option name="MAIN_CLASS_NAME" value="codechef.START5B.SLPCYCLETest" />
       <option name="METHOD_NAME" value="solve" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindSuccessorTest.successorOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.graph" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.graph.FindSuccessorTest" />
-      <option name="METHOD_NAME" value="successorOf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatchsticksToSquareTest.makesquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.MatchsticksToSquareTest" />
-      <option name="METHOD_NAME" value="makesquare" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegularExpressionMatchingTest.isMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.RegularExpressionMatchingTest" />
-      <option name="METHOD_NAME" value="isMatch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TheMaze2Test.shortestDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.TheMaze2Test" />
-      <option name="METHOD_NAME" value="shortestDistance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MatchsticksToSquareTest.makesquare" />
-        <item itemvalue="JUnit.FindKthFromSAndTTest.solve" />
-        <item itemvalue="JUnit.FindSuccessorTest.successorOf" />
-        <item itemvalue="JUnit.TheMaze2Test.shortestDistance" />
-        <item itemvalue="JUnit.RegularExpressionMatchingTest.isMatch" />
+        <item itemvalue="JUnit.CandyTest.candy" />
+        <item itemvalue="Application.TOTCRT" />
+        <item itemvalue="Application.SLPCYCLE" />
+        <item itemvalue="JUnit.SLPCYCLETest.solve" />
+        <item itemvalue="JUnit.MergeSortTest.sort" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +233,19 @@
       <workItem from="1623778057351" duration="3668000" />
       <workItem from="1623845494476" duration="2986000" />
       <workItem from="1623940239936" duration="4084000" />
-      <workItem from="1624008882911" duration="3253000" />
+      <workItem from="1624008882911" duration="5273000" />
+      <workItem from="1624023247595" duration="1317000" />
+      <workItem from="1624195885992" duration="40000" />
+      <workItem from="1624196026606" duration="54000" />
+      <workItem from="1624273476127" duration="596000" />
+      <workItem from="1624364596484" duration="7063000" />
+      <workItem from="1624427415157" duration="30008000" />
+      <workItem from="1624616268456" duration="5492000" />
+      <workItem from="1624694411306" duration="2981000" />
+      <workItem from="1624731987966" duration="10000" />
+      <workItem from="1624772719483" duration="7205000" />
+      <workItem from="1624789456311" duration="12632000" />
+      <workItem from="1624815648289" duration="13127000" />
     </task>
     <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
       <created>1622189670173</created>
@@ -431,7 +457,63 @@
       <option name="project" value="LOCAL" />
       <updated>1624011530406</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adding solution to RangeSumQueryMutable">
+      <created>1624012280784</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1624012280784</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Adding solution to NumberOfMatchingSubsequences">
+      <created>1624372526247</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1624372526247</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Adding LC solutions">
+      <created>1624464722799</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1624464722799</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Adding LC solution for RedundantConnection">
+      <created>1624617894099</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1624617894100</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Adding alt. LC solution for RedundantConnection">
+      <created>1624622227956</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1624622227956</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Adding bisect left &amp; right array util">
+      <created>1624778094702</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1624778094702</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Adding T extends Number to graph classes">
+      <created>1624778126798</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1624778126798</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Adding RemoveAllAdjacentDuplicatesInString">
+      <created>1624874773930</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1624874773930</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,19 +532,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing test case issues" />
-    <MESSAGE value="Adding pom.xml" />
-    <MESSAGE value="Adding TC for BellmanFord" />
-    <MESSAGE value="Adding file GenerateParenthesis" />
-    <MESSAGE value="Adding workspace.xml" />
-    <MESSAGE value="Cleaning up README.md" />
-    <MESSAGE value="Adding LeetCode #10: Regular Expression Matching" />
     <MESSAGE value="Adding performant and lite graph APIs" />
     <MESSAGE value="Adding PaintHouse and MaximumAreaOfAPieceOfCake" />
     <MESSAGE value="Adding SuccessorGraph" />
     <MESSAGE value="Fixing bug in djikstra" />
     <MESSAGE value="Adding util method and project files" />
-    <MESSAGE value="Adding LC solutions" />
     <MESSAGE value="Adding ABC200 sols" />
     <MESSAGE value="Adding PalindromePairs" />
     <MESSAGE value="Adding MaximumUnitsOnATruck" />
@@ -475,6 +549,21 @@
     <MESSAGE value="Adding solution to ShortestDistanceToTargetColor" />
     <MESSAGE value="Moving stuff" />
     <MESSAGE value="Moving stuff again!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moving stuff again!" />
+    <MESSAGE value="Adding solution to RangeSumQueryMutable" />
+    <MESSAGE value="Adding solution to NumberOfMatchingSubsequences" />
+    <MESSAGE value="Adding LC solutions" />
+    <MESSAGE value="Adding LC solution for RedundantConnection" />
+    <MESSAGE value="Adding alt. LC solution for RedundantConnection" />
+    <MESSAGE value="Adding bisect left &amp; right array util" />
+    <MESSAGE value="Adding T extends Number to graph classes" />
+    <MESSAGE value="Adding RemoveAllAdjacentDuplicatesInString" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding RemoveAllAdjacentDuplicatesInString" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/wkp$test.coverage" NAME="test Coverage Results" MODIFIED="1624023824407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/java/util" />
   </component>
 </project>

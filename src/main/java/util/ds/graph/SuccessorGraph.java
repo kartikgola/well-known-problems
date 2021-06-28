@@ -11,7 +11,7 @@ import util.ds.graph.edge.Edge;
 
 import java.util.HashMap;
 
-public class SuccessorGraph<T> extends DirectedGraph<T> {
+public class SuccessorGraph<T extends Number> extends DirectedGraph<T> {
 
     public SuccessorGraph(int size) {
         super(size);

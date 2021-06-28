@@ -17,12 +17,12 @@ import java.util.Map;
 public class FROGS {
 
     public static void main(String[] args) throws Exception {
-        int t = getInt();
+        int t = nextInt();
         while (t-- > 0) {
-            int n = getInt();
+            int n = nextInt();
             Map<Integer, List<Integer>> map = new HashMap<>();
-            int[] W = getInts(n);
-            int[] L = getInts(n);
+            int[] W = nextInts(n);
+            int[] L = nextInts(n);
 
             // Create map of {weight=[Initial Position, Jump distance]}
             int pos = 1;
