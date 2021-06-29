@@ -14,38 +14,35 @@ public class SegmentTree {
         Sum
     }
 
-    private int[] tree;
-    private int[] arr;
-    private RangeQueryType type;
+    private final int[] tree;
+    private final RangeQueryType type;
+    private final int size;
 
     public SegmentTree(int[] arr, RangeQueryType type) {
+        this.size = arr.length;
         this.tree = new int[arr.length * 4];
-        this.arr = arr;
         this.type = type;
-        this.build(0, 0, arr.length - 1);
+        this.build(arr, 0, 0, arr.length - 1);
     }
 
     private int merge(int val1, int val2) {
-        int res = -1;
-        if ( type == RangeQueryType.Maximum ) {
-            res = Math.max(val1, val2);
-        } else if ( type == RangeQueryType.Minimum ) {
-            res = Math.min(val1, val2);
-        } else if ( type == RangeQueryType.Sum) {
-            res = val1 + val2;
+        switch (this.type) {
+            case Maximum: return Math.max(val1, val2);
+            case Minimum: return Math.min(val1, val2);
+            case Sum: return val1+val2;
         }
-        return res;
+        return -1;
     }
 
-    private void build(int treePos, int low, int high) {
+    private void build(int[] arr, int treePos, int low, int high) {
         if ( low == high ) {
             tree[treePos] = arr[low];
             return;
         }
 
         int mid = low + (high - low) / 2;
-        build(2 * treePos + 1, low, mid);
-        build(2 * treePos + 2, mid + 1, high);
+        build(arr, 2 * treePos + 1, low, mid);
+        build(arr, 2 * treePos + 2, mid + 1, high);
 
         tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
@@ -81,11 +78,10 @@ public class SegmentTree {
     }
 
     public int query(int i, int j) {
-        return query(0, 0, arr.length - 1, i, j);
+        return query(0, 0, size - 1, i, j);
     }
 
     public void update(int i, int val) {
-        this.arr[i] = val;
-        this.update(0, 0, arr.length - 1, i, val);
+        this.update(0, 0, size - 1, i, val);
     }
 }
