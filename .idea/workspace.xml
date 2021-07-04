@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding sol'n for GrayCode">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/FindKClosestElements.java" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding FindKClosestElements">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CountVowelsPermutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -130,15 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,14 +212,8 @@
       <workItem from="1624815648289" duration="16740000" />
       <workItem from="1624937432337" duration="9902000" />
       <workItem from="1625146144641" duration="12087000" />
-      <workItem from="1625199943264" duration="8351000" />
-    </task>
-    <task id="LOCAL-00001" summary="Major Update: Moving project to Maven">
-      <created>1622189670173</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1622189670173</updated>
+      <workItem from="1625199943264" duration="8414000" />
+      <workItem from="1625406928059" duration="1020000" />
     </task>
     <task id="LOCAL-00002" summary="Fixing broken imports">
       <created>1622190324162</created>
@@ -559,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625163031867</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Adding FindKClosestElements">
+      <created>1625235056575</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1625235056575</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +577,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding MatchsticksToSquare and updating PartitionToKEqualSumSubsets" />
     <MESSAGE value="Updating Trie method" />
     <MESSAGE value="Updating GenerateParenthesis" />
     <MESSAGE value="Adding solution to NumberOfSubarraysWithBoundedMaximum" />
@@ -603,7 +601,8 @@
     <MESSAGE value="Updating SegmentTree" />
     <MESSAGE value="Updating LazySegmentTree" />
     <MESSAGE value="Adding sol'n for GrayCode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding sol'n for GrayCode" />
+    <MESSAGE value="Adding FindKClosestElements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding FindKClosestElements" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
