@@ -59,53 +59,6 @@ class CP {
         return seive;
     }
 
-    // Returns list of all prime numbers upto (not including) the specified number
-    private static List<Integer> primeNumbersUpto(int number) {
-        List<Integer> primes = new ArrayList<>();
-        if ( number > 2 ) {
-            boolean[] seive = new boolean[number];
-            for ( int num = 2; num < seive.length; ++num ) {
-                if ( !seive[num] ) {
-                    for ( int mult = num * 2; mult < seive.length; mult += num ) {
-                        seive[mult] = true;
-                    }
-                }
-            }
-            for ( int num = 2; num < seive.length; ++num ) {
-                if ( !seive[num] ) {
-                    primes.add(num);
-                }
-            }
-        }
-        return primes;
-    }
-
-    // Returns all prime factors of the given number in an Integer List
-    private static Map<Long, Long> primeFactors(long number) {
-        if (number <= 0)
-            return new HashMap<>();
-
-        Map<Long, Long> primeFactors = new HashMap<>();
-        List<Integer> primes = primeNumbersUpto((int)Math.sqrt(number) + 1);
-
-        for (int prime: primes) {
-            long count = 0;
-            while (number % prime == 0) {
-                number /= prime;
-                count++;
-            }
-            if (count > 0) {
-                primeFactors.put((long)prime, count);
-            }
-        }
-
-        if (number > 1) {
-            primeFactors.put(number, 1L);
-        }
-
-        return primeFactors;
-    }
-
     private static boolean isPalindrome(long number) {
         String str = Long.toString(number);
         for (int i = 0, j = str.length() - 1; i <= j; ++i, --j) {
