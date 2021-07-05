@@ -17,11 +17,17 @@ public class SegmentTree {
     private final int[] tree;
     private final RangeQueryType type;
     private final int size;
+    private int NOT_FOUND;
 
     public SegmentTree(int[] arr, RangeQueryType type) {
         this.size = arr.length;
         this.tree = new int[arr.length * 4];
         this.type = type;
+        switch (type) {
+            case Sum: NOT_FOUND = 0; break;
+            case Maximum: NOT_FOUND = Integer.MIN_VALUE; break;
+            case Minimum: NOT_FOUND = Integer.MAX_VALUE; break;
+        }
         this.build(arr, 0, 0, arr.length - 1);
     }
 
@@ -49,7 +55,7 @@ public class SegmentTree {
 
     private int query(int treePos, int low, int high, int i, int j) {
         if ( low > j || high < i )
-            return 0;
+            return NOT_FOUND;
         if ( low >= i && high <= j )
             return tree[treePos];
 

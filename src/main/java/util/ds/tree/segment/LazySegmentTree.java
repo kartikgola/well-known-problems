@@ -18,12 +18,18 @@ public class LazySegmentTree {
     private final int[] lazy;
     private final RangeQueryType type;
     private final int size;
+    private int NOT_FOUND;
 
     public LazySegmentTree(int[] arr, RangeQueryType rangeQueryType) {
         this.size = arr.length;
         this.type = rangeQueryType;
         this.tree = new int[arr.length * 4];
         this.lazy = new int[arr.length * 4];
+        switch (rangeQueryType) {
+            case Sum: NOT_FOUND = 0; break;
+            case Maximum: NOT_FOUND = Integer.MIN_VALUE; break;
+            case Minimum: NOT_FOUND = Integer.MAX_VALUE; break;
+        }
         this.build(arr, 0, 0, arr.length - 1);
     }
 
@@ -51,7 +57,7 @@ public class LazySegmentTree {
 
     private int query(int treePos, int low, int high, int i, int j) {
         if ( low > j || high < i )
-            return 0;
+            return NOT_FOUND;
 
         if ( lazy[treePos] != 0 )
             removeLaziness(treePos, low, high);

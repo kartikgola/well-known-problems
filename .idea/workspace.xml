@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding FindKClosestElements">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/CountVowelsPermutation.java" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding CountVowelsPermutation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/coursera/SumOfMinimums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/LazySegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/LazySegmentTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/SegmentTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -83,7 +86,7 @@
       <recent name="leetcode.interview.uber" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GrayCode">
+  <component name="RunManager" selected="Application.SumOfMinimums">
     <configuration name="CP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CP" />
       <module name="wkp" />
@@ -104,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SLPCYCLE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codechef.START5B.SLPCYCLE" />
+    <configuration name="SumOfMinimums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coursera.SumOfMinimums" />
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codechef.START5B.*" />
+          <option name="PATTERN" value="coursera.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,13 +133,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SumOfMinimums" />
         <item itemvalue="Application.GrayCode" />
         <item itemvalue="Application.CP" />
         <item itemvalue="JUnit.CandyTest.candy" />
         <item itemvalue="Application.TOTCRT" />
-        <item itemvalue="Application.SLPCYCLE" />
       </list>
     </recent_temporary>
   </component>
@@ -213,14 +218,13 @@
       <workItem from="1624937432337" duration="9902000" />
       <workItem from="1625146144641" duration="12087000" />
       <workItem from="1625199943264" duration="8414000" />
-      <workItem from="1625406928059" duration="1020000" />
-    </task>
-    <task id="LOCAL-00002" summary="Fixing broken imports">
-      <created>1622190324162</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1622190324162</updated>
+      <workItem from="1625406928059" duration="1566000" />
+      <workItem from="1625408829585" duration="5000" />
+      <workItem from="1625422304302" duration="1280000" />
+      <workItem from="1625467730481" duration="716000" />
+      <workItem from="1625471542956" duration="2000" />
+      <workItem from="1625471648693" duration="572000" />
+      <workItem from="1625478329987" duration="594000" />
     </task>
     <task id="LOCAL-00003" summary="Adding tests for Graph/Tree algos">
       <created>1622193291721</created>
@@ -558,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625235056575</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Adding CountVowelsPermutation">
+      <created>1625408073512</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1625408073512</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +588,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updating Trie method" />
     <MESSAGE value="Updating GenerateParenthesis" />
     <MESSAGE value="Adding solution to NumberOfSubarraysWithBoundedMaximum" />
     <MESSAGE value="Adding solution to ShortestDistanceToTargetColor" />
@@ -602,7 +612,8 @@
     <MESSAGE value="Updating LazySegmentTree" />
     <MESSAGE value="Adding sol'n for GrayCode" />
     <MESSAGE value="Adding FindKClosestElements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding FindKClosestElements" />
+    <MESSAGE value="Adding CountVowelsPermutation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding CountVowelsPermutation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
