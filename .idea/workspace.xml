@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Fixing bugs in SegTree">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Removing less-used method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/KthSmallestElementInSortedMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReduceArraySizeToTheHalf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,14 +222,9 @@
       <workItem from="1625471648693" duration="572000" />
       <workItem from="1625478329987" duration="853000" />
       <workItem from="1625481683966" duration="1310000" />
-      <workItem from="1625495443265" duration="377000" />
-    </task>
-    <task id="LOCAL-00004" summary="Fixing test case issues">
-      <created>1622193839591</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1622193839591</updated>
+      <workItem from="1625495443265" duration="657000" />
+      <workItem from="1625559842901" duration="1835000" />
+      <workItem from="1625722322340" duration="656000" />
     </task>
     <task id="LOCAL-00005" summary="Adding pom.xml">
       <created>1622194005843</created>
@@ -566,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625478957725</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Removing less-used method">
+      <created>1625495853861</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1625495853861</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +588,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding solution to NumberOfSubarraysWithBoundedMaximum" />
     <MESSAGE value="Adding solution to ShortestDistanceToTargetColor" />
     <MESSAGE value="Moving stuff" />
     <MESSAGE value="Moving stuff again!" />
@@ -610,7 +612,8 @@
     <MESSAGE value="Adding FindKClosestElements" />
     <MESSAGE value="Adding CountVowelsPermutation" />
     <MESSAGE value="Fixing bugs in SegTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing bugs in SegTree" />
+    <MESSAGE value="Removing less-used method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing less-used method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
