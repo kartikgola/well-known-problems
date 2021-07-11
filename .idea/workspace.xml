@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Removing less-used method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/KthSmallestElementInSortedMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/ReduceArraySizeToTheHalf.java" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LC solutions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DecodeWays2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-11.0.2/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -70,6 +71,9 @@
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\wkp\src\main\java" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -131,13 +135,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,14 +230,11 @@
       <workItem from="1625481683966" duration="1310000" />
       <workItem from="1625495443265" duration="657000" />
       <workItem from="1625559842901" duration="1835000" />
-      <workItem from="1625722322340" duration="656000" />
-    </task>
-    <task id="LOCAL-00005" summary="Adding pom.xml">
-      <created>1622194005843</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1622194005843</updated>
+      <workItem from="1625722322340" duration="1628000" />
+      <workItem from="1625851583833" duration="521000" />
+      <workItem from="1625927029862" duration="17000" />
+      <workItem from="1625987197513" duration="3363000" />
+      <workItem from="1626000608466" duration="106000" />
     </task>
     <task id="LOCAL-00006" summary="Adding TC for BellmanFord">
       <created>1622194021583</created>
@@ -569,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625495853861</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Adding LC solutions">
+      <created>1625724536843</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1625724536843</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +603,6 @@
     <MESSAGE value="Moving stuff again!" />
     <MESSAGE value="Adding solution to RangeSumQueryMutable" />
     <MESSAGE value="Adding solution to NumberOfMatchingSubsequences" />
-    <MESSAGE value="Adding LC solutions" />
     <MESSAGE value="Adding LC solution for RedundantConnection" />
     <MESSAGE value="Adding alt. LC solution for RedundantConnection" />
     <MESSAGE value="Adding bisect left &amp; right array util" />
@@ -613,7 +622,8 @@
     <MESSAGE value="Adding CountVowelsPermutation" />
     <MESSAGE value="Fixing bugs in SegTree" />
     <MESSAGE value="Removing less-used method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing less-used method" />
+    <MESSAGE value="Adding LC solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding LC solutions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,13 +13,13 @@ public class IOUtils {
 
     // Integer
     public static int nextInt() throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         return Integer.parseInt(tkn.nextToken());
     }
 
     public static int[] nextInts(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         int[] ans = new int[n];
         for (int i = 0; i < n; i++)
@@ -28,7 +28,7 @@ public class IOUtils {
     }
 
     public static List<Integer> nextIntList(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         List<Integer> ans = new ArrayList<>(n);
         for (int i = 0; i < n; i++)
@@ -38,13 +38,13 @@ public class IOUtils {
 
     // Long
     public static long nextLong() throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         return Long.parseLong(tkn.nextToken());
     }
 
     public static long[] nextLongs(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         long[] ans = new long[n];
         for (int i = 0; i < n; i++)
@@ -53,7 +53,7 @@ public class IOUtils {
     }
 
     public static List<Long> nextLongList(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         List<Long> ans = new ArrayList<>(n);
         for (int i = 0; i < n; i++)
@@ -63,13 +63,13 @@ public class IOUtils {
 
     // Double
     public static double nextDouble() throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         return Double.parseDouble(tkn.nextToken());
     }
 
     public static double[] nextDouble(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         double[] ans = new double[n];
         for (int i = 0; i < n; i++)
@@ -78,7 +78,7 @@ public class IOUtils {
     }
 
     public static List<Double> nextDoubleList(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         List<Double> ans = new ArrayList<>(n);
         for (int i = 0; i < n; i++)
@@ -88,13 +88,13 @@ public class IOUtils {
 
     // String
     public static String nextString() throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         return tkn.nextToken();
     }
 
     public static String[] nextStrings(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         String[] ans = new String[n];
         for (int i = 0; i < n; i++)
@@ -103,7 +103,7 @@ public class IOUtils {
     }
 
     public static List<String> nextStringList(int n) throws Exception {
-        if (!tkn.hasMoreTokens())
+        while (!tkn.hasMoreTokens())
             tkn = new StringTokenizer(rd.readLine());
         List<String> ans = new ArrayList<>(n);
         for (int i = 0; i < n; i++)
