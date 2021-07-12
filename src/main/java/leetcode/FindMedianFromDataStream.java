@@ -12,7 +12,10 @@ import java.util.Queue;
 
 public class FindMedianFromDataStream {
 
+    // Max-heap that stores numbers less than median
     private Queue<Integer> lows = new PriorityQueue<>((a, b) -> b - a);
+
+    // Min-heap that stores numbers greater than equal to median
     private Queue<Integer> highs = new PriorityQueue<>();
 
     /** initialize your data structure here. */
