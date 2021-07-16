@@ -39,6 +39,7 @@ class ArrayUtilsTest {
         assertEquals(3, bisectRight(new int[]{10, 20, 20, 50}, 20));
         assertEquals(1, bisectRight(new int[]{10}, 10));
         assertEquals(1, bisectRight(new int[]{10}, 20));
+        assertEquals(0, bisectRight(new int[]{10}, 5));
     }
 
 }
