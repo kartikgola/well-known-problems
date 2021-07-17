@@ -12,7 +12,7 @@ import java.util.List;
 
 public class FourSum {
 
-    private List<List<Integer>> fourSumCount(int[] nums, int target) {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList<>();
         if ( nums.length < 4 ) return list;
 
