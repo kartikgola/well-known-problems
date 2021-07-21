@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LC solutions">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LC solution for LowestCommonAncestorOfABinarySearchTree">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitHacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DecodeWays2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/IOUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ArrayUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,23 +90,23 @@
       <recent name="leetcode.interview.uber" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SumOfMinimums">
-    <configuration name="CP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CP" />
+  <component name="RunManager" selected="JUnit.ArrayUtilsTest.testBisectRight">
+    <configuration name="BitHacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fundamentals.bithandling.BitHacks" />
       <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fundamentals.bithandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrayCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.GrayCode" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,19 +117,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="coursera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TOTCRT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codechef.START5B.TOTCRT" />
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codechef.START5B.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,17 +137,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CandyTest.candy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayUtilsTest.testBisectLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.CandyTest" />
-      <option name="METHOD_NAME" value="candy" />
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
+      <option name="METHOD_NAME" value="testBisectLeft" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayUtilsTest.testBisectRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
+      <option name="METHOD_NAME" value="testBisectRight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayUtilsTest.testBisectRight" />
+        <item itemvalue="JUnit.ArrayUtilsTest.testBisectLeft" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BitHacks" />
         <item itemvalue="Application.SumOfMinimums" />
-        <item itemvalue="Application.GrayCode" />
-        <item itemvalue="Application.CP" />
-        <item itemvalue="JUnit.CandyTest.candy" />
-        <item itemvalue="Application.TOTCRT" />
       </list>
     </recent_temporary>
   </component>
@@ -234,77 +239,17 @@
       <workItem from="1625851583833" duration="521000" />
       <workItem from="1625927029862" duration="17000" />
       <workItem from="1625987197513" duration="3363000" />
-      <workItem from="1626000608466" duration="106000" />
-    </task>
-    <task id="LOCAL-00006" summary="Adding TC for BellmanFord">
-      <created>1622194021583</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622194021583</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Adding file GenerateParenthesis">
-      <created>1622194033420</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622194033420</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Adding workspace.xml">
-      <created>1622194050967</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1622194050967</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Cleaning up README.md">
-      <created>1622194190706</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1622194190706</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Adding LeetCode #10: Regular Expression Matching">
-      <created>1622207832209</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1622207832209</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Adding performant and lite graph APIs">
-      <created>1622395378276</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1622395378276</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding LC solutions">
-      <created>1622639283014</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1622639283014</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Adding PaintHouse and MaximumAreaOfAPieceOfCake">
-      <created>1622792303564</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1622792303564</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Adding SuccessorGraph">
-      <created>1623162386760</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1623162386760</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Fixing bug in djikstra">
-      <created>1623162406724</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1623162406724</updated>
+      <workItem from="1626000608466" duration="186000" />
+      <workItem from="1626002443241" duration="1000" />
+      <workItem from="1626013820835" duration="59000" />
+      <workItem from="1626063869695" duration="12608000" />
+      <workItem from="1626161603490" duration="2140000" />
+      <workItem from="1626254126697" duration="1542000" />
+      <workItem from="1626419646197" duration="363000" />
+      <workItem from="1626431566891" duration="4090000" />
+      <workItem from="1626503467668" duration="193000" />
+      <workItem from="1626718973148" duration="5192000" />
+      <workItem from="1626848371289" duration="1689000" />
     </task>
     <task id="LOCAL-00016" summary="Adding LC solutions">
       <created>1623162432799</created>
@@ -579,7 +524,77 @@
       <option name="project" value="LOCAL" />
       <updated>1625724536843</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Removing CP template and updating IO">
+      <created>1626000744215</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1626000744215</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Adding solution for FindMedianFromDataStream">
+      <created>1626076932607</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1626076932607</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Updating comment in FindMedianFromDataStream">
+      <created>1626077008358</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1626077008358</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Adding LC solution to IsomorphicStrings">
+      <created>1626106022233</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1626106022233</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Adding LC solution for FindPeakElement">
+      <created>1626187693530</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1626187693531</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Adding LC solution for CustomSortString">
+      <created>1626321383098</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1626321383098</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Adding changes to bisect utils">
+      <created>1626438004774</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1626438004774</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Adding LC solution for ValidTriangleNumber">
+      <created>1626438032317</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1626438032317</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Updating method name to be LC compatible">
+      <created>1626503611096</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1626503611096</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Adding LC solution for LowestCommonAncestorOfABinarySearchTree">
+      <created>1626849216513</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1626849216513</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -598,16 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding solution to ShortestDistanceToTargetColor" />
-    <MESSAGE value="Moving stuff" />
-    <MESSAGE value="Moving stuff again!" />
-    <MESSAGE value="Adding solution to RangeSumQueryMutable" />
-    <MESSAGE value="Adding solution to NumberOfMatchingSubsequences" />
-    <MESSAGE value="Adding LC solution for RedundantConnection" />
-    <MESSAGE value="Adding alt. LC solution for RedundantConnection" />
-    <MESSAGE value="Adding bisect left &amp; right array util" />
-    <MESSAGE value="Adding T extends Number to graph classes" />
-    <MESSAGE value="Adding RemoveAllAdjacentDuplicatesInString" />
     <MESSAGE value="Updating utilities" />
     <MESSAGE value="Adding CP template" />
     <MESSAGE value="Fixing StringTokenizer issue in utils" />
@@ -623,7 +628,17 @@
     <MESSAGE value="Fixing bugs in SegTree" />
     <MESSAGE value="Removing less-used method" />
     <MESSAGE value="Adding LC solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding LC solutions" />
+    <MESSAGE value="Removing CP template and updating IO" />
+    <MESSAGE value="Adding solution for FindMedianFromDataStream" />
+    <MESSAGE value="Updating comment in FindMedianFromDataStream" />
+    <MESSAGE value="Adding LC solution to IsomorphicStrings" />
+    <MESSAGE value="Adding LC solution for FindPeakElement" />
+    <MESSAGE value="Adding LC solution for CustomSortString" />
+    <MESSAGE value="Adding changes to bisect utils" />
+    <MESSAGE value="Adding LC solution for ValidTriangleNumber" />
+    <MESSAGE value="Updating method name to be LC compatible" />
+    <MESSAGE value="Adding LC solution for LowestCommonAncestorOfABinarySearchTree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding LC solution for LowestCommonAncestorOfABinarySearchTree" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

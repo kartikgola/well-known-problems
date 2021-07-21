@@ -8,10 +8,15 @@ import ood.bitcask.Bitcask;
 import ood.bitcask.BitcaskApp;
 import projecteuler.Problem5;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
         Problem5 p1 = new Problem5();
         System.out.println(p1.solve());
+        List<String> al = Arrays.asList("ab", "cd");
+        System.out.println(al.toString());
     }
 }
