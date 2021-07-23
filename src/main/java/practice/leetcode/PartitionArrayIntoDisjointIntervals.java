@@ -9,7 +9,9 @@ package practice.leetcode;
 public class PartitionArrayIntoDisjointIntervals {
 
     public int partitionDisjoint(int[] nums) {
+        // max values from left to right
         int[] max = new int[nums.length];
+        // min values from right to left
         int[] min = new int[nums.length];
 
         max[0] = nums[0];
