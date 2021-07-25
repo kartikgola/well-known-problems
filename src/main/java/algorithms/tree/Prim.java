@@ -23,8 +23,8 @@ public class Prim<T extends Number> {
      * @param graph : input graph
      * @return graph : representing a Minimum Spanning Tree (MST)
      */
-    public Graph<T> prim(Graph<T> graph) {
-        Graph<T> mst = new UndirectedGraph<>(graph.getSize());
+    public UndirectedGraph<T> prim(UndirectedGraph<T> graph) {
+        UndirectedGraph<T> mst = new UndirectedGraph<>(graph.getSize());
         Queue<Edge<T>> pq = new PriorityQueue<>(Comparator.comparingInt(e -> e.weight));
 
         // Initialize with a random vertex

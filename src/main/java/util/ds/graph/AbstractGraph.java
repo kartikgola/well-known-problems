@@ -34,17 +34,7 @@ public abstract class AbstractGraph<T extends Number> implements Graph<T> {
 
     @Override
     public List<T> getVertices() {
-        // Add all 'from' vertices
-        final Set<T> verticesSet = new HashSet<>();
-        verticesSet.addAll(adjMap.keySet());
-        // Add all 'to' vertices
-        verticesSet.addAll(adjMap.values()
-            .stream()
-            .map(Map::keySet)
-            .flatMap(Collection::stream)
-            .collect(Collectors.toSet())
-        );
-        return new ArrayList<>(verticesSet);
+        return new ArrayList<>(adjMap.keySet());
     }
 
     @Override
@@ -55,6 +45,11 @@ public abstract class AbstractGraph<T extends Number> implements Graph<T> {
     @Override
     public List<Edge<T>> getEdgesFrom(T u) {
         return new ArrayList<>(adjMap.getOrDefault(u, new HashMap<>()).values());
+    }
+
+    @Override
+    public void addNode(T node) {
+        adjMap.putIfAbsent(node, new HashMap<>());
     }
 
     @Override

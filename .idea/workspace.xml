@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LC solution for LowestCommonAncestorOfABinarySearchTree">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitHacks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/DecodeWays2.java" afterDir="false" />
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding LC sol'n for BinaryTreePruning">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/DecodeWays2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/NonNegativeIntegersWithoutConsecutiveOnes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/ArrayUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ArrayUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/tree/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/tree/Kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/tree/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/tree/Prim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/graph/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/graph/AbstractGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/BellmanFordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/BellmanFordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/DijkstraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/FindSuccessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FindSuccessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/graph/FloydWarshallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/KruskalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/algorithms/tree/PrimTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,23 +87,27 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="practice" />
       <recent name="util" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="fundamentals.bithandling" />
       <recent name="leetcode" />
       <recent name="codechef.START5B" />
       <recent name="algorithms.sorting" />
       <recent name="util" />
-      <recent name="leetcode.interview.uber" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="practice.atcoder.abc199" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayUtilsTest.testBisectRight">
-    <configuration name="BitHacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fundamentals.bithandling.BitHacks" />
+  <component name="RunManager" selected="JUnit.PrimTest.testMSTGeneration">
+    <configuration name="TaskE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.atcoder.abc199.TaskE" />
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fundamentals.bithandling.*" />
+          <option name="PATTERN" value="practice.atcoder.abc199.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,66 +115,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="wkp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SumOfMinimums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coursera.SumOfMinimums" />
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="coursera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayUtilsTest.testBisectLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="util.*" />
+          <option name="PATTERN" value="algorithms.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
-      <option name="METHOD_NAME" value="testBisectLeft" />
+      <option name="PACKAGE_NAME" value="algorithms.graph" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.graph.BellmanFordTest" />
+      <option name="METHOD_NAME" value="testExceptionThrowingOnNegativeWeightCycle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayUtilsTest.testBisectRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DijkstraTest.testShortestPathFinding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="util.*" />
+          <option name="PATTERN" value="algorithms.graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
-      <option name="METHOD_NAME" value="testBisectRight" />
+      <option name="PACKAGE_NAME" value="algorithms.graph" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.graph.DijkstraTest" />
+      <option name="METHOD_NAME" value="testShortestPathFinding" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindSuccessorTest.successorOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms.graph" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.graph.FindSuccessorTest" />
+      <option name="METHOD_NAME" value="successorOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimTest.testMSTGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms.tree" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.tree.PrimTest" />
+      <option name="METHOD_NAME" value="testMSTGeneration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArrayUtilsTest.testBisectRight" />
-        <item itemvalue="JUnit.ArrayUtilsTest.testBisectLeft" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.BitHacks" />
-        <item itemvalue="Application.SumOfMinimums" />
+        <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
+        <item itemvalue="JUnit.DijkstraTest.testShortestPathFinding" />
+        <item itemvalue="JUnit.FindSuccessorTest.successorOf" />
+        <item itemvalue="JUnit.BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" />
+        <item itemvalue="Application.TaskE" />
       </list>
     </recent_temporary>
   </component>
@@ -249,42 +270,11 @@
       <workItem from="1626431566891" duration="4090000" />
       <workItem from="1626503467668" duration="193000" />
       <workItem from="1626718973148" duration="5192000" />
-      <workItem from="1626848371289" duration="1689000" />
-    </task>
-    <task id="LOCAL-00016" summary="Adding LC solutions">
-      <created>1623162432799</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1623162432799</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Adding util method and project files">
-      <created>1623162462442</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1623162462442</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Adding LC solutions">
-      <created>1623350910333</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1623350910333</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Adding ABC200 sols">
-      <created>1623659093093</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1623659093093</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Adding PalindromePairs">
-      <created>1623691052361</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1623691052361</updated>
+      <workItem from="1626848371289" duration="2824000" />
+      <workItem from="1626852619541" duration="26338000" />
+      <workItem from="1627028934534" duration="4725000" />
+      <workItem from="1627195880023" duration="614000" />
+      <workItem from="1627219002842" duration="7572000" />
     </task>
     <task id="LOCAL-00021" summary="Adding MaximumUnitsOnATruck">
       <created>1623738229518</created>
@@ -594,7 +584,42 @@
       <option name="project" value="LOCAL" />
       <updated>1626849216513</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Moving problems to &quot;practice&quot;">
+      <created>1626850490045</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1626850490045</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Adding bit hacks">
+      <created>1626867159286</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1626867159286</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Adding LC solution for PartitionArrayIntoDisjointIntervals">
+      <created>1627033544217</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1627033544217</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Adding comments">
+      <created>1627033594097</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1627033594097</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Adding LC sol'n for BinaryTreePruning">
+      <created>1627062277495</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1627062277495</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,11 +638,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updating utilities" />
-    <MESSAGE value="Adding CP template" />
-    <MESSAGE value="Fixing StringTokenizer issue in utils" />
-    <MESSAGE value="Updating copyrights yet again!" />
-    <MESSAGE value="Updating CP template" />
     <MESSAGE value="Updating comment" />
     <MESSAGE value="Updating IO stuff" />
     <MESSAGE value="Updating SegmentTree" />
@@ -638,7 +658,12 @@
     <MESSAGE value="Adding LC solution for ValidTriangleNumber" />
     <MESSAGE value="Updating method name to be LC compatible" />
     <MESSAGE value="Adding LC solution for LowestCommonAncestorOfABinarySearchTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding LC solution for LowestCommonAncestorOfABinarySearchTree" />
+    <MESSAGE value="Moving problems to &quot;practice&quot;" />
+    <MESSAGE value="Adding bit hacks" />
+    <MESSAGE value="Adding LC solution for PartitionArrayIntoDisjointIntervals" />
+    <MESSAGE value="Adding comments" />
+    <MESSAGE value="Adding LC sol'n for BinaryTreePruning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding LC sol'n for BinaryTreePruning" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

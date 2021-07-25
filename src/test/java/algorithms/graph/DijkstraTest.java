@@ -14,7 +14,10 @@ class DijkstraTest {
 
     @Test
     void testShortestPathFinding() {
-        Graph<Integer> graph1 = new UndirectedGraph<>(5);
+        final int size = 5;
+        Graph<Integer> graph1 = new UndirectedGraph<>(size);
+        for (int node = 1; node <= size; node++)
+            graph1.addNode(node);
         graph1.setEdges(Arrays.asList(
                 new UndirectedEdge<>(1,2,5),
                 new UndirectedEdge<>(1,3,3),

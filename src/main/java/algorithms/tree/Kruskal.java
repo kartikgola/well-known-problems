@@ -27,7 +27,7 @@ public class Kruskal<T extends Number> {
      * @param graph : input graph
      * @return graph : representing a Minimum Spanning Tree (MST)
      */
-    public Graph<T> kruskal(Graph<T> graph) {
+    public UndirectedGraph<T> kruskal(UndirectedGraph<T> graph) {
         // 1. Sort the edges by weights
         List<Edge<T>> edges = graph.getDistinctEdges();
         boolean[] isMSTEdge = new boolean[edges.size()];
@@ -42,7 +42,7 @@ public class Kruskal<T extends Number> {
 
         // 3. Get the data of included vertices
         // and create a new Graph
-        Graph<T> mst = new UndirectedGraph<>(graph.getSize());
+        UndirectedGraph<T> mst = new UndirectedGraph<>(graph.getSize());
         for (int i = 0; i < edges.size(); i++) {
             if (isMSTEdge[i])
                 mst.addEdge(new UndirectedEdge<>(edges.get(i)));

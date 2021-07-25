@@ -77,4 +77,11 @@ public interface Graph<T extends Number> {
      */
     T getAnyAdjacentVertex(T u);
 
+
+    /**
+     * Adds a node to the Graph
+     * @param node: a generic node
+     */
+    void addNode(T node);
+
 }

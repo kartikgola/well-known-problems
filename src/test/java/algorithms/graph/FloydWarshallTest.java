@@ -15,7 +15,10 @@ class FloydWarshallTest {
 
     @Test
     void testShortestPathFinding() {
+        final int size = 5;
         Graph<Integer> graph = new UndirectedGraph<>(5);
+        for (int node = 1; node <= size; node++)
+            graph.addNode(node);
         graph.setEdges(Arrays.asList(
                 new UndirectedEdge<>(3,4,7),
                 new UndirectedEdge<>(3,2,2),

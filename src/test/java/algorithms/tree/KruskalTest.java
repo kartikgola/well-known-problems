@@ -13,7 +13,10 @@ class KruskalTest {
 
     @Test
     void testMSTGeneration() {
-        Graph<Integer> graph = new UndirectedGraph<>(5);
+        final int size = 6;
+        UndirectedGraph<Integer> graph = new UndirectedGraph<>(size);
+        for (int node = 1; node <= size; node++)
+            graph.addNode(node);
         graph.setEdges(Arrays.asList(
                 new UndirectedEdge<>(1,2,3),
                 new UndirectedEdge<>(1,5,5),
@@ -24,7 +27,7 @@ class KruskalTest {
                 new UndirectedEdge<>(5,6,2),
                 new UndirectedEdge<>(6,4,7)
         ));
-        Graph<Integer> mst = new Kruskal<Integer>().kruskal(graph);
+        UndirectedGraph<Integer> mst = new Kruskal<Integer>().kruskal(graph);
         assertEquals(20, mst.getDistinctEdges().stream().mapToInt(e -> e.weight).sum());
     }
 }

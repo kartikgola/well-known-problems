@@ -10,7 +10,12 @@ class FindSuccessorTest {
 
     @Test
     void successorOf() {
-        SuccessorGraph<Integer> graph = new SuccessorGraph<>(4);
+        final int size = 4;
+        SuccessorGraph<Integer> graph = new SuccessorGraph<>(size);
+        graph.addNode(1);
+        graph.addNode(3);
+        graph.addNode(7);
+        graph.addNode(9);
         graph.addEdge(new DirectedEdge<>(9, 3, 1));
         graph.addEdge(new DirectedEdge<>(1, 3, 1));
         graph.addEdge(new DirectedEdge<>(7, 1, 1));
