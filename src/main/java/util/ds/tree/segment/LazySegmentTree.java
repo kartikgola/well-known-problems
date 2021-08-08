@@ -8,12 +8,6 @@ package util.ds.tree.segment;
 
 public class LazySegmentTree {
 
-    public enum RangeQueryType {
-        Minimum,
-        Maximum,
-        Sum
-    }
-
     private final int[] tree;
     private final int[] lazy;
     private final RangeQueryType type;
@@ -25,21 +19,8 @@ public class LazySegmentTree {
         this.type = rangeQueryType;
         this.tree = new int[arr.length * 4];
         this.lazy = new int[arr.length * 4];
-        switch (rangeQueryType) {
-            case Sum: NOT_FOUND = 0; break;
-            case Maximum: NOT_FOUND = Integer.MIN_VALUE; break;
-            case Minimum: NOT_FOUND = Integer.MAX_VALUE; break;
-        }
+        this.NOT_FOUND = type.getDefault();
         this.build(arr, 0, 0, arr.length - 1);
-    }
-
-    private int merge(int val1, int val2) {
-        switch (this.type) {
-            case Maximum: return Math.max(val1, val2);
-            case Minimum: return Math.min(val1, val2);
-            case Sum: return val1+val2;
-        }
-        return -1;
     }
 
     private void build(int[] arr, int treePos, int low, int high) {
@@ -52,7 +33,7 @@ public class LazySegmentTree {
         build(arr, 2 * treePos + 1, low, mid);
         build(arr, 2 * treePos + 2, mid + 1, high);
 
-        tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
+        tree[treePos] = type.merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
 
     private int query(int treePos, int low, int high, int i, int j) {
@@ -69,7 +50,7 @@ public class LazySegmentTree {
         int leftResult = query(2 * treePos + 1, low, mid, i, j);
         int rightResult = query(2 * treePos + 2, mid + 1, high, i, j);
 
-        return merge(leftResult, rightResult);
+        return type.merge(leftResult, rightResult);
     }
 
     private void removeLaziness(int treePos, int low, int high) {
@@ -111,7 +92,7 @@ public class LazySegmentTree {
         update(2 * treePos + 1, low, mid, i, j, val);
         update(2 * treePos + 2, mid + 1, high, i, j, val);
 
-        tree[treePos] = merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
+        tree[treePos] = type.merge(tree[2 * treePos + 1], tree[2 * treePos + 2]);
     }
 
     public int query(int i, int j) {

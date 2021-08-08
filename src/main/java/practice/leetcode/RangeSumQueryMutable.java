@@ -7,6 +7,7 @@
 
 package practice.leetcode;
 
+import util.ds.tree.segment.RangeQueryType;
 import util.ds.tree.segment.SegmentTree;
 
 public class RangeSumQueryMutable {
@@ -14,7 +15,7 @@ public class RangeSumQueryMutable {
     private final SegmentTree st;
 
     public RangeSumQueryMutable(int[] nums) {
-        st = new SegmentTree(nums, SegmentTree.RangeQueryType.Sum);
+        st = new SegmentTree(nums, RangeQueryType.Sum);
     }
 
     public void update(int index, int val) {

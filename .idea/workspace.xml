@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Added &quot;addNode(T t)&quot; method in graph">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding solution for 3 sum closest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/hackerearth/MicroAndGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/BeautifulArray.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/DecodeWays2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/NonNegativeIntegersWithoutConsecutiveOnes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/NumberOfVisiblePeopleInAQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/PalindromePartitioning2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/StoneGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/RangeQueryType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/leetcode/RangeSumQueryMutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/RangeSumQueryMutable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/LazySegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/LazySegmentTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/SegmentTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fundamentals/bithandling/BitmaskDPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fundamentals/bithandling/BitmaskDPTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,7 @@
         <option value="Python Script" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -68,14 +77,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="util.ds.tree.segment" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\wkp\src\main\java" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="util.ds.tree.segment.SegmentTree.RangeQueryType" />
+      <recent name="util.ds.tree.segment.RangeQueryType" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="practice" />
@@ -92,13 +108,13 @@
       <recent name="practice.atcoder.abc199" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimTest.testMSTGeneration">
-    <configuration name="TaskE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.atcoder.abc199.TaskE" />
+  <component name="RunManager" selected="JUnit.BellmanFordTest.testShortestPathFinding">
+    <configuration name="StoneGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.leetcode.StoneGame" />
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.atcoder.abc199.*" />
+          <option name="PATTERN" value="practice.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,18 +122,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BellmanFordTest.testShortestPathFinding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +145,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="algorithms.graph" />
       <option name="MAIN_CLASS_NAME" value="algorithms.graph.BellmanFordTest" />
-      <option name="METHOD_NAME" value="testExceptionThrowingOnNegativeWeightCycle" />
+      <option name="METHOD_NAME" value="testShortestPathFinding" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BellmanFordTest.testShortestPathFinding" />
+        <item itemvalue="Application.StoneGame" />
         <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
-        <item itemvalue="JUnit.DijkstraTest.testShortestPathFinding" />
         <item itemvalue="JUnit.FindSuccessorTest.successorOf" />
-        <item itemvalue="JUnit.BellmanFordTest.testExceptionThrowingOnNegativeWeightCycle" />
-        <item itemvalue="Application.TaskE" />
+        <item itemvalue="JUnit.DijkstraTest.testShortestPathFinding" />
       </list>
     </recent_temporary>
   </component>
@@ -265,21 +283,17 @@
       <workItem from="1626852619541" duration="26338000" />
       <workItem from="1627028934534" duration="4725000" />
       <workItem from="1627195880023" duration="614000" />
-      <workItem from="1627219002842" duration="23847000" />
-    </task>
-    <task id="LOCAL-00022" summary="Adding MatchsticksToSquare">
-      <created>1623760988390</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1623760988390</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Making changes to Trie">
-      <created>1623761029576</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1623761029576</updated>
+      <workItem from="1627219002842" duration="25249000" />
+      <workItem from="1627454271100" duration="7029000" />
+      <workItem from="1627538754469" duration="1650000" />
+      <workItem from="1627580712159" duration="4487000" />
+      <workItem from="1627820695691" duration="1277000" />
+      <workItem from="1627921723100" duration="3422000" />
+      <workItem from="1627969079695" duration="10202000" />
+      <workItem from="1628231749204" duration="3008000" />
+      <workItem from="1628318115869" duration="1058000" />
+      <workItem from="1628405732583" duration="1388000" />
+      <workItem from="1628421493514" duration="1174000" />
     </task>
     <task id="LOCAL-00024" summary="Adding MatchsticksToSquare and updating PartitionToKEqualSumSubsets">
       <created>1623781749774</created>
@@ -610,7 +624,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627230906358</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Adding LC solution for NumberOfVisiblePeopleInAQueue">
+      <created>1627408685702</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1627408685702</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Adding solution for 3 sum closest">
+      <created>1627544023321</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1627544023322</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,8 +657,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updating IO stuff" />
-    <MESSAGE value="Updating SegmentTree" />
     <MESSAGE value="Updating LazySegmentTree" />
     <MESSAGE value="Adding sol'n for GrayCode" />
     <MESSAGE value="Adding FindKClosestElements" />
@@ -654,7 +680,9 @@
     <MESSAGE value="Adding comments" />
     <MESSAGE value="Adding LC sol'n for BinaryTreePruning" />
     <MESSAGE value="Added &quot;addNode(T t)&quot; method in graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;addNode(T t)&quot; method in graph" />
+    <MESSAGE value="Adding LC solution for NumberOfVisiblePeopleInAQueue" />
+    <MESSAGE value="Adding solution for 3 sum closest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding solution for 3 sum closest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
