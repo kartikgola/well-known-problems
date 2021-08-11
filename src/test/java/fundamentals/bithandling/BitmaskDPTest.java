@@ -24,7 +24,7 @@ class BitmaskDPTest {
 
         Integer[][] dp = new Integer[n][(int) Math.pow(2, n)];
         long start = System.currentTimeMillis();
-        int ans = BitmaskDP.minCostDp(0, 0, n, cost, dp);
+        int ans = BitmaskDP.minCostDpTopDown(0, 0, n, cost, dp);
         System.out.println("Min. cost with DP = " + (System.currentTimeMillis() - start));
 
         start = System.currentTimeMillis();

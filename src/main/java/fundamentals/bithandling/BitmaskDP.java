@@ -16,7 +16,7 @@ public class BitmaskDP {
         return assign | (1 << i);
     }
 
-    public static int minCostDp(int job, int assign, int n, int[][] cost, Integer[][] dp) {
+    public static int minCostDpTopDown(int job, int assign, int n, int[][] cost, Integer[][] dp) {
         if (job >= n)
             return 0;
         if (dp[job][assign] != null)
@@ -24,7 +24,7 @@ public class BitmaskDP {
         int ans = Integer.MAX_VALUE;
         for (int person = 0; person < n; ++person) {
             if (isPersonAvailable(assign, person)) {
-                ans = Math.min(ans, cost[person][job] + minCostDp(job+1, assignPerson(assign, person), n, cost, dp));
+                ans = Math.min(ans, cost[person][job] + minCostDpTopDown(job+1, assignPerson(assign, person), n, cost, dp));
             }
         }
         return dp[job][assign] = ans;
