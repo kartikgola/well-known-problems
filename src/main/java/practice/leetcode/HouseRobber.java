@@ -17,6 +17,7 @@ public class HouseRobber {
         return dp[i] = Math.max(nums[i] + rob(nums, i+2, dp), rob(nums, i+1, dp));
     }
 
+    // For a given i, we can return max{ nums[i] + f(i+2), f(i+1) }
     public int rob(int[] nums) {
         return rob(nums, 0, new Integer[nums.length]);
     }
