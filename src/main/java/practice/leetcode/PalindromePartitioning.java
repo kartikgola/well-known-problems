@@ -10,17 +10,17 @@ import java.util.*;
 
 public class PalindromePartitioning {
 
-    private List<List<String>> f(String s, boolean[][] pd, int i) {
+    private List<List<String>> partition(String s, boolean[][] pd, int i) {
         List<List<String>> ans = new ArrayList<>();
         if (i >= s.length())
             ans.add(Collections.emptyList());
         for (int j = i; j < s.length(); ++j) {
             if (pd[i][j]) {
-                List<List<String>> sub = f(s, pd, j+1);
-                for (List<String> su: sub) {
+                List<List<String>> subParts = partition(s, pd, j+1);
+                for (List<String> parts: subParts) {
                     List<String> al = new ArrayList<>();
                     al.add(s.substring(i, j+1));
-                    al.addAll(su);
+                    al.addAll(parts);
                     ans.add(al);
                 }
             }
@@ -39,7 +39,7 @@ public class PalindromePartitioning {
                     pd[i][j] = s.charAt(i) == s.charAt(j) && (l <= 1 || pd[i + 1][j - 1]);
             }
         }
-        return f(s, pd, 0);
+        return partition(s, pd, 0);
     }
 
 }
