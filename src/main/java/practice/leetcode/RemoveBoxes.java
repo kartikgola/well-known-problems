@@ -52,6 +52,7 @@ public class RemoveBoxes {
     }
 
     // Proper DP solution
+    // Explanation - https://leetcode.com/problems/remove-boxes/discuss/1402561/C%2B%2BJavaPython-Top-down-DP-Clear-explanation-with-Picture-Clean-and-Concise
     private int removeBoxes(int[] boxes, int l, int r, int k, Integer[][][] dp) {
         if (l > r)
             return 0;
