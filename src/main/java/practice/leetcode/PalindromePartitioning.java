@@ -6,54 +6,40 @@
 
 package practice.leetcode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class PalindromePartitioning {
 
-    Map<Integer, List<List<String>>> map = new HashMap<>();
-
-    private boolean isPalindrome(StringBuilder sb) {
-        int p = 0, q = sb.length() - 1;
-        while ( p <= q ) {
-            if ( sb.charAt(p) == sb.charAt(q) ) {
-                p++;
-                q--;
-            } else return false;
-        }
-        return true;
-    }
-
-    private List<List<String>> partition(String s, int j) {
-        if ( map.containsKey(j) )
-            return map.get(j);
-
-        List<List<String>> list = new ArrayList<>();
-        StringBuilder sb = new StringBuilder();
-
-        for ( int i = j; i < s.length(); ++i ) {
-            sb.append(s.charAt(i));
-            if ( isPalindrome(sb) ) {
-                for ( List<String> remainingParts : partition(s, i + 1) ) {
-                    List<String> subList = new ArrayList<>();
-                    subList.add(sb.toString());
-                    subList.addAll(remainingParts);
-                    list.add(subList);
+    private List<List<String>> f(String s, boolean[][] pd, int i) {
+        List<List<String>> ans = new ArrayList<>();
+        if (i >= s.length())
+            ans.add(Collections.emptyList());
+        for (int j = i; j < s.length(); ++j) {
+            if (pd[i][j]) {
+                List<List<String>> sub = f(s, pd, j+1);
+                for (List<String> su: sub) {
+                    List<String> al = new ArrayList<>();
+                    al.add(s.substring(i, j+1));
+                    al.addAll(su);
+                    ans.add(al);
                 }
             }
         }
-        if ( list.size() == 0 ) {
-            list.add(new ArrayList<>());
-        }
-
-        map.put(j, list);
-        return list;
+        return ans;
     }
 
     public List<List<String>> partition(String s) {
-        return partition(s, 0);
+        boolean[][] pd = new boolean[s.length()][s.length()];
+        for (int l = 0; l < s.length(); ++l) {
+            for (int i = 0; i+l < s.length(); ++i) {
+                int j = i+l;
+                if (l == 0)
+                    pd[i][j] = true;
+                else
+                    pd[i][j] = s.charAt(i) == s.charAt(j) && (l <= 1 || pd[i + 1][j - 1]);
+            }
+        }
+        return f(s, pd, 0);
     }
 
 }
