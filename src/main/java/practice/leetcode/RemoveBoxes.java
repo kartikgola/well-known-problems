@@ -57,10 +57,10 @@ public class RemoveBoxes {
             return 0;
         if (dp[l][r][k] != null)
             return dp[l][r][k];
-        int tempL = l, tempR = r, tempK = k;
+        int x = l, y = r, z = k;
         while (l+1 <= r && boxes[l] == boxes[l+1]) {
-            l++;
-            k++;
+            l++; //
+            k++; // count of same elements in a row, starting from l
         }
         int ans = (k+1) * (k+1) + removeBoxes(boxes, l+1, r, 0, dp);
         for (int j = l+1; j <= r; ++j) {
@@ -68,7 +68,7 @@ public class RemoveBoxes {
                 ans = Math.max(ans, removeBoxes(boxes, j, r, k+1, dp) + removeBoxes(boxes, l+1, j-1, 0, dp));
             }
         }
-        return dp[tempL][tempR][tempK] = ans;
+        return dp[x][y][z] = ans;
     }
 
     public int removeBoxes(int[] boxes) {
