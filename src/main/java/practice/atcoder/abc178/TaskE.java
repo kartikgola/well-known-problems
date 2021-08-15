@@ -12,7 +12,7 @@ import static util.IOUtils.*;
 
 public class TaskE {
 
-    public static void main(String[] args) throws Exception {
+    public void solve() throws Exception {
         int n = nextInt();
         long[] x = new long[n];
         long[] y = new long[n];
@@ -39,5 +39,27 @@ public class TaskE {
             ans = Math.max(ans, max[i] - min[i]);
         }
         System.out.println(ans);
+    }
+
+    // Editorial - https://img.atcoder.jp/abc178/editorial-E-en.pdf
+    public void solve2() throws Exception {
+        int n = nextInt();
+        long zmax = Long.MIN_VALUE,
+             zmin = Long.MAX_VALUE,
+             wmax = Long.MIN_VALUE,
+             wmin = Long.MAX_VALUE;
+
+        while (n-- > 0) {
+            long x = nextLong(), y = nextLong();
+            zmax = Math.max(zmax, x+y);
+            zmin = Math.min(zmin, x+y);
+            wmax = Math.max(wmax, x-y);
+            wmin = Math.min(wmin, x-y);
+        }
+        System.out.println(Math.max(zmax-zmin, wmax-wmin));
+    }
+
+    public static void main(String[] args) throws Exception {
+        new TaskE().solve2();
     }
 }
