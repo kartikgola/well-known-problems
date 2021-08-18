@@ -28,7 +28,6 @@ public class LongestIncreasingSubsequence {
         return al.size();
     }
 
-    // Naive top-down DP
     private int lis(int[] nums, int i, Integer[] dp) {
         int ans = 1;
         if (dp[i] != null)
@@ -41,6 +40,7 @@ public class LongestIncreasingSubsequence {
         return dp[i] = ans;
     }
 
+    // Naive top-down DP
     public int lengthOfLISDP1(int[] nums) {
         Integer[] dp = new Integer[nums.length];
         int ans = 1;
