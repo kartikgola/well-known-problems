@@ -13,8 +13,15 @@ import static util.ArrayUtils.Bisect.bisectLeft;
 
 public class LongestIncreasingSubsequence {
 
-    // O(nlog(n)) algorithm
-    // Refer Patience Sorting - https://www.cs.princeton.edu/courses/archive/spring13/cos423/lectures/LongestIncreasingSubsequence.pdf
+    /**
+     * Treat numbers like playing cards and sort using "Patience Sorting"
+     * Try to place each card as left as possible; with the condition that a card of higher value cannot be placed
+     * on a card with a lower value.
+     * If we cannot place the current card anywhere, create a new pile to the right
+     * Refer - https://www.cs.princeton.edu/courses/archive/spring13/cos423/lectures/LongestIncreasingSubsequence.pdf
+     * @param nums
+     * @return
+     */
     public int lengthOfLIS(int[] nums) {
         List<Integer> al = new ArrayList<>(nums.length);
         for (int i = 0; i < nums.length; ++i) {
