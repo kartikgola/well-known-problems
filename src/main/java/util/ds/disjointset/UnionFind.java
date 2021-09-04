@@ -12,7 +12,6 @@ public class UnionFind {
 
     private int groups;
     private final int[] parent;
-    private boolean zeroIndexed = true;
 
     public UnionFind(int size) {
         groups = size;
@@ -21,13 +20,8 @@ public class UnionFind {
     }
 
     public UnionFind(int size, boolean zeroIndexed) {
-        groups = size;
-        if (zeroIndexed)
-            parent = new int[size];
-        else
-            parent = new int[size+1];
-        Arrays.fill(parent, -1);
-        this.zeroIndexed = zeroIndexed;
+        this(zeroIndexed ? size : size+1);
+        if (!zeroIndexed) groups--;
     }
 
     /**
