@@ -12,74 +12,120 @@ public class ArrayUtils {
 
     public static class Bisect {
 
-        public static int bisectLeft(List<Integer> arr, int value) {
-            if (arr.isEmpty()) return 0;
-            int l = 0, r = arr.size()-1;
+        // ------------------------Left Bisection-----------------------------
+        public static int bisectLeft(int[] arr, int from, int to, int x) {
+            int l = from, r = to-1;
             while (l < r) {
-                int m = l + (r-l) / 2;
-                if (arr.get(m) == value) {
-                    while (m-1 > -1 && arr.get(m-1) == value) --m;
-                    return m;
-                } else if (arr.get(m) < value) l = m+1;
-                else r = m-1;
+                int m = l+(r-l)/2;
+                if (arr[m] >= x)
+                    r = m-1;
+                else
+                    l = m+1;
             }
-            return arr.get(l) < value ? l+1 : l;
+            if (l >= to)
+                return l;
+            return arr[l] < x ? l+1 : l;
         }
 
-        public static int bisectLeft(int[] arr, int value) {
-            if (arr.length == 0) return 0;
-            int l = 0, r = arr.length-1;
-            while (l < r) {
-                int m = l + (r-l) / 2;
-                if (arr[m] == value) {
-                    while (m-1 > -1 && arr[m-1] == value) --m;
-                    return m;
-                } else if (arr[m] < value) l = m+1;
-                else  r = m-1;
-            }
-            return arr[l] < value ? l+1 : l;
+        public static int bisectLeft(int[] arr, int x) {
+            return bisectLeft(arr, 0, arr.length, x);
         }
 
-        public static int bisectLeft(int[] arr, int lo, int hi, int value) {
-            if (lo == hi) return -1;
-            int l = 0, r = arr.length-1;
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        public static <T> int bisectLeft(T[] arr, int from, int to, T x) {
+            int l = from, r = to-1;
             while (l < r) {
-                int m = l + (r-l) / 2;
-                if (arr[m] == value) {
-                    while (m-1 > -1 && arr[m-1] == value) --m;
-                    return m;
-                } else if (arr[m] < value) l = m+1;
-                else  r = m-1;
+                int m = l+(r-l)/2;
+                if (((Comparable) arr[m]).compareTo(x) >= 0)
+                    r = m-1;
+                else
+                    l = m+1;
             }
-            return arr[l] < value ? l+1 : l;
+            if (l >= to)
+                return l;
+            return ((Comparable) arr[l]).compareTo(x) < 0 ? l+1 : l;
         }
 
-        public static int bisectRight(int[] arr, int value) {
-            if (arr.length == 0) return 0;
-            int l = 0, r = arr.length-1;
-            while (l < r) {
-                int m = l + (r-l) / 2;
-                if (arr[m] == value) {
-                    while (m+1 < arr.length && arr[m+1] == value) ++m;
-                    return m+1;
-                } else if (arr[m] < value) l = m+1;
-                else r = m-1;
-            }
-            return arr[l] <= value ? l+1 : l;
+        public static <T> int bisectLeft(T[] arr, T x) {
+            return bisectLeft(arr, 0, arr.length, x);
         }
 
-        public static int bisectRight(List<Integer> arr, int value) {
-            if (arr.isEmpty())  return 0;
-            int l = 0, r = arr.size()-1;
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        public static <T> int bisectLeft(List<T> arr, int from, int to, T x) {
+            int l = from, r = to-1;
             while (l < r) {
-                int m = l + (r-l) / 2;
-                if (arr.get(m) == value) {
-                    while (m+1 < arr.size() && arr.get(m+1) == value) ++m;
-                    return m+1;
-                } else if (arr.get(m) < value) l = m+1;
-                else r = m-1;
+                int m = l+(r-l)/2;
+                if (((Comparable)arr.get(m)).compareTo(x) >= 0)
+                    r = m-1;
+                else
+                    l = m+1;
             }
-            return arr.get(l) <= value ? l+1 : l;
+            if (l >= to)
+                return l;
+            return ((Comparable) arr.get(l)).compareTo(x) < 0 ? l+1 : l;
         }
+
+        public static <T> int bisectLeft(List<T> arr, T x) {
+            return bisectLeft(arr, 0, arr.size(), x);
+        }
+
+
+        // ------------------------Right Bisection-----------------------------
+        public static int bisectRight(int[] arr, int x) {
+            return bisectRight(arr, 0, arr.length, x);
+        }
+
+        public static int bisectRight(int[] arr, int from, int to, int x) {
+            int l = from, r = to-1;
+            while (l < r) {
+                int m = l+(r-l)/2;
+                if (arr[m] <= x)
+                    l = m+1;
+                else
+                    r = m-1;
+            }
+            if (l >= to)
+                return l;
+            return arr[l] <= x ? l+1 : l;
+        }
+
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        public static <T> int bisectRight(T[] arr, int from, int to, T x) {
+            int l = from, r = to-1;
+            while (l < r) {
+                int m = l+(r-l)/2;
+                if (((Comparable) arr[m]).compareTo(x) <= 0)
+                    l = m+1;
+                else
+                    r = m-1;
+            }
+            if (l >= to)
+                return l;
+            return ((Comparable) arr[l]).compareTo(x) <= 0 ? l+1 : l;
+        }
+
+        public static <T> int bisectRight(T[] arr, T x) {
+            return bisectRight(arr, 0, arr.length, x);
+        }
+
+        @SuppressWarnings({"unchecked", "rawtypes"})
+        public static <T> int bisectRight(List<T> arr, int from, int to, T x) {
+            int l = from, r = to-1;
+            while (l < r) {
+                int m = l+(r-l)/2;
+                if (((Comparable) arr.get(m)).compareTo(x) <= 0)
+                    l = m+1;
+                else
+                    r = m-1;
+            }
+            if (l >= to)
+                return l;
+            return ((Comparable) arr.get(l)).compareTo(x) <= 0 ? l+1 : l;
+        }
+
+        public static <T> int bisectRight(List<T> arr, T x) {
+            return bisectRight(arr, 0, arr.size(), x);
+        }
+
     }
 }
