@@ -62,11 +62,11 @@ public class UnionFind {
         if ( pu != pv ) {
             // Weight of pu is more (more negative means higher weight)
             if ( parent[pu] <= parent[pv] ) {
+                parent[pu] += parent[pv];
                 parent[pv] = pu;
-                parent[pu]--;
             } else {
+                parent[pv] += parent[pu];
                 parent[pu] = pv;
-                parent[pv]--;
             }
             groups--;
             return true;
