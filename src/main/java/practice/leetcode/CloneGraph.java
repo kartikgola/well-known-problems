@@ -55,21 +55,25 @@ public class CloneGraph {
         return copies.get(node);
     }
 
-//    private Map<Node, Node> copies = new HashMap<>();
-//
-//    public Node cloneGraph(Node node) {
-//        if ( node == null )
-//            return null;
-//
-//        if ( copies.containsKey(node) )
-//            return copies.get(node);
-//
-//        Node copy = new Node(node.val);
-//        copies.put(node, copy);
-//
-//        for ( Node neighbor : node.neighbors )
-//            copy.neighbors.add(cloneGraph(neighbor));
-//
-//        return copy;
-//    }
+
+    private void dfs(Node u, Node uc, boolean[] vis, Map<Integer, Node> map) {
+        vis[u.val] = true;
+        for (Node un: u.neighbors) {
+            map.putIfAbsent(un.val, new Node(un.val));
+            Node ucn = map.get(un.val);
+            uc.neighbors.add(ucn);
+            if (!vis[ucn.val]) {
+                dfs(un, ucn, vis, map);
+            }
+        }
+    }
+
+    public Node cloneGraph2(Node node) {
+        if (node == null)
+            return null;
+        Map<Integer, Node> map = new HashMap<>();
+        map.put(node.val, new Node(node.val));
+        dfs(node, map.get(node.val), new boolean[101], map);
+        return map.get(node.val);
+    }
 }
