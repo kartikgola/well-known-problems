@@ -17,33 +17,37 @@ public class PopulatingNextRightPointersInEachNode2 {
     public Node connect(Node root) {
         if (root == null)
             return null;
-
         Queue<Node> q = new LinkedList<>();
         q.add(root);
         q.add(null);
-        Node prev = null;
 
-        while(!q.isEmpty()) {
-            Node r = q.poll();
-            if (r == null) {
-                prev = null;
-                if (!q.isEmpty()) {
+        while (!q.isEmpty()) {
+            Node c = q.poll();
+            if (c == null) {
+                if (!q.isEmpty())
                     q.add(null);
-                }
-            } else {
-                if (r.left != null) {
-                    q.add(r.left);
-                }
-                if (r.right != null) {
-                    q.add(r.right);
-                }
-                if (prev != null) {
-                    prev.next = r;
-                }
-                prev = r;
+                continue;
             }
+            c.next = q.peek();
+            if (c.left != null)
+                q.add(c.left);
+            if (c.right != null)
+                q.add(c.right);
         }
 
+        return root;
+    }
+
+    private void f(Node root, Node next) {
+        if (root != null) {
+            root.next = next;
+            f(root.left, root.right);
+            f(root.right, next != null ? next.left : null);
+        }
+    }
+
+    public Node connectDFS(Node root) {
+        f(root, null);
         return root;
     }
 }
