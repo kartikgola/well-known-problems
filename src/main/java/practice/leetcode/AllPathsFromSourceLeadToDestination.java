@@ -8,36 +8,38 @@
 package practice.leetcode;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AllPathsFromSourceLeadToDestination {
 
-    private boolean leadsToDestination(int u, int dest, List<List<Integer>> adj, boolean[] vis, boolean[] path) {
-        if (!vis[u]) {
-            vis[u] = path[u] = true;
-            for (int v: adj.get(u)) {
-                if (!vis[v]) {
-                    if (!leadsToDestination(v, dest, adj, vis, path)) // unvisited node should always lead to destination
-                        return false;
-                } else if (path[v]) { // there is an edge u -> v, such that v is already in the current path
-                    return false;
-                }
-            }
+    private boolean f(int u, int x, Map<Integer, List<Integer>> map, Boolean[] dp, boolean[] path) {
+        if (path[u])
+            return false;
+        path[u] = true;
+        boolean ans = true;
+        // need to check all neighbors of 'u'
+        for (int v: map.getOrDefault(u, new ArrayList<>())) {
+            // In case this neighbor is already visited (has a defined dp[v]), we can use its result
+            if (dp[v] != null)
+                ans = dp[v];
+            else
+                ans = f(v, x, map, dp, path);
+            if (!ans)
+                break;
         }
         path[u] = false;
-        return u == dest || adj.get(u).size() > 0; // destination is always reachable & non-destination node should have >0 neighbors
+        // if there are no outgoing edges, it should be 'x', otherwise return 'ans'
+        return dp[u] = map.getOrDefault(u, new ArrayList<>()).isEmpty() ? u == x : ans;
     }
 
     public boolean leadsToDestination(int n, int[][] edges, int source, int destination) {
-        List<List<Integer>> adj = new ArrayList<>(n);
-        for (int i = 0; i < n; ++i)
-            adj.add(new ArrayList<>());
-
+        Map<Integer, List<Integer>> map = new HashMap<>();
         for (int[] e: edges) {
-            adj.get(e[0]).add(e[1]);
-            if (e[0] == destination) // this check is optional. Having it saves ~3ms :)
-                return false;
+            map.putIfAbsent(e[0], new ArrayList<>());
+            map.get(e[0]).add(e[1]);
         }
-        return leadsToDestination(source, destination, adj, new boolean[n], new boolean[n]);
+        return f(source, destination, map, new Boolean[n], new boolean[n]);
     }
 }
