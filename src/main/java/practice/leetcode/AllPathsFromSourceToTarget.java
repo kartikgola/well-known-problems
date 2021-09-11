@@ -6,9 +6,7 @@
 
 package practice.leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class AllPathsFromSourceToTarget {
 
@@ -26,6 +24,28 @@ public class AllPathsFromSourceToTarget {
 
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
         dfs(0, graph.length-1, graph, new Stack<>());
+        return ans;
+    }
+
+    public List<List<Integer>> allPathsSourceTargetBFS(int[][] graph) {
+        final int n = graph.length;
+        List<List<Integer>> ans = new ArrayList<>();
+        Queue<List<Integer>> q = new LinkedList<>();
+        q.add(new ArrayList<>(Arrays.asList(0)));
+
+        while (!q.isEmpty()) {
+            List<Integer> c = q.poll();
+            if (c.get(c.size()-1) == n-1) {
+                ans.add(c);
+                continue;
+            }
+            for (int d: graph[c.get(c.size()-1)]) {
+                List<Integer> t = new ArrayList<>(c);
+                t.add(d);
+                q.add(t);
+            }
+        }
+
         return ans;
     }
 }
