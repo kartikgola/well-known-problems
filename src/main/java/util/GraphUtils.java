@@ -189,7 +189,10 @@ public class GraphUtils {
             IntGraph mst = new IntGraph(size, isDirected);
             edges.sort(Comparator.comparingInt(e -> e[2]));
             UnionFind uf = new UnionFind(size);
+            int edgesTaken = 0;
             for (int[] edge: edges) {
+                if (edgesTaken == size-1)
+                    break;
                 if (uf.union(edge[0], edge[2])) {
                     mst.addEdge(edge);
                 }
@@ -200,21 +203,23 @@ public class GraphUtils {
         // Prim's algorithm
         public IntGraph prim() {
             boolean[] visited = new boolean[size];
-            Queue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(e -> e[2]));
+            Queue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(e -> e[0]));
             IntGraph mst = new IntGraph(size, isDirected);
             int randomSource = new Random().nextInt(size);
             for (Map.Entry<Integer, Integer> edge: adj.get(randomSource).entrySet())
-                pq.add(new int[]{randomSource, edge.getKey(), edge.getValue()});
+                pq.add(new int[]{edge.getValue(), edge.getKey(), randomSource});
             visited[randomSource] = true;
+            int edgesTaken = 0;
 
-            while (!pq.isEmpty()) {
-                int u = pq.peek()[0],
-                    v = pq.peek()[1],
-                    w = pq.poll()[2];
+            while (!pq.isEmpty() && edgesTaken < size-1) {
+                int w = pq.peek()[0];
+                int v = pq.peek()[1];
+                int u = pq.poll()[2];
                 if (visited[v])
                     continue;
                 visited[v] = true;
                 mst.addEdge(new int[]{u, v, w});
+                edgesTaken++;
                 for (Map.Entry<Integer, Integer> edge: adj.getOrDefault(v, new HashMap<>()).entrySet())
                     pq.add(new int[]{v, edge.getKey(), edge.getValue()});
             }
