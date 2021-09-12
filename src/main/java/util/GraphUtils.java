@@ -82,7 +82,7 @@ public class GraphUtils {
             return true;
         }
 
-        // Topological sort
+        // Topological sort (Kahn's algorithm)
         public int[] topologicalSort() {
             int[] indegree = new int[size];
             int[] ans = new int[size];
