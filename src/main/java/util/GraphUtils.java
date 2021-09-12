@@ -125,7 +125,7 @@ public class GraphUtils {
                 if (visited[u])
                     continue;
                 visited[u] = true;
-                for (Map.Entry<Integer, Integer> e: adj.get(u).entrySet()) {
+                for (Map.Entry<Integer, Integer> e: adj.getOrDefault(u, new HashMap<>()).entrySet()) {
                     int v = e.getKey(),
                         w = e.getValue();
                     if (d + w < dist[v]) {
@@ -167,7 +167,7 @@ public class GraphUtils {
             for (int u = 0; u < size; ++u) {
                 Arrays.fill(dist[u], Integer.MAX_VALUE);
                 dist[u][u] = 0;
-                for (Map.Entry<Integer, Integer> e: adj.get(u).entrySet()) {
+                for (Map.Entry<Integer, Integer> e: adj.getOrDefault(u, new HashMap<>()).entrySet()) {
                     dist[u][e.getKey()] = e.getValue();
                 }
             }
@@ -215,7 +215,7 @@ public class GraphUtils {
                     continue;
                 visited[v] = true;
                 mst.addEdge(new int[]{u, v, w});
-                for (Map.Entry<Integer, Integer> edge: adj.get(v).entrySet())
+                for (Map.Entry<Integer, Integer> edge: adj.getOrDefault(v, new HashMap<>()).entrySet())
                     pq.add(new int[]{v, edge.getKey(), edge.getValue()});
             }
             return mst;
