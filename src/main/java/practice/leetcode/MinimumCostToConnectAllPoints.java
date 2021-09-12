@@ -32,4 +32,38 @@ public class MinimumCostToConnectAllPoints {
         }
         return ans;
     }
+
+    private List<int[]> f(int[][] p, int i, boolean[] vi) {
+        List<int[]> al = new ArrayList<>();
+        for (int j = 0; j < p.length; ++j) {
+            if (j != i && !vi[j]) {
+                al.add(new int[]{ Math.abs(p[i][0]-p[j][0]) + Math.abs(p[i][1]-p[j][1]), j });
+            }
+        }
+        return al;
+    }
+
+    public int minCostConnectPointsPrims(int[][] p) {
+        final int n = p.length;
+        boolean[] vi = new boolean[n];
+        vi[0] = true;
+        Queue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(p2 -> p2[0]));
+        pq.addAll(f(p, 0, vi));
+        int ans = 0;
+        int count = 0;
+
+        while (!pq.isEmpty() && count < n-1) {
+            int[] c = pq.poll();
+            if (vi[c[1]])
+                continue;
+            vi[c[1]] = true;
+            count++;
+            ans += c[0];
+            for (int[] d: f(p, c[1], vi)) {
+                pq.add(new int[]{d[0], d[1]});
+            }
+        }
+
+        return ans;
+    }
 }
