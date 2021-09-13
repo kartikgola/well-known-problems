@@ -29,9 +29,7 @@ public class CheapestFlightWithinKStops {
         }
 
         // Tuple of (vertex, distance, stops)
-        Queue<int[]> pq = new PriorityQueue<>((int[] a, int[] b) -> {
-            return a[1] - b[1];
-        });
+        Queue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt((int[] a) -> a[1]));
         pq.offer(new int[]{ src, 0, 0 });
 
         while ( !pq.isEmpty() ) {
@@ -61,6 +59,32 @@ public class CheapestFlightWithinKStops {
         }
 
         return costs[dst] == Integer.MAX_VALUE ? -1 : costs[dst];
+    }
+
+    public int findCheapestPriceBellmanFord(int n, int[][] flights, int src, int dst, int k) {
+        if (src == dst)
+            return 0;
+        int[] prev = new int[n];
+        int[] curr = new int[n];
+        Arrays.fill(prev, Integer.MAX_VALUE);
+        Arrays.fill(curr, Integer.MAX_VALUE);
+        prev[src] = 0;
+        // relax k+1 times, since no. of edges for k stops will be k+1
+        for (int i = 0; i < k+1; i++) {
+            curr[src] = 0;
+            for (int[] flight : flights) {
+                int previous_flight = flight[0];
+                int current_flight = flight[1];
+                int cost = flight[2];
+
+                if (prev[previous_flight] < Integer.MAX_VALUE) {
+                    curr[current_flight] = Math.min(curr[current_flight],
+                            prev[previous_flight] + cost);
+                }
+            }
+            prev = curr.clone();
+        }
+        return curr[dst] == Integer.MAX_VALUE ? -1 : curr[dst];
     }
 
 }
