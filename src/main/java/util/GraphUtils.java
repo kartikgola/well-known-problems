@@ -82,7 +82,7 @@ public class GraphUtils {
             return true;
         }
 
-        // Topological sort (Kahn's algorithm)
+        // Topological sort/Kahn's algorithm O(V+E)
         public int[] topologicalSort() {
             int[] indegree = new int[size];
             int[] ans = new int[size];
@@ -110,7 +110,7 @@ public class GraphUtils {
             return ans;
         }
 
-        // Dijkstra's algorithm
+        // Dijkstra's algorithm O(ElogV)
         public int[] dijkstra(int source) {
             int[] dist = new int[size];
             boolean[] visited = new boolean[size];
@@ -138,30 +138,62 @@ public class GraphUtils {
             return dist;
         }
 
-        // Bellman-ford's algorithm
+        // Bellman-ford's algorithm O(VE)
         public int[] bellmanFord(int source) {
+            int[] prev = new int[size];
+            int[] curr = new int[size];
+            Arrays.fill(prev, Integer.MAX_VALUE);
+            Arrays.fill(curr, Integer.MAX_VALUE);
+            prev[source] = 0;
+
+            // relax size-1 times
+            for (int i = 0; i < size-1; i++) {
+                curr[source] = 0;
+                for (int[] edge : edges) {
+                    int u = edge[0];
+                    int v = edge[1];
+                    int w = edge[2];
+
+                    if (prev[u] < Integer.MAX_VALUE) {
+                        curr[v] = Math.min(curr[v], prev[u] + w);
+                    }
+                }
+                prev = curr.clone();
+            }
+
+            // can we relax 1 more time?
+            for (int[] edge: edges) {
+                int u = edge[0];
+                int v = edge[1];
+                int w = edge[2];
+                if (prev[u] < Integer.MAX_VALUE && prev[u] + w < curr[v])
+                    return new int[]{};
+            }
+            return curr;
+        }
+
+        // Shortest Path Faster algorithm O(VE)
+        public int[] spfa(int source) {
             int[] dist = new int[size];
             Arrays.fill(dist, Integer.MAX_VALUE);
             dist[source] = 0;
-            for (int i = 0; i < size-1; ++i) {
-                for (int[] edge: edges) {
-                    int from = edge[0], to = edge[1], weight = edge[2];
-                    if (dist[from] != Integer.MAX_VALUE && dist[from] + weight < dist[to]) {
-                        dist[to] = dist[from] + weight;
+            Queue<Integer> q = new LinkedList<>();
+            q.add(source);
+            // we can't use 'visited' here, since this is plain-old BFS with a simple optimization
+            // worst-case complexity is same as bellman-ford
+            while (!q.isEmpty()) {
+                int u = q.poll();
+                for (Map.Entry<Integer, Integer> e: adj.getOrDefault(u, new HashMap<>()).entrySet()) {
+                    if (dist[u] + e.getValue() < dist[e.getKey()]) {
+                        dist[e.getKey()] = dist[u] + e.getValue();
+                        q.add(e.getKey());
                     }
-                }
-            }
-            for (int[] edge: edges) {
-                int from = edge[0], to = edge[1], weight = edge[2];
-                if (dist[from] != Integer.MAX_VALUE && dist[from] + weight < dist[to]) {
-                    // Graph has -ve weight cycle
-                    return new int[]{};
                 }
             }
             return dist;
         }
 
-        // Floyd-warshall's algorithm
+        // Floyd-warshall's algorithm O(V^3)
         public int[][] floydWarshall() {
             int[][] dist = new int[size][size];
             for (int u = 0; u < size; ++u) {
@@ -184,7 +216,7 @@ public class GraphUtils {
             return dist;
         }
 
-        // Kruskal's algorithm
+        // Kruskal's algorithm O(ELogV)
         public IntGraph kruskal() {
             IntGraph mst = new IntGraph(size, isDirected);
             edges.sort(Comparator.comparingInt(e -> e[2]));
@@ -200,12 +232,14 @@ public class GraphUtils {
             return mst;
         }
 
-        // Prim's algorithm
+        // Prim's algorithm O(ELogV)
         public IntGraph prim() {
             boolean[] visited = new boolean[size];
-            Queue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(e -> e[0]));
             IntGraph mst = new IntGraph(size, isDirected);
             int randomSource = new Random().nextInt(size);
+            // Tuple of (edgeWeight, to, from)
+            // 'from' is not really needed & is only there to add edges in new MST
+            Queue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(e -> e[0]));
             for (Map.Entry<Integer, Integer> edge: adj.get(randomSource).entrySet())
                 pq.add(new int[]{edge.getValue(), edge.getKey(), randomSource});
             visited[randomSource] = true;
