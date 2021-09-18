@@ -7,6 +7,7 @@
 
 package practice.leetcode;
 
+import java.util.Map;
 import java.util.TreeMap;
 
 public class MyCalendar1 {
@@ -16,12 +17,16 @@ public class MyCalendar1 {
     public MyCalendar1() { }
 
     public boolean book(int start, int end) {
-        Integer left = map.floorKey(start);
-        Integer right = map.ceilingKey(start);
-        if ((left == null || map.get(left) <= start) && (right == null || right >= end)) {
-            map.put(start, end);
-            return true;
-        }
-        return false;
+        Map.Entry<Integer, Integer> before = map.floorEntry(start);
+        Map.Entry<Integer, Integer> after = map.ceilingEntry(start);
+        boolean ok = true;
+        if (before != null && before.getValue() > start)
+            ok = false;
+        if (after != null && after.getKey() < end)
+            ok = false;
+        if (!ok)
+            return false;
+        map.put(start, end);
+        return true;
     }
 }
