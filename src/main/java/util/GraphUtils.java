@@ -146,8 +146,8 @@ public class GraphUtils {
             Arrays.fill(curr, Integer.MAX_VALUE);
             prev[source] = 0;
 
-            // relax size-1 times
-            for (int i = 0; i < size-1; i++) {
+            // relax unique_edges-1 times
+            for (int i = 0; i < edges.size()/2 - 1; i++) {
                 curr[source] = 0;
                 for (int[] edge : edges) {
                     int u = edge[0];
