@@ -10,44 +10,34 @@ import util.ds.linkedlist.ListNode;
 
 public class SplitLinkedListInParts {
 
-    private int getLen(ListNode head) {
-        if ( head == null )
-            return 0;
-        int c = 1;
-        ListNode sl = head, fs = head;
-        while ( fs != null && fs.next != null ) {
-            sl = sl.next;
-            fs = fs.next.next;
-            ++c;
+    public ListNode[] splitListToParts(ListNode head, int k) {
+        ListNode curr = head;
+        ListNode[] ans = new ListNode[k];
+        // find list length
+        int listLen = 0;
+        while (curr != null) {
+            listLen++;
+            curr = curr.next;
         }
-        if ( fs == null ) return 2 * c - 2;
-        else return 2 * c - 1;
-    }
+        int partsLen = listLen / k;
+        int mod = listLen % k;
+        int j = 0;
 
-    public ListNode[] splitListToParts(ListNode root, int k) {
-        int len = getLen(root);
-        int extras = len > k ? len % k : 0;// These are extras
-        int eachCount = len / k == 0 ? 1 : len / k;
-        ListNode[] list = new ListNode[k];
-
-        int i = 0, j = 0;
-        ListNode prev = null;
-        for ( ListNode curr = root; curr != null; curr = curr.next, ++j ) {
-            if ( j == 0 ) {
-                if ( prev != null )
-                    prev.next = null;
-                list[i] = curr;
-                i++;
+        curr = head;
+        while (j < ans.length) {
+            // If mod > 0, we can only take out 1 from it
+            int currLen = partsLen + (mod-- > 0 ? 1 : 0);
+            ans[j] = curr;
+            while (--currLen > 0)
+                curr = curr.next;
+            if (curr != null) {
+                ListNode next = curr.next;
+                curr.next = null;
+                curr = next;
             }
-            if ( j == eachCount - 1 && extras == 0 ) {
-                j = -1;
-            } else if ( j == eachCount && extras > 0 ) {
-                j = -1;
-                extras--;
-            }
-            prev = curr;
+            j++;
         }
 
-        return list;
+        return ans;
     }
 }
