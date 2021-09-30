@@ -6,6 +6,8 @@
 
 package practice.leetcode;
 
+import java.util.ArrayDeque;
+
 public class PredictTheWinner {
 
     // Approach - You(P1) can only win if you can put your opponent(P2) in a situation where his choices don't matter.
@@ -30,5 +32,36 @@ public class PredictTheWinner {
 
     public boolean PredictTheWinner(int[] nums) {
         return f(nums, true, 0, 0, 0, nums.length-1);
+    }
+
+    // Approach - Any player can only take out left/right from nums
+    // dp[i][j] = max score of "P1" using piles from [i...j]
+    // P1's turn => dp[i][j] = max{ nums[i] + dp[i+1][j], nums[j] + dp[i][j-1] }
+    // P2's turn => dp[i][j] = min{ -nums[i] + dp[i+1][j], -nums[j] + dp[i][j-1] }
+    public boolean PredictTheWinnerDP(int[] nums) {
+        final int n = nums.length;
+        boolean evenStart = n % 2 == 0;
+        int[][] dp = new int[n][n];
+
+        for (int k = 0; k < n; ++k) {
+            for (int i = 0; i < n-k; ++i) {
+                int j = i+k;
+                boolean p1turn;
+                int len = j-i+1;
+                if (evenStart) {
+                    p1turn = len % 2 == 0;
+                } else {
+                    p1turn = len % 2 != 0;
+                }
+                if (i == j)
+                    dp[i][j] = (p1turn ? 1 : -1) * nums[i];
+                else if (p1turn)
+                    dp[i][j] = Math.max(nums[i] + dp[i+1][j], nums[j] + dp[i][j-1]);
+                else
+                    dp[i][j] = Math.min(-nums[i] + dp[i+1][j], -nums[j] + dp[i][j-1]);
+            }
+        }
+
+        return dp[0][n-1] >= 0;
     }
 }

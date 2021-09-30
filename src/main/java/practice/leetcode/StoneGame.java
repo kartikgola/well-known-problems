@@ -38,12 +38,13 @@ public class StoneGame {
         for (int k = 0; k < n; ++k) {
             for (int i = 0; i < n-k; ++i) {
                 int j = i+k;
-                boolean alexTurn = j-i % 2 != 0;
-                int m = alexTurn ? 1 : -1;
+                boolean alexTurn = (j-i) % 2 != 0;
                 if (i == j)
-                    dp[i][j] = m * piles[i];
+                    dp[i][j] = (alexTurn ? 1 : -1) * piles[i];
+                else if (alexTurn)
+                    dp[i][j] = Math.max( piles[i] + dp[i+1][j], piles[j] + dp[i][j-1] );
                 else
-                    dp[i][j] = Math.max( m * piles[i] + dp[i+1][j], m * piles[j] + dp[i][j-1] );
+                    dp[i][j] = Math.min( -piles[i] + dp[i+1][j], -piles[j] + dp[i][j-1] );
             }
         }
 
