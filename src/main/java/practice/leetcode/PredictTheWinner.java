@@ -6,8 +6,6 @@
 
 package practice.leetcode;
 
-import java.util.ArrayDeque;
-
 public class PredictTheWinner {
 
     // Approach - You(P1) can only win if you can put your opponent(P2) in a situation where his choices don't matter.
