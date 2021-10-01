@@ -10,31 +10,33 @@ import java.util.Arrays;
 
 public class PartitionToKEqualSumSubsets {
 
-    public boolean canPartitionKSubsets(int[] A, int k) {
-        if (k > A.length) return false;
-        int sum = 0;
-        for (int num : A) sum += num;
-        if (sum % k != 0) return false;
-        boolean[] visited = new boolean[A.length];
-        // Sorting here is being done to speed up the process of grouping
-        // Since a big number, if taken first, is less probable to be grouped with other numbers
-        Arrays.sort(A);
-        return canPart(A, 0, A.length - 1, visited, sum / k, k);
-    }
-
-    private boolean canPart(int[] A, int sum, int st, boolean[] visited, int target, int k) {
-        if (k == 0) return true;
-        if (sum == target && canPart(A, 0, A.length - 1, visited, target, k - 1))
+    private boolean canPart(int mask, int[] nums, int end, int k, int currSum, int partSum) {
+        if (k == 0)
             return true;
-        for (int i = st; i >= 0; --i) {
-            if (!visited[i] && sum + A[i] <= target) {
-                visited[i] = true;
-                if (canPart(A, sum + A[i], i - 1, visited, target, k))
-                    return true;
-                visited[i] = false;
+        if (currSum == partSum)
+            if (canPart(mask, nums, nums.length-1, k-1, 0, partSum))
+                return true;
+        for (int i = end; i >= 0; --i) {
+            if ((mask & (1 << i)) == 0) {
+                if (currSum + nums[i] <= partSum) {
+                    mask |= (1 << i);
+                    if (canPart(mask, nums, i-1, k, currSum + nums[i], partSum))
+                        return true;
+                    mask &= ~(1 << i);
+                }
             }
         }
         return false;
+    }
+
+    public boolean canPartitionKSubsets(int[] nums, int k) {
+        int sum = 0;
+        for (int x: nums)
+            sum += x;
+        if (sum % k != 0)
+            return false;
+        Arrays.sort(nums);
+        return canPart(0, nums, nums.length-1, k, 0, sum / k);
     }
 
 }
