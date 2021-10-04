@@ -28,8 +28,8 @@ public class BellmanFord<T extends Number> {
         Map<T, Integer> dist = new HashMap<>(graph.getVertices().stream().collect(Collectors.toMap(Function.identity(), v -> Integer.MAX_VALUE)));
         dist.put(source, 0);
 
-        // 1. Try to relax the distances 'V-1' times
-        for (int i = 0; i < graph.getSize()-1; i++) {
+        // 1. Try to relax the distances 'E-1' times
+        for (int i = 0; i < graph.getEdges().size()-1; i++) {
             for (Edge<T> e: graph.getEdges()) {
                 if (dist.get(e.from) != Integer.MAX_VALUE && dist.get(e.to) > e.weight + dist.get(e.from)) {
                     dist.put(e.to, e.weight + dist.get(e.from));
