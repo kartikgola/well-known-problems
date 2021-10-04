@@ -6,8 +6,6 @@
 
 package algorithms.string;
 
-import util.MathUtils;
-
 import java.io.IOException;
 
 public class RabinKarpStringMatching {
@@ -18,15 +16,15 @@ public class RabinKarpStringMatching {
         final int k = s.length() - 1;
         long hash = 0;
         for ( int i = 0; i < s.length(); ++i ) {
-            hash += MathUtils.fastPow(C, k - i) * (s.charAt(i) - 'a');
+            hash += Math.pow(C, k - i) * (s.charAt(i) - 'a');
         }
         return hash;
     }
 
     private long rollHash(long prevHash, char prevChar, char newChar, int len) {
-        prevHash -= MathUtils.fastPow(C, len - 1) * (prevChar - 'a');
+        prevHash -= Math.pow(C, len - 1) * (prevChar - 'a');
         prevHash *= C;
-        prevHash += MathUtils.fastPow(C, 0) * (newChar - 'a');
+        prevHash += Math.pow(C, 0) * (newChar - 'a');
         return prevHash;
     }
 

@@ -1,7 +1,12 @@
+/*
+ * Author: Kartik Gola
+ * Date: 10/4/21, 5:28 PM
+ * Copyright (c) 2021 | https://kartikgola.com
+ */
+
 package fundamentals.concurrency.collections;
 
 import java.util.*;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

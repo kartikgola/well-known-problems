@@ -7,8 +7,6 @@
 
 package projecteuler;
 
-import util.MathUtils;
-
 import java.util.Map;
 
 public class Problem3 {

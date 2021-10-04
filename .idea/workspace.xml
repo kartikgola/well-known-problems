@@ -4,19 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Adding solution for 3 sum closest">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Bugfix in BellmanFord">
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/google/TreeDirections.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/hackerearth/MicroAndGraph.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/BeautifulArray.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/DecodeWays2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/PalindromePartitioning2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/StoneGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/RangeQueryType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/DungeonGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/ExpressionAddOperators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/PatchingArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/ProcessTasksUsingServers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/RectangleArea2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/leetcode/RangeSumQueryMutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/RangeSumQueryMutable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/LazySegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/LazySegmentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/SegmentTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ds/tree/segment/SegmentTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fundamentals/bithandling/BitmaskDPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fundamentals/bithandling/BitmaskDPTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/string/RabinKarpStringMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/string/RabinKarpStringMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/Temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/Temp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitHacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/bithandling/BitHacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/bithandling/BitmaskDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/CheckResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/CheckResults.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ExtendThreadClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ExtendThreadClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ImmutableInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ImmutableInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ImplementRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ImplementRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MyBlockingQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/MyBlockingQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ReferenceIsNotThreadSafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ReferenceIsNotThreadSafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/TwoSums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/TwoSums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/BlockingQueueExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/BlockingQueueExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/CopyOnWriteArrayListExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/CopyOnWriteArrayListExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/ObtainingSyncCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/ObtainingSyncCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/SkipListExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/SkipListExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/racecondition/AtomicExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/racecondition/AtomicExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/racecondition/RaceConditionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/racecondition/RaceConditionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/racecondition/SynchronizedBlockExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/racecondition/SynchronizedBlockExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/streams/CollectExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/streams/CollectExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/streams/ParallelStreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/streams/ParallelStreamExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/streams/StreamReduceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/streams/StreamReduceExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyCachedThreadPoolExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyCachedThreadPoolExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyFixedThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyFixedThreadExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyFutureExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyFutureExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyScheduledThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyScheduledThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MySingleThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MySingleThreadExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/BasicGetReflectionAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/BasicGetReflectionAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/BasicSetReflectionAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/BasicSetReflectionAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/ExampleEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/ExampleEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/ExampleEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/ExampleEntityManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/MetaModelPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/MetaModelPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/annotations/MyColumnAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/annotations/MyColumnAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/annotations/MyPrimaryKeyAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/annotations/MyPrimaryKeyAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/util/MetaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/util/MetaModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/util/MyColumnField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/util/MyColumnField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/util/MyPrimaryKeyField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/util/MyPrimaryKeyField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/strings/StringFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/strings/StringFormatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/strings/StringJoinerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/strings/StringJoinerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/codechef/FEB21C/PRIGAME.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/leetcode/OptimizeWaterDistributionInAVillage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/OptimizeWaterDistributionInAVillage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projecteuler/Problem3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projecteuler/Problem3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/MathUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fundamentals/bithandling/BitmaskDPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javafundamentals/bithandling/BitmaskDPTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +74,8 @@
       <list>
         <option value="Python Script" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -47,9 +90,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -105,12 +145,27 @@
       <recent name="util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="practice.google" />
+      <recent name="practice.leetcode" />
       <recent name="practice.atcoder.abc199" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BellmanFordTest.testShortestPathFinding">
-    <configuration name="StoneGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.leetcode.StoneGame" />
+  <component name="RunManager" selected="Application.LongestTreeAP">
+    <configuration name="LongestTreeAP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.google.LongestTreeAP" />
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatchingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.leetcode.PatchingArray" />
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
@@ -122,78 +177,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="SumOfSquareNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.leetcode.SumOfSquareNumbers" />
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BellmanFordTest.testShortestPathFinding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayUtilsTest.testBisectLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.graph.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.graph" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.graph.BellmanFordTest" />
-      <option name="METHOD_NAME" value="testShortestPathFinding" />
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
+      <option name="METHOD_NAME" value="testBisectLeft" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DijkstraTest.testShortestPathFinding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayUtilsTest.testBisectRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.graph.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.graph" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.graph.DijkstraTest" />
-      <option name="METHOD_NAME" value="testShortestPathFinding" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindSuccessorTest.successorOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.graph.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.graph" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.graph.FindSuccessorTest" />
-      <option name="METHOD_NAME" value="successorOf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimTest.testMSTGeneration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.tree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.tree" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.tree.PrimTest" />
-      <option name="METHOD_NAME" value="testMSTGeneration" />
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
+      <option name="METHOD_NAME" value="testBisectRight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BellmanFordTest.testShortestPathFinding" />
-        <item itemvalue="Application.StoneGame" />
-        <item itemvalue="JUnit.PrimTest.testMSTGeneration" />
-        <item itemvalue="JUnit.FindSuccessorTest.successorOf" />
-        <item itemvalue="JUnit.DijkstraTest.testShortestPathFinding" />
+        <item itemvalue="Application.LongestTreeAP" />
+        <item itemvalue="JUnit.ArrayUtilsTest.testBisectRight" />
+        <item itemvalue="JUnit.ArrayUtilsTest.testBisectLeft" />
+        <item itemvalue="Application.PatchingArray" />
+        <item itemvalue="Application.SumOfSquareNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -293,356 +327,426 @@
       <workItem from="1628231749204" duration="3008000" />
       <workItem from="1628318115869" duration="1058000" />
       <workItem from="1628405732583" duration="1388000" />
-      <workItem from="1628421493514" duration="1174000" />
+      <workItem from="1628421493514" duration="3606000" />
+      <workItem from="1628505995324" duration="1207000" />
+      <workItem from="1628533356385" duration="1000" />
+      <workItem from="1628574405661" duration="11227000" />
+      <workItem from="1628654690457" duration="5445000" />
+      <workItem from="1628704887509" duration="5303000" />
+      <workItem from="1628857485249" duration="3131000" />
+      <workItem from="1628917770240" duration="3714000" />
+      <workItem from="1628925512746" duration="14026000" />
+      <workItem from="1629012977934" duration="1244000" />
+      <workItem from="1629030409490" duration="6791000" />
+      <workItem from="1629132135505" duration="1000" />
+      <workItem from="1629133385342" duration="3601000" />
+      <workItem from="1629258273152" duration="5950000" />
+      <workItem from="1629291007349" duration="6030000" />
+      <workItem from="1629355631669" duration="11330000" />
+      <workItem from="1629705625169" duration="1807000" />
+      <workItem from="1629740300828" duration="2631000" />
+      <workItem from="1629826488999" duration="8405000" />
+      <workItem from="1629987456114" duration="14274000" />
+      <workItem from="1630133578363" duration="4613000" />
+      <workItem from="1630164761961" duration="3672000" />
+      <workItem from="1630224741885" duration="3164000" />
+      <workItem from="1630255088012" duration="7221000" />
+      <workItem from="1630422799158" duration="1663000" />
+      <workItem from="1630516128147" duration="14072000" />
+      <workItem from="1630742532594" duration="10241000" />
+      <workItem from="1630818255276" duration="17578000" />
+      <workItem from="1630904949815" duration="1957000" />
+      <workItem from="1630952526139" duration="1084000" />
+      <workItem from="1631087116253" duration="486000" />
+      <workItem from="1631105463052" duration="939000" />
+      <workItem from="1631170402637" duration="688000" />
+      <workItem from="1631256512812" duration="4655000" />
+      <workItem from="1631292741929" duration="17990000" />
+      <workItem from="1631439388286" duration="11834000" />
+      <workItem from="1631509965613" duration="2826000" />
+      <workItem from="1631520057894" duration="13769000" />
+      <workItem from="1631630441952" duration="765000" />
+      <workItem from="1631644298302" duration="642000" />
+      <workItem from="1631709692480" duration="10469000" />
+      <workItem from="1631888676632" duration="5000" />
+      <workItem from="1631899333403" duration="797000" />
+      <workItem from="1631904656756" duration="40000" />
+      <workItem from="1631906725703" duration="148000" />
+      <workItem from="1631986133530" duration="10159000" />
+      <workItem from="1632075801468" duration="1253000" />
+      <workItem from="1632124126975" duration="1828000" />
+      <workItem from="1632146812621" duration="5513000" />
+      <workItem from="1632228842045" duration="960000" />
+      <workItem from="1632294379156" duration="2615000" />
+      <workItem from="1632373072163" duration="3949000" />
+      <workItem from="1632381496928" duration="231000" />
+      <workItem from="1632556532306" duration="2867000" />
+      <workItem from="1632723145666" duration="2528000" />
+      <workItem from="1632805319751" duration="27346000" />
+      <workItem from="1633104268167" duration="5154000" />
+      <workItem from="1633179763496" duration="2159000" />
+      <workItem from="1633328646496" duration="1306000" />
+      <workItem from="1633345982132" duration="8000" />
+      <workItem from="1633348318104" duration="954000" />
     </task>
-    <task id="LOCAL-00024" summary="Adding MatchsticksToSquare and updating PartitionToKEqualSumSubsets">
-      <created>1623781749774</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00118" summary="Adding ExpressiveWords">
+      <created>1631292808195</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
       <option name="project" value="LOCAL" />
-      <updated>1623781749774</updated>
+      <updated>1631292808195</updated>
     </task>
-    <task id="LOCAL-00025" summary="Updating Trie method">
-      <created>1623781838670</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00119" summary="Adding ArithmeticSlices2Subsequence">
+      <created>1631353182135</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
       <option name="project" value="LOCAL" />
-      <updated>1623781838670</updated>
+      <updated>1631353182135</updated>
     </task>
-    <task id="LOCAL-00026" summary="Updating GenerateParenthesis">
-      <created>1623848198623</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00120" summary="Adding CompareStringsByFrequencyOfSmallestCharacter">
+      <created>1631353191476</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
       <option name="project" value="LOCAL" />
-      <updated>1623848198623</updated>
+      <updated>1631353191476</updated>
     </task>
-    <task id="LOCAL-00027" summary="Adding solution to NumberOfSubarraysWithBoundedMaximum">
-      <created>1623954741769</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00121" summary="Improving solution for AllPathsFromSourceLeadToDestination">
+      <created>1631355373312</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
       <option name="project" value="LOCAL" />
-      <updated>1623954741769</updated>
+      <updated>1631355373312</updated>
     </task>
-    <task id="LOCAL-00028" summary="Adding solution to ShortestDistanceToTargetColor">
-      <created>1623957206618</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00122" summary="Adding BFS version">
+      <created>1631359963099</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
       <option name="project" value="LOCAL" />
-      <updated>1623957206618</updated>
+      <updated>1631359963100</updated>
     </task>
-    <task id="LOCAL-00029" summary="Moving stuff">
-      <created>1624010795274</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00123" summary="Adding BFS sol'n for FindIfPathExistsInGraph">
+      <created>1631360043850</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
       <option name="project" value="LOCAL" />
-      <updated>1624010795274</updated>
+      <updated>1631360043850</updated>
     </task>
-    <task id="LOCAL-00030" summary="Moving stuff again!">
-      <created>1624011530406</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00124" summary="Adding BFS+DFS sol'n for PopulatingNextRightPointersInEachNode2">
+      <created>1631360867299</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
       <option name="project" value="LOCAL" />
-      <updated>1624011530406</updated>
+      <updated>1631360867299</updated>
     </task>
-    <task id="LOCAL-00031" summary="Adding solution to RangeSumQueryMutable">
-      <created>1624012280784</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00125" summary="Adding solution for BasicCalculator">
+      <created>1631382391303</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
       <option name="project" value="LOCAL" />
-      <updated>1624012280784</updated>
+      <updated>1631382391303</updated>
     </task>
-    <task id="LOCAL-00032" summary="Adding solution to NumberOfMatchingSubsequences">
-      <created>1624372526247</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00126" summary="Adding solution for ReadNCharactersGivenRead4Two">
+      <created>1631439758179</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
       <option name="project" value="LOCAL" />
-      <updated>1624372526247</updated>
+      <updated>1631439758179</updated>
     </task>
-    <task id="LOCAL-00033" summary="Adding LC solutions">
-      <created>1624464722799</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00127" summary="Minor changes in GraphUtils">
+      <created>1631447738261</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
       <option name="project" value="LOCAL" />
-      <updated>1624464722799</updated>
+      <updated>1631447738261</updated>
     </task>
-    <task id="LOCAL-00034" summary="Adding LC solution for RedundantConnection">
-      <created>1624617894099</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00128" summary="Adding sol'n for ReachableNodesInSubdividedGraph">
+      <created>1631447749751</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
       <option name="project" value="LOCAL" />
-      <updated>1624617894100</updated>
+      <updated>1631447749751</updated>
     </task>
-    <task id="LOCAL-00035" summary="Adding alt. LC solution for RedundantConnection">
-      <created>1624622227956</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00129" summary="Adding sol'n for MinimumCostToConnectAllPoints">
+      <created>1631460703206</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
       <option name="project" value="LOCAL" />
-      <updated>1624622227956</updated>
+      <updated>1631460703206</updated>
     </task>
-    <task id="LOCAL-00036" summary="Adding bisect left &amp; right array util">
-      <created>1624778094702</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00130" summary="Some optimizations in GraphUtils">
+      <created>1631465752695</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
       <option name="project" value="LOCAL" />
-      <updated>1624778094702</updated>
+      <updated>1631465752695</updated>
     </task>
-    <task id="LOCAL-00037" summary="Adding T extends Number to graph classes">
-      <created>1624778126798</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00131" summary="Adding 2 sol'ns to MinimumCostToConnectAllPoints">
+      <created>1631466785132</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
       <option name="project" value="LOCAL" />
-      <updated>1624778126798</updated>
+      <updated>1631466785132</updated>
     </task>
-    <task id="LOCAL-00038" summary="Adding RemoveAllAdjacentDuplicatesInString">
-      <created>1624874773930</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00132" summary="Updating comment">
+      <created>1631468104624</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
       <option name="project" value="LOCAL" />
-      <updated>1624874773930</updated>
+      <updated>1631468104624</updated>
     </task>
-    <task id="LOCAL-00039" summary="Updating utilities">
-      <created>1624882303264</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00133" summary="Adding univalue problems">
+      <created>1631470808019</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
       <option name="project" value="LOCAL" />
-      <updated>1624882303264</updated>
+      <updated>1631470808019</updated>
     </task>
-    <task id="LOCAL-00040" summary="Adding CP template">
-      <created>1624882325906</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00134" summary="Adding alt. solutions for CheapestFlightWithinKStops">
+      <created>1631525784256</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
       <option name="project" value="LOCAL" />
-      <updated>1624882325906</updated>
+      <updated>1631525784256</updated>
     </task>
-    <task id="LOCAL-00041" summary="Fixing StringTokenizer issue in utils">
-      <created>1624882463446</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00135" summary="Some opt. in GraphUtils">
+      <created>1631552615652</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
       <option name="project" value="LOCAL" />
-      <updated>1624882463446</updated>
+      <updated>1631552615652</updated>
     </task>
-    <task id="LOCAL-00042" summary="Updating copyrights yet again!">
-      <created>1624883097256</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
+    <task id="LOCAL-00136" summary="Adding PathWithMinimumEffort">
+      <created>1631552623737</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
       <option name="project" value="LOCAL" />
-      <updated>1624883097256</updated>
+      <updated>1631552623737</updated>
     </task>
-    <task id="LOCAL-00043" summary="Updating CP template">
-      <created>1624886582949</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
+    <task id="LOCAL-00137" summary="Updating comment">
+      <created>1631552663664</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
       <option name="project" value="LOCAL" />
-      <updated>1624886582949</updated>
+      <updated>1631552663665</updated>
     </task>
-    <task id="LOCAL-00044" summary="Updating CP template">
-      <created>1624886980066</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
+    <task id="LOCAL-00138" summary="Adding MaxAreaOfIsland">
+      <created>1631722039065</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
       <option name="project" value="LOCAL" />
-      <updated>1624886980066</updated>
+      <updated>1631722039066</updated>
     </task>
-    <task id="LOCAL-00045" summary="Updating comment">
-      <created>1624887404525</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
+    <task id="LOCAL-00139" summary="Adding AsteroidCollision">
+      <created>1631727549457</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
       <option name="project" value="LOCAL" />
-      <updated>1624887404525</updated>
+      <updated>1631727549457</updated>
     </task>
-    <task id="LOCAL-00046" summary="Updating IO stuff">
-      <created>1624888215205</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
+    <task id="LOCAL-00140" summary="Adding LC solutions">
+      <created>1631730978267</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
       <option name="project" value="LOCAL" />
-      <updated>1624888215205</updated>
+      <updated>1631730978267</updated>
     </task>
-    <task id="LOCAL-00047" summary="Updating SegmentTree">
-      <created>1624938331788</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
+    <task id="LOCAL-00141" summary="Adding SingleThreadedCpu">
+      <created>1631791727289</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
       <option name="project" value="LOCAL" />
-      <updated>1624938331788</updated>
+      <updated>1631791727290</updated>
     </task>
-    <task id="LOCAL-00048" summary="Updating LazySegmentTree">
-      <created>1624938437977</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
+    <task id="LOCAL-00142" summary="Adding ValidSquare">
+      <created>1631802882933</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
       <option name="project" value="LOCAL" />
-      <updated>1624938437977</updated>
+      <updated>1631802882933</updated>
     </task>
-    <task id="LOCAL-00049" summary="Adding sol'n for GrayCode">
-      <created>1625163031867</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
+    <task id="LOCAL-00143" summary="Adding solutions">
+      <created>1631903059065</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
       <option name="project" value="LOCAL" />
-      <updated>1625163031867</updated>
+      <updated>1631903059065</updated>
     </task>
-    <task id="LOCAL-00050" summary="Adding FindKClosestElements">
-      <created>1625235056575</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
+    <task id="LOCAL-00144" summary="Adding TimeNeededToInformAllEmployees">
+      <created>1631904689541</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
       <option name="project" value="LOCAL" />
-      <updated>1625235056575</updated>
+      <updated>1631904689541</updated>
     </task>
-    <task id="LOCAL-00051" summary="Adding CountVowelsPermutation">
-      <created>1625408073512</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
+    <task id="LOCAL-00145" summary="Adding LongestLineOfConsecutiveOneInMatrix">
+      <created>1631906867191</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
       <option name="project" value="LOCAL" />
-      <updated>1625408073512</updated>
+      <updated>1631906867192</updated>
     </task>
-    <task id="LOCAL-00052" summary="Fixing bugs in SegTree">
-      <created>1625478957724</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
+    <task id="LOCAL-00146" summary="Updating MyCalendar1">
+      <created>1631993966259</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
       <option name="project" value="LOCAL" />
-      <updated>1625478957725</updated>
+      <updated>1631993966260</updated>
     </task>
-    <task id="LOCAL-00053" summary="Removing less-used method">
-      <created>1625495853861</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
+    <task id="LOCAL-00147" summary="Adding DistinctSubsequences">
+      <created>1632070876059</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
       <option name="project" value="LOCAL" />
-      <updated>1625495853861</updated>
+      <updated>1632070876059</updated>
     </task>
-    <task id="LOCAL-00054" summary="Adding LC solutions">
-      <created>1625724536843</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
+    <task id="LOCAL-00148" summary="Adding RobotRoomCleaner">
+      <created>1632076372335</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
       <option name="project" value="LOCAL" />
-      <updated>1625724536843</updated>
+      <updated>1632076372336</updated>
     </task>
-    <task id="LOCAL-00055" summary="Removing CP template and updating IO">
-      <created>1626000744215</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
+    <task id="LOCAL-00149" summary="Adding SplitArrayIntoConsecutiveSubsequences">
+      <created>1632229161874</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
       <option name="project" value="LOCAL" />
-      <updated>1626000744215</updated>
+      <updated>1632229161875</updated>
     </task>
-    <task id="LOCAL-00056" summary="Adding solution for FindMedianFromDataStream">
-      <created>1626076932607</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
+    <task id="LOCAL-00150" summary="Adding MinNoOfRefuelingStops">
+      <created>1632294528744</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
       <option name="project" value="LOCAL" />
-      <updated>1626076932607</updated>
+      <updated>1632294528744</updated>
     </task>
-    <task id="LOCAL-00057" summary="Updating comment in FindMedianFromDataStream">
-      <created>1626077008358</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
+    <task id="LOCAL-00151" summary="Adding CarFleet">
+      <created>1632296997338</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
       <option name="project" value="LOCAL" />
-      <updated>1626077008358</updated>
+      <updated>1632296997338</updated>
     </task>
-    <task id="LOCAL-00058" summary="Adding LC solution to IsomorphicStrings">
-      <created>1626106022233</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
+    <task id="LOCAL-00152" summary="Adding ShortestDistanceFromAllBuildings &amp; ShortestPathInAGridWithObstaclesElimination">
+      <created>1632571399531</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
       <option name="project" value="LOCAL" />
-      <updated>1626106022233</updated>
+      <updated>1632571399531</updated>
     </task>
-    <task id="LOCAL-00059" summary="Adding LC solution for FindPeakElement">
-      <created>1626187693530</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
+    <task id="LOCAL-00153" summary="Adding MaximumProductSubarray">
+      <created>1632571412538</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
       <option name="project" value="LOCAL" />
-      <updated>1626187693531</updated>
+      <updated>1632571412538</updated>
     </task>
-    <task id="LOCAL-00060" summary="Adding LC solution for CustomSortString">
-      <created>1626321383098</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
+    <task id="LOCAL-00154" summary="Adding LargestComponentSizeByCommonFactor">
+      <created>1632571510128</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
       <option name="project" value="LOCAL" />
-      <updated>1626321383098</updated>
+      <updated>1632571510128</updated>
     </task>
-    <task id="LOCAL-00061" summary="Adding changes to bisect utils">
-      <created>1626438004774</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
+    <task id="LOCAL-00155" summary="Adding NumberOfIslands2">
+      <created>1632591235327</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
       <option name="project" value="LOCAL" />
-      <updated>1626438004774</updated>
+      <updated>1632591235327</updated>
     </task>
-    <task id="LOCAL-00062" summary="Adding LC solution for ValidTriangleNumber">
-      <created>1626438032317</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
+    <task id="LOCAL-00156" summary="Updating StoneGame">
+      <created>1632887005869</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
       <option name="project" value="LOCAL" />
-      <updated>1626438032317</updated>
+      <updated>1632887005869</updated>
     </task>
-    <task id="LOCAL-00063" summary="Updating method name to be LC compatible">
-      <created>1626503611096</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
+    <task id="LOCAL-00157" summary="Adding FlipEquivalentBinaryTrees &amp; LongestAbsoluteFilePath">
+      <created>1632887075687</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
       <option name="project" value="LOCAL" />
-      <updated>1626503611096</updated>
+      <updated>1632887075687</updated>
     </task>
-    <task id="LOCAL-00064" summary="Adding LC solution for LowestCommonAncestorOfABinarySearchTree">
-      <created>1626849216513</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
+    <task id="LOCAL-00158" summary="Updating FindMinimumInRotatedSortedArray to correct code">
+      <created>1632887099743</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
       <option name="project" value="LOCAL" />
-      <updated>1626849216513</updated>
+      <updated>1632887099743</updated>
     </task>
-    <task id="LOCAL-00065" summary="Moving problems to &quot;practice&quot;">
-      <created>1626850490045</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
+    <task id="LOCAL-00159" summary="Bugfix in bellman-ford">
+      <created>1632887131844</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
       <option name="project" value="LOCAL" />
-      <updated>1626850490045</updated>
+      <updated>1632887131844</updated>
     </task>
-    <task id="LOCAL-00066" summary="Adding bit hacks">
-      <created>1626867159286</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
+    <task id="LOCAL-00160" summary="Adding SplitArrayLargestSum">
+      <created>1632887160225</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
       <option name="project" value="LOCAL" />
-      <updated>1626867159286</updated>
+      <updated>1632887160225</updated>
     </task>
-    <task id="LOCAL-00067" summary="Adding LC solution for PartitionArrayIntoDisjointIntervals">
-      <created>1627033544217</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
+    <task id="LOCAL-00161" summary="Adding SplitLinkedListInParts">
+      <created>1632983350456</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
       <option name="project" value="LOCAL" />
-      <updated>1627033544217</updated>
+      <updated>1632983350456</updated>
     </task>
-    <task id="LOCAL-00068" summary="Adding comments">
-      <created>1627033594097</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
+    <task id="LOCAL-00162" summary="Adding PredictTheWinner &amp; StoneGame">
+      <created>1632996019384</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
       <option name="project" value="LOCAL" />
-      <updated>1627033594097</updated>
+      <updated>1632996019384</updated>
     </task>
-    <task id="LOCAL-00069" summary="Adding LC sol'n for BinaryTreePruning">
-      <created>1627062277495</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
+    <task id="LOCAL-00163" summary="Updating PredictTheWinner">
+      <created>1633069067169</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
       <option name="project" value="LOCAL" />
-      <updated>1627062277495</updated>
+      <updated>1633069067169</updated>
     </task>
-    <task id="LOCAL-00070" summary="Added &quot;addNode(T t)&quot; method in graph">
-      <created>1627230906357</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
+    <task id="LOCAL-00164" summary="Adding MinimumWindowSubsequence">
+      <created>1633069076555</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
       <option name="project" value="LOCAL" />
-      <updated>1627230906358</updated>
+      <updated>1633069076555</updated>
     </task>
-    <task id="LOCAL-00071" summary="Adding LC solution for NumberOfVisiblePeopleInAQueue">
-      <created>1627408685702</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
+    <task id="LOCAL-00165" summary="Updating PartitionToKEqualSumSubsets to make it more performant!">
+      <created>1633106047574</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
       <option name="project" value="LOCAL" />
-      <updated>1627408685702</updated>
+      <updated>1633106047575</updated>
     </task>
-    <task id="LOCAL-00072" summary="Adding solution for 3 sum closest">
-      <created>1627544023321</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
+    <task id="LOCAL-00166" summary="Bugfix in BellmanFord">
+      <created>1633348420644</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
       <option name="project" value="LOCAL" />
-      <updated>1627544023322</updated>
+      <updated>1633348420645</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -657,32 +761,32 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updating LazySegmentTree" />
-    <MESSAGE value="Adding sol'n for GrayCode" />
-    <MESSAGE value="Adding FindKClosestElements" />
-    <MESSAGE value="Adding CountVowelsPermutation" />
-    <MESSAGE value="Fixing bugs in SegTree" />
-    <MESSAGE value="Removing less-used method" />
-    <MESSAGE value="Adding LC solutions" />
-    <MESSAGE value="Removing CP template and updating IO" />
-    <MESSAGE value="Adding solution for FindMedianFromDataStream" />
-    <MESSAGE value="Updating comment in FindMedianFromDataStream" />
-    <MESSAGE value="Adding LC solution to IsomorphicStrings" />
-    <MESSAGE value="Adding LC solution for FindPeakElement" />
-    <MESSAGE value="Adding LC solution for CustomSortString" />
-    <MESSAGE value="Adding changes to bisect utils" />
-    <MESSAGE value="Adding LC solution for ValidTriangleNumber" />
-    <MESSAGE value="Updating method name to be LC compatible" />
-    <MESSAGE value="Adding LC solution for LowestCommonAncestorOfABinarySearchTree" />
-    <MESSAGE value="Moving problems to &quot;practice&quot;" />
-    <MESSAGE value="Adding bit hacks" />
-    <MESSAGE value="Adding LC solution for PartitionArrayIntoDisjointIntervals" />
-    <MESSAGE value="Adding comments" />
-    <MESSAGE value="Adding LC sol'n for BinaryTreePruning" />
-    <MESSAGE value="Added &quot;addNode(T t)&quot; method in graph" />
-    <MESSAGE value="Adding LC solution for NumberOfVisiblePeopleInAQueue" />
-    <MESSAGE value="Adding solution for 3 sum closest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding solution for 3 sum closest" />
+    <MESSAGE value="Adding ValidSquare" />
+    <MESSAGE value="Adding solutions" />
+    <MESSAGE value="Adding TimeNeededToInformAllEmployees" />
+    <MESSAGE value="Adding LongestLineOfConsecutiveOneInMatrix" />
+    <MESSAGE value="Updating MyCalendar1" />
+    <MESSAGE value="Adding DistinctSubsequences" />
+    <MESSAGE value="Adding RobotRoomCleaner" />
+    <MESSAGE value="Adding SplitArrayIntoConsecutiveSubsequences" />
+    <MESSAGE value="Adding MinNoOfRefuelingStops" />
+    <MESSAGE value="Adding CarFleet" />
+    <MESSAGE value="Adding ShortestDistanceFromAllBuildings &amp; ShortestPathInAGridWithObstaclesElimination" />
+    <MESSAGE value="Adding MaximumProductSubarray" />
+    <MESSAGE value="Adding LargestComponentSizeByCommonFactor" />
+    <MESSAGE value="Adding NumberOfIslands2" />
+    <MESSAGE value="Updating StoneGame" />
+    <MESSAGE value="Adding FlipEquivalentBinaryTrees &amp; LongestAbsoluteFilePath" />
+    <MESSAGE value="Updating FindMinimumInRotatedSortedArray to correct code" />
+    <MESSAGE value="Bugfix in bellman-ford" />
+    <MESSAGE value="Adding SplitArrayLargestSum" />
+    <MESSAGE value="Adding SplitLinkedListInParts" />
+    <MESSAGE value="Adding PredictTheWinner &amp; StoneGame" />
+    <MESSAGE value="Updating PredictTheWinner" />
+    <MESSAGE value="Adding MinimumWindowSubsequence" />
+    <MESSAGE value="Updating PartitionToKEqualSumSubsets to make it more performant!" />
+    <MESSAGE value="Bugfix in BellmanFord" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfix in BellmanFord" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
