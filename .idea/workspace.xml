@@ -4,62 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Bugfix in BellmanFord">
+    <list default="true" id="e0027613-8755-49bc-bd6d-396c18dd3d44" name="Default Changelist" comment="Moving files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/numbertheory/EratosthenesSeive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/numbertheory/LinearSeive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fundamentals/numbertheory/TrialDivision.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/google/TreeDirections.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/hackerearth/MicroAndGraph.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/BeautifulArray.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/DecodeWays2.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/DungeonGame.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/ExpressionAddOperators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/MinimumCostToMakeAtleastOneValidPathInAGrid.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/PatchingArray.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/ProcessTasksUsingServers.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/RectangleArea2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/SequenceReconstruction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/string/RabinKarpStringMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/string/RabinKarpStringMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/Temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/Temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitHacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/bithandling/BitHacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/bithandling/BitmaskDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/bithandling/BitmaskDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/CheckResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/CheckResults.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ExtendThreadClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ExtendThreadClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ImmutableInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ImmutableInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ImplementRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ImplementRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/MyBlockingQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/MyBlockingQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/ReferenceIsNotThreadSafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/ReferenceIsNotThreadSafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/TwoSums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/TwoSums.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/BlockingQueueExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/BlockingQueueExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/CopyOnWriteArrayListExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/CopyOnWriteArrayListExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/ObtainingSyncCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/ObtainingSyncCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/collections/SkipListExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/collections/SkipListExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/racecondition/AtomicExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/racecondition/AtomicExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/racecondition/RaceConditionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/racecondition/RaceConditionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/racecondition/SynchronizedBlockExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/racecondition/SynchronizedBlockExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/streams/CollectExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/streams/CollectExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/streams/ParallelStreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/streams/ParallelStreamExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/streams/StreamReduceExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/streams/StreamReduceExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyCachedThreadPoolExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyCachedThreadPoolExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyFixedThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyFixedThreadExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyFutureExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyFutureExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MyScheduledThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MyScheduledThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/concurrency/threadpools/MySingleThreadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/concurrency/threadpools/MySingleThreadExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/BasicGetReflectionAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/BasicGetReflectionAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/BasicSetReflectionAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/BasicSetReflectionAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/ExampleEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/ExampleEntityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/ExampleEntityManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/ExampleEntityManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/MetaModelPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/MetaModelPlayground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/annotations/MyColumnAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/annotations/MyColumnAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/annotations/MyPrimaryKeyAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/annotations/MyPrimaryKeyAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/util/MetaModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/util/MetaModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/util/MyColumnField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/util/MyColumnField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/reflection/util/MyPrimaryKeyField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/reflection/util/MyPrimaryKeyField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/strings/StringFormatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/strings/StringFormatTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fundamentals/strings/StringJoinerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javafundamentals/strings/StringJoinerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/codechef/FEB21C/PRIGAME.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/leetcode/OptimizeWaterDistributionInAVillage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/leetcode/OptimizeWaterDistributionInAVillage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projecteuler/Problem3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projecteuler/Problem3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/MathUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fundamentals/bithandling/BitmaskDPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/javafundamentals/bithandling/BitmaskDPTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +111,20 @@
       <recent name="practice.atcoder.abc199" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestTreeAP">
+  <component name="RunManager" selected="Application.TrialDivision">
+    <configuration name="LinearSeive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fundamentals.numbertheory.LinearSeive" />
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fundamentals.numbertheory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LongestTreeAP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practice.google.LongestTreeAP" />
       <module name="wkp" />
@@ -164,25 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatchingArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.leetcode.PatchingArray" />
+    <configuration name="TrialDivision" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fundamentals.numbertheory.TrialDivision" />
       <module name="wkp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SumOfSquareNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.leetcode.SumOfSquareNumbers" />
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.leetcode.*" />
+          <option name="PATTERN" value="fundamentals.numbertheory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,22 +158,6 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayUtilsTest.testBisectLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="wkp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.ArrayUtilsTest" />
-      <option name="METHOD_NAME" value="testBisectLeft" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,13 +178,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BitmaskDPTest.testBitmaskDP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wkp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fundamentals.bithandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fundamentals.bithandling" />
+      <option name="MAIN_CLASS_NAME" value="fundamentals.bithandling.BitmaskDPTest" />
+      <option name="METHOD_NAME" value="testBitmaskDP" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TrialDivision" />
+        <item itemvalue="Application.LinearSeive" />
+        <item itemvalue="JUnit.BitmaskDPTest.testBitmaskDP" />
         <item itemvalue="Application.LongestTreeAP" />
         <item itemvalue="JUnit.ArrayUtilsTest.testBisectRight" />
-        <item itemvalue="JUnit.ArrayUtilsTest.testBisectLeft" />
-        <item itemvalue="Application.PatchingArray" />
-        <item itemvalue="Application.SumOfSquareNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -387,14 +348,7 @@
       <workItem from="1633179763496" duration="2159000" />
       <workItem from="1633328646496" duration="1306000" />
       <workItem from="1633345982132" duration="8000" />
-      <workItem from="1633348318104" duration="954000" />
-    </task>
-    <task id="LOCAL-00118" summary="Adding ExpressiveWords">
-      <created>1631292808195</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1631292808195</updated>
+      <workItem from="1633348318104" duration="9761000" />
     </task>
     <task id="LOCAL-00119" summary="Adding ArithmeticSlices2Subsequence">
       <created>1631353182135</created>
@@ -732,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633348420645</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="Moving files">
+      <created>1633349401580</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1633349401580</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +722,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding ValidSquare" />
     <MESSAGE value="Adding solutions" />
     <MESSAGE value="Adding TimeNeededToInformAllEmployees" />
     <MESSAGE value="Adding LongestLineOfConsecutiveOneInMatrix" />
@@ -786,7 +746,8 @@
     <MESSAGE value="Adding MinimumWindowSubsequence" />
     <MESSAGE value="Updating PartitionToKEqualSumSubsets to make it more performant!" />
     <MESSAGE value="Bugfix in BellmanFord" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix in BellmanFord" />
+    <MESSAGE value="Moving files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
