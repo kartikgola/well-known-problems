@@ -6,64 +6,72 @@
 
 package practice.leetcode;
 
-import util.ds.trie.Trie;
-import util.ds.trie.TrieNode;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class WordSearch2 {
 
-    Trie t;
-    int m, n;
-    final int[][] pos = new int[][]{{-1,0}, {0,1}, {1,0}, {0,-1}};
+    private class Node {
+        char val;
+        String str;
+        boolean isComplete;
+        Map<Character, Node> map = new HashMap<>();
+        Node(char val) { this.val = val; }
+    }
 
-    private List<String> dfs(char[][] board, int i, int j, boolean[][] vis, TrieNode parent) {
-        List<String> res = new ArrayList<>();
-        if ( i < 0 || i >= m || j < 0 || j >= n || vis[i][j] )
-            return res;
-        TrieNode current = null;
-        if ( parent == null ) current = t.getNode(Character.toString(board[i][j]));
-        else current = parent.children.getOrDefault(board[i][j], null);
+    private final Node root = new Node('#');
 
-        if ( current == null )
-            return res;
+    private final int[][] pos = new int[][]{{-1,0}, {0,1}, {1,0}, {0,-1}};
 
-        vis[i][j] = true;
-        for ( int[] p : pos ) {
-            List<String> subRes = dfs(board, i + p[0], j + p[1], vis, current);
-            for ( String wd : subRes )
-                res.add(board[i][j] + wd);
+    private void addWord(String word) {
+        Node curr = root;
+        for (int i = 0; i < word.length(); ++i) {
+            curr.map.putIfAbsent(word.charAt(i), new Node(word.charAt(i)));
+            curr = curr.map.get(word.charAt(i));
+            if (i == word.length()-1) {
+                curr.isComplete = true;
+                curr.str = word;
+            }
         }
+    }
 
-        if ( current.isComplete ) {
-            res.add(Character.toString(board[i][j]));
+    private Set<String> seen = new HashSet<>();
+
+    private List<String> f(int i, int j, Node node, char[][] board) {
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '#')
+            return new ArrayList<>();
+        List<String> ans = new ArrayList<>();
+        char val = board[i][j];
+        board[i][j] = '#';
+        if (node.map.containsKey(val)) {
+            Node child = node.map.get(val);
+            if (child.isComplete && !seen.contains(child.str)) {
+                ans.add(child.str);
+                seen.add(child.str);
+            }
+            for (int[] p: pos) {
+                int x = p[0]+i;
+                int y = p[1]+j;
+                ans.addAll(f(x, y, child, board));
+            }
         }
-
-        vis[i][j] = false;
-        return res;
+        board[i][j] = val;
+        return ans;
     }
 
     public List<String> findWords(char[][] board, String[] words) {
-        this.t = new Trie();
-        this.m = board.length;
-        this.n = board[0].length;
+        int m = board.length;
+        int n = board[0].length;
 
-        for ( String word : words )
-            t.add(word);
+        for (String word: words)
+            addWord(word);
 
-        boolean[][] vis = new boolean[m][n];
-        Set<String> set = new HashSet<>();
-        for ( int i = 0; i < m; ++i ) {
-            for ( int j = 0; j < n; ++j ) {
-                for ( String wd : dfs(board, i, j, vis, null) ) {
-                    set.add(wd);
-                }
+        List<String> ans = new ArrayList<>();
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                ans.addAll(f(i, j, root, board));
             }
         }
 
-        return new ArrayList<>(set);
+        return ans;
     }
 }
