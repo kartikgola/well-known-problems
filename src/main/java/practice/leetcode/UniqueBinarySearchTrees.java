@@ -23,4 +23,8 @@ public class UniqueBinarySearchTrees {
         return trees[n];
     }
 
+    public int numBalancedTrees(int n) {
+        return -1;
+    }
+
 }

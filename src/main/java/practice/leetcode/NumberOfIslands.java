@@ -6,6 +6,10 @@
 
 package practice.leetcode;
 
+import util.ds.disjointset.UnionFind;
+
+import java.util.Arrays;
+
 public class NumberOfIslands {
 
     char[][] g;
@@ -41,5 +45,31 @@ public class NumberOfIslands {
         }
 
         return c;
+    }
+
+    public int numIslands2(char[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        UnionFind uf = new UnionFind(m*n);
+        int total1s = 0;
+        int totalUnions = 0;
+        int[][] pos = new int[][]{{-1,0}, {0,1}, {1,0}, {0,-1}};
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                if (grid[i][j] == '1') {
+                    total1s++;
+                    for (int[] p: pos) {
+                        int x = i+p[0];
+                        int y = j+p[1];
+                        if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == '1') {
+                            if (uf.union(i*n+j, x*n+y)) {
+                                totalUnions++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return total1s == 0 ? 0 : total1s - totalUnions;
     }
 }
