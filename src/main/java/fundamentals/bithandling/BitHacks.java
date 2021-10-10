@@ -20,6 +20,8 @@ public class BitHacks {
         return num & ~(1 << i);
     }
 
+    // Brian Kernighan's algorithm
+    // http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan
     public int countSetBits(int num) {
         int count = 0;
         while (num > 0) {
