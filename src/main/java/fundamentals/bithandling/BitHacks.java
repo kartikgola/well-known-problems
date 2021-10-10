@@ -20,8 +20,16 @@ public class BitHacks {
         return num & ~(1 << i);
     }
 
-    public static void main(String[] args) {
+    public int countSetBits(int num) {
+        int count = 0;
+        while (num > 0) {
+            num &= (num-1);
+            count++;
+        }
+        return count;
+    }
 
+    public static void main(String[] args) {
         // Stored as 00000000000000000000000000000111
         // However, o/p is just 111 since leading zeros (no matter how many they are) are never printed
         // This is binary representation of 7
