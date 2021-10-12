@@ -6,10 +6,7 @@
 
 package practice.leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class ThreeSum {
 
@@ -41,12 +38,15 @@ public class ThreeSum {
         return list;
     }
 
+    // a+b+c=k
+    // sum=k-a
+    // diff=sum-b
     private List<List<Integer>> threeSumCountWithMap(int[] nums, int target) {
         List<List<Integer>> list = new ArrayList<>();
         if ( nums.length < 3 ) return list;
 
         final int n = nums.length;
-        final HashMap<Integer, Integer> map = new HashMap<>();
+        final Map<Integer, Integer> map = new HashMap<>();
         int i, j, sum;
 
         for ( i = 0; i < n - 2; ++i ) {
