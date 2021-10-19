@@ -7,6 +7,7 @@
 package practice.leetcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static util.ArrayUtils.Bisect.bisectLeft;
@@ -31,6 +32,21 @@ public class LongestIncreasingSubsequence {
             } else if (nums[i] < al.get(l)) {
                 al.set(l, nums[i]);
             }
+        }
+        return al.size();
+    }
+
+    // Same as above but uses built-in Arrays.binarySearch()
+    public int lengthOfLIS2(int[] nums) {
+        List<Integer> al = new ArrayList<>(nums.length);
+        for (int num: nums) {
+            int i = Collections.binarySearch(al, num);
+            if (i < 0)
+                i = -(i + 1);
+            if (i == al.size())
+                al.add(num);
+            else
+                al.set(i, num);
         }
         return al.size();
     }
