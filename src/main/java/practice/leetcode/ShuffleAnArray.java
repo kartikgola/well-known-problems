@@ -7,6 +7,7 @@
 package practice.leetcode;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class ShuffleAnArray {
@@ -25,10 +26,11 @@ public class ShuffleAnArray {
 
     /** Returns a random shuffling of the array. */
     public int[] shuffle() {
-        if ( orig.length <= 1 ) return orig;
+        if (orig.length <= 1)
+            return orig;
 
         int[] perm = new int[orig.length];
-        ArrayList<Integer> aux = new ArrayList<>(orig.length);
+        List<Integer> aux = new ArrayList<>(orig.length);
         for ( int num : orig ) aux.add(num);
 
         for ( int i = 0; i < perm.length; ++i ) {
