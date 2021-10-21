@@ -6,52 +6,45 @@
 
 package practice.leetcode;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class RandomizedSet {
 
-    private HashMap<Integer, Integer> map;
-    private ArrayList<Integer> list;
-    private Random random = new Random();
+    private final Random rand = new Random();
+    private final int MAX_OPS = 2 * (int)2e5;
+    private final Map<Integer, Integer> map = new HashMap<>(); // Map of <value, position_in_nums>
+    private final int[] nums = new int[MAX_OPS]; // treat as if length of nums is denoted by 'len'
+    private int len = 0; // denotes the no. of elements currently in nums
 
-    /** Initialize your data structure here. */
     public RandomizedSet() {
-        list = new ArrayList<>();
-        map = new HashMap<>();
     }
 
-    /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
     public boolean insert(int val) {
-        if ( map.containsKey(val) ) return false;
-        map.put(val, list.size());
-        list.add(val);
+        if (map.containsKey(val))
+            return false;
+        map.put(val, len);
+        nums[len++] = val;
         return true;
     }
 
-    /** Removes a value from the set. Returns true if the set contained the specified element. */
     public boolean remove(int val) {
-        if ( !map.containsKey(val) ) return false;
+        if (!map.containsKey(val))
+            return false;
         int pos = map.get(val);
-
-        // if removing non-last element
-        if ( pos < list.size() - 1 ) {
-            list.set(pos, list.get(list.size() - 1));
-            list.remove(list.size() - 1);
-            map.put(list.get(pos), pos);
-            map.remove(val);
-        } else {
-            list.remove(list.size() - 1);
-            map.remove(val);
+        if (pos < len-1) {
+            // bring the last element to 'pos'
+            int last = nums[len-1];
+            nums[pos] = last;
+            map.put(last, pos);
         }
-
+        map.remove(val);
+        --len;
         return true;
     }
 
-    /** Get a random element from the set. */
     public int getRandom() {
-        final int randVal = random.nextInt(list.size());
-        return list.get(randVal);
+        return nums[rand.nextInt(len)];
     }
 }
