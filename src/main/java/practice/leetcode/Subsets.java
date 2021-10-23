@@ -6,46 +6,10 @@
 
 package practice.leetcode;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Subsets {
-
-    private String subsequences(String word) {
-        // abc,ab,bc,ac,a,b,c,
-        if ( word.isEmpty() ) {
-            return "";
-        } else {
-            StringBuilder builder = new StringBuilder();
-            char firstLetter = word.charAt(0);
-            String restOfWord = word.substring(1);
-            String subsequenceOfRest = subsequences(restOfWord);
-
-            for ( String subsequence : subsequenceOfRest.split(",", -1) ) {
-                builder.append(",").append(subsequence);
-                builder.append(",").append(firstLetter).append(subsequence);
-            }
-            builder.deleteCharAt(0);
-            return builder.toString();
-        }
-    }
-
-    private String subsequences2(String word) {
-        return _subsequences2("", word);
-    }
-
-    private String _subsequences2(String partial, String word) {
-        if ( word.isEmpty() ) {
-            return "";
-        } else {
-            return _subsequences2(partial, word.substring(1))
-                    + ","
-                    + _subsequences2(partial + word.charAt(0), word.substring(1));
-        }
-    }
 
     private final List<List<Integer>> ans = new ArrayList<>();
 
@@ -58,14 +22,30 @@ public class Subsets {
         }
     }
 
+    // Using void recursive calls
     public List<List<Integer>> subsets(int[] nums) {
         subsets(nums, 0, new ArrayList<>());
         return ans;
     }
 
-    public void solve() throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String word = reader.readLine();
-        System.out.println(subsequences(word));
+    private List<List<Integer>> subsets(int[] nums, int i) {
+        List<List<Integer>> ans = new ArrayList<>();
+        if (i >= nums.length) {
+            ans.add(new ArrayList<>());
+            return ans;
+        }
+        List<List<Integer>> sub = subsets(nums, i+1);
+        ans.addAll(sub);
+        for (List<Integer> al: sub) {
+            List<Integer> temp = new ArrayList<>(al);
+            temp.add(nums[i]);
+            ans.add(temp);
+        }
+        return ans;
+    }
+
+    // Using List<List<Integer>> recursive calls
+    public List<List<Integer>> subsets2(int[] nums) {
+        return subsets(nums, 0);
     }
 }
