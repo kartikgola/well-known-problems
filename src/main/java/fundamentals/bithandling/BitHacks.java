@@ -22,9 +22,11 @@ public class BitHacks {
 
     // Brian Kernighan's algorithm
     // http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan
+    // Time complexity - O(K), where K is the number of set bits in num
     public int countSetBits(int num) {
         int count = 0;
         while (num > 0) {
+            // AND operation with num and (num-1) always sets off right-most one-bit
             num &= (num-1);
             count++;
         }
