@@ -9,6 +9,8 @@ package practice.leetcode;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Subsets {
 
@@ -43,6 +45,22 @@ public class Subsets {
                     + ","
                     + _subsequences2(partial + word.charAt(0), word.substring(1));
         }
+    }
+
+    private final List<List<Integer>> ans = new ArrayList<>();
+
+    private void subsets(int[] nums, int start, List<Integer> al) {
+        ans.add(al);
+        for (int i = start; i < nums.length; ++i) {
+            List<Integer> temp = new ArrayList<>(al);
+            temp.add(nums[i]);
+            subsets(nums, i+1, temp);
+        }
+    }
+
+    public List<List<Integer>> subsets(int[] nums) {
+        subsets(nums, 0, new ArrayList<>());
+        return ans;
     }
 
     public void solve() throws IOException {
