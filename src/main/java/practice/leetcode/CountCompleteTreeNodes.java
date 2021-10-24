@@ -42,8 +42,10 @@ public class CountCompleteTreeNodes {
 
         // Total nodes excluding last level
         final int totalExcLast = (1 << rd)-1;
+
         // Initial value for binary-search's right pointer
         final int initR = (1 << (ld-1))-1;
+
         int l = 0, r = initR;
         while (l < r) {
             int m = l+(r-l)/2;
@@ -52,6 +54,8 @@ public class CountCompleteTreeNodes {
             else
                 r = m-1;
         }
+
+        // After exiting, l may be pointing to right_most_node_index+1 or right_most_node_index
         if (exists(root, 0, initR, l))
             return (l+1) + totalExcLast;
         return l + totalExcLast;
