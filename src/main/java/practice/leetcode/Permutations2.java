@@ -19,10 +19,7 @@ public class Permutations2 {
         for (List<Integer> sub: permuteUnique(nums, vis, i+1)) {
             for (int j = 0; j <= sub.size(); ++j) {
                 List<Integer> temp = new ArrayList<>(sub);
-                if (j == sub.size())
-                    temp.add(nums[i]);
-                else
-                    temp.add(j, nums[i]);
+                temp.add(j, nums[i]);
                 String key = temp.toString();
                 if (vis.contains(key))
                     continue;
