@@ -27,11 +27,7 @@ public class Permutations {
         for (List<Integer> al: sub) {
             for (int j = 0; j <= al.size(); ++j) {
                 List<Integer> temp = new ArrayList<>(al);
-                if (j == al.size()) {
-                    temp.add(nums[i]);
-                } else {
-                    temp.add(j, nums[i]);
-                }
+                temp.add(j, nums[i]);
                 ans.add(temp);
             }
         }
