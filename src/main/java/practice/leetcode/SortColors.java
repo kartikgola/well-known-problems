@@ -8,51 +8,50 @@ package practice.leetcode;
 
 public class SortColors {
 
-    private final int INF = Integer.MAX_VALUE;
-
-    private void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
+    // O(n^2) approach
+    // Keep the array sorted & rotate right whenever a number is misplaced
+    public void sortColors(int[] nums) {
+        // pre[i] = previous index of nums[i] OR previous index of max(nums[i]-1, nums[i]-2) if nums[i] is not present
+        int[] pre = new int[]{-1,-1,-1};
+        for (int i = 0; i < nums.length; ++i) {
+            int num = nums[i];
+            int p = pre[num];
+            // 0,0,1,1,2,2,0
+            if (p == -1) {
+                if (num == 1)
+                    p = pre[0];
+                else if (num == 2)
+                    p = pre[1] != -1 ? pre[1] : pre[0];
+            }
+            // rotate-right the values in nums[p+1, i-1]
+            for (int j = i-1; j > p; --j) {
+                int curr = nums[j];
+                nums[j+1] = curr;
+                pre[curr] = Math.max(pre[curr], j+1);
+            }
+            nums[p+1] = num;
+            pre[num] = p+1;
+        }
     }
 
-    public void sortColors(int[] nums) {
-        if ( nums.length < 2 ) return;
-        final int n = nums.length;
-        int two = INF, one = INF;
-
-        for ( int i = 0; i < n; ++i ) {
-            if ( nums[i] == 0 ) {
-                if ( Math.min(one, two) < i ) {
-                    final int min = Math.min(one, two);
-                    if ( min == one ) {
-                        if ( two == INF ) {
-                            swap(nums, i, one);
-                            while(one < n && nums[one] != 1) ++one;
-                        } else {
-                            swap(nums, i, one);
-                            swap(nums, i, two);
-                            while(one < n && nums[one] != 1) ++one;
-                            while(two < n && nums[two] != 2) ++two;
-                        }
-                    } else {
-                        swap(nums, i, two);
-                        while(two < n && nums[two] != 2) ++two;
-                    }
-                }
-            } else if ( nums[i] == 1 ) {
-                if ( two < i ) {
-                    swap(nums, i, two);
-                    if ( one == INF ) {
-                        one = two;
-                    }
-                    while(two < n && nums[two] != 2) ++two;
-                } else if ( one == INF ) {
-                    one = i;
-                }
-            } else if ( nums[i] == 2 && two == INF ) {
-                two = i;
+    // O(n) 1-pass approach
+    public void sortColors2(int[] nums) {
+        int red = 0;
+        int blue = nums.length - 1;
+        for (int i = 0; i <= blue; i++) {
+            if (nums[i] == 0) {
+                swap(nums, i, red);
+                red++;
+            } else if (nums[i] == 2) {
+                swap(nums, i, blue);
+                i--;
+                blue--;
             }
         }
+    }
+    private void swap(int[] nums, int left, int right) {
+        int tmp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = tmp;
     }
 }
