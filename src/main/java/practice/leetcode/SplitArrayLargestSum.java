@@ -39,4 +39,41 @@ public class SplitArrayLargestSum {
 
         return dp[n-1][m-1];
     }
+
+    private boolean canSplit(int[] nums, int maxSum, int m) {
+        int subArrays = 1;
+        int currSum = 0;
+        for (int num: nums) {
+            currSum += num;
+            if (currSum > maxSum) {
+                currSum = num;
+                subArrays++;
+                if (subArrays > m)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    public int splitArray2(int[] nums, int m) {
+        // left = maximum one element sum
+        // right = sum of all nums
+        int l = nums[0];
+        int r = 0;
+        for (int num: nums) {
+            l = Math.max(l, num);
+            r += num;
+        }
+
+        while (l < r) {
+            int mid = l+(r-l)/2;
+            if (canSplit(nums, mid, m)) {
+                r = mid;
+            } else {
+                l = mid+1;
+            }
+        }
+
+        return l;
+    }
 }
