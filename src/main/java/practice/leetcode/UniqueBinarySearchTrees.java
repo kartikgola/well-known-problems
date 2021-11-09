@@ -23,8 +23,17 @@ public class UniqueBinarySearchTrees {
         return trees[n];
     }
 
-    public int numBalancedTrees(int n) {
-        return -1;
+    private Integer[] dp = new Integer[20];
+
+    public int numTrees2(int n) {
+        if (n <= 1)
+            return 1;
+        if (dp[n] != null)
+            return dp[n];
+        int ans = 0;
+        for (int root = 1; root <= n; ++root)
+            ans += numTrees2(root-1) * numTrees2(n-root);
+        return dp[n] = ans;
     }
 
 }
