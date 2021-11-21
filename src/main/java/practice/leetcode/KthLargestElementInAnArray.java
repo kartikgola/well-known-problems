@@ -52,6 +52,8 @@ public class KthLargestElementInAnArray {
 
     public int findKthLargest(int[] nums, int k) {
         final int n = nums.length;
+        // Largest kth element is located at index = n-k
+        // Consequently, smallest kth element is located at index = k-1
         return quickSelect(nums, 0, n - 1, n - k);
     }
 
