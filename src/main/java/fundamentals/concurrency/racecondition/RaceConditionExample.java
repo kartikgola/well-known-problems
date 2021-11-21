@@ -13,25 +13,18 @@ public class RaceConditionExample {
     private static int count = 0;
 
     public static void raceConditionExample() throws InterruptedException {
-        ExecutorService es = null;
         final int MAX_THREADS = 20;
+        ExecutorService es = Executors.newFixedThreadPool(MAX_THREADS);
         try {
-            es = Executors.newFixedThreadPool(MAX_THREADS);
-            System.out.println(Thread.currentThread().getName() + " Begin");
-
-
             for (int i = 0; i < MAX_THREADS; i++) {
                 es.submit(() -> {
                     // reading value of 'count'
                     // Updating 'count' value
                     // This might lead to wrong update due to 2 threads reading same value
                     // and then overwriting it with same value
-                    System.out.println(++count);
+                    System.out.println(count += 1);
                 });
             }
-
-
-            System.out.println(Thread.currentThread().getName() + " End");
         } catch (Exception exception) {
             System.out.println(exception);
         } finally {
