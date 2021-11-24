@@ -38,7 +38,7 @@ public class FixedThreadPoolExample {
             // However, it is up to the discretion of the interrupted Thread to continue or abort
             es.shutdownNow();
 
-            // Trying to execute anything after shutting down causes RejectedExecutionException
+            // Trying to schedule anything after shutting down causes RejectedExecutionException
             es.execute(() -> System.out.println("This does not get printed & will throw RejectedExecutionException"));
 
             // isTerminated() returns true if all tasks have completed following shutdown
@@ -62,7 +62,7 @@ public class FixedThreadPoolExample {
             // However, it will stop accepting further executions.
             es.shutdown();
 
-            // Trying to execute anything after shutdown
+            // Trying to schedule anything after shutdown
             es.execute(() -> System.out.println("This does not get printed!"));
         } catch (Exception exception) {
             System.out.println(exception);
