@@ -25,6 +25,7 @@ public class IntervalListIntersection {
             int[] a = A[i];
             int[] b = B[j];
             int[] c = intersectionOf(a, b);
+            // In case of no intersection, increase the pointer only for first-ending interval
             if (c.length == 0) {
                 if (a[1] > b[1])
                     j++;
@@ -32,7 +33,7 @@ public class IntervalListIntersection {
                     i++;
             } else {
                 al.add(c);
-                if (a[1] >= c[1]) {
+                if (a[1] > c[1]) {
                     j++;
                 } else if (b[1] > c[1]) {
                     i++;
