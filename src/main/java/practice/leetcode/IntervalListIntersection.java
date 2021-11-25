@@ -19,11 +19,9 @@ public class IntervalListIntersection {
 
     public int[][] intervalIntersection(int[][] A, int[][] B) {
         List<int[]> al = new ArrayList<>();
-        final int m = A.length;
-        final int n = B.length;
         int i = 0, j = 0;
 
-        while (i < m && j < n) {
+        while (i < A.length && j < B.length) {
             int[] a = A[i];
             int[] b = B[j];
             int[] c = intersectionOf(a, b);
