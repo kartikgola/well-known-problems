@@ -16,7 +16,9 @@ public class NonOverlappingIntervals {
         int prev = 0;
         int removed = 0;
         for (int i = 1; i < intervals.length; ++i) {
+            // check for prev and current overlap
             if (intervals[prev][1] > intervals[i][0]) {
+                // prev will be removed only if it ends after current interval
                 if (intervals[prev][1] > intervals[i][1]) {
                     prev = i;
                 }
