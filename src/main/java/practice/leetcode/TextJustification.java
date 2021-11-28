@@ -14,55 +14,59 @@ import java.util.List;
 public class TextJustification {
 
     public List<String> fullJustify(String[] words, int maxWidth) {
-        List<String> ans = new ArrayList<>();
-        StringBuilder sb = new StringBuilder();
-
-        int wdLen = 0;
+        List<List<String>> al = new ArrayList<>();
+        List<String> temp = new ArrayList<>();
         int len = 0;
-        List<Pair<List<String>, Integer>> lines = new ArrayList<>();
-        List<String> line = new ArrayList<>();
-
-        for (int i = 0; i < words.length;) {
-            if (!line.isEmpty() && 1+len+words[i].length() > maxWidth) {
-                lines.add(new Pair<>(line, wdLen));
-                line = new ArrayList<>();
-                len = 0;
-                wdLen = 0;
+        for (String word: words) {
+            if (len + word.length() > maxWidth) {
+                al.add(temp);
+                temp = new ArrayList<>();
+                temp.add(word);
+                len = word.length() + 1;
             } else {
-                if (line.isEmpty())
-                    len = words[i].length();
-                else
-                    len += 1+words[i].length();
-                wdLen += words[i].length();
-                line.add(words[i++]);
+                len += word.length() + 1;
+                temp.add(word);
             }
         }
 
-        if (!line.isEmpty())
-            lines.add(new Pair<>(line, wdLen));
+        if (!temp.isEmpty())
+            al.add(temp);
 
-        for (int i = 0; i < lines.size(); ++i) {
-            List<String> ln = lines.get(i).getKey();
-            int totalLen = lines.get(i).getValue();
-            if (i == lines.size()-1) {
-                for (String wd: line) {
-                    if (sb.length() == 0)
-                        sb.append(wd);
-                    else sb.append(" " + wd);
+        List<String> ans = new ArrayList<>();
+        for (int i = 0; i < al.size(); ++i) {
+            StringBuilder sb = new StringBuilder();
+            int chars = al.get(i).stream().mapToInt(String::length).sum();
+            int numWords = al.get(i).size();
+            int space = maxWidth - chars;
+
+            if (numWords == 1 || i == al.size()-1) {
+                for (String word: al.get(i)) {
+                    sb.append(word);
+                    if (sb.length()+1 <= maxWidth)
+                        sb.append(" ");
                 }
-                sb.append(" ".repeat(maxWidth-sb.length()));
+                sb.append(" ".repeat(maxWidth - sb.length()));
             } else {
-                int spaces = ln.size() == 1 ? 1 : ln.size()-1;
-                int spaceLen = spaces > 0 ? (maxWidth - totalLen) / spaces : 0;
-                int mod = spaces > 0 ? (maxWidth - totalLen) % spaces : 0;
-                for (String wd: ln) {
-                    sb.append(wd);
-                    if (spaces-- > 0)
-                        sb.append(" ".repeat(spaceLen + (mod-- > 0 ? 1 : 0)));
+                // Example,
+                // space=5, numWords=4
+                // spaceBetween = 5/3 = 1
+                // extra=2
+                // a--b--c-d
+                int spaceBetween = space / (numWords-1);
+                int extra = space % (numWords-1);
+
+                for (String word: al.get(i)) {
+                    sb.append(word);
+                    if (sb.length()+spaceBetween <= maxWidth) {
+                        sb.append(" ".repeat(spaceBetween));
+                        if (extra > 0) {
+                            sb.append(" ");
+                            extra--;
+                        }
+                    }
                 }
             }
             ans.add(sb.toString());
-            sb = new StringBuilder();
         }
 
         return ans;
