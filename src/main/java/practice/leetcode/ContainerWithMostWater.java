@@ -14,11 +14,14 @@ public class ContainerWithMostWater {
         int maxWater = 0;
 
         while (begin < end) {
-            maxWater = Math.max(maxWater, (end - begin) * Math.min(height[begin], height[end]));
+            int waterWidth = end - begin;
+            int waterHeight = Math.min(height[begin], height[end]);
+            maxWater = Math.max(maxWater, waterWidth * waterHeight);
+
             if (height[begin] <= height[end])
-                begin++;
+                begin++; // inc begin, in the hope of getting better height
             else
-                end--;
+                end--; // dec end, in the hope of getting better height
         }
 
         return maxWater;
