@@ -9,33 +9,27 @@ package practice.leetcode;
 public class SearchInRotatedSortedArray {
 
     public int search(int[] nums, int target) {
-        int l = 0,
-            r = nums.length - 1,
-            m = -1;
+        int l = 0;
+        int r = nums.length-1;
 
-        while ( l <= r ) {
-            m = l + (r - l) / 2;
-            int left = nums[l], mid = nums[m], right = nums[r];
-
-            if ( mid == target )
+        while (l < r) {
+            int m = l+(r-l)/2;
+            if (nums[m] == target) {
                 return m;
-
-            // right part is sorted
-            if ( mid < right ) {
-                if ( target > mid && target <= right )
-                    l = m + 1;
+            } else if (nums[m] < nums[r]) {
+                if (target <= nums[r] && target > nums[m])
+                    l = m+1;
                 else
-                    r = m - 1;
+                    r = m-1;
             } else {
-                // left part is sorted
-                if ( target < mid && target >= left )
-                    r = m - 1;
+                if (target >= nums[l] && target < nums[m])
+                    r = m-1;
                 else
-                    l = m + 1;
+                    l = m+1;
             }
         }
 
-        return -1;
+        return nums[l] == target ? l : -1;
     }
 
 }
