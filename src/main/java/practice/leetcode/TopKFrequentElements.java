@@ -42,15 +42,12 @@ public class TopKFrequentElements {
             int randomPart = lo + rand.nextInt(hi - lo);
             int p = partition(nums, lo, hi, randomPart);
             if ( p == k )
-                // Elements that we currently have, i.e., 'uniques.length - p' == top k elements
+                // Elements that we currently have, i.e., p == n-k
                 return p;
             else if ( p > k )
-                // 'uniques.length - p' is less than elements you want in answer. So, we get more from left!
-                // Example, if uniques.length = 3, k = 3, p = 1
-                // Here, we have already got top 3 - 1 => 2 elements, but since k = 3, we need more, so we go leftwards.
+                // We need more elements than we currently have
                 return quickSelect(nums, lo, p - 1, k);
             else
-                // If we need less 'top' elements than we currently have, we go rightwards.
                 return quickSelect(nums, p + 1, hi, k);
         }
     }
@@ -66,6 +63,8 @@ public class TopKFrequentElements {
 
         // Roughly sort the array to quick-select an index, such that elements ahead of that index
         // have frequency equal to higher than the selected element.
+        // Think of it in this way - If you want top 1 element, then you will have to look at the entire array
+        // that means, the quickselect partition must be at n-1, ensuring that all arr[0...n-1] have frequency <= freq[arr[n-1]]
         int p = quickSelect(uniques, 0, uniques.length - 1, uniques.length - k);
         int[] res = new int[uniques.length - p];
 
