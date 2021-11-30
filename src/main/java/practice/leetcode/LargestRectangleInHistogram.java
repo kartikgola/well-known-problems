@@ -41,16 +41,22 @@ public class LargestRectangleInHistogram {
         return ans;
     }
 
-    public int largestRectangleArea2(int[] nums) {
-        final int n = nums.length;
+    public int largestRectangleArea2(int[] heights) {
+        final int n = heights.length;
         int ans = 0;
 
+        // Keep a monotonically increasing stack of height indices
+        // such that height[stack.peek()] < height[i]
+        // so, whenever we get a value which is less than equal to stack top, we can be sure to pop() and calc a candidate answer
+        // because heights[stack.peek()] >= height[i], and so a rectangle formed using height[i] will always be limited to a height of height[i]
+        // however, it might utilize the width of previous histograms which had a greater height (that's why mono inc stack)
         Stack<Integer> stack = new Stack<>();
         stack.push(-1);
-        for (int i = 0; i < nums.length; ++i) {
-            while (stack.peek() != -1 && nums[stack.peek()] >= nums[i]) {
+
+        for (int i = 0; i < heights.length; ++i) {
+            while (stack.peek() != -1 && heights[stack.peek()] >= heights[i]) {
                 int pop = stack.pop();
-                int height = nums[pop];
+                int height = heights[pop];
                 int width = i - pop - 1;
                 ans = Math.max(ans, height*width);
             }
@@ -59,7 +65,7 @@ public class LargestRectangleInHistogram {
 
         while (stack.peek() != -1) {
             int pop = stack.pop();
-            int height = nums[pop];
+            int height = heights[pop];
             int width = n - pop - 1;
             ans = Math.max(ans, height*width);
         }
