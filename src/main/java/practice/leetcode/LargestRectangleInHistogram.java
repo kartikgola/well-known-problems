@@ -49,7 +49,7 @@ public class LargestRectangleInHistogram {
         // such that height[stack.peek()] < height[i]
         // so, whenever we get a value which is less than equal to stack top, we can be sure to pop() and calc a candidate answer
         // because heights[stack.peek()] >= height[i], and so a rectangle formed using height[i] will always be limited to a height of height[i]
-        // however, it might utilize the width of previous histograms which had a greater height (that's why mono inc stack)
+        // so, all the indices in stack which have height >= height[i] are popped and their width is calculated as i-stack.peek()-1
         Stack<Integer> stack = new Stack<>();
         stack.push(-1);
 
@@ -57,7 +57,7 @@ public class LargestRectangleInHistogram {
             while (stack.peek() != -1 && heights[stack.peek()] >= heights[i]) {
                 int pop = stack.pop();
                 int height = heights[pop];
-                int width = i - pop - 1;
+                int width = i - stack.peek() - 1;
                 ans = Math.max(ans, height*width);
             }
             stack.push(i);
@@ -66,7 +66,7 @@ public class LargestRectangleInHistogram {
         while (stack.peek() != -1) {
             int pop = stack.pop();
             int height = heights[pop];
-            int width = n - pop - 1;
+            int width = n - stack.peek() - 1;
             ans = Math.max(ans, height*width);
         }
 
