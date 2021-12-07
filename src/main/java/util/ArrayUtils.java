@@ -13,17 +13,22 @@ public class ArrayUtils {
     public static class Bisect {
 
         // ------------------------Left Bisection-----------------------------
+        // Returns the least index at which x should be inserted, to maintain sorted order
+        // Same as python's bisect_left
         public static int bisectLeft(int[] arr, int from, int to, int x) {
             int l = from, r = to-1;
             while (l < r) {
                 int m = l+(r-l)/2;
+                // Predicate = arr[m] is greater than equal to x
                 if (arr[m] >= x)
                     r = m;
                 else
                     l = m+1;
             }
+            // l is now least index that satisfies predicate
             if (l >= to)
                 return l;
+            // check if l actually satisfies predicate; if not, return l+1
             return arr[l] >= x ? l : l+1;
         }
 
@@ -50,6 +55,8 @@ public class ArrayUtils {
         }
 
         // ------------------------Right Bisection-----------------------------
+        // Returns the highest index at which x should be inserted, to maintain sorted order
+        // Same as python's bisect_right
         public static int bisectRight(int[] arr, int x) {
             return bisectRight(arr, 0, arr.length, x);
         }
@@ -58,13 +65,16 @@ public class ArrayUtils {
             int l = from, r = to-1;
             while (l < r) {
                 int m = l+(r-l)/2;
+                // Predicate = arr[m] is greater than equal to x+1
                 if (arr[m] >= x+1)
                     r = m;
                 else
                     l = m+1;
             }
+            // l is now least index that satisfies predicate
             if (l >= to)
                 return l;
+            // check if l actually satisfies predicate; if not, return l+1
             return arr[l] >= x+1 ? l : l+1;
         }
 
