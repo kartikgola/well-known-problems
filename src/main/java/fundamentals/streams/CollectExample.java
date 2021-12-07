@@ -4,7 +4,7 @@
  * Copyright (c) 2021 | https://kartikgola.com
  */
 
-package fundamentals.concurrency.streams;
+package fundamentals.streams;
 
 import java.util.Set;
 import java.util.SortedSet;
