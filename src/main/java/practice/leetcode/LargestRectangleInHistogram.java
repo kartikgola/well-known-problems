@@ -55,6 +55,7 @@ public class LargestRectangleInHistogram {
 
         for (int i = 0; i < heights.length; ++i) {
             while (stack.peek() != -1 && heights[stack.peek()] >= heights[i]) {
+                // calculate a candidate answer using popped element's height
                 int pop = stack.pop();
                 int height = heights[pop];
                 int width = i - stack.peek() - 1;
@@ -66,6 +67,8 @@ public class LargestRectangleInHistogram {
         while (stack.peek() != -1) {
             int pop = stack.pop();
             int height = heights[pop];
+            // right wall is 'n' because it represents greater height
+            // left wall is peek index because it represents lesser height
             int width = n - stack.peek() - 1;
             ans = Math.max(ans, height*width);
         }
