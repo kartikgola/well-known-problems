@@ -14,6 +14,7 @@ public class ArrayUtils {
 
         // ------------------------Left Bisection-----------------------------
         // Returns the least index at which x should be inserted, to maintain sorted order
+        // May return an index == size of array
         // Same as python's bisect_left
         public static int bisectLeft(int[] arr, int from, int to, int x) {
             int l = from, r = to-1;
@@ -56,6 +57,7 @@ public class ArrayUtils {
 
         // ------------------------Right Bisection-----------------------------
         // Returns the highest index at which x should be inserted, to maintain sorted order
+        // May return an index == size of array
         // Same as python's bisect_right
         public static int bisectRight(int[] arr, int x) {
             return bisectRight(arr, 0, arr.length, x);
