@@ -223,6 +223,7 @@ public class GraphUtils {
             UnionFind uf = new UnionFind(size);
             int edgesTaken = 0;
             for (int[] edge: edges) {
+                // MST will always contains V-1 edges
                 if (edgesTaken == size-1)
                     break;
                 if (uf.union(edge[0], edge[2])) {
@@ -245,6 +246,7 @@ public class GraphUtils {
             visited[randomSource] = true;
             int edgesTaken = 0;
 
+            // MST will always contains V-1 edges
             while (!pq.isEmpty() && edgesTaken < size-1) {
                 int w = pq.peek()[0];
                 int v = pq.peek()[1];
