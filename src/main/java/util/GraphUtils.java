@@ -263,8 +263,9 @@ public class GraphUtils {
             return mst;
         }
 
-        private void cutVertices(int u, int parent, int[] disc, int[] low, List<Integer> ans) {
+        private void cutVertices(int u, int parent, int[] disc, int[] low, Set<Integer> ans) {
             low[u] = disc[u] = ++time;
+            int children = 0;
             for (Map.Entry<Integer, Integer> e: adj.get(u).entrySet()) {
                 int v = e.getKey();
                 if (v == parent)
@@ -272,23 +273,26 @@ public class GraphUtils {
                 if (disc[v] == -1) {
                     cutVertices(v, u, disc, low, ans);
                     low[u] = Math.min(low[u], low[v]);
-                    if (low[v] >= disc[u])
+                    if (parent != -1 && low[v] >= disc[u])
                         ans.add(u);
+                    children++;
                 } else {
                     low[u] = Math.min(low[u], disc[v]);
                 }
             }
+            if (parent != -1 && children > 1)
+                ans.add(u);
         }
 
         // Tarjan's algorithm to find cut-vertices (AKA articulation points)
         public List<Integer> cutVertices() {
             time = 0;
-            List<Integer> ans = new ArrayList<>();
+            Set<Integer> ans = new HashSet<>();
             int[] disc = new int[size];
             int[] low = new int[size];
             Arrays.fill(disc, -1);
-            cutVertices(0, 0, disc, low, ans);
-            return ans;
+            cutVertices(0, -1, disc, low, ans);
+            return new ArrayList<>(ans);
         }
 
         private void cutEdges(int u, int parent, int[] disc, int[] low, List<List<Integer>> ans) {
@@ -315,7 +319,7 @@ public class GraphUtils {
             int[] disc = new int[size];
             int[] low = new int[size];
             Arrays.fill(disc, -1);
-            cutEdges(0, 0, disc, low, ans);
+            cutEdges(0, -1, disc, low, ans);
             return ans;
         }
     }
