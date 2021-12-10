@@ -14,8 +14,13 @@ public class CriticalConnections {
 
     int time = 0;
 
+    // Tarjan's algorithm to find "bridges" in a graph
+    // Bridge is any edge that if removed causes the graph to become disconnected
+    // So, if "u-v" is a bridge, then after removing it, the vertices "u" and "v" will not be reachable from each other.
     public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
+        // discovery time of vertex u
         int[] disc = new int[n];
+        // lowest vertex reachable by u
         int[] low = new int[n];
         // List of cut-vertices's edges
         List<List<Integer>> cv = new ArrayList<>();
