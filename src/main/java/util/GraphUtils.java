@@ -20,6 +20,7 @@ public class GraphUtils {
         public List<int[]> edges;
         public final int size;
         public final boolean isDirected;
+        private int time = 0;
         public IntGraph(int size, boolean isDirected) {
             this.size = size;
             this.isDirected = isDirected;
@@ -260,6 +261,62 @@ public class GraphUtils {
                     pq.add(new int[]{v, edge.getKey(), edge.getValue()});
             }
             return mst;
+        }
+
+        private void cutVertices(int u, int parent, int[] disc, int[] low, List<Integer> ans) {
+            low[u] = disc[u] = ++time;
+            for (Map.Entry<Integer, Integer> e: adj.get(u).entrySet()) {
+                int v = e.getKey();
+                if (v == parent)
+                    continue;
+                if (disc[v] == -1) {
+                    cutVertices(v, u, disc, low, ans);
+                    low[u] = Math.min(low[u], low[v]);
+                    if (low[v] >= disc[u])
+                        ans.add(u);
+                } else {
+                    low[u] = Math.min(low[u], disc[v]);
+                }
+            }
+        }
+
+        // Tarjan's algorithm to find cut-vertices (AKA articulation points)
+        public List<Integer> cutVertices() {
+            time = 0;
+            List<Integer> ans = new ArrayList<>();
+            int[] disc = new int[size];
+            int[] low = new int[size];
+            Arrays.fill(disc, -1);
+            cutVertices(0, 0, disc, low, ans);
+            return ans;
+        }
+
+        private void cutEdges(int u, int parent, int[] disc, int[] low, List<List<Integer>> ans) {
+            low[u] = disc[u] = ++time;
+            for (Map.Entry<Integer, Integer> e: adj.get(u).entrySet()) {
+                int v = e.getKey();
+                if (v == parent)
+                    continue;
+                if (disc[v] == -1) {
+                    cutEdges(v, u, disc, low, ans);
+                    low[u] = Math.min(low[u], low[v]);
+                    if (low[v] > disc[u])
+                        ans.add(Arrays.asList(u, v));
+                } else {
+                    low[u] = Math.min(low[u], disc[v]);
+                }
+            }
+        }
+
+        // Tarjan's algorithm to find cut-edges (AKA bridges)
+        public List<List<Integer>> cutEdges() {
+            time = 0;
+            List<List<Integer>> ans = new ArrayList<>();
+            int[] disc = new int[size];
+            int[] low = new int[size];
+            Arrays.fill(disc, -1);
+            cutEdges(0, 0, disc, low, ans);
+            return ans;
         }
     }
 
