@@ -280,7 +280,8 @@ public class GraphUtils {
                     low[u] = Math.min(low[u], disc[v]);
                 }
             }
-            if (parent != -1 && children > 1)
+            // if u is root and has > 1 children
+            if (parent == -1 && children > 1)
                 ans.add(u);
         }
 
