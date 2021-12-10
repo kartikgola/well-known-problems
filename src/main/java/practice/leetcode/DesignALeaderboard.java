@@ -13,7 +13,9 @@ import java.util.TreeMap;
 
 public class DesignALeaderboard {
 
+    // Sorted map that will store {score=count_of_players_with_this_score}
     private TreeMap<Integer, Integer> scoreCount = new TreeMap<>(Comparator.reverseOrder());
+    // Hash map that will store {playerId=score}
     private Map<Integer, Integer> playerScore = new HashMap<>();
 
     public DesignALeaderboard() {
