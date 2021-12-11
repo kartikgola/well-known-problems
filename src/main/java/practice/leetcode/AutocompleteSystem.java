@@ -10,113 +10,80 @@ import java.util.*;
 
 class AutocompleteSystem {
 
-    private class Trie {
-
-        class Sentence {
-            String val;
-            int times;
-            Sentence(String val, int times) {
-                this.val = val;
-                this.times = times;
-            }
-        }
-
-        class Node {
-            char val;
-            int times = 0;
-            boolean isComplete = false;
-            Map<Character, Node> children = new HashMap<>();
-            Node(char val) { this.val = val; }
-        }
-
-        Node root = new Node('#');
-        Trie() {}
-
-        public void insert(String word, int times) {
-            Node curr = root;
-            for ( int i = 0; i < word.length(); ++i ) {
-                char ch = word.charAt(i);
-                if ( curr.children.containsKey(ch) ) {
-                    curr = curr.children.get(ch);
-                } else {
-                    Node newChild = new Node(ch);
-                    curr.children.put(ch, newChild);
-                    curr = newChild;
-                }
-                if ( i == word.length() - 1 ) {
-                    curr.isComplete = true;
-                    curr.times += times;
-                }
-            }
-        }
-
-        private List<Sentence> allWordsBelow(Node node) {
-            List<Sentence> res = new ArrayList<>();
-            if ( node.isComplete )
-                res.add( new Sentence(node.val + "", node.times) );
-
-            List<Sentence> subRes = new ArrayList<>();
-            for ( Map.Entry<Character, Node> e : node.children.entrySet() )
-                subRes.addAll( allWordsBelow(e.getValue()) );
-
-            for ( Sentence st : subRes ) {
-                st.val = node.val + st.val;
-                res.add( st );
-            }
-
-            return res;
-        }
-
-        public List<String> startsWith(String prefix) {
-            List<String> res = new ArrayList<>();
-            if ( prefix.isEmpty() )
-                return res;
-
-            Node curr = root;
-            int j = 0;
-            for ( j = 0; j < prefix.length(); ++j ) {
-                char ch = prefix.charAt(j);
-                if ( curr.children.containsKey(ch) )
-                    curr = curr.children.get(ch);
-                else return res;
-            }
-
-            List<Sentence> sentences = allWordsBelow(curr);
-            for ( Sentence st : sentences )
-                st.val = prefix.substring(0, j - 1) + st.val;
-
-            Collections.sort(sentences, (Sentence s1, Sentence s2) -> {
-                if ( s2.times - s1.times != 0 )
-                    return s2.times - s1.times;
-                return s1.val.compareTo(s2.val);
-            });
-
-            for ( int i = 0; i < sentences.size() && i < 3; ++i )
-                res.add( sentences.get(i).val );
-
-            return res;
+    private class Node {
+        char val;
+        int times;
+        boolean isComplete;
+        String str;
+        Map<Character, Node> map = new HashMap<>();
+        Node(char val) {
+            this.val = val;
         }
     }
 
-    Trie t;
-    String query;
+    private final Node root = new Node('#');
+    // represents the previous Node of recently typed char
+    private Node prev = root;
+    // store the string of types chars
+    private StringBuilder typed = new StringBuilder();
+
+    private void add(String str, int times) {
+        Node curr = root;
+        for (int i = 0; i < str.length(); ++i) {
+            curr.map.putIfAbsent(str.charAt(i), new Node(str.charAt(i)));
+            curr = curr.map.get(str.charAt(i));
+            if (i == str.length()-1) {
+                curr.isComplete = true;
+                curr.times += times;
+                curr.str = str;
+            }
+        }
+    }
+
+    // gets all nodes below curr node
+    private void nodesBelow(Node curr, List<Node> al) {
+        if (curr.isComplete)
+            al.add(curr);
+        for (Node child: curr.map.values()) {
+            nodesBelow(child, al);
+        }
+    }
 
     public AutocompleteSystem(String[] sentences, int[] times) {
-        t = new Trie();
-        query = "";
-        for ( int i = 0; i < sentences.length; ++i )
-            t.insert(sentences[i], times[i]);
+        for (int i = 0; i < sentences.length; ++i) {
+            add(sentences[i], times[i]);
+        }
     }
 
     public List<String> input(char c) {
-        if ( c == '#' ) {
-            t.insert(query, 1);
-            query = "";
-            return new ArrayList<>();
-        } else {
-            query += c;
-            return t.startsWith(query);
+        if (c == '#') {
+            prev = root;
+            add(typed.toString(), 1);
+            typed = new StringBuilder();
+            return Collections.emptyList();
         }
+        typed.append(c);
+        if (prev == null)
+            return Collections.emptyList();
+
+        prev = prev.map.getOrDefault(c, null);
+        if (prev == null)
+            return Collections.emptyList();
+
+        List<Node> al = new ArrayList<>();
+        nodesBelow(prev, al);
+        Queue<Node> pq = new PriorityQueue<>((n1, n2) -> n1.times - n2.times != 0 ? n1.times - n2.times : n2.str.compareTo(n1.str));
+        for (Node node: al) {
+            pq.offer(node);
+            if (pq.size() > 3)
+                pq.poll();
+        }
+        List<String> ans = new ArrayList<>();
+        while (!pq.isEmpty()) {
+            ans.add(pq.poll().str);
+        }
+        Collections.reverse(ans);
+        return ans;
     }
 }
 
