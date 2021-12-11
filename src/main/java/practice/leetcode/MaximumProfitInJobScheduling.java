@@ -40,20 +40,32 @@ public class MaximumProfitInJobScheduling {
         return dp.lastEntry().getValue();
     }
 
-    // lee215's solution
+    // based on lee215's solution
     public int jobScheduling2(int[] startTime, int[] endTime, int[] profit) {
         int n = startTime.length;
         int[][] jobs = new int[n][3];
         for (int i = 0; i < n; i++) {
             jobs[i] = new int[] {startTime[i], endTime[i], profit[i]};
         }
+        // sort by endTime in ascending order
         Arrays.sort(jobs, Comparator.comparingInt(j -> j[1]));
-        TreeMap<Integer, Integer> dp = new TreeMap<>();
-        dp.put(0, 0);
+
+        // use treemap to store {end_time = max_profit_till_this_end_time}
+        TreeMap<Integer, Integer> dp = new TreeMap<>(){{ put(0, 0); }};
+
         for (int[] job : jobs) {
-            int cur = job[2] + dp.floorEntry(job[0]).getValue();
-            if (cur > dp.lastEntry().getValue())
-                dp.put(job[1], cur);
+            // max profit upto the job that ends before current job's start
+            int prev = dp.floorEntry(job[0]).getValue();
+
+            // profit from current job
+            int cur = job[2];
+
+            // since we've iterating the jobs in sorted order of endTime, it is guaranteed that next job
+            // would have an endTime >= current job's endTime. So, we will only add (cur+prev) to DP if
+            // it is higher than lastEntry's profit (since it wouldn't make sense for future jobs to club
+            // with a lower profit job -> This step is greedy!)
+            if (cur + prev > dp.lastEntry().getValue())
+                dp.put(job[1], cur + prev);
         }
         return dp.lastEntry().getValue();
     }
