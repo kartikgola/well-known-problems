@@ -41,33 +41,38 @@ public class LargestBSTSubtree {
         return Math.max(largestBSTSubtree(root.left), largestBSTSubtree(root.right));
     }
 
+    private int ans = 0;
 
-//    // This bad boy times out on bigger testcases (passes 71/73) since it lacks the ability to re-use results
-//    private int ans = 0;
-//
-//    private int f(TreeNode root, int min, int max) {
-//        if (root != null) {
-//            // Check for BSTs below using current node as root and ignoring (min, max) values that are passed by parent
-//            int ileft = f(root.left, Integer.MIN_VALUE, root.val);
-//            int iright = f(root.right, root.val, Integer.MAX_VALUE);
-//            if (ileft != -1 && iright != -1) {
-//                ans = Math.max(ans, 1 + ileft + iright);
-//            }
-//
-//            // Check for BSTs below using current node AND (min, max) values passed by parent
-//            int left = f(root.left, root.val, min);
-//            int right = f(root.right, max, root.val);
-//            if (left != -1 && right != -1 && root.val < max && root.val > min) {
-//                ans = Math.max(ans, 1 + left + right);
-//                return 1 + left + right;
-//            }
-//            return -1;
-//        }
-//        return 0;
-//    }
-//
-//    public int largestBSTSubtree(TreeNode root) {
-//        f(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
-//        return ans;
-//    }
+    private int f(TreeNode root, int max, int min) {
+        if (root != null) {
+            // look for BSTs wrt max and min passed by parent
+            int left = f(root.left, root.val, min);
+            int right = f(root.right, max, root.val);
+            int size = -1;
+            if (left != -1 && right != -1 && root.val < max && root.val > min) {
+                size = 1 + left + right;
+                ans = Math.max(ans, size);
+            }
+
+            // if the tree incl current and all the nodes below form a BST (wrt max & min passed by parent)
+            // this will be the largest BST and we do not need to look for independent BSTs
+            if (size > -1)
+                return size;
+
+            // look for independent BSTs starting from current node
+            int ileft = f(root.left, root.val, Integer.MIN_VALUE);
+            int iright = f(root.right, Integer.MAX_VALUE, root.val);
+            if (ileft != -1 && iright != -1) {
+                ans = Math.max(ans, 1 + ileft + iright);
+            }
+
+            return size;
+        }
+        return 0;
+    }
+
+    public int largestBSTSubtree2(TreeNode root) {
+        f(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
+        return ans;
+    }
 }
