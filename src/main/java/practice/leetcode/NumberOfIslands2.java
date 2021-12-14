@@ -21,19 +21,19 @@ public class NumberOfIslands2 {
     }
 
     private boolean union(int i, int j, int k, int l) {
-        int[] p1 = find(i, j);
-        int[] p2 = find(k, l);
-        if (!Arrays.equals(p1, p2)) {
-            int v1 = root[p1[0]][p1[1]][0];
-            int v2 = root[p2[0]][p2[1]][0];
-            if (v1 <= v2) {
-                root[p1[0]][p1[1]][0] = v1+v2;
-                root[p2[0]][p2[1]][0] = p1[0];
-                root[p2[0]][p2[1]][1] = p1[1];
+        int[] a = find(i, j);
+        int[] b = find(k, l);
+        if (!Arrays.equals(a, b)) {
+            int va = root[a[0]][a[1]][0];
+            int vb = root[b[0]][b[1]][0];
+            if (va <= vb) {
+                root[a[0]][a[1]][0] = va+vb;
+                root[b[0]][b[1]][0] = a[0];
+                root[b[0]][b[1]][1] = a[1];
             } else {
-                root[p2[0]][p2[1]][0] = v1+v2;
-                root[p1[0]][p1[1]][0] = p2[0];
-                root[p1[0]][p1[1]][1] = p2[1];
+                root[b[0]][b[1]][0] = va+vb;
+                root[a[0]][a[1]][0] = b[0];
+                root[a[0]][a[1]][1] = b[1];
             }
             return true;
         }
