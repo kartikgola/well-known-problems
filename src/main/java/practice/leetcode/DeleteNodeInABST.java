@@ -34,9 +34,13 @@ public class DeleteNodeInABST {
                 if (root.left == null && root.right == null) {
                     return null;
                 } else if (root.right != null) {
+                    // Replace current node with in-order successor's value
+                    // Delete that in-order successor
                     root.val = successor(root.right).val;
                     root.right = deleteNode(root.right, root.val);
                 } else {
+                    // Replace current node with in-order predecessor's value
+                    // Delete that in-order predecessor
                     root.val = predecessor(root.left).val;
                     root.left = deleteNode(root.left, root.val);
                 }
