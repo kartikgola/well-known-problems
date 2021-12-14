@@ -10,6 +10,8 @@ import java.util.Random;
 
 public class KClosestPointsToOrigin {
 
+    private final Random random = new Random();
+
     private void swap(int[][] points, int i, int j) {
         int[] temp = points[i];
         points[i] = points[j];
@@ -36,7 +38,7 @@ public class KClosestPointsToOrigin {
 
     private int quickSelect(int[][] points, int lo, int hi, int k) {
         if (lo < hi) {
-            int rand = lo + new Random().nextInt(hi - lo);
+            int rand = lo + random.nextInt(hi - lo);
             int p = partition(points, lo, hi, rand);
             if (p == k)
                 return p;
