@@ -14,24 +14,23 @@ public class LongestSubstringWithAtMostKDistinctCharacters {
 
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
         final Map<Character, Integer> map = new HashMap<>();
-        final int n = s.length();
-        int left = 0, right = 0;
+        int l = 0, r = 0;
         int maxLen = Integer.MIN_VALUE;
 
-        while ( right < n ) {
-            char ch = s.charAt(right);
+        while (r < s.length()) {
+            char ch = s.charAt(r);
             map.put(ch, map.getOrDefault(ch, 0) + 1);
-            ++right;
+            ++r;
 
-            while ( map.size() > k ) {
-                ch = s.charAt(left);
+            while (map.size() > k) {
+                ch = s.charAt(l);
                 map.put(ch, map.get(ch) - 1);
-                if ( map.get(ch) == 0 )
+                if (map.get(ch) == 0)
                     map.remove(ch);
-                ++left;
+                ++l;
             }
 
-            maxLen = Math.max(maxLen, right - left);
+            maxLen = Math.max(maxLen, r - l);
         }
 
         return maxLen == Integer.MIN_VALUE ? 0 : maxLen;
