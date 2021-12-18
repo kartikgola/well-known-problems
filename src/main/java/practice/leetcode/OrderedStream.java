@@ -11,18 +11,18 @@ import java.util.List;
 
 public class OrderedStream {
 
-    private int start = 0;
-    private String[] values;
+    private int ptr = 1;
+    private String[] arr;
 
     public OrderedStream(int n) {
-        values = new String[n];
+        this.arr = new String[n+1];
     }
 
     public List<String> insert(int idKey, String value) {
         List<String> ans = new ArrayList<>();
-        values[idKey-1] = value;
-        while (start < values.length && values[start] != null)
-            ans.add(values[start++]);
+        arr[idKey] = value;
+        while (ptr < arr.length && arr[ptr] != null)
+            ans.add(arr[ptr++]);
         return ans;
     }
 }
