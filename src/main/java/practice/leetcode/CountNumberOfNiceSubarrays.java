@@ -13,6 +13,7 @@ import java.util.Set;
 
 public class CountNumberOfNiceSubarrays {
 
+    // Technique similar to "Subarray sum equals K"
     public int numberOfSubarrays(int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>(){{ put(0, 1); }};
         int odd = 0;
@@ -46,6 +47,7 @@ public class CountNumberOfNiceSubarrays {
         return ans;
     }
 
+    // Subarrays with exactly k odd = subarrays with at most k odd - subarrays with at most k-1 odd
     public int numberOfSubarrays2(int[] nums, int k) {
         return atMostK(nums, k) - atMostK(nums, k-1);
     }
