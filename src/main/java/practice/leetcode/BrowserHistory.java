@@ -43,4 +43,33 @@ public class BrowserHistory {
         curr = Math.min(len-1, curr+steps);
         return history.get(curr);
     }
+
+    /*
+    // 2-stacks solution
+    private Stack<String> history = new Stack<>();
+    private Stack<String> fwd = new Stack<>();
+
+    public BrowserHistory(String homepage) {
+        history.push(homepage);
+    }
+
+    public void visit(String url) {
+        history.push(url);
+        fwd.clear();
+    }
+
+    public String back(int steps) {
+        steps = Math.min(history.size()-1, steps);
+        while (steps-- > 0)
+            fwd.push(history.pop());
+        return history.peek();
+    }
+
+    public String forward(int steps) {
+        steps = Math.min(fwd.size(), steps);
+        while (steps-- > 0)
+            history.push(fwd.pop());
+        return history.peek();
+    }
+    */
 }
