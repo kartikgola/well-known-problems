@@ -6,7 +6,9 @@
 
 package practice.leetcode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class NumberOfShipsInARectangle {
 
@@ -30,28 +32,28 @@ public class NumberOfShipsInARectangle {
             this.y2 = y2;
         }
 
-        public Rectangle[] half() {
-            Rectangle h1, h2;
+        public List<Rectangle> half() {
+            List<Rectangle> halves = new ArrayList<>(2);
             // x-coordinate is same
             if (x1 == x2) {
                 int x = x1;
                 int my = y1 + (y2 - y1) / 2;
-                h1 = new Rectangle(x, y1, x, my);
-                h2 = new Rectangle(x, my+1, x, y2);
+                halves.add(new Rectangle(x, y1, x, my));
+                halves.add(new Rectangle(x, my+1, x, y2));
             } else if (y1 == y2) {
                 // y-coordinate is same
                 int y = y1;
                 int mx = x1 + (x2 - x1) / 2;
-                h1 = new Rectangle(x1, y, mx, y);
-                h2 = new Rectangle(mx+1, y, x2, y);
+                halves.add(new Rectangle(x1, y, mx, y));
+                halves.add(new Rectangle(mx+1, y, x2, y));
             } else {
                 // we can half using either x or y coordinate
                 // using x-coordinate half here
                 int mx = x1 + (x2 - x1) / 2;
-                h1 = new Rectangle(x1, y1, mx, y2);
-                h2 = new Rectangle(mx+1, y1, x2, y2);
+                halves.add(new Rectangle(x1, y1, mx, y2));
+                halves.add(new Rectangle(mx+1, y1, x2, y2));
             }
-            return new Rectangle[]{h1, h2};
+            return halves;
         }
 
         public int[] tr() { return new int[]{x2, y2}; }
