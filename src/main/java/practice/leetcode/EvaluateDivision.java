@@ -11,49 +11,60 @@ import java.util.*;
 public class EvaluateDivision {
 
     private Map<String, String> root = new HashMap<>();
-    private Map<String, Double> dist = new HashMap<>();
+    private Map<String, Double> mult = new HashMap<>();
 
-    private String find(String s) {
-        if (!root.containsKey(s)) {
-            root.put(s, s);
-            dist.put(s, 1.0);
-            return s;
+    private String find(String u) {
+        if (!root.containsKey(u)) {
+            root.put(u, u);
+            mult.put(u, 1.0);
+            return u;
         }
-        if (root.get(s).equals(s))
-            return s;
-        String p = root.get(s);
-        String pp = find(p);
-        root.put(s, pp);
-        dist.put(s, dist.get(s) * dist.get(p));
-        return pp;
+        if (root.get(u).equals(u))
+            return u;
+
+        String parent = root.get(u);
+        String grandParent = find(parent);
+
+        // path compression
+        // example - if a/b = 2, and b/c = 3
+        // then a/c = 2x3 = 6
+        root.put(u, grandParent);
+        mult.put(u, mult.get(u) * mult.get(parent));
+
+        // return new root of u
+        return grandParent;
     }
 
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
-        double[] ans = new double[queries.size()];
         for (int i = 0; i < equations.size(); ++i) {
-            String x1 = equations.get(i).get(0);
-            String x2 = equations.get(i).get(1);
-            String r1 = find(x1);
-            String r2 = find(x2);
-            root.put(r1, r2);
-            dist.put(r1, dist.get(x2) * values[i] / dist.get(x1));
+            String num = equations.get(i).get(0);
+            String den = equations.get(i).get(1);
+            String numRoot = find(num);
+            String denRoot = find(den);
+
+            root.put(numRoot, denRoot);
+            // **IMPORTANT**
+            mult.put(numRoot, (1.0 / mult.get(num)) * values[i] * mult.get(den));
         }
 
-        for (int i = 0; i < queries.size(); ++i) {
-            String x1 = queries.get(i).get(0);
-            String x2 = queries.get(i).get(1);
+        double[] ans = new double[queries.size()];
 
-            if (!root.containsKey(x1) || !root.containsKey(x2)) {
+        for (int i = 0; i < queries.size(); ++i) {
+            String num = queries.get(i).get(0);
+            String den = queries.get(i).get(1);
+
+            if (!root.containsKey(num) || !root.containsKey(den)) {
                 ans[i] = -1.0;
                 continue;
             }
 
-            String r1 = find(x1);
-            String r2 = find(x2);
-            if (!r1.equals(r2))
-                ans[i] = -1.0;
+            String numRoot = find(num);
+            String denRoot = find(den);
+
+            if (numRoot.equals(denRoot))
+                ans[i] = mult.get(num) / mult.get(den);
             else
-                ans[i] = (double) dist.get(x1) / dist.get(x2);
+                ans[i] = -1.0;
         }
 
         return ans;
