@@ -8,6 +8,7 @@ package practice.leetcode;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -88,5 +89,89 @@ class BoundedBlockingQueue2 {
         } finally {
             lock.unlock();
         }
+    }
+}
+
+// Solution using 3 Semaphores (permits)
+class BoundedBlockingQueue3 {
+
+    private final Queue<Integer> queue;
+    private final int capacity;
+    private final Semaphore full;
+    private final Semaphore empty;
+    private final Semaphore mutex;
+
+    public BoundedBlockingQueue3(int capacity) {
+        this.capacity = capacity;
+        this.queue = new LinkedList<>();
+        this.full = new Semaphore(0);
+        this.empty = new Semaphore(capacity);
+        this.mutex = new Semaphore(1);
+    }
+
+    public void enqueue(int element) throws InterruptedException {
+        empty.acquire();
+        mutex.acquire();
+        queue.add(element);
+        mutex.release();
+        full.release();
+    }
+
+    public int dequeue() throws InterruptedException {
+        full.acquire();
+        mutex.acquire();
+        int poll = queue.poll();
+        mutex.release();
+        empty.release();
+        return poll;
+    }
+
+    public int size() throws InterruptedException {
+        mutex.acquire();
+        int size = queue.size();
+        mutex.release();
+        return size;
+    }
+}
+
+// Solution using 2 Semaphores + queue as monitor
+class BoundedBlockingQueue4 {
+
+    private final Queue<Integer> queue;
+    private final int capacity;
+    private final Semaphore full;
+    private final Semaphore empty;
+
+    public BoundedBlockingQueue4(int capacity) {
+        this.capacity = capacity;
+        this.queue = new LinkedList<>();
+        this.full = new Semaphore(0);
+        this.empty = new Semaphore(capacity);
+    }
+
+    public void enqueue(int element) throws InterruptedException {
+        empty.acquire();
+        synchronized (queue) {
+            queue.add(element);
+        }
+        full.release();
+    }
+
+    public int dequeue() throws InterruptedException {
+        full.acquire();
+        int poll = -1;
+        synchronized (queue) {
+            poll = queue.poll();
+        }
+        empty.release();
+        return poll;
+    }
+
+    public int size() throws InterruptedException {
+        int size = 0;
+        synchronized (queue) {
+            size = queue.size();
+        }
+        return size;
     }
 }
