@@ -12,34 +12,42 @@ import java.util.Map;
 
 public class MinimumCostToCutAStick {
 
-    private Map<Integer, Map<Integer, Integer>> dp = new HashMap<>();
+    private Integer[][] memo;
 
-    private int cost(int l, int r, int[] cuts) {
-        if (r - l <= 1)
+    /*
+        cuts[] ==> sorted([0, ...cuts, n])
+        dp[i][j] = min cost to use all cuts in (i, j)
+        dp[i][j] = cuts[j] - cuts[i] + min {
+            dp[i][k] + dp[k][j]
+        }; where, k is in [i+1, j)
+
+        Goal is to find dp[0][cuts.length-1]
+    */
+
+    private int cost(int i, int j, int[] cuts) {
+        if (j - i <= 1)
             return 0;
-
-        if (dp.containsKey(l) && dp.get(l).containsKey(r))
-            return dp.get(l).get(r);
-
-        int ans = Integer.MAX_VALUE;
-        for (int cut: cuts) {
-            if (cut > l && cut < r) {
-                int subCost = cost(l, cut, cuts) + cost(cut, r, cuts);
-                ans = Math.min(ans, subCost + r - l);
-            }
+        if (memo[i][j] != null)
+            return memo[i][j];
+        memo[i][j] = Integer.MAX_VALUE;
+        for (int k = i+1; k < j; ++k) {
+            memo[i][j] = Math.min(
+                    memo[i][j],
+                    cuts[j] - cuts[i] + cost(i, k, cuts) + cost(k, j, cuts)
+            );
         }
-
-        if (ans == Integer.MAX_VALUE)
-            ans = 0;
-
-        dp.putIfAbsent(l, new HashMap<>());
-        dp.get(l).put(r, ans);
-
-        return ans;
+        return memo[i][j];
     }
 
     public int minCost(int n, int[] cuts) {
-        Arrays.sort(cuts);
-        return cost(0, n, cuts);
+        final int m = cuts.length;
+        memo = new Integer[m+2][m+2];
+        int[] _cuts = new int[m+2];
+        for (int i = 1; i <= m; ++i)
+            _cuts[i] = cuts[i-1];
+        _cuts[m+1] = n;
+        Arrays.sort(_cuts);
+        return cost(0, _cuts.length-1, _cuts);
     }
+
 }
