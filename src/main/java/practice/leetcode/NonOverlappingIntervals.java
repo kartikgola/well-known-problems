@@ -42,6 +42,7 @@ public class NonOverlappingIntervals {
         final int n = intervals.length;
 
         // dp[i] = max no of intervals that can be "included" when considering ith interval and some/all in intervals[0..i-1]
+        // in other words, dp[i] = max length of intervals that can be included if we have to to include ith interval
         int ans = 1;
         int[] dp = new int[n];
         dp[0] = 1;
