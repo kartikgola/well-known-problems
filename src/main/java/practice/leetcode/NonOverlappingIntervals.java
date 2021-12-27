@@ -19,6 +19,7 @@ public class NonOverlappingIntervals {
             // check for prev and current overlap
             if (intervals[prev][1] > intervals[i][0]) {
                 // prev will be removed only if it ends after current interval
+                // that is, we are trying to "keep" intervals which are smaller
                 if (intervals[prev][1] > intervals[i][1]) {
                     prev = i;
                 }
