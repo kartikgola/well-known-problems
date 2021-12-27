@@ -11,6 +11,7 @@ import java.util.Comparator;
 
 public class NonOverlappingIntervals {
 
+    // Greedy solution / O(nlogn + n)
     public int eraseOverlapIntervals(int[][] intervals) {
         Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
         int prev = 0;
@@ -29,5 +30,33 @@ public class NonOverlappingIntervals {
             }
         }
         return removed;
+    }
+
+    public boolean isOverlapping(int[] a, int[] b) {
+        return !(a[1] <= b[0] || a[0] >= b[1]);
+    }
+
+    // DP solution / O(nlogn + n^2)
+    public int eraseOverlapIntervals2(int[][] intervals) {
+        Arrays.sort(intervals, Comparator.comparingInt(intv -> intv[0]));
+        final int n = intervals.length;
+
+        // dp[i] = max no of intervals that can be "included" when considering ith interval and some/all in intervals[0..i-1]
+        int ans = 1;
+        int[] dp = new int[n];
+        dp[0] = 1;
+
+        for (int i = 1; i < n; ++i) {
+            int max = 0;
+            for (int j = 0; j < i; ++j) {
+                if (!isOverlapping(intervals[j], intervals[i])) {
+                    max = Math.max(max, dp[j]);
+                }
+            }
+            dp[i] = max+1;
+            ans = Math.max(ans, dp[i]);
+        }
+
+        return n - ans;
     }
 }
