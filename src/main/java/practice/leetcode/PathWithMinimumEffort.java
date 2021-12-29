@@ -2,7 +2,7 @@
  * Author: Kartik Gola
  * Date: 4/2/21, 1:10 PM
  * Copyright (c) 2021 | https://kartikgola.com
- * Problem URL: 
+ * Problem URL: https://leetcode.com/problems/path-with-minimum-effort/
  */
 
 package practice.leetcode;
