@@ -21,6 +21,7 @@ public class PathWithMinimumEffort {
         }
     }
 
+    // Dijkstra's solution O(mn * log(mn))
     public int minimumEffortPath(int[][] heights) {
         final int m = heights.length;
         final int n = heights[0].length;
@@ -56,7 +57,8 @@ public class PathWithMinimumEffort {
         return minEffort[m-1][n-1];
     }
 
-    public int minimumEffortPathSpfa(int[][] heights) {
+    // SPFA solution O(mn * mn)
+    public int minimumEffortPath2(int[][] heights) {
         int m = heights.length;
         int n = heights[0].length;
         int[][] effort = new int[m][n];
@@ -83,5 +85,50 @@ public class PathWithMinimumEffort {
             }
         }
         return effort[m-1][n-1];
+    }
+
+    // Bellman ford solution (mn * mn)
+    public int minimumEffortPath3(int[][] heights) {
+        final int m = heights.length;
+        final int n = heights[0].length;
+        int[][] prev = new int[m][n];
+        int[][] curr = new int[m][n];
+        for (int[] p: prev)
+            Arrays.fill(p, Integer.MAX_VALUE);
+        for (int[] c: curr)
+            Arrays.fill(c, Integer.MAX_VALUE);
+        prev[0][0] = 0;
+        curr[0][0] = 0;
+
+        int[][] pos = new int[][]{{-1,0}, {0,1}, {1,0}, {0,-1}};
+
+        int limit = m*n;
+        boolean isRelaxed = true;
+        while (isRelaxed && limit-- > 0) {
+            isRelaxed = false;
+            curr[0][0] = 0;
+            for (int i = 0; i < m; ++i) {
+                for (int j = 0; j < n; ++j) {
+                    for (int[] p: pos) {
+                        int ni = p[0] + i;
+                        int nj = p[1] + j;
+                        if (ni >= 0 && ni < m && nj >= 0 && nj < n) {
+                            if (prev[i][j] < Integer.MAX_VALUE) {
+                                int effort = Math.max(prev[i][j], Math.abs(heights[i][j] - heights[ni][nj]));
+                                if (effort < curr[ni][nj]) {
+                                    isRelaxed = true;
+                                    curr[ni][nj] = effort;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            for (int i = 0; i < m; ++i) {
+                prev[i] = curr[i].clone();
+            }
+        }
+
+        return curr[m-1][n-1];
     }
 }
