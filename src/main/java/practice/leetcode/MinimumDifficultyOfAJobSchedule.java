@@ -13,6 +13,7 @@ public class MinimumDifficultyOfAJobSchedule {
     // f(i, j) = min difficulty of job-schedule that starts with ith job on jth day
     private int f(int[] jobDiff, int i, int j, int d) {
         if (j >= d) {
+            // if there are still pending jobs, they need to be completed on the last day that is, (d-1)th day
             if (i < jobDiff.length) {
                 int max = Integer.MIN_VALUE;
                 for (int k = i; k < jobDiff.length; ++k)
