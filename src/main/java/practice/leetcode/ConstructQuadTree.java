@@ -96,8 +96,6 @@ public class ConstructQuadTree {
         }
     }
 
-    // Creates Node with isLeaf and val property set
-    // Finds sum of the given range in grid to check for isLeaf
     private Node create(int[][] grid, Range r) {
         int sum = 0;
         boolean foundZero = false;
@@ -183,5 +181,36 @@ public class ConstructQuadTree {
 
     public Node construct2(int[][] grid) {
         return construct(prefixSum(grid), new Range(0, grid.length, 0, grid[0].length));
+    }
+
+
+
+    // O(n^2) solution that avoids processing a cell more than once
+    private Node construct3(int[][] grid, Range r) {
+        if (r.size() == 1)
+            return new Node(grid[r.r1][r.c1] == 1, true);
+
+        Node node = new Node();
+        Node topLeft = construct3(grid, r.topLeft());
+        Node topRight = construct3(grid, r.topRight());
+        Node bottomLeft = construct3(grid, r.topRight());
+        Node bottomRight = construct3(grid, r.bottomRight());
+
+        if (topLeft.isLeaf && topRight.isLeaf && bottomLeft.isLeaf && bottomRight.isLeaf
+        && topLeft.val == topRight.val && topRight.val == bottomLeft.val && bottomLeft.val == bottomRight.val) {
+            node.isLeaf = true;
+            node.val = topLeft.val;
+            return node;
+        }
+
+        node.topLeft = topLeft;
+        node.topRight = topRight;
+        node.bottomLeft = bottomLeft;
+        node.bottomRight = bottomRight;
+        return node;
+    }
+
+    public Node construct3(int[][] grid) {
+        return construct(grid, new Range(0, grid.length, 0, grid[0].length));
     }
 }
