@@ -24,7 +24,6 @@ public class ArrayOfDoubledPairs {
         for (int num: a)
             map.put(num, map.getOrDefault(num,0) + 1);
 
-
         for (int i = 0; i < a.length; ++i) {
             if (map.getOrDefault(a[i], 0) > 0) {
                 if (map.getOrDefault(a[i]*2, 0) > 0) {
