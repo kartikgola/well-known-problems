@@ -6,6 +6,8 @@
 
 package practice.leetcode;
 
+import java.util.Arrays;
+
 public class MinimumDifficultyOfAJobSchedule {
 
     // f(i, j) = min difficulty of job-schedule that starts with ith job on jth day
@@ -77,5 +79,37 @@ public class MinimumDifficultyOfAJobSchedule {
             hardest[i] = hardestJob;
         }
         return f2(jobDiff, hardest, new Integer[jobDiff.length][d], 0, 0, d);
+    }
+
+    // Bottom-up solution O(d*n^2)
+    public int minDifficulty3(int[] jobDiff, int d) {
+        final int n = jobDiff.length;
+        if (n < d)
+            return -1;
+
+        // dp[i][j] = min difficulty of job-schedule that starts with ith job on jth day
+        // goal is to find dp[0][0], just like in top-down approach
+        int[][] dp = new int[n][d];
+
+        for (int[] _dp: dp)
+            Arrays.fill(_dp, Integer.MAX_VALUE);
+
+        // fill up base case
+        dp[n-1][d-1] = jobDiff[n-1];
+        for (int i = n-2; i >= 0; --i) {
+            dp[i][d-1] = Math.max(dp[i+1][d-1], jobDiff[i]);
+        }
+
+        for (int j = d-2; j >= 0; --j) {
+            for (int i = j; i < n-(d-j)+1; ++i) {
+                int diff = Integer.MIN_VALUE;
+                for (int k = i; k < n-(d-j)+1; ++k) {
+                    diff = Math.max(diff, jobDiff[k]);
+                    dp[i][j] = Math.min(dp[i][j], diff + dp[k+1][j+1]);
+                }
+            }
+        }
+
+        return dp[0][0];
     }
 }
