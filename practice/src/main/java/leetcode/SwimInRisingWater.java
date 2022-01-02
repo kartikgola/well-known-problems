@@ -141,11 +141,7 @@ public class SwimInRisingWater {
                 cells.add(new Cell(i, j, grid[i][j]));
             }
         }
-        cells.sort((c1, c2) -> {
-            if (c1.val - c2.val != 0)
-                return c1.val - c2.val;
-            return (c1.i*n+c1.j) - (c2.i*n+c2.j);
-        });
+        cells.sort((c1, c2) -> c1.val - c2.val);
         int[][] pos = new int[][]{{-1,0}, {0,1}, {1,0}, {0,-1}};
         boolean[][] vis = new boolean[m][n];
         UF uf = new UF(m*n);
