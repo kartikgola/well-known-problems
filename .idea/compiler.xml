@@ -6,10 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="wkp" />
+        <module name="fundamentals" />
+        <module name="practice" />
+        <module name="system-design" />
+        <module name="commons" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="algorithms" target="11" />
+      <module name="commons" target="11" />
+      <module name="fundamentals" target="11" />
+      <module name="practice" target="11" />
+      <module name="system-design" target="11" />
       <module name="well-known-problems" target="11" />
       <module name="wkp" target="11" />
     </bytecodeTargetLevel>
