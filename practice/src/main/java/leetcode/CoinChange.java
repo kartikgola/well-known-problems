@@ -6,6 +6,8 @@
 
 package leetcode;
 
+import java.util.Arrays;
+
 public class CoinChange {
 
     private int coinChangeTopDown(Integer[] map, int[] coins, int amount) {
@@ -35,17 +37,19 @@ public class CoinChange {
     }
 
     public int coinChangeBottomUp(int[] coins, int amount) {
-        int[] dp = new int[amount + 1];
+        int[] dp = new int[amount+1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
         dp[0] = 0;
 
         for (int amt = 1; amt <= amount; ++amt) {
-            dp[amt] = Integer.MAX_VALUE;
-            for (int coin : coins) {
-                if (amt - coin >= 0 && dp[amt - coin] > -1) {
-                    dp[amt] = Math.min(dp[amt], dp[amt - coin] + 1);
+            for (int i = 0; i < coins.length; ++i) {
+                int rem = amt - coins[i];
+                if (rem >= 0 && dp[rem] > -1) {
+                    dp[amt] = Math.min(dp[amt], 1 + dp[rem]);
                 }
             }
-            dp[amt] = dp[amt] == Integer.MAX_VALUE ? -1 : dp[amt];
+            if (dp[amt] == Integer.MAX_VALUE)
+                dp[amt] = -1;
         }
 
         return dp[amount];
