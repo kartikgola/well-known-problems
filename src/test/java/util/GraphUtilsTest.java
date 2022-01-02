@@ -39,4 +39,19 @@ class GraphUtilsTest {
         });
         assertEquals(Collections.singletonList(0), ig.cutVertices());
     }
+
+    @Test
+    void cutVerticesTest3() {
+        GraphUtils.IntGraph ig = new GraphUtils.IntGraph(7, false, new int[][]{
+                {0, 1},
+                {1, 2},
+                {2, 3},
+                {3, 4},
+                {4, 5},
+                {5, 3},
+                {3, 0},
+                {2, 6}
+        });
+        assertEquals(Arrays.asList(2, 3), ig.cutVertices());
+    }
 }
