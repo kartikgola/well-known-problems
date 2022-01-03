@@ -6,21 +6,11 @@
 
 package leetcode;
 
+import util.Pair;
+
 import java.util.*;
 
 public class WordLadder {
-
-    class Pair<T, W> {
-        T key;
-        W value;
-        Pair(T key, W value) {
-            this.key = key;
-            this.value = value;
-        }
-
-        T getKey() { return key; }
-        W getValue() { return value; }
-    }
 
     private int L;
     private Map<String, List<String>> allComboDict;
