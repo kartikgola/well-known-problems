@@ -4,7 +4,9 @@
  * Copyright (c) 2021 | https://kartikgola.com
  */
 
-package util;public class Pair<T, K> {
+package util;
+
+public class Pair<T, K> {
 
     private final T key;
     private final K value;
