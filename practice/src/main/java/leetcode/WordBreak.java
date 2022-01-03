@@ -85,4 +85,34 @@ public class WordBreak {
         return false;
     }
 
+    // Alt. DP solution O(len(wordDict) + len(s)^2)
+    public boolean wordBreak4(String s, List<String> wordDict) {
+        /*
+            dp[i] = {
+                true; if s[i,n) can be formed using wordDict
+                false; otherwise
+            }
+            goal is to find dp[0]
+        */
+
+        final int n = s.length();
+        Set<String> set = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[n+1];
+
+        // base case
+        dp[n] = true;
+
+        for (int i = n-1; i >= 0; --i) {
+            StringBuilder sb = new StringBuilder();
+            for (int j = i; j < n; ++j) {
+                sb.append(s.charAt(j));
+                dp[i] = set.contains(sb.toString()) && dp[j+1];
+                if (dp[i])
+                    break;
+            }
+        }
+
+        return dp[0];
+    }
+
 }
