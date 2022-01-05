@@ -57,6 +57,7 @@ public class RabinKarpStringMatching {
         // hash of empty prefix string is tHash[0]
         // tHash[i] = hash of text[0,i-1]
         // so, hash of any substring of text, tHash(text[i,j]) = tHash[j+1]-tHash[i];
+        // this technique is also known as rolling-hash
         long[] tHash = new long[text.length()+1];
         for (int i = 1; i <= text.length(); ++i)
             tHash[i] = (tHash[i-1] + (text.charAt(i-1)-'a'+1) * pow[i-1]) % m;
