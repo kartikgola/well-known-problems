@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
 
 public class RabinKarpStringMatching {
 
-    // Basic algorithm to calculate the hash of a string
+    // Polynomial rolling hash algorithm to calculate hash of a string
     private long hash(String s) {
         // hash = (s[0] + s[1].p + s[2].p^2 + .. + s[n-1].p^n-1) % m
         long hash = 0;
