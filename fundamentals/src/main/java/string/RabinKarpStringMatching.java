@@ -53,7 +53,10 @@ public class RabinKarpStringMatching {
             pow[i] = (pow[i-1] * p) % m;
 
         // calculate hash of all the prefixes of text
+        // using this pre-computation allows us to calculate the hash of any substring of text in O(1)
         // hash of empty prefix string is tHash[0]
+        // tHash[i] = hash of text[0,i-1]
+        // so, hash of any substring of text, tHash(text[i,j]) = tHash[j+1]-tHash[i];
         long[] tHash = new long[text.length()+1];
         for (int i = 1; i <= text.length(); ++i)
             tHash[i] = (tHash[i-1] + (text.charAt(i-1)-'a'+1) * pow[i-1]) % m;
@@ -63,12 +66,17 @@ public class RabinKarpStringMatching {
         for (int i = 0; i < pattern.length(); ++i)
             pHash = (pHash + (pattern.charAt(i)-'a'+1) * pow[i]) % m;
 
-        // iterate over text and compare the hashes of substring text[i+len(pattern)] and pattern
-        // while comparing, pHash needs to be multiplied by pow[i] to have same powers as substring of text
+        // iterate over text and compare the hashes of substring of text[i+len(pattern)] and pattern
+        // while comparing, pHash needs to be multiplied by pow[i] because
+        // subHash includes powers of p that are greater than powers of p in pHash
+        // Example, text=abcd, pattern=cd
+        // subHash = hash(substring "cd") = hash(abcd)-hash(ab) = c*p^2 + d*p^3
+        // pHash = hash(pattern "cd") = c*p^0 + d*p^1
+        // so, to compare these hashes, we simply multiply pHash with p^2
         List<Integer> ans = new ArrayList<>();
         for (int i = 0; i+pattern.length()-1 < text.length(); ++i) {
-            long currHash = (tHash[i+pattern.length()] + m - tHash[i]) % m;
-            if (currHash == pHash * pow[i] % m)
+            long subHash = (tHash[i+pattern.length()] + m - tHash[i]) % m;
+            if (subHash == pHash * pow[i] % m)
                 ans.add(i);
         }
 
