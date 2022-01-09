@@ -20,4 +20,13 @@ public class HouseRobber {
     public int rob(int[] nums) {
         return rob(nums, 0, new Integer[nums.length]);
     }
+
+    public int rob2(int[] nums) {
+        // dp[i] = max amount we can rob starting from ith house (may/may not including ith house)
+        int[] dp = new int[nums.length+2];
+        for (int i = nums.length-1; i >= 0; --i) {
+            dp[i] = Math.max(nums[i] + dp[i+2], dp[i+1]);
+        }
+        return dp[0];
+    }
 }
