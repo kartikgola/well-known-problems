@@ -7,6 +7,7 @@
 package leetcode;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class DeleteAndEarn {
 
@@ -109,8 +110,7 @@ public class DeleteAndEarn {
         Map<Integer, Integer> counts = new HashMap<>();
         for (int num: nums)
             counts.put(num, counts.getOrDefault(num, 0)+1);
-        List<Integer> uniq = new ArrayList<>(counts.keySet());
-        Collections.sort(uniq);
+        List<Integer> uniq = counts.keySet().stream().sorted().collect(Collectors.toList());
         this.dp = new Integer[uniq.size()];
         return f(uniq, counts, 0);
     }
