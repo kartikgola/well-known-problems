@@ -45,4 +45,32 @@ public class CherryPickup2 {
 
         return dp[0][0][n-1];
     }
+
+    private int f(int[][] grid, Integer[][][] dp, int row, int c1, int c2) {
+        if (row >= grid.length)
+            return 0;
+
+        int cherries = 0;
+        if (dp[row][c1][c2] != null)
+            return dp[row][c1][c2];
+
+        // if col index of robots is same, only one of them will get the cherries; otherwise both will get
+        int curr = c1 == c2 ? grid[row][c1] : grid[row][c1] + grid[row][c2];
+        for (int i = -1; i <= 1; ++i) {
+            for (int j = -1; j <= 1; ++j) {
+                int c11 = c1 + i;
+                int c22 = c2 + j;
+                if (c11 >= 0 && c11 < grid[0].length && c22 >= 0 && c22 < grid[0].length) {
+                    cherries = Math.max(cherries, curr + f(grid, dp, row+1, c11, c22));
+                }
+            }
+        }
+
+        return dp[row][c1][c2] = cherries;
+    }
+
+    public int cherryPickup2(int[][] grid) {
+        // dp[i][j][k] = max cherries collected at ith row, when R1 is at j and R2 is at k
+        return f(grid, new Integer[grid.length][grid[0].length][grid[0].length], 0, 0, grid[0].length-1);
+    }
 }
