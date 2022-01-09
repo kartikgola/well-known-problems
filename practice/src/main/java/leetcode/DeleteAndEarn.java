@@ -6,13 +6,11 @@
 
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class DeleteAndEarn {
 
-    // O(nlog(n))
+    // Bottom-up DP solution O(nlog(n))
     public int deleteAndEarn(int[] nums) {
         Arrays.sort(nums);
         final int n = nums.length;
@@ -40,7 +38,7 @@ public class DeleteAndEarn {
         return dp.get(dp.size()-1);
     }
 
-    // O(n)
+    // Bottom-up DP solution O(n)
     public int deleteAndEarn2(int[] nums) {
         int[] vals = new int[10001];
         List<Integer> dp = new ArrayList<>(nums.length);
@@ -71,5 +69,49 @@ public class DeleteAndEarn {
         }
 
         return dp.get(dp.size() - 1);
+    }
+
+    /*
+    * Top-down O(nlogn) DP solution
+    * uniq[] is an array of uniques in nums[]
+    * counts<int, int> is a count map of nums[]
+    * dp[i] = max points that can be earned starting from i, using all/some uniques in [i, n)
+    * dp[i] = max {
+    *   uniq[i] * counts[i] + (uniq[i+1] == uniq[i] ? dp[i+2] : dp[i+1]),
+    *   dp[i+1]
+    * }
+    * */
+    private Integer[] dp;
+
+    private int f(List<Integer> uniq, Map<Integer, Integer> counts, int i) {
+        if (i >= uniq.size())
+            return 0;
+
+        if (dp[i] != null)
+            return dp[i];
+
+        int num = uniq.get(i);
+        int count = counts.get(num);
+        int points = num * count;
+
+        if (i+1 < uniq.size()) {
+            if (uniq.get(i+1) == num+1)
+                points += f(uniq, counts, i+2);
+            else
+                points += f(uniq, counts, i+1);
+        }
+
+        return dp[i] = Math.max(points, f(uniq, counts, i+1));
+    }
+
+    public int deleteAndEarn3(int[] nums) {
+        final int n = nums.length;
+        Map<Integer, Integer> counts = new HashMap<>();
+        for (int num: nums)
+            counts.put(num, counts.getOrDefault(num, 0)+1);
+        List<Integer> uniq = new ArrayList<>(counts.keySet());
+        Collections.sort(uniq);
+        this.dp = new Integer[uniq.size()];
+        return f(uniq, counts, 0);
     }
 }
