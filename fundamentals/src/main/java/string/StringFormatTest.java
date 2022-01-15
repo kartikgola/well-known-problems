@@ -1,10 +1,10 @@
 /*
  * Author: Kartik Gola
- * Date: 10/4/21, 5:28 PM
+ * Date: 1/15/22, 10:34 PM
  * Copyright (c) 2021 | https://kartikgola.com
  */
 
-package strings;
+package string;
 
 public class StringFormatTest {
 
