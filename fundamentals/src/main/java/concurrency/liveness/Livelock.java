@@ -11,14 +11,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+// In Livelock, threads are not stuck per-se but their action or their execution schedule becomes such that
+// no overall progress is being made in the system.
+// The operations in the 2 threads counter each other
+// and so, in theory this process can go on forever!
 public class Livelock {
 
     private static void example1() {
         ExecutorService es = Executors.newFixedThreadPool(2);
         try {
-
-            // The operations in the 2 threads counter each other
-            // and so, in theory this process can go on forever!
             AtomicInteger x = new AtomicInteger(0);
             es.execute(() -> {
                 while (x.get() <= 2) {

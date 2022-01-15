@@ -12,6 +12,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+
+// Typical scenario where T1 is holding a but waiting on b
+// and T2 is holding b but waiting on a
 public class Deadlock {
 
     private static void example1() {

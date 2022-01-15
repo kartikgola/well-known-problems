@@ -13,6 +13,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
+// Starvation prevents some of the threads in the system to "starve" of the shared resources
+// This is exactly the opposite of "fairness" in concurrency
+// Since there is only 1 monitor, it may so happen that a thread repeatedly gets the lock
+// and performs its operation (incrementing iter in this case), while starving the other threads
 public class Starvation {
 
     private static void example1() {
@@ -33,8 +37,6 @@ public class Starvation {
                                 System.out.println(Thread.currentThread() + " iterations = " + iter);
                                 return;
                             }
-                            // Since there is only 1 monitor, it may so happen that a thread repeatedly gets the lock
-                            // and performs its operation (incrementing iter in this case), while starving the other threads
                             synchronized (monitor) {
                                 iter++;
                             }
