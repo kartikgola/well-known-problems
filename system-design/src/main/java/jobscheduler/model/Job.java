@@ -1,15 +1,19 @@
 /*
  * Author: Kartik Gola
- * Date: 1/16/22, 1:08 AM
+ * Date: 1/16/22, 1:28 PM
  * Copyright (c) 2021 | https://kartikgola.com
  */
 
-package jobscheduler;
+package jobscheduler.model;
 
 public class Job {
 
     private int id;
+
+    // Runnable that will be executed as part of the job's task
     private Runnable runnable;
+
+    // startTime at which job should ideally start
     private long startTime;
 
     public Job(int id, Runnable runnable, long startTime) {
