@@ -6,7 +6,6 @@
 
 package jobscheduler.controller;
 
-import jobscheduler.controller.JobScheduler;
 import jobscheduler.model.Job;
 
 import java.util.*;
@@ -25,7 +24,7 @@ public class SimpleJobScheduler implements JobScheduler {
     private volatile boolean canShutdown = false;
     private volatile boolean shutdownNow = false;
 
-    private volatile List<Job> waitingJobs = null;
+    private volatile List<Job> drainedJobs = null;
     private final Lock drainLock = new ReentrantLock();
     private final Condition drainComplete = drainLock.newCondition();
 
@@ -39,8 +38,8 @@ public class SimpleJobScheduler implements JobScheduler {
                     // 2. interrupt all the running threads
                     if (shutdownNow) {
                         drainLock.lock();
-                            waitingJobs = new ArrayList<>();
-                            jobQueue.drainTo(waitingJobs);
+                            drainedJobs = new ArrayList<>();
+                            jobQueue.drainTo(drainedJobs);
                             workerThreads.stream()
                                     .filter(Objects::nonNull)
                                     .forEach(Thread::interrupt);
@@ -105,7 +104,7 @@ public class SimpleJobScheduler implements JobScheduler {
         shutdown();
         try {
             drainLock.lock();
-            while (waitingJobs == null)
+            while (drainedJobs == null)
                 drainComplete.await();
         } catch (InterruptedException ie) {
             ie.printStackTrace();
@@ -114,6 +113,6 @@ public class SimpleJobScheduler implements JobScheduler {
         }
 
 
-        return waitingJobs;
+        return drainedJobs;
     }
 }
