@@ -22,10 +22,10 @@ public class SimpleJobScheduler implements JobScheduler {
     private final List<Thread> workerThreads;
     private final Thread checkerThread;
 
-    private boolean canShutdown = false;
-    private boolean shutdownNow = false;
+    private volatile boolean canShutdown = false;
+    private volatile boolean shutdownNow = false;
 
-    private List<Job> waitingJobs = null;
+    private volatile List<Job> waitingJobs = null;
     private final Lock drainLock = new ReentrantLock();
     private final Condition drainComplete = drainLock.newCondition();
 
