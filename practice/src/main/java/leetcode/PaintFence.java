@@ -17,26 +17,18 @@ public class PaintFence {
      *      k*k, if n == 2,
      *      (k-1) * (f(n-1,k) + f(n-2,k))
      *  }
-     *  1. Use 1 less color and combine with f(n-1, k)
-     *  2. Use 1 less color and combine with f(n-2, k)
-     *     For the 2nd part, think of it like this -
-     *     if n = 3, k = 3, and assuming f(1) is painted with r, g, b
-     *     that means, there are these posts available with us
-     *     r, _, ?
-     *     g, _, ?
-     *     b, _, ?
      *
-     *     so, each, '?' can have 2 ways to color it, (1 less color, that is, k-1)
-     *     r, _, b/g
-     *     g, _, r/b
-     *     b, _, g/r
+     *  At each ith post -
+     *  1. We can use a different color as (i-1)th post
+     *  2. We can use a same color as (i-1)th post, provided (i-2)th post is of different color
      *
-     *     now, the '_' part can be filled in 2 ways as well
-     *     r, b/g, b/g
-     *     g, r/b, r/b
-     *     b, g/r, g/r
+     *  Total colors = k
+     *  So, no. of ways to paint ith post using a different color than (i-1)th post = (k-1) * f(n-1)
+     *  Also, by the same logic, no. of ways to paint (i-2)th post using a different color than (i-1)th post = (k-1) * f(n-2)
      *
-     *     so, we have 6 ways, that forms our 2nd term => (k-1) * f(n-2, k)
+     *  So, Total ways = (k-1) * (f(n-1) + f(n-2))
+     *      where n >= 3,
+     *            k >= 1
      */
     private int f(int n, int k) {
         if (n == 1)
