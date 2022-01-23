@@ -11,36 +11,32 @@ import java.util.Arrays;
 public class MinimumDifficultyOfAJobSchedule {
 
     // f(i, j) = min difficulty of job-schedule that starts with ith job on jth day
-    private int f(int[] jobDiff, Integer[][] dp, int i, int j, int d) {
+    private int f(int[] job, Integer[][] dp, int i, int j, int d) {
         if (j >= d) {
             // if there are still pending jobs, they need to be completed on the last day that is, (d-1)th day
-            if (i < jobDiff.length) {
-                int max = Integer.MIN_VALUE;
-                for (int k = i; k < jobDiff.length; ++k)
-                    max = Math.max(max, jobDiff[k]);
-                return max;
-            }
+            if (i < job.length)
+                return Arrays.stream(job, i, job.length).max().orElse(0);
             return 0;
         }
 
         if (dp[i][j] != null)
             return dp[i][j];
 
-        int diff = jobDiff[i];
+        int diff = job[i];
         int ans = Integer.MAX_VALUE;
 
-        for (int k = i; k < jobDiff.length - (d-j) + 1; ++k) {
-            diff = Math.max(diff, jobDiff[k]);
-            ans = Math.min(ans, diff + f(jobDiff, dp, k+1, j+1, d));
+        for (int k = i; k < job.length - (d-j) + 1; ++k) {
+            diff = Math.max(diff, job[k]);
+            ans = Math.min(ans, diff + f(job, dp, k+1, j+1, d));
         }
 
         return dp[i][j] = ans;
     }
 
-    public int minDifficulty(int[] jobDiff, int d) {
-        if (jobDiff.length < d)
+    public int minDifficulty(int[] job, int d) {
+        if (job.length < d)
             return -1;
-        return f(jobDiff, new Integer[jobDiff.length][d], 0, 0, d);
+        return f(job, new Integer[job.length][d], 0, 0, d);
     }
 
 
