@@ -10,51 +10,52 @@ public class StringToInteger {
 
     public int myAtoi(String s) {
         s = s.trim();
+        if (s.isEmpty())
+            return 0;
+
+        boolean pos = s.charAt(0) == '-';
+        int offset = s.charAt(0) == '-' || s.charAt(0) == '+' ? 1 : 0;
+
         StringBuilder sb = new StringBuilder();
-        boolean pos = true;
-        int i = 0;
-
-        // check sign
-        if (s.length() > 0 && (s.charAt(0) == '+' || s.charAt(0) == '-'))
-            pos = s.charAt(i++) == '+';
-
-        // check digits
-        while (i < s.length()) {
-            char ch = s.charAt(i++);
-            if (ch >= '0' && ch <= '9') {
-                sb.append(ch);
-            } else {
-                if (sb.length() == 0)
-                    return 0;
-                else break;
-            }
+        for (int i = offset; i < s.length(); ++i) {
+            if (s.charAt(i) >= '0' && s.charAt(i) <= '9')
+                sb.append(s.charAt(i));
+            else break;
         }
 
-        // remove initial zeros
-        for (int k = 0; k < sb.length() && sb.charAt(k) == '0';)
-            sb.delete(k, k+1);
+        if (sb.length() == 0)
+            return 0;
 
-        long ans = 0;
-        if (pos && sb.length() > String.valueOf(Integer.MAX_VALUE).length())
-            return Integer.MAX_VALUE;
-        if (!pos && sb.length() > String.valueOf(Integer.MIN_VALUE).length()-1)
-            return Integer.MIN_VALUE;
-
-        for (int j = 0; j < sb.length(); ++j) {
-            int v = sb.charAt(j) - '0';
-            if (v > 0) {
-                if (pos)
-                    ans += Math.pow(10, sb.length()-j-1) * v;
-                else
-                    ans -= Math.pow(10, sb.length()-j-1) * v;
-            }
+        if (sb.charAt(0) == '0') {
+            int i = 0;
+            while (i+1 < sb.length() && sb.charAt(i+1) == '0')
+                i++;
+            sb.delete(0, i+1);
+            if (sb.length() == 0)
+                return 0;
         }
 
-        if (ans > Integer.MAX_VALUE)
-            return Integer.MAX_VALUE;
-        if (ans < Integer.MIN_VALUE)
-            return Integer.MIN_VALUE;
+        int max = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
+        int len = (int)(Math.log(max) / Math.log(10)) + 1;
 
-        return (int) ans;
+        if (sb.length() > len)
+            return pos ? max : min;
+        else if (sb.length() < len)
+            return Integer.parseInt((pos ? "" : "-") + sb.toString());
+
+        // limit is the maximum or minimum string to compare with
+        // limit should only be the absolute value without any + or - sign
+        String limit = pos ? String.valueOf(max) : String.valueOf(min).substring(1);
+
+        // Start comparing limit with sb
+        for (int i = 0; i < sb.length(); ++i) {
+            if (limit.charAt(i) > sb.charAt(i))
+                return Integer.parseInt((pos ? "" : "-") + sb.toString());
+            else if (limit.charAt(i) < sb.charAt(i) && i > 0)
+                break;
+        }
+
+        return pos ? max : min;
     }
 }
