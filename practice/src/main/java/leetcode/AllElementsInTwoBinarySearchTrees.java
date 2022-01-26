@@ -12,39 +12,58 @@ import java.util.*;
 
 public class AllElementsInTwoBinarySearchTrees {
 
+    private final int MAX = Integer.MAX_VALUE;
+
+    private class BSTIterator {
+
+        private final Stack<TreeNode> stack = new Stack<>();
+
+        BSTIterator(TreeNode root) {
+            if (root != null) {
+                stack.push(root);
+                while (stack.peek().left != null)
+                    stack.push(stack.peek().left);
+            }
+        }
+
+        // top of the stack will always be the next smallest element
+        // or MAX, in case stack is empty
+        public int next() {
+            if (stack.isEmpty())
+                return MAX;
+            TreeNode pop = stack.pop();
+            if (pop.right != null) {
+                stack.push(pop.right);
+                while (stack.peek().left != null)
+                    stack.push(stack.peek().left);
+            }
+            return pop.val;
+        }
+    }
+
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         List<Integer> ans = new ArrayList<>();
-        Stack<TreeNode> s1 = new Stack<>();
-        Stack<TreeNode> s2 = new Stack<>();
-        if ( root1 != null ) s1.push(root1);
-        if ( root2 != null ) s2.push(root2);
+        BSTIterator it1 = new BSTIterator(root1);
+        BSTIterator it2 = new BSTIterator(root2);
 
-        boolean canGoLeft1 = true,
-                canGoLeft2 = true;
-        while ( !s1.isEmpty() || !s2.isEmpty() ) {
-            while ( !s1.isEmpty() && canGoLeft1 && s1.peek().left != null )
-                s1.push(s1.peek().left);
-            while ( !s2.isEmpty() && canGoLeft2 && s2.peek().left != null )
-                s2.push(s2.peek().left);
+        int v1 = it1.next();
+        int v2 = it2.next();
 
-            if ( !s1.isEmpty() && ( s2.isEmpty() || s1.peek().val <= s2.peek().val) ) {
-                TreeNode r1 = s1.pop();
-                ans.add(r1.val);
-                if ( r1.right != null ) {
-                    s1.push(r1.right);
-                    canGoLeft1 = true;
+        while (v1 != MAX || v2 != MAX) {
+            if (v1 != MAX && v2 != MAX) {
+                if (v1 <= v2) {
+                    ans.add(v1);
+                    v1 = it1.next();
                 } else {
-                    canGoLeft1 = false;
+                    ans.add(v2);
+                    v2 = it2.next();
                 }
-            } else if ( !s2.isEmpty() && (s1.isEmpty() || s1.peek().val > s2.peek().val) ) {
-                TreeNode r2 = s2.pop();
-                ans.add(r2.val);
-                if ( r2.right != null ) {
-                    s2.push(r2.right);
-                    canGoLeft2 = true;
-                } else {
-                    canGoLeft2 = false;
-                }
+            } else if (v1 != MAX) {
+                ans.add(v1);
+                v1 = it1.next();
+            } else {
+                ans.add(v2);
+                v2 = it2.next();
             }
         }
 
