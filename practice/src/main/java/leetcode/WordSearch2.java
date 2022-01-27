@@ -36,14 +36,14 @@ public class WordSearch2 {
 
     private Set<String> seen = new HashSet<>();
 
-    private List<String> f(int i, int j, Node node, char[][] board) {
+    private List<String> f(int i, int j, Node parent, char[][] board) {
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] == '#')
             return new ArrayList<>();
         List<String> ans = new ArrayList<>();
         char val = board[i][j];
         board[i][j] = '#';
-        if (node.map.containsKey(val)) {
-            Node child = node.map.get(val);
+        if (parent.map.containsKey(val)) {
+            Node child = parent.map.get(val);
             if (child.isComplete && !seen.contains(child.str)) {
                 ans.add(child.str);
                 seen.add(child.str);
