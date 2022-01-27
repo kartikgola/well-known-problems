@@ -10,24 +10,24 @@ import java.util.*;
 
 public class CourseSchedule2 {
 
-    // Visits a vertex
-    // @returns true, if node is part of a cycle; false, otherwise
-    private boolean visit(int v, boolean[] path, boolean[] visited, Stack<Integer> st, List<List<Integer>> req) {
-        if ( !visited[v] ) {
-            visited[v] = true;
-            path[v] = true;
+    // DFS method that performs 2 things -
+    // 1. Checks for cycle in the graph
+    // 2. Populates Stack<Integer> while doing DFS
+    private boolean checkCycle(int u, boolean[] path, boolean[] visited, Stack<Integer> st, List<List<Integer>> req) {
+        if (!visited[u]) {
+            visited[u] = true;
+            path[u] = true;
 
-            for ( Integer nbr : req.get(v) ) {
-                if ( !visited[nbr] ) {
-                    if ( visit(nbr, path, visited, st, req) )
+            for (Integer nbr : req.get(u)) {
+                if (!visited[nbr]) {
+                    if (checkCycle(nbr, path, visited, st, req))
                         return true;
-                } else if ( path[nbr] ) {
+                } else if (path[nbr])
                     return true;
-                }
             }
         }
-        path[v] = false;
-        st.push(v);
+        path[u] = false;
+        st.push(u);
         return false;
     }
 
@@ -36,7 +36,8 @@ public class CourseSchedule2 {
         for ( int i = 0; i < n; ++i )
             req.add(new ArrayList<>());
 
-        for ( int[] p : pre )
+        // req[i] = j, means that 'j' is a pre-requisite for 'i'
+        for (int[] p : pre)
             req.get(p[0]).add(p[1]);
 
         boolean[] visited = new boolean[n];
@@ -44,21 +45,15 @@ public class CourseSchedule2 {
         Stack<Integer> st = new Stack<>();
 
         for ( int i = 0; i < n; ++i ) {
-            if ( !visited[i] )
-                if ( visit(i, path, visited, st, req) ) {
+            if (!visited[i])
+                if (checkCycle(i, path, visited, st, req))
                     return new int[]{};
-                }
         }
 
-        int j = st.size() - 1;
-        int[] res = new int[st.size()];
-        while ( !st.empty() ) {
-            res[j--] = st.pop();
-        }
-
-        return res;
+        return st.stream().mapToInt(i -> i).toArray();
     }
 
+    // Kahn's algorithm O(V+E)
     public int[] findOrder2(int n, int[][] pre) {
         int[] res = new int[n];
         List<List<Integer>> req = new ArrayList<>(n);
