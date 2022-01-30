@@ -87,6 +87,7 @@ public class PartitionEqualSubsetSum {
             return memo[i][sum];
 
         // f(i, sum) = f(i+1, sum-nums[i]) || f(i+1, sum)
+        // f(i, sum) = can we form 'sum' picking numbers in [i, n-1]
         if (nums[i] == sum)
             return true;
         else if (sum - nums[i] > 0)
