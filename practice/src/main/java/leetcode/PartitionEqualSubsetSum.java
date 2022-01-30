@@ -44,4 +44,63 @@ public class PartitionEqualSubsetSum {
 
         return dp[n-1][sum];
     }
+
+    public boolean canPartition2(int[] nums) {
+        int sum = 0;
+        for (int num: nums)
+            sum += num;
+
+        if (sum % 2 != 0)
+            return false;
+
+        int half = sum/2;
+
+        // dp[i][j] = Can we form sum j using numbers in [i,n-1]
+        // goal is to find dp[0][half]
+        // at every stage for ith number, we can choose to include it or not
+        // dp[i][j] = dp[i+1][j] || dp[i][j-nums[i]]
+        final int n = nums.length;
+        boolean[][] dp = new boolean[n][half+1];
+
+        for (int j = 1; j <= half; ++j)
+            dp[n-1][j] = nums[n-1] == j;
+
+        for (int i = 0; i < n; ++i)
+            dp[i][0] = true;
+
+        for (int i = n-2; i >= 0; --i) {
+            for (int j = 1; j <= half; ++j) {
+                if (j - nums[i] >= 0)
+                    dp[i][j] = dp[i+1][j] || dp[i+1][j-nums[i]];
+                else
+                    dp[i][j] = dp[i+1][j];
+            }
+        }
+
+        return dp[0][half];
+    }
+
+    private boolean f(int[] nums, int i, int sum, Boolean[][] memo) {
+        if (i >= nums.length || sum < 0)
+            return false;
+        if (memo[i][sum] != null)
+            return memo[i][sum];
+
+        // f(i, sum) = f(i+1, sum-nums[i]) || f(i+1, sum)
+        if (nums[i] == sum)
+            return true;
+        else if (sum - nums[i] > 0)
+            return memo[i][sum] = f(nums, i+1, sum, memo) || f(nums, i+1, sum - nums[i], memo);
+        else
+            return memo[i][sum] = f(nums, i+1, sum, memo);
+    }
+
+    public boolean canPartition3(int[] nums) {
+        int sum = 0;
+        for (int num: nums)
+            sum += num;
+        if (sum % 2 != 0)
+            return false;
+        return f(nums, 0, sum/2, new Boolean[nums.length][sum/2+1]);
+    }
 }
