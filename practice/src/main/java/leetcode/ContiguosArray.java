@@ -7,6 +7,8 @@
 package leetcode;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ContiguosArray {
 
@@ -24,6 +26,27 @@ public class ContiguosArray {
             }
         }
         return maxLen;
+    }
+
+    public int findMaxLength2(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>(){{ put(0, -1); }};
+        int match = 0;
+        int ans = 0;
+
+        // Similar logic as Subarray sum equals K
+        for (int i = 0; i < nums.length; ++i) {
+            if (nums[i] == 1)
+                match++;
+            else match--;
+
+            if (map.containsKey(match)) {
+                ans = Math.max(ans, i-map.get(match));
+            } else {
+                map.put(match, i);
+            }
+        }
+
+        return ans;
     }
 
 }
